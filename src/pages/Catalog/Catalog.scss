@@ -1,0 +1,32 @@
+.catalog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.catalog-collection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  gap: 60px;
+}
+
+.catalog__banner {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 400px;
+}
+
+//.main-content__banner-img {
+//  height: 140%;
+//  width: auto;
+//}
+
+.main-content__bestsellers-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

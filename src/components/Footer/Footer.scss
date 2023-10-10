@@ -1,0 +1,25 @@
+//Main footer
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 70px;
+}
+
+.main-footer__links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-link-active,
+.footer-link:hover {
+  color: #8C8C8C;
+}
+
+.footer-link {
+  color: #1B1A19;
+}

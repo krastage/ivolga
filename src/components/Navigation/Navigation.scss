@@ -1,0 +1,48 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.nav-link-active,
+.nav-link:hover {
+  color: #8C8C8C;
+}
+
+.nav-link {
+  color: #1B1A19;
+
+}
+
+//Logo
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+}
+
+//Navigation
+
+.main-header__list {
+  display: flex;
+  gap: 30px;
+}
+
+//Buttons
+
+.main-header__buttons-list {
+  display: flex;
+  gap: 30px;
+}
+
+.main-header__buttons-item,
+.main-header__button {
+  display: flex;
+  align-items: center;
+}
+
+.main-header__button:hover {
+  stroke: #8C8C8C;
+}
