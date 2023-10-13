@@ -17,6 +17,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  transition: 0.9s right ease-in-out;
   z-index: 9999;
 }
 
@@ -31,7 +32,7 @@
   top: 0;
   position: fixed;
   transition: 0.9s right ease-in-out;
-  right: -542px;
+  right: -50vw;
 }
 
 .search-modal.active .modal__content {
