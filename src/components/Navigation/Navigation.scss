@@ -1,48 +1,48 @@
+@import 'src/styles/global/settings';
+
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+  padding: 40px 60px;
 
-.nav-link-active,
-.nav-link:hover {
-  color: #8C8C8C;
-}
+  .nav-link {
+    color: $text-black;
+  }
 
-.nav-link {
-  color: #1B1A19;
+  .nav-link-active,
+  .nav-link:hover {
+    color: $text-grey;
+  }
 
-}
+  //Logo
 
-//Logo
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
 
-.main-header__logo {
-  display: flex;
-  align-items: center;
-}
+  //Navigation
 
-//Navigation
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
 
-.main-header__list {
-  display: flex;
-  gap: 30px;
-}
+  //Buttons
 
-//Buttons
+  &__buttons-list {
+    display: flex;
+    gap: 30px;
+  }
 
-.main-header__buttons-list {
-  display: flex;
-  gap: 30px;
-}
+  &__buttons-item,
+  &__button {
+    display: flex;
+    align-items: center;
+  }
 
-.main-header__buttons-item,
-.main-header__button {
-  display: flex;
-  align-items: center;
-}
-
-.main-header__button:hover {
-  stroke: #8C8C8C;
+  &__button:hover {
+    stroke: $text-grey;
+  }
 }

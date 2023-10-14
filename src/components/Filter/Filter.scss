@@ -1,75 +1,71 @@
-//Filter
+@import 'src/styles/global/settings';
 
 .filter-modal {
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
-  transform: scale(0);
-  transition: 0.9s top ease-in-out;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  pointer-events: none;
 
   &.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: all;
+    z-index: 9999;
+
+    .filter-modal-container {
+      top: 0;
+      transition: 0.9s top ease-in-out;
+    }
+  }
+
+  .filter-modal-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+    height: 433px;
+    width: 100vw;
+    background-color: $background-white;
+    top: -50vh;
+    position: fixed;
+    transition: 0.9s top ease-in-out;
+  }
+
+  //Heading
+
+  .filter-modal-heading {
+    padding: 40px 58px 0;
+    display: flex;
+    justify-content: flex-end;
+
+    &__button {
+      display: flex;
+      padding: 10px;
+      border: 1px solid $border-grey;
+      align-items: center;
+    }
+  }
+
+  //Content
+
+  .filter-modal-content {
+    display: flex;
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.4);
-    transform: scale(1);
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 9999;
+    border-top: 1px solid $border-grey;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      padding: 32px;
+      width: 289px;
+      color: $text-grey;
+      border-left: 1px solid $border-grey;
+    }
   }
-}
-
-.filter-modal__content {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  height: 433px;
-  width: 100vw;
-  background-color: #FFFFFF;
-  top: -433px;
-  position: fixed;
-  transition: 0.9s top ease-in-out;
-}
-
-.filter-modal.active .filter-modal__content {
-  top: 0;
-}
-
-//Heading
-
-.filter-modal-heading {
-  padding: 40px 58px 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.filter-modal-heading__button {
-  display: flex;
-  padding: 10px;
-  border: 1px solid var(--grey-3, #D7D7D7);
-  align-items: center;
-}
-
-//Content
-
-.filter-modal-content {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  border-top: 1px solid var(--grey-3, #D7D7D7);
-}
-
-.filter-modal-content__list {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-  padding: 32px;
-  width: 289px;
-  color: #8C8C8C;
-  border-left: 1px solid var(--grey-3, #D7D7D7);
 }

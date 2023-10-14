@@ -20,7 +20,7 @@ export const SizeGuide = ({ sizeGuideActive, setSizeGuideActive }) => {
       onClick={() => setSizeGuideActive(false)}
     >
       <div
-        className="sizeGuide-modal__container"
+        className="sizeGuide-modal-container"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="sizeGuide-modal-heading">
@@ -34,7 +34,7 @@ export const SizeGuide = ({ sizeGuideActive, setSizeGuideActive }) => {
           </button>
         </div>
 
-        <div className="sizeGuide-modal__content">
+        <div className="sizeGuide-modal-content">
           <div className="sizeGuide-modal__table">
             <h1 className="sizeGuide-table__title">Футболка</h1>
 

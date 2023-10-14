@@ -20,7 +20,7 @@ export const Search = ({ searchActive, setSearchActive }) => {
       className={searchActive ? "search-modal active" : "search-modal"}
       onClick={() => setSearchActive(false)}
     >
-      <div className="modal__content" onClick={(e) => e.stopPropagation()}>
+      <div className="search-modal__content" onClick={(e) => e.stopPropagation()}>
         <div className="search-modal-heading">
           <p>Поиск</p>
           <button onClick={() => setSearchActive(false)}>

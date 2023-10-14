@@ -1,4 +1,4 @@
-//Main footer
+@import 'src/styles/global/settings';
 
 .main-footer {
   display: flex;
@@ -8,18 +8,18 @@
   padding-top: 20px;
   padding-bottom: 20px;
   gap: 70px;
-}
 
-.main-footer__links {
-  display: flex;
-  gap: 30px;
-}
+  &__links {
+    display: flex;
+    gap: 30px;
+  }
 
-.footer-link-active,
-.footer-link:hover {
-  color: #8C8C8C;
-}
+  .footer-link-active,
+  .footer-link:hover {
+    color: $text-grey;
+  }
 
-.footer-link {
-  color: #1B1A19;
+  .footer-link {
+    color: $text-black;
+  }
 }

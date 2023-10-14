@@ -1,2 +1,12 @@
-@import "./global/settings";
+@import './global/settings';
+
+@import 'src/components/Search/Search';
+@import 'src/components/Auth/Auth';
+@import 'src/components/Basket/Basket';
+@import 'src/components/Filter/Filter';
+@import 'src/components/SizeGuide/SizeGuide';
+@import 'src/components/Navigation/Navigation';
+@import 'src/components/Footer/Footer';
+
+
 

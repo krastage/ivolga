@@ -20,7 +20,7 @@ export const Filter = ({ filterActive, setFilterActive }) => {
       onClick={() => setFilterActive(false)}
     >
       <div
-        className="filter-modal__content"
+        className="filter-modal-container"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="filter-modal-heading">

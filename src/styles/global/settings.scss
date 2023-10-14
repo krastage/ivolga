@@ -1,15 +1,20 @@
+//Global settings
+
 @font-face {
   font-family: Pragmatica;
-  src: url("../../../public/assets/fonts/Pragmatica-Book.woff")
+  src: url('../../../public/assets/fonts/Pragmatica-Book.woff')
 }
 
 @font-face {
   font-family: Steinback;
-  src: url("../../../public/assets/fonts/Steinbeck-Regular.ttf")
+  src: url('../../../public/assets/fonts/Steinbeck-Regular.ttf')
 }
 
-$ivolga-black: #2A2835;
-$ivolga-grey: #8C8C8C;
+$background-white: #FFFFFF;
+$text-black: #2A2835;
+$text-grey: #8C8C8C;
+$border-grey: #D7D7D7;
+$border-black: #1B1A19;
 
 html {
   scroll-behavior: smooth;
@@ -26,13 +31,12 @@ body {
 
 .container {
   max-width: 2000px;
-  width: 100vw;
-  padding: 0 60px;
+  //padding: 0 60px;
   box-sizing: border-box;
 }
 
 h1, h2, h3 {
-  color: $ivolga-black;
+  color: $text-black;
   font-family: Steinbeck, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -48,7 +52,7 @@ h1 {
 
 p, a, span, label, input, textarea, tr, td, th, ul {
   font-family: Pragmatica, sans-serif;
-  color: var(--ivolga-black, #2A2835);
+  color: $text-black;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
@@ -78,5 +82,5 @@ button {
 
 input:focus,
 textarea:focus {
-  outline: 1px solid #1B1A19;
+  outline: 1px solid $border-black;
 }
