@@ -1,0 +1,53 @@
+@import '../modals/rightModal';
+
+//Order
+
+.basket-modal-order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.basket-modal-order__title {
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+.basket-modal-order__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.basket-modal-order__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+.basket-modal-order__description {
+  color: $text-grey;
+}
+
+//Link
+
+.basket-modal-order__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid $border-black;
+}
+
+//Orders
+
+.basket-modal-orders__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.basket-modal-orders__list .products-card__product {
+  width: 188.5px;
+}

@@ -1,0 +1,73 @@
+@import "../variables";
+@import "./fonts";
+
+//Global settings
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.body-container {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 2000px;
+  //padding: 0 60px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: $text-black;
+  font-family: Steinbeck, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p, a, span, label, input, textarea, tr, td, th, ul {
+  font-family: Pragmatica, sans-serif;
+  color: $text-black;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid $border-black;
+}

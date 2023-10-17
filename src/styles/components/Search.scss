@@ -1,0 +1,54 @@
+@import '../modals/rightModal';
+
+//Input
+
+.search-modal-input-container {
+  position: relative;
+}
+
+.search-modal-input {
+  display: flex;
+  padding: 20px 8px 20px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  font-size: 28px;
+  color: $text-grey;
+  width: 100%;
+  border-bottom: 1px solid $border-black;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-modal-input__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 30px;
+}
+
+//Recommendations
+
+.search-modal-recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-modal-recommendations__title {
+  color: $text-grey;
+}
+
+.search-modal-recommendations__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.search-modal-recommendations__item {
+  display: flex;
+  padding: 20px;
+  border: 1px solid $border-grey;
+}

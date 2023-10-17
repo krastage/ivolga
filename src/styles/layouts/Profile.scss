@@ -1,0 +1,217 @@
+@import '../global/settings';
+@import '../checkbocks';
+@import '../buttons';
+@import '../inputs';
+
+//Global
+
+.common-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 98px;
+  margin-bottom: 60px;
+}
+
+.common-profile-title {
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+//Profile
+
+.profile {
+  display: flex;
+  padding: 0 60px;
+}
+
+.profile-link {
+  color: $text-grey;
+
+  &-active,
+  &:hover {
+    color: $text-black;
+  }
+}
+
+//Profile menu
+
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 252px;
+  border-right: $border-grey 1px solid;
+  height: 100%;
+}
+
+.profile-menu__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+//Profile info
+
+.profile-container {
+  @extend .common-container;
+  gap: 80px;
+  width: 516px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-info__loyalty,
+.profile-info__discount {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+.profile-news {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-info__description {
+  padding-bottom: 10px;
+  color: $text-grey;
+  border-bottom: $border-grey 1px solid;
+}
+
+//Wishlist
+
+.wishlist-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 98px;
+  margin-bottom: 60px;
+  max-width: 1042px;
+}
+
+//Orders
+
+.orders-container {
+  @extend .common-container;
+  gap: 40px;
+  width: 866px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.orders-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+//Order details
+
+.orders-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 97px;
+  width: 692px;
+}
+
+.orders-details-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.orders-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.orders-detail {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+//Addresses
+
+.addresses-container {
+  @extend .common-container;
+  gap: 40px;
+  width: 779px;
+}
+
+.addresses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addresses-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+//Address add
+
+.address-add-container {
+  @extend .common-container;
+  gap: 40px;
+  width: 778px;
+  margin-bottom: 60px;
+}
+
+.address-add-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.address-add-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+//Settings
+
+.settings-container {
+  @extend .common-container;
+  width: 515px;
+}
+
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.settings-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settings-subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 72px;
+}

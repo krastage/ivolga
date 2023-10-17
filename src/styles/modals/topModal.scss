@@ -1,0 +1,53 @@
+@import '../variables';
+
+//Modal top
+
+.modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+
+  &.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: all;
+    z-index: 9999;
+
+    .modal-top-content {
+      top: 0;
+      transition: 0.9s top ease-in-out;
+    }
+  }
+
+  .modal-top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    height: 433px;
+    width: 100vw;
+    background-color: $background-white;
+    top: -100vh;
+    position: fixed;
+    transition: 0.9s top ease-in-out;
+  }
+}
+
+//Modal top heading
+
+.modal-top-heading {
+  padding: 40px 58px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-top-heading__button {
+  display: flex;
+  padding: 10px;
+  border: 1px solid $border-grey;
+  align-items: center;
+}

@@ -1,0 +1,57 @@
+@import '../global/settings';
+@import "../variables";
+
+//Modal right
+
+.modal-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+
+  &.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: all;
+    z-index: 9999;
+
+    .modal-right-content {
+      right: 0;
+      transition: 0.9s right ease-in-out;
+    }
+  }
+
+  .modal-right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100vh;
+    width: $nav-modal-width;
+    right: $nav-modal-right;
+    padding: 40px 60px;
+    background-color: $background-white;
+    top: 0;
+    position: fixed;
+    overflow: auto;
+    transition: 0.9s right ease-in-out;
+  }
+}
+
+//Modal right heading
+
+.modal-right-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-right-heading__button {
+  display: flex;
+  padding: 10px;
+  border: 1px solid $border-grey;
+  align-items: center;
+}

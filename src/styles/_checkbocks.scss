@@ -1,0 +1,32 @@
+@import './global/settings';
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 1px solid $border-grey;
+  background: $background-white;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: url("../../public/assets/img/icons/checkbox-active.svg") no-repeat center;
+}
+
+label span {
+  font-size: 12px;
+  margin-left: 11px;
+  cursor: pointer;
+}

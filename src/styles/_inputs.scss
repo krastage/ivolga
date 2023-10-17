@@ -1,0 +1,62 @@
+@import "variables";
+
+.input {
+  display: flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 48px;
+  font-size: 16px;
+  align-self: stretch;
+  border: 1px solid $border-grey;
+  background: $background-white;
+}
+
+.input-error {
+  border: 1px solid $error !important;
+  background: $background-white !important;
+  color: $error !important;
+  outline: none !important;
+}
+
+.select {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  align-self: stretch;
+  border: 1px solid $border-grey;
+  background: $background-white;
+}
+
+.select option {
+  padding: 16px 24px;
+}
+
+.textarea {
+  display: flex;
+  height: 130px;
+  padding: 16px 0 16px 24px;
+  align-items: flex-start;
+  gap: 48px;
+  font-size: 16px;
+  align-self: stretch;
+  border: 1px solid $border-grey;
+  background: $background-white;
+}
+
+.input,
+.input-phone {
+  display: flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 48px;
+  font-size: 16px;
+  align-self: stretch;
+  border: 1px solid $border-grey;
+  background: $background-white;
+}
+
+.input-phone:focus {
+  outline: none;
+}

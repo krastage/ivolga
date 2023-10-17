@@ -1,0 +1,49 @@
+@import '../global/settings';
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+.nav-link {
+  color: $text-black;
+
+  &-active,
+  &:hover {
+    color: $text-grey;
+  }
+}
+
+//Logo
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+}
+
+//Navigation
+
+.main-header__list {
+  display: flex;
+  gap: 30px;
+}
+
+//Buttons
+
+.main-header__buttons-list {
+  display: flex;
+  gap: 30px;
+}
+
+.main-header__buttons-item,
+.main-header__button {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    stroke: $text-grey;
+  }
+}
+

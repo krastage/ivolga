@@ -1,0 +1,42 @@
+@import '../modals/rightModal';
+@import "../inputs";
+@import "../buttons";
+@import "../messages";
+
+//Title
+
+.auth-modal-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & p {
+    color: $text-grey;
+  }
+}
+
+.auth-modal-title__heading {
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+//Buttons
+
+.auth-modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+//Login
+
+.auth-modal-login__input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-modal-login__input-info {
+  margin-top: 10px;
+  color: $text-grey;
+}

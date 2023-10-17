@@ -1,0 +1,21 @@
+@import '../modals/topModal';
+
+//Content
+
+.filter-modal-content {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  border-top: 1px solid $border-grey;
+}
+
+.filter-modal-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 32px;
+  width: 289px;
+  color: $text-grey;
+  border-left: 1px solid $border-grey;
+}

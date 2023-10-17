@@ -1,12 +1,33 @@
 /**
- * Модальное окно авторизации
+ * Модальное окно регистрации/авторизации
  */
 
-import "./Auth.scss";
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import "../../styles/components/Auth.scss";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { LoginModal } from "./LoginModal";
+import { VerificationModal } from "./VerificationModal";
+import { PhoneInputModal } from "./PhoneInputModal";
+import { AuthorizedModal } from "./AuthorizedModal";
 
 export const Auth = ({ authActive, setAuthActive }) => {
+  const [isAuthorized, setIsAuthorized] = useState(false);
+  const [isLoginComponentActive, setIsLoginComponentActive] = useState(true);
+  const [isVerificationComponentActive, setIsVerificationComponentActive] =
+    useState(false);
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [verificationCode, setVerificationCode] = useState("");
+  const [sentPhoneNumber, setSentPhoneNumber] = useState("");
+  const [isButtonActive, setIsButtonActive] = useState(false);
+  const [isResendButtonActive, setIsResendButtonActive] = useState(true);
+  const [isCodeValid, setIsCodeValid] = useState(true);
+  const [resendTimer, setResendTimer] = useState(30);
+
+  let timerId;
+
+  const location = useLocation();
+  const navigation = useNavigate();
+
   useEffect(() => {
     if (authActive) {
       document.body.style.overflow = "hidden";
@@ -15,50 +36,134 @@ export const Auth = ({ authActive, setAuthActive }) => {
     }
   }, [authActive]);
 
-  return (
-    <div
-      className={authActive ? "auth-modal active" : "auth-modal"}
-      onClick={() => setAuthActive(false)}
-    >
-      <div className="auth-modal-content" onClick={(e) => e.stopPropagation()}>
-        <div className="auth-modal-heading">
-          <p>Вход</p>
-          <button onClick={() => setAuthActive(false)}>
-            <img
-              src="/assets/img/icons/close.svg"
-              alt="close"
-              className="auth-modal-heading__button"
-            />
-          </button>
-        </div>
+  const toggleLogin = () => {
+    setIsLoginComponentActive(!isLoginComponentActive);
+    setIsVerificationComponentActive(false);
+    setVerificationCode("");
+  };
 
-        <div className="auth-modal-title">
-          <h1 className="auth-modal-title__heading">
-            Войдите в аккаунт или продолжите <br />
-            как гость
-          </h1>
-          <p>
-            Зарегистрируйтесь или войдите в свой аккаунт, чтобы <br />
-            воспользоваться программой лояльности
-          </p>
-        </div>
+  const toggleVerification = () => {
+    setIsVerificationComponentActive(!isVerificationComponentActive);
+    setVerificationCode("");
+  };
 
-        <div className="auth-modal-buttons">
-          <Link
-            to={"/profile"}
-            className="auth-modal-buttons__auth"
-            onClick={() => setAuthActive(false)}
-          >
-            Войти / Зарегистрироваться
-          </Link>
-          <button
-            className="auth-modal-buttons__guest"
-            onClick={() => setAuthActive(false)}
-          >
-            Продолжить как гость
-          </button>
-        </div>
-      </div>
-    </div>
+  const phoneNumberHandle = (e) => {
+    const inputPhone = e.target.value;
+    const formattedPhone = inputPhone.replace(/\D/g, "");
+
+    if (formattedPhone.length === 11) {
+      setIsButtonActive(true);
+    } else {
+      setIsButtonActive(false);
+    }
+
+    setPhoneNumber(inputPhone);
+  };
+
+  const sendVerificationCode = () => {
+    setIsVerificationComponentActive(true);
+    setPhoneNumber("");
+    setSentPhoneNumber(phoneNumber);
+    setIsButtonActive(false);
+    setIsResendButtonActive(false);
+    startTimer();
+  };
+
+  const verificationCodeHandle = (e) => {
+    const inputCode = e.target.value.replace(/[^0-9]/g, "");
+    setVerificationCode(inputCode);
+
+    if (inputCode) {
+      setIsButtonActive(true);
+      setIsCodeValid(true);
+    }
+  };
+
+  const submitVerificationCode = () => {
+    if (verificationCode === "1234") {
+      setIsCodeValid(true);
+      navigation("/profile");
+      setAuthActive(false);
+      setIsAuthorized(true);
+      stopTimer();
+    } else {
+      setIsCodeValid(false);
+    }
+  };
+
+  const resendCodeHandle = () => {
+    setIsResendButtonActive(!isResendButtonActive);
+    startTimer();
+  };
+
+  const logoutHandle = () => {
+    if (location.pathname === "/profile") {
+      navigation("/");
+      setIsAuthorized(false);
+      setIsLoginComponentActive(true);
+      setAuthActive(false);
+    } else {
+      setIsAuthorized(false);
+      setIsLoginComponentActive(true);
+      setAuthActive(false);
+    }
+  };
+
+  const startTimer = () => {
+    let timer = resendTimer;
+    const countdown = () => {
+      if (timer === 0) {
+        clearTimeout(timerId);
+      } else {
+        timer -= 1;
+        setResendTimer(timer);
+      }
+    };
+    timerId = setInterval(countdown, 1000);
+  };
+
+  const stopTimer = () => {
+    clearTimeout(timerId);
+  };
+
+  return isAuthorized ? (
+    <AuthorizedModal
+      authActive={authActive}
+      setAuthActive={setAuthActive}
+      logoutHandle={logoutHandle}
+    />
+  ) : isLoginComponentActive ? (
+    //Окно входа
+    <LoginModal
+      authActive={authActive}
+      setAuthActive={setAuthActive}
+      toggleLogin={toggleLogin}
+    />
+  ) : !isVerificationComponentActive ? (
+    //  Ввод номера телефона
+    <PhoneInputModal
+      authActive={authActive}
+      setAuthActive={setAuthActive}
+      phoneNumber={phoneNumber}
+      phoneNumberHandle={phoneNumberHandle}
+      isButtonActive={isButtonActive}
+      sendVerificationCode={sendVerificationCode}
+    />
+  ) : (
+    // Ввод кода из СМС
+    <VerificationModal
+      authActive={authActive}
+      setAuthActive={setAuthActive}
+      toggleVerification={toggleVerification}
+      sentPhoneNumber={sentPhoneNumber}
+      isCodeValid={isCodeValid}
+      verificationCode={verificationCode}
+      verificationCodeHandle={verificationCodeHandle}
+      resendTimer={resendTimer}
+      isButtonActive={isButtonActive}
+      submitVerificationCode={submitVerificationCode}
+      isResendButtonActive={isResendButtonActive}
+      resendCodeHandle={resendCodeHandle}
+    />
   );
 };

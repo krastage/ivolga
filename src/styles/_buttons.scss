@@ -1,0 +1,117 @@
+@import "variables";
+
+//Back
+
+.back-button {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+//Profile
+
+.profile-subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-subscribe__button {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  font-size: 16px;
+  border: 1px solid $border-grey;
+}
+
+//Order
+
+.orders-item__button {
+  padding: 20px;
+  font-size: 12px;
+  width: 82px;
+  border: $border-grey 1px solid;
+}
+
+//Address
+
+.addresses-item__button {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  font-size: 12px;
+  border: 1px solid $border-grey;
+}
+
+.addresses__add-button {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  width: 219px;
+  border: 1px solid $border-grey;
+}
+
+.address-add-save-button {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid $border-grey;
+}
+
+//Settings
+
+.settings-subscribe__button {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  font-size: 16px;
+  border: 1px solid $border-grey;
+}
+
+//Auth
+
+.auth-modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.auth-modal-buttons__auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid $border-black;
+
+  &:disabled {
+    border: 1px solid $border-grey;
+  }
+  &:enabled {
+    border: 1px solid $border-black;
+  }
+}
+
+.auth-modal-buttons__guest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid $border-grey;
+}
+
+//Search
+
+.search-modal-input__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 30px;
+}
