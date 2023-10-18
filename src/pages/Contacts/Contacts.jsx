@@ -1,5 +1,5 @@
-import { ContactsLayout } from '../layouts/ContactsLayout';
-import { AnimatedPage } from '../components/AnimatedPage';
+import { ContactsLayout } from '../../layouts/ContactsLayout';
+import { AnimatedPage } from '../../components/AnimatedPage';
 
 export const Contacts = () => {
   const content = (

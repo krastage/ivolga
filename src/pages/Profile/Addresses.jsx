@@ -1,5 +1,5 @@
-import { ProfileLayout } from "../layouts/ProfileLayout";
-import { AnimatedPage } from "../components/AnimatedPage";
+import { ProfileLayout } from "../../layouts/ProfileLayout";
+import { AnimatedPage } from "../../components/AnimatedPage";
 import { useState } from "react";
 
 export const Addresses = () => {
@@ -39,47 +39,45 @@ export const Addresses = () => {
           <p>Назад</p>
         </button>
 
-        <ul className="address-add-details">
+        <form className="form">
           <h1 className="common-profile-title">Новый адрес</h1>
 
-          <li className="address-add-item">
+          <div className="form-item">
             <p className="address-add-item__title">Название</p>
             <input
               type="text"
               placeholder="Офис на Остоженке"
               className="input"
             />
-          </li>
+          </div>
 
-          <li className="address-add-item">
+          <div className="form-item">
             <p className="address-add-item__title">Город</p>
             <select name="city" id="city" className="select">
               <option value="moscow">Москва</option>
               <option value="piter">Санкт-Петербург</option>
               <option value="kazan">Казань</option>
             </select>
-          </li>
+          </div>
 
-          <li className="address-add-item">
+          <div className="form-item">
             <p className="address-add-item__title">Адрес</p>
             <input
               type="text"
               placeholder="Улица Большая Никитская, 2, кв. 21"
               className="input"
             />
-          </li>
+          </div>
 
-          <li className="address-add-item">
+          <div className="form-item">
             <p className="address-add-item__title">Комментарий для курьера</p>
             <textarea
               placeholder="Позвоните за 2 часа, этаж 2, дофомон 54667457"
               className="textarea"
             />
-          </li>
-        </ul>
-
-        <button className="address-add-save-button">Сохранить</button>
-
+          </div>
+          <button className="address-add-save-button">Сохранить</button>
+        </form>
       </div>
     </AnimatedPage>
   );

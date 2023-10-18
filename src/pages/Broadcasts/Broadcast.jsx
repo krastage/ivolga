@@ -1,7 +1,7 @@
-import "../styles/pages/Broadcast.scss";
-import { AnimatedPage } from "../components/AnimatedPage";
-import { Footer } from "../components/Footer";
-import { ProductsCardSmall } from "../layouts/ProductsCardSmall";
+import "../../styles/pages/Broadcasts/Broadcast.scss";
+import { AnimatedPage } from "../../components/AnimatedPage";
+import { Footer } from "../../components/Footer";
+import { ProductCard } from "../../layouts/ProductCard";
 
 export const Broadcast = () => {
   return (
@@ -30,39 +30,45 @@ export const Broadcast = () => {
           </div>
 
           <div className="broadcast-products">
-          <h1 className="broadcast-products__title">Товары из трансляции</h1>
+            <h1 className="broadcast-products__title">Товары из трансляции</h1>
             <ul className="broadcast-products__list">
-              <ProductsCardSmall
+              <ProductCard
+                size="small"
                 link={"/catalog/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
-              <ProductsCardSmall
+              <ProductCard
+                size="small"
                 link={"/catalog/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
-              <ProductsCardSmall
+              <ProductCard
+                size="small"
                 link={"/catalog/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
-              <ProductsCardSmall
+              <ProductCard
+                size="small"
                 link={"/catalog/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
-              <ProductsCardSmall
+              <ProductCard
+                size="small"
                 link={"/catalog/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
-              <ProductsCardSmall
+              <ProductCard
+                size="small"
                 link={"/catalog/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}

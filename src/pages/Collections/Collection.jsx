@@ -1,8 +1,8 @@
-import "../styles/pages/Collection.scss";
-import { AnimatedPage } from "../components/AnimatedPage";
-import { Footer } from "../components/Footer";
-import { CollectionsList } from "../layouts/CollectionsList";
-import { CollectionsElement } from "../layouts/CollectionsElement";
+import "../../styles/pages/Collection.scss";
+import { AnimatedPage } from "../../components/AnimatedPage";
+import { Footer } from "../../components/Footer";
+import { CollectionsList } from "../../layouts/CollectionsList";
+import { CollectionsElement } from "../../layouts/CollectionsElement";
 
 export const Collection = () => {
   return (
@@ -70,7 +70,7 @@ export const Collection = () => {
           </ul>
 
           <CollectionsList
-            title={'Ещё больше коллекций'}
+            title={"Ещё больше коллекций"}
             elements={[
               <CollectionsElement
                 link={"/collections/collection"}

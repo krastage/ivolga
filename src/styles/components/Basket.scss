@@ -1,6 +1,6 @@
-@import '../modals/rightModal';
+@import "../modals/rightModal";
 
-//Order
+//Checkout
 
 .basket-modal-order {
   display: flex;
@@ -46,6 +46,7 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 .basket-modal-orders__list .products-card__product {

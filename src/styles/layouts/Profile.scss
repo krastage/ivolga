@@ -1,7 +1,8 @@
-@import '../global/settings';
-@import '../checkbocks';
-@import '../buttons';
-@import '../inputs';
+@import "../global/settings";
+@import "../checkbocks";
+@import "../buttons";
+@import "../inputs";
+@import "../forms";
 
 //Global
 
@@ -117,7 +118,7 @@
   border-bottom: $border-grey 1px solid;
 }
 
-//Order details
+//Checkout details
 
 .orders-details-container {
   display: flex;
@@ -168,7 +169,7 @@
   border-bottom: $border-grey 1px solid;
 }
 
-//Address add
+//Addresses add
 
 .address-add-container {
   @extend .common-container;
@@ -177,41 +178,11 @@
   margin-bottom: 60px;
 }
 
-.address-add-details {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.address-add-item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 //Settings
 
 .settings-container {
   @extend .common-container;
   width: 515px;
-}
-
-.settings-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.settings-item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.settings-subscribe {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 72px;
+  gap: 20px;
+  margin-bottom: 60px;
 }

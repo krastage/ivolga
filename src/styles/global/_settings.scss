@@ -18,11 +18,18 @@ body {
 
 .container {
   max-width: 2000px;
-  //padding: 0 60px;
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+h1,
+h2,
+h3 {
   color: $text-black;
   font-family: Steinbeck, sans-serif;
   font-style: normal;
@@ -37,7 +44,16 @@ h1 {
   font-size: 28px;
 }
 
-p, a, span, label, input, textarea, tr, td, th, ul {
+p,
+a,
+span,
+label,
+input,
+textarea,
+tr,
+td,
+th,
+ul {
   font-family: Pragmatica, sans-serif;
   color: $text-black;
   font-style: normal;

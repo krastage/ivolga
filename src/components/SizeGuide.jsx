@@ -19,10 +19,7 @@ export const SizeGuide = ({ sizeGuideActive, setSizeGuideActive }) => {
       className={sizeGuideActive ? "sizeGuide-right active" : "sizeGuide-right"}
       onClick={() => setSizeGuideActive(false)}
     >
-      <div
-        className="modal-right-content"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="modal-right-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-right-heading">
           <p>Гид по размерам</p>
           <button onClick={() => setSizeGuideActive(false)}>

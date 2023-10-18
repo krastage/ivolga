@@ -1,7 +1,7 @@
-import { ProfileLayout } from "../layouts/ProfileLayout";
-import { AnimatedPage } from "../components/AnimatedPage";
+import { ProfileLayout } from "../../layouts/ProfileLayout";
+import { AnimatedPage } from "../../components/AnimatedPage";
 import { useState } from "react";
-import { ProductsCardSmall } from "../layouts/ProductsCardSmall";
+import { ProductCard } from "../../layouts/ProductCard";
 
 export const Orders = () => {
   const [showDetails, setShowDetails] = useState(true);
@@ -52,7 +52,8 @@ export const Orders = () => {
         <h1 className="orders-details-title">Заказ #00004</h1>
 
         <ul className="orders-details-items">
-          <ProductsCardSmall
+          <ProductCard
+            size="small"
             link={"/catalog/product"}
             title={"Топ черный из кашемира"}
             price={25000}

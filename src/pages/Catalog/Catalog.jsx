@@ -1,9 +1,9 @@
-import "../styles/global/_settings.scss";
-import "../styles/pages/Catalog.scss";
-import { Footer } from "../components/Footer";
-import { ProductsCardBig } from "../layouts/ProductsCardBig";
-import { ProductsCardList } from "../layouts/ProductsCardList";
-import { AnimatedPage } from "../components/AnimatedPage";
+import "../../styles/global/_settings.scss";
+import "../../styles/pages/Catalog/Catalog.scss";
+import { Footer } from "../../components/Footer";
+import { ProductCard } from "../../layouts/ProductCard";
+import { ProductsCardList } from "../../layouts/ProductsCardList";
+import { AnimatedPage } from "../../components/AnimatedPage";
 
 export const Catalog = () => {
   return (
@@ -24,74 +24,86 @@ export const Catalog = () => {
                 <ProductsCardList
                   title={"Бестселлеры"}
                   filterButton={true}
-                  elements={[
-                    <ProductsCardBig
+                  children={[
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}
                       imageSource={"/assets/img/products/product.png"}
                     />,
-                    <ProductsCardBig
+                    <ProductCard
+                      size="big"
                       link={"/catalog/product"}
                       title={"Топ черный из кашемира"}
                       price={25000}

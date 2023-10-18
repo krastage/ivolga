@@ -1,6 +1,6 @@
-import '../styles/layouts/Profile.scss';
-import { ProfileLayout } from '../layouts/ProfileLayout';
-import { AnimatedPage } from '../components/AnimatedPage';
+import '../../styles/layouts/Profile.scss';
+import { ProfileLayout } from '../../layouts/ProfileLayout';
+import { AnimatedPage } from '../../components/AnimatedPage';
 
 export const Profile = () => {
   const content = (

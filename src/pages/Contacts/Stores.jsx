@@ -1,7 +1,7 @@
-import { ContactsLayout } from '../layouts/ContactsLayout';
-import { AnimatedPage } from '../components/AnimatedPage';
+import { ContactsLayout } from "../../layouts/ContactsLayout";
+import { AnimatedPage } from "../../components/AnimatedPage";
 
-export const Address = () => {
+export const Stores = () => {
   const content = (
     <AnimatedPage>
       <div className="contacts-info-container">
@@ -25,7 +25,9 @@ export const Address = () => {
         </div>
 
         <div className="contacts-info">
-          <h1 className="faq-info__title">Магазин Ivolga, Столешников переулок</h1>
+          <h1 className="faq-info__title">
+            Магазин Ivolga, Столешников переулок
+          </h1>
           <ul className="faq-info__contacts">
             <li>
               <div className="faq-info__contact">
@@ -46,8 +48,5 @@ export const Address = () => {
     </AnimatedPage>
   );
 
-  return (
-    <ContactsLayout content={content} />
-  );
+  return <ContactsLayout content={content} />;
 };
-

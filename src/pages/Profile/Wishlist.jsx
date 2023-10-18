@@ -1,7 +1,7 @@
-import { ProfileLayout } from "../layouts/ProfileLayout";
-import { AnimatedPage } from "../components/AnimatedPage";
-import { ProductsCardMedium } from "../layouts/ProductsCardMedium";
-import { ProductsCardList } from "../layouts/ProductsCardList";
+import { ProfileLayout } from "../../layouts/ProfileLayout";
+import { AnimatedPage } from "../../components/AnimatedPage";
+import { ProductCard } from "../../layouts/ProductCard";
+import { ProductsCardList } from "../../layouts/ProductsCardList";
 
 export const Wishlist = () => {
   const content = (
@@ -10,50 +10,58 @@ export const Wishlist = () => {
         <ProductsCardList
           title={null}
           filterButton={true}
-          elements={[
-            <ProductsCardMedium
+          children={[
+            <ProductCard
+              size="medium"
               link={"/catalog/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
-            <ProductsCardMedium
+            <ProductCard
+              size="medium"
               link={"/catalog/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
-            <ProductsCardMedium
+            <ProductCard
+              size="medium"
               link={"/catalog/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
-            <ProductsCardMedium
+            <ProductCard
+              size="medium"
               link={"/catalog/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
-            <ProductsCardMedium
+            <ProductCard
+              size="medium"
               link={"/catalog/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
-            <ProductsCardMedium
+            <ProductCard
+              size="medium"
               link={"/catalog/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
-            <ProductsCardMedium
+            <ProductCard
+              size="medium"
               link={"/catalog/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
-            <ProductsCardMedium
+            <ProductCard
+              size="medium"
               link={"/catalog/product"}
               title={"Топ черный из кашемира"}
               price={25000}
