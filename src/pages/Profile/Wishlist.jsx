@@ -1,3 +1,7 @@
+/**
+ * Страница подраздела профиля с информацией об избранных товарах (вишлист)
+ */
+
 import { ProfileLayout } from "../../layouts/ProfileLayout";
 import { AnimatedPage } from "../../components/AnimatedPage";
 import { ProductCard } from "../../layouts/ProductCard";
@@ -13,56 +17,56 @@ export const Wishlist = () => {
           children={[
             <ProductCard
               size="medium"
-              link={"/catalog/product"}
+              link={"/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
             <ProductCard
               size="medium"
-              link={"/catalog/product"}
+              link={"/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
             <ProductCard
               size="medium"
-              link={"/catalog/product"}
+              link={"/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
             <ProductCard
               size="medium"
-              link={"/catalog/product"}
+              link={"/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
             <ProductCard
               size="medium"
-              link={"/catalog/product"}
+              link={"/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
             <ProductCard
               size="medium"
-              link={"/catalog/product"}
+              link={"/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
             <ProductCard
               size="medium"
-              link={"/catalog/product"}
+              link={"/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}
             />,
             <ProductCard
               size="medium"
-              link={"/catalog/product"}
+              link={"/product"}
               title={"Топ черный из кашемира"}
               price={25000}
               imageSource={"/assets/img/products/product.png"}

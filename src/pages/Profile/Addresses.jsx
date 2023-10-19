@@ -1,3 +1,7 @@
+/**
+ * Страница подраздела профиля с информацией об адресах (адресная книга)
+ */
+
 import { ProfileLayout } from "../../layouts/ProfileLayout";
 import { AnimatedPage } from "../../components/AnimatedPage";
 import { useState } from "react";

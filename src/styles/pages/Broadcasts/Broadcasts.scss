@@ -1,3 +1,5 @@
+@import "../../global/settings";
+
 //Broadcasts
 
 .broadcasts-content {
@@ -51,7 +53,7 @@
   position: absolute;
   bottom: 0;
   z-index: 1;
-  color: #FFF;
+  color: $background-white;
 }
 
 .broadcasts-state {
@@ -59,9 +61,9 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border: 1px solid #FFF;
+  border: 1px solid $background-white;
   width: 70px;
-  color: #FFF;
+  color: $background-white;
   font-size: 12px;
 }
 
@@ -73,7 +75,7 @@
 
 .broadcasts-article p,
 .broadcasts-article h1 {
-  color: #FFF;
+  color: $background-white;
 }
 
 //Broadcasts products

@@ -1,5 +1,5 @@
 /**
- * Список карточек товаров
+ * Шаблон списка карточек товаров
  */
 
 import "../styles/layouts/ProductsCardSettings.scss";

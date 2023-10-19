@@ -1,5 +1,5 @@
 /**
- * Навигация
+ * Навигация, шапка сайта
  */
 
 import "../styles/global/_settings.scss";

@@ -1,3 +1,7 @@
+/**
+ * Домашняя страница
+ */
+
 import "../styles/global/_settings.scss";
 import "../styles/pages/Home.scss";
 import { Footer } from "../components/Footer";
@@ -10,7 +14,7 @@ export const Home = () => {
   return (
     <AnimatedPage>
       <>
-        <main className="home-content">
+        <main className="content">
           <div className="home-collection">
             <div className="home__hero body-hero">
               <div className="home__description">
@@ -29,28 +33,28 @@ export const Home = () => {
               children={[
                 <ProductCard
                   size="big"
-                  link={"/catalog/product"}
+                  link={"/product"}
                   title={"Топ черный из кашемира"}
                   price={25000}
                   imageSource={"/assets/img/products/product.png"}
                 />,
                 <ProductCard
                   size="big"
-                  link={"/catalog/product"}
+                  link={"/product"}
                   title={"Топ черный из кашемира"}
                   price={25000}
                   imageSource={"/assets/img/products/product.png"}
                 />,
                 <ProductCard
                   size="big"
-                  link={"/catalog/product"}
+                  link={"/product"}
                   title={"Топ черный из кашемира"}
                   price={25000}
                   imageSource={"/assets/img/products/product.png"}
                 />,
                 <ProductCard
                   size="big"
-                  link={"/catalog/product"}
+                  link={"/product"}
                   title={"Топ черный из кашемира"}
                   price={25000}
                   imageSource={"/assets/img/products/product.png"}
@@ -77,28 +81,28 @@ export const Home = () => {
               children={[
                 <ProductCard
                   size="big"
-                  link={"/catalog/product"}
+                  link={"/product"}
                   title={"Топ черный из кашемира"}
                   price={25000}
                   imageSource={"/assets/img/products/product2.png"}
                 />,
                 <ProductCard
                   size="big"
-                  link={"/catalog/product"}
+                  link={"/product"}
                   title={"Топ черный из кашемира"}
                   price={25000}
                   imageSource={"/assets/img/products/product3.png"}
                 />,
                 <ProductCard
                   size="big"
-                  link={"/catalog/product"}
+                  link={"/product"}
                   title={"Топ черный из кашемира"}
                   price={25000}
                   imageSource={"/assets/img/products/product4.png"}
                 />,
                 <ProductCard
                   size="big"
-                  link={"/catalog/product"}
+                  link={"/product"}
                   title={"Топ черный из кашемира"}
                   price={25000}
                   imageSource={"/assets/img/products/product5.png"}

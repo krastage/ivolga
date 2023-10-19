@@ -1,5 +1,5 @@
 /**
- * Страница товара, продукта
+ * Шаблон страницы товара, продукта
  */
 
 import "../styles/layouts/ProductLayout.scss";
@@ -12,23 +12,29 @@ export const ProductLayout = ({
   price,
   detailButtonTitle,
   size,
-  colorSource,
-  color,
+  colors,
 }) => {
   const [sizeGuideActive, setSizeGuideActive] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
   const [showPayment, setShowPayment] = useState(false);
   const [showExchange, setShowExchange] = useState(false);
+  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
+  const [isPaymentOpen, setIsPaymentOpen] = useState(false);
+  const [isExchangeOpen, setIsExchangeOpen] = useState(false);
+  const [selectedColor, setSelectedColor] = useState(null);
   const toggleDetails = () => {
     setShowDetails(!showDetails);
+    setIsDetailsOpen(!isDetailsOpen);
   };
 
   const togglePayment = () => {
     setShowPayment(!showPayment);
+    setIsPaymentOpen(!isPaymentOpen);
   };
 
   const toggleExchange = () => {
     setShowExchange(!showExchange);
+    setIsExchangeOpen(!isExchangeOpen);
   };
 
   const details = (
@@ -41,8 +47,7 @@ export const ProductLayout = ({
         – relaxed fit <br />
         – detachable high neck <br />
         – primary fabric 58% cotton 42% polyester <br />
-        – made in Italy <br />
-        – StyleID:J03NL0103J15381107
+        – made in Italy <br />– StyleID:J03NL0103J15381107
       </p>
     </div>
   );
@@ -66,6 +71,21 @@ export const ProductLayout = ({
       <p>Информация о возврате</p>
     </div>
   );
+
+  const colorsData = [
+    {
+      name: "Бежевый",
+      img: "/assets/img/icons/color-pick1.svg",
+    },
+    {
+      name: "Белый",
+      img: "/assets/img/icons/color-pick2.svg",
+    },
+    {
+      name: "Зеленый",
+      img: "/assets/img/icons/color-pick3.svg",
+    },
+  ];
 
   return (
     <div className="product container">
@@ -111,15 +131,18 @@ export const ProductLayout = ({
 
           <div className="product-config__colors">
             <ul className="product-config__colors-list">
-              {colorSource.map((colorSource, index) => (
+              {colors.map((colorIndex, index) => (
                 <li key={index}>
-                  <button className="product-config__colors-button">
-                    <img src={colorSource} alt="pick" />
+                  <button
+                    className="product-config__colors-button"
+                    onClick={() => setSelectedColor(colorIndex)}
+                  >
+                    <img src={colorsData[colorIndex].img} alt="pick" />
                   </button>
                 </li>
               ))}
             </ul>
-            <p>{color}</p>
+            <p>{colorsData[colors[selectedColor]]?.name}</p>
           </div>
 
           <div className="product-config__buy">
@@ -134,7 +157,7 @@ export const ProductLayout = ({
               >
                 <div className="product-config__button-title">
                   <p>Детали и уход</p>
-                  <p>+</p>
+                  {isDetailsOpen ? <p>-</p> : <p>+</p>}
                 </div>
                 {details}
               </button>
@@ -146,7 +169,7 @@ export const ProductLayout = ({
               >
                 <div className="product-config__button-title">
                   <p>Оплата и доставка</p>
-                  <p>+</p>
+                  {isPaymentOpen ? <p>-</p> : <p>+</p>}
                 </div>
                 {payment}
               </button>
@@ -158,7 +181,7 @@ export const ProductLayout = ({
               >
                 <div className="product-config__button-title">
                   <p>Возврат</p>
-                  <p>+</p>
+                  {isExchangeOpen ? <p>-</p> : <p>+</p>}
                 </div>
                 {exchange}
               </button>

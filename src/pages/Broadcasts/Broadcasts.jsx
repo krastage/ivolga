@@ -1,3 +1,7 @@
+/**
+ * Страница "Прямые эфиры"
+ */
+
 import "../../styles/pages/Broadcasts/Broadcasts.scss";
 import { Footer } from "../../components/Footer";
 import { AnimatedPage } from "../../components/AnimatedPage";

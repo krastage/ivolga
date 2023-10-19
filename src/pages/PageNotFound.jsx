@@ -1,5 +1,9 @@
-import '../styles/pages/PageNotFound.scss';
-import { AnimatedPage } from '../components/AnimatedPage';
+/**
+ * Несуществующая страница
+ */
+
+import "../styles/pages/PageNotFound.scss";
+import { AnimatedPage } from "../components/AnimatedPage";
 
 export const PageNotFound = () => {
   return (

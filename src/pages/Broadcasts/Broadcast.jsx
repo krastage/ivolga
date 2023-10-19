@@ -1,3 +1,7 @@
+/**
+ *  Страница прямого эфира
+ */
+
 import "../../styles/pages/Broadcasts/Broadcast.scss";
 import { AnimatedPage } from "../../components/AnimatedPage";
 import { Footer } from "../../components/Footer";
@@ -34,42 +38,42 @@ export const Broadcast = () => {
             <ul className="broadcast-products__list">
               <ProductCard
                 size="small"
-                link={"/catalog/product"}
+                link={"/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
               <ProductCard
                 size="small"
-                link={"/catalog/product"}
+                link={"/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
               <ProductCard
                 size="small"
-                link={"/catalog/product"}
+                link={"/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
               <ProductCard
                 size="small"
-                link={"/catalog/product"}
+                link={"/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
               <ProductCard
                 size="small"
-                link={"/catalog/product"}
+                link={"/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}
               />
               <ProductCard
                 size="small"
-                link={"/catalog/product"}
+                link={"/product"}
                 title={"Топ черный из кашемира"}
                 price={25000}
                 imageSource={"/assets/img/broadcast/product.png"}

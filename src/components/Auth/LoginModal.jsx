@@ -1,3 +1,7 @@
+/**
+ * Модальное окно входа
+ */
+
 import React from "react";
 
 export const LoginModal = ({ authActive, setAuthActive, toggleLogin }) => {
@@ -20,12 +24,11 @@ export const LoginModal = ({ authActive, setAuthActive, toggleLogin }) => {
 
         <div className="auth-modal-title">
           <h1 className="auth-modal-title__heading">
-            Войдите в аккаунт или продолжите <br />
-            как гость
+            Войдите в аккаунт или продолжите как гость
           </h1>
           <p>
-            Зарегистрируйтесь или войдите в свой аккаунт, чтобы <br />
-            воспользоваться программой лояльности
+            Зарегистрируйтесь или войдите в свой аккаунт, чтобы воспользоваться
+            программой лояльности
           </p>
         </div>
 

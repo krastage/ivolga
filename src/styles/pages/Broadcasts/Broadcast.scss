@@ -1,3 +1,5 @@
+@import "../../global/settings";
+
 //Broadcast
 
 .broadcast-content {
@@ -28,7 +30,7 @@
   padding-left: 30px;
   padding-bottom: 32px;
   position: absolute;
-  color: #FFF;
+  color: $background-white;
 }
 
 //Article
@@ -42,7 +44,7 @@
 
 .broadcast-article p,
 .broadcast-article h1 {
-  color: #FFF;
+  color: $background-white;
 }
 
 .broadcast-state {
@@ -50,9 +52,9 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border: 1px solid #FFF;
+  border: 1px solid $background-white;
   width: 70px;
-  color: #FFF;
+  color: $background-white;
   font-size: 12px;
 }
 
@@ -66,7 +68,7 @@
 }
 
 .broadcast-tools p {
-  color: #FFF;
+  color: $background-white;
 }
 
 //Products
@@ -82,7 +84,7 @@
 .broadcast-products__title {
   padding-bottom: 10px;
   font-size: 24px;
-  border-bottom: #D7D7D7 1px solid;
+  border-bottom: $border-grey 1px solid;
 }
 
 .broadcast-products__list {
@@ -108,4 +110,3 @@
   height: 10px;
   padding: 3px;
 }
-

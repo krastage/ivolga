@@ -1,4 +1,4 @@
-@import '../global/settings';
+@import "../global/settings";
 
 .faq {
   display: flex;
@@ -11,6 +11,7 @@
   &-active,
   &:hover {
     color: $border-black;
+    transition: 0.5s;
   }
 }
 
@@ -40,6 +41,10 @@
   gap: 16px;
   width: 516px;
   margin-left: 97px;
+
+  & p {
+    max-width: 516px;
+  }
 }
 
 .faq-info__title {

@@ -1,3 +1,7 @@
+/**
+ * Страница подраздела контактов с адресами магазинов
+ */
+
 import { ContactsLayout } from "../../layouts/ContactsLayout";
 import { AnimatedPage } from "../../components/AnimatedPage";
 

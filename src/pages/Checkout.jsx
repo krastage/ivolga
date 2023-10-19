@@ -1,3 +1,7 @@
+/**
+ * Страница оформления заказа
+ */
+
 import "../styles/pages/Checkout.scss";
 import { AnimatedPage } from "../components/AnimatedPage";
 

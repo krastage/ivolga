@@ -1,4 +1,4 @@
-@import '../global/settings';
+@import "../global/settings";
 
 .main-header {
   display: flex;
@@ -13,6 +13,7 @@
   &-active,
   &:hover {
     color: $text-grey;
+    transition: 0.5s;
   }
 }
 
@@ -44,6 +45,6 @@
 
   &:hover {
     stroke: $text-grey;
+    transition: 0.5s;
   }
 }
-

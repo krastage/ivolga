@@ -1,8 +1,8 @@
 /**
- * Релевантные образы
+ * Шаблон списка релевантных образов
  */
 
-import '../styles/layouts/RelevantLooks.scss';
+import "../styles/layouts/RelevantLooks.scss";
 
 export const RelevantLooks = ({ imageSource }) => {
   return (

@@ -1,4 +1,4 @@
-@import '../global/settings';
+@import "../global/settings";
 
 .main-footer {
   display: flex;
@@ -21,6 +21,6 @@
   &-active,
   &:hover {
     color: $text-grey;
+    transition: 0.5s;
   }
-
 }

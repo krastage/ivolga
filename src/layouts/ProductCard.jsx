@@ -1,5 +1,5 @@
 /**
- * Карточка товара
+ * Шаблон карточки товара с 3 размерами
  */
 
 import "../styles/layouts/ProductsCardSettings.scss";

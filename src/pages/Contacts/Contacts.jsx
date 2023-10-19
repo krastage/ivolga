@@ -1,5 +1,9 @@
-import { ContactsLayout } from '../../layouts/ContactsLayout';
-import { AnimatedPage } from '../../components/AnimatedPage';
+/**
+ * Страница контактов
+ */
+
+import { ContactsLayout } from "../../layouts/ContactsLayout";
+import { AnimatedPage } from "../../components/AnimatedPage";
 
 export const Contacts = () => {
   const content = (
@@ -32,8 +36,5 @@ export const Contacts = () => {
     </AnimatedPage>
   );
 
-  return (
-    <ContactsLayout content={content} />
-  );
+  return <ContactsLayout content={content} />;
 };
-

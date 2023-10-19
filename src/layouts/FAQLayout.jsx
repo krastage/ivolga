@@ -6,7 +6,7 @@ import "../styles/layouts/FAQ.scss";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatedPage } from "../components/AnimatedPage";
 
-export const FAQLayout = ({ menuTitle, contentTitle, content }) => {
+export const FAQLayout = ({ menuTitle, contentTitle, children }) => {
   const location = useLocation();
 
   const LinkItem = ({ to, location, label }) => {
@@ -52,7 +52,7 @@ export const FAQLayout = ({ menuTitle, contentTitle, content }) => {
       <AnimatedPage>
         <div className="faq-info">
           <h1 className="faq-info__title">{contentTitle}</h1>
-          {content}
+          {children}
         </div>
       </AnimatedPage>
     </main>

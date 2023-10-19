@@ -1,3 +1,7 @@
+/**
+ * Модальное окно ввода кода из смс (верификация)
+ */
+
 import React from "react";
 
 export const VerificationModal = ({

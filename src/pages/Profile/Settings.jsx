@@ -1,3 +1,7 @@
+/**
+ * Страница подраздела профиля с настройками (настройки)
+ */
+
 import { ProfileLayout } from "../../layouts/ProfileLayout";
 import { AnimatedPage } from "../../components/AnimatedPage";
 

@@ -1,9 +1,9 @@
+@import "../global/settings";
+
 //Collection
 
 .collection-content {
-  margin: 60px;
-  display: flex;
-  flex-direction: column;
+  padding: 60px;
 }
 
 .collection-content__title {
@@ -56,8 +56,7 @@
   width: 515px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-self: flex-end;
+  align-items: flex-end;
 }
 
 //Item space between

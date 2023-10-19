@@ -1,3 +1,7 @@
+/**
+ * Страница подраздела профиля с информацией об историях заказов (история заказов)
+ */
+
 import { ProfileLayout } from "../../layouts/ProfileLayout";
 import { AnimatedPage } from "../../components/AnimatedPage";
 import { useState } from "react";
@@ -54,7 +58,7 @@ export const Orders = () => {
         <ul className="orders-details-items">
           <ProductCard
             size="small"
-            link={"/catalog/product"}
+            link={"/product"}
             title={"Топ черный из кашемира"}
             price={25000}
             imageSource={"/assets/img/broadcast/product.png"}

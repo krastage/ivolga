@@ -1,4 +1,4 @@
-@import '../global/settings';
+@import "../global/settings";
 
 .product {
   display: flex;
@@ -92,6 +92,7 @@
 
       &:hover {
         color: $text-grey;
+        transition: 0.5s;
       }
     }
 
@@ -124,6 +125,7 @@
         &:hover,
         &:focus {
           border: 1px solid rgba(0, 0, 0, 0.57);
+          transition: 0.5s;
         }
       }
     }
@@ -171,6 +173,7 @@
 
         &:hover p {
           color: $text-grey;
+          transition: 0.5s;
         }
       }
     }
@@ -197,4 +200,3 @@
     }
   }
 }
-

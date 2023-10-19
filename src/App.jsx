@@ -3,7 +3,7 @@ import "./styles/global/_settings.scss";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
 import { Home } from "./pages/Home";
-import { Catalog } from "./pages/Catalog/Catalog";
+import { Catalog } from "./pages/Catalog";
 import { Looks } from "./pages/Looks";
 import { Collections } from "./pages/Collections/Collections";
 import { Broadcasts } from "./pages/Broadcasts/Broadcasts";
@@ -18,7 +18,7 @@ import { Stores } from "./pages/Contacts/Stores";
 import { AnimatedPage } from "./components/AnimatedPage";
 import { Collection } from "./pages/Collections/Collection";
 import { ScrollToTop } from "./components/ScrollToTop";
-import { Product } from "./pages/Catalog/Product";
+import { Product } from "./pages/Product";
 import { Broadcast } from "./pages/Broadcasts/Broadcast";
 import { Profile } from "./pages/Profile/Profile";
 import { Wishlist } from "./pages/Profile/Wishlist";
@@ -38,7 +38,7 @@ export const App = () => {
             <Route path={"/home"} element={<Home />} />
             <Route path={"/"} element={<Navigate to={"/home"} />} />
             <Route path={"/catalog"} element={<Catalog />} />
-            <Route path={"/catalog/product"} element={<Product />} />
+            <Route path={"/product"} element={<Product />} />
             <Route path={"/looks"} element={<Looks />} />
             <Route path={"/collections"} element={<Collections />} />
             <Route path={"/collections/collection"} element={<Collection />} />

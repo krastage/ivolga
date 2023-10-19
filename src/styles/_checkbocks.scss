@@ -1,4 +1,15 @@
-@import './global/settings';
+@keyframes checkboxChange {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@import "./global/settings";
 
 input[type="checkbox"] {
   display: none;
@@ -22,7 +33,9 @@ input[type="checkbox"]:checked + label::before {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  background: url("../../public/assets/img/icons/checkbox-active.svg") no-repeat center;
+  background: url("../../public/assets/img/icons/checkbox-active.svg") no-repeat
+    center;
+  animation: checkboxChange 0.5s ease-in-out;
 }
 
 label span {

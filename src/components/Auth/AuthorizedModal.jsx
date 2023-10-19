@@ -1,3 +1,7 @@
+/**
+ * Модальное окно профиля зарегистрированного пользователя
+ */
+
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 

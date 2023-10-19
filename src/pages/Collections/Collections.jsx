@@ -1,5 +1,5 @@
 /**
- * Страница с коллекциями
+ * Страница "Коллекции"
  */
 
 import "../../styles/pages/Collections.scss";

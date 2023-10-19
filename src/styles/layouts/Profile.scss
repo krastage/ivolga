@@ -31,6 +31,7 @@
   &-active,
   &:hover {
     color: $text-black;
+    transition: 0.5s;
   }
 }
 
@@ -78,6 +79,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.profile-news__description {
+  color: $text-grey;
+  width: 320px;
 }
 
 .profile-info__description {
