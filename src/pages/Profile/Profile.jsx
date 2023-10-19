@@ -30,15 +30,17 @@ export const Profile = () => {
           </p>
         </div>
 
-        <div className="profile-subscribe">
+        <form className="profile-subscribe">
           <div>
             <input type="checkbox" id="agreement" name="agreement" />
             <label htmlFor="agreement">
-              <span>Я хочу получать новостную рассылку от магазина Ivolga</span>
+              <span>
+                Я не хочу получать новостную рассылку от магазина Ivolga
+              </span>
             </label>
           </div>
           <button className="profile-subscribe__button">Отписаться</button>
-        </div>
+        </form>
       </div>
     </AnimatedPage>
   );
