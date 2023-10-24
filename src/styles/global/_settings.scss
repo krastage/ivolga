@@ -1,5 +1,5 @@
-@import "../variables";
-@import "./fonts";
+@import '../variables';
+@import './fonts';
 
 //Global settings
 
@@ -24,7 +24,6 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 60px;
 }
 
 h1,

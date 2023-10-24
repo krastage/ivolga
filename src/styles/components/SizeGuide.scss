@@ -2,10 +2,19 @@
 
 .sizeGuide-right {
   @extend .modal-right;
+  transition: background-color 1.9s ease-in-out;
+
+  &.active {
+    .modal-right-content {
+      right: 0;
+      transition: 1.9s right ease-in-out;
+    }
+  }
 
   .modal-right-content {
     width: $size-guide-modal-width;
     right: $size-guide-modal-right;
+    transition: 2.9s right ease-in-out;
   }
 }
 

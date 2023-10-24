@@ -1,26 +1,19 @@
-@import "variables";
+@import 'variables';
 
 .error-message {
   color: $error;
 }
 
 .success-message {
-  display: none;
-  opacity: 0;
-
-  &.show {
-    display: flex;
-    position: absolute;
-    transform: translateX(-50%);
-    background-color: $border-black;
-    justify-content: space-between;
-    padding: 24px;
-    left: 693px;
-    width: 465px;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    user-select: none;
-  }
+  display: flex;
+  position: absolute;
+  background-color: $border-black;
+  justify-content: space-between;
+  padding: 24px;
+  margin-bottom: 80px;
+  margin-left: 100px;
+  width: 465px;
+  user-select: none;
 
   & p {
     color: $background-white;

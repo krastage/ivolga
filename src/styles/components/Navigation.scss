@@ -1,4 +1,4 @@
-@import "../global/settings";
+@import '../global/settings';
 
 .main-header {
   display: flex;
@@ -7,8 +7,21 @@
   padding: 40px 60px;
 }
 
+.main-header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: $background-white;
+  z-index: 999;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  transition: bottom 1.3s ease;
+}
+
 .nav-link {
   color: $text-black;
+  transition: color 0.5s;
 
   &-active,
   &:hover {

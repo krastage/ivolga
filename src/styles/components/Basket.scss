@@ -1,4 +1,4 @@
-@import "../modals/rightModal";
+@import '../modals/rightModal';
 
 //Checkout
 
@@ -44,6 +44,7 @@
 
 .basket-modal-orders__list {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
   flex-wrap: wrap;
   margin-bottom: 60px;

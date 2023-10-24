@@ -1,4 +1,4 @@
-@import "../global/settings";
+@import '../global/settings';
 
 //Collection
 
@@ -54,9 +54,7 @@
 
 .collection-item--horizontal p {
   width: 515px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  margin-left: auto;
 }
 
 //Item space between

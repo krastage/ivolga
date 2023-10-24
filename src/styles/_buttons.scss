@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 //Back
 
@@ -32,7 +32,6 @@
 .orders-item__button {
   padding: 20px;
   font-size: 12px;
-  width: 82px;
   border: $border-grey 1px solid;
 }
 
@@ -52,7 +51,6 @@
   align-items: center;
   padding: 20px;
   justify-content: center;
-  width: 219px;
   border: 1px solid $border-grey;
 }
 
@@ -61,21 +59,38 @@
   align-items: center;
   padding: 20px;
   border: 1px solid $border-grey;
+
+  &:hover {
+    border: 1px solid $border-black;
+  }
+}
+
+.address-add-save-button:disabled {
+  border: 1px solid $border-grey;
+  background-color: $background-white;
+  cursor: auto;
 }
 
 //Settings
 
-.settings-subscribe__button {
+.settings-submit__button {
   display: flex;
   align-items: center;
   padding: 20px;
   justify-content: center;
   font-size: 16px;
   border: 1px solid $border-grey;
+  background-color: $background-white;
 
   &:hover {
     border: 1px solid $border-black;
   }
+}
+
+.settings-submit__button:disabled {
+  border: 1px solid $border-grey;
+  background-color: $background-white;
+  cursor: auto;
 }
 
 //Auth
@@ -97,6 +112,7 @@
   &:disabled {
     border: 1px solid $border-grey;
   }
+
   &:enabled {
     border: 1px solid $border-black;
   }
@@ -118,4 +134,46 @@
   top: 0;
   right: 0;
   padding-top: 30px;
+  transition: color 0.5s;
+}
+
+//Scroll to top
+
+.scroll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border: none;
+  fill: $background-white;
+  border-radius: 100%;
+  cursor: pointer;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.scroll-button:not(:hover) {
+  background: $text-black;
+}
+
+.scroll-button:hover {
+  background: $border-black;
+}
+
+.scroll-button.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.backToTopBtn:not(.active) {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }

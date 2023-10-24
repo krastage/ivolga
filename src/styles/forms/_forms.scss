@@ -1,0 +1,8 @@
+@import '../global/settings';
+@import '../variables';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

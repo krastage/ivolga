@@ -1,4 +1,5 @@
-@import '../variables';
+@import '../global/settings';
+@import "../variables";
 
 //Modal top
 
@@ -9,18 +10,20 @@
   position: fixed;
   height: 100vh;
   width: 100vw;
-  top: 0;
+  top: 109px;
   right: 0;
   pointer-events: none;
+  transition: background-color 1.9s ease-in-out;
 
   &.active {
     background-color: rgba(0, 0, 0, 0.4);
     pointer-events: all;
     z-index: 9999;
+    transition: background-color 1.9s ease-in-out;
 
     .modal-top-content {
-      top: 0;
-      transition: 0.9s top ease-in-out;
+      top: 109px;
+      transition: 1.9s top ease-in-out;
     }
   }
 
@@ -28,12 +31,12 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    height: 433px;
     width: 100vw;
     background-color: $background-white;
     top: -100vh;
     position: fixed;
-    transition: 0.9s top ease-in-out;
+    transition: 1.9s top ease-in-out;
+    border: 1px solid $border-grey;
   }
 }
 
