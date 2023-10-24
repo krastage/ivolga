@@ -9,7 +9,8 @@ import ProfileLayout from '../../../layouts/ProfileLayout';
 const Orders = () => {
   const content = (
     <AnimatedPage>
-      <div className='orders-container'>
+      <div className="right-container">
+        <div className='orders-container'>
         <h1 className='common-profile-title'>История заказов</h1>
         <ul className='orders-list'>
           <li className='orders-item'>
@@ -38,6 +39,8 @@ const Orders = () => {
           </li>
         </ul>
       </div>
+      </div>
+      
     </AnimatedPage>
   );
 

@@ -37,7 +37,8 @@ const Profile = () => {
   const content = (
     <AnimatedPage>
       {showMessage && <SuccessMessage />}
-      <div className='profile-container'>
+      <div className="right-container">
+        <div className='profile-container'>
         <div className='profile-info'>
           <h1 className='common-profile-title'>Ольга Малюга</h1>
           <div className='profile-info__loyalty'>
@@ -69,6 +70,8 @@ const Profile = () => {
           </button>
         </form>
       </div>
+      </div>
+      
     </AnimatedPage>
   );
 

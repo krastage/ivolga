@@ -10,7 +10,8 @@ import AnimatedPage from '../../../utils/AnimatedPage';
 const Wishlist = () => {
   const content = (
     <AnimatedPage>
-      <div className='wishlist-container'>
+      <div className="right-container">
+        <div className='wishlist-container'>
         <ProductsCardList
           title={null}
           filterButton={true}
@@ -74,6 +75,8 @@ const Wishlist = () => {
           ]}
         />
       </div>
+      </div>
+      
     </AnimatedPage>
   );
 

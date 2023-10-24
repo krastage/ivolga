@@ -9,7 +9,8 @@ import ProfileLayout from '../../../layouts/ProfileLayout';
 const Addresses = () => {
   const content = (
     <AnimatedPage>
-      <div className='addresses-container'>
+      <div className="right-container">
+        <div className='addresses-container'>
         <h1 className='common-profile-title'>Адресная книга</h1>
         <ul className='addresses-list'>
           <li className='addresses-item'>
@@ -28,6 +29,8 @@ const Addresses = () => {
           Добавить новый адрес
         </Link>
       </div>
+      </div>
+      
     </AnimatedPage>
   );
 

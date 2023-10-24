@@ -4,5 +4,16 @@
 .form {
   display: flex;
   flex-direction: column;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+}
+
+.form__bottom-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }

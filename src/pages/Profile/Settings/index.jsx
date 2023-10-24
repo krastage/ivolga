@@ -2,6 +2,7 @@
  * Страница подраздела профиля с настройками (настройки)
  */
 
+import '../../../styles/forms/_forms.scss';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import ProfileLayout from '../../../layouts/ProfileLayout';
@@ -41,11 +42,13 @@ const Settings = () => {
   const content = (
     <AnimatedPage>
       {showMessage && <SuccessMessage />}
-      <div className='settings-container'>
+      <div className="right-container">
+        <div className='settings-container'>
         <h1 className='common-profile-title'>Настройки профиля</h1>
 
-        <form className='form' onSubmit={handleSubmit(onSubmit)}>
-          <TextInput
+          <form className='form' onSubmit={handleSubmit(onSubmit)}>
+            <div className="form__container">
+              <TextInput
             title={'Имя'}
             placeholder={'Имя'}
             name={'firstName'}
@@ -74,8 +77,11 @@ const Settings = () => {
           />
 
           <ReadonlyInput title={'Телефон'} placeholder={'+7 (977) 184-20-72'} />
+            </div>
+          
 
-          <div className='form-checkbox'>
+            <div className="form__bottom-container">
+              <div className='form-checkbox'>
             <CheckboxInput
               name={'agreement'}
               text={'Я даю согласие на обработку персональных данных'}
@@ -87,8 +93,12 @@ const Settings = () => {
           <button className='settings-submit__button' type='submit' disabled={!isValid}>
             Сохранить
           </button>
+            </div>
+          
         </form>
       </div>
+      </div>
+      
     </AnimatedPage>
   );
 
