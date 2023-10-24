@@ -36,13 +36,14 @@ const AddAddress = () => {
   const content = (
     <AnimatedPage>
       {showMessage && <SuccessMessage />}
-      <div className='address-add-container'>
+      <div className="right-container">
+        <div className='address-add-container'>
         <Link to={'/profile/addresses'} className='back-button'>
           <img src='/assets/img/icons/arrow-left.svg' alt='' />
           <p>Назад</p>
         </Link>
 
-        <form className='form' onSubmit={handleSubmit(onSubmit)}>
+        <form className='form form--gap' onSubmit={handleSubmit(onSubmit)}>
           <h1 className='common-profile-title'>Новый адрес</h1>
 
           <MultiInput
@@ -82,6 +83,8 @@ const AddAddress = () => {
           </button>
         </form>
       </div>
+      </div>
+      
     </AnimatedPage>
   );
 

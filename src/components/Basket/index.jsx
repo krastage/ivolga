@@ -63,28 +63,28 @@ const Basket = ({ basketActive, setBasketActive }) => {
             size='small'
             link={'/product'}
             title={'Топ черный из кашемира'}
-            price={25000}
+            price={25_000}
             imageSource={'/assets/img/broadcast/product.png'}
           />
           <ProductCard
             size='small'
             link={'/product'}
             title={'Топ черный из кашемира'}
-            price={25000}
+            price={25_000}
             imageSource={'/assets/img/broadcast/product.png'}
           />
           <ProductCard
             size='small'
             link={'/product'}
             title={'Топ черный из кашемира'}
-            price={25000}
+            price={25_000}
             imageSource={'/assets/img/broadcast/product.png'}
           />
           <ProductCard
             size='small'
             link={'/product'}
             title={'Топ черный из кашемира'}
-            price={25000}
+            price={25_000}
             imageSource={'/assets/img/broadcast/product.png'}
           />
         </ul>

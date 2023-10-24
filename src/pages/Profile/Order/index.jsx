@@ -6,7 +6,8 @@ import ProfileLayout from '../../../layouts/ProfileLayout';
 const Order = () => {
   const content = (
     <AnimatedPage>
-      <div className='orders-details-container'>
+      <div className="right-container">
+        <div className='orders-details-container'>
         <Link to={'/profile/orders'} className='back-button'>
           <img src='/assets/img/icons/arrow-left.svg' alt='' />
           <p>Назад</p>
@@ -19,7 +20,7 @@ const Order = () => {
             size='small'
             link={'/product'}
             title={'Топ черный из кашемира'}
-            price={25000}
+            price={25_000}
             imageSource={'/assets/img/broadcast/product.png'}
           />
         </ul>
@@ -51,6 +52,8 @@ const Order = () => {
           </li>
         </ul>
       </div>
+      </div>
+      
     </AnimatedPage>
   );
 

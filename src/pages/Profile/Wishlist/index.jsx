@@ -20,57 +20,65 @@ const Wishlist = () => {
               size='medium'
               link={'/product'}
               title={'Топ черный из кашемира'}
-              price={25000}
+              price={25_000}
               imageSource={'/assets/img/products/product.png'}
+              key={1}
             />,
             <ProductCard
               size='medium'
               link={'/product'}
               title={'Топ черный из кашемира'}
-              price={25000}
+              price={25_000}
               imageSource={'/assets/img/products/product.png'}
+              key={2}
             />,
             <ProductCard
               size='medium'
               link={'/product'}
               title={'Топ черный из кашемира'}
-              price={25000}
+              price={25_000}
               imageSource={'/assets/img/products/product.png'}
+              key={3}
             />,
             <ProductCard
               size='medium'
               link={'/product'}
               title={'Топ черный из кашемира'}
-              price={25000}
+              price={25_000}
               imageSource={'/assets/img/products/product.png'}
+              key={4}
             />,
             <ProductCard
               size='medium'
               link={'/product'}
               title={'Топ черный из кашемира'}
-              price={25000}
+              price={25_000}
               imageSource={'/assets/img/products/product.png'}
+              key={5}
             />,
             <ProductCard
               size='medium'
               link={'/product'}
               title={'Топ черный из кашемира'}
-              price={25000}
+              price={25_000}
               imageSource={'/assets/img/products/product.png'}
+              key={6}
             />,
             <ProductCard
               size='medium'
               link={'/product'}
               title={'Топ черный из кашемира'}
-              price={25000}
+              price={25_000}
               imageSource={'/assets/img/products/product.png'}
+              key={7}
             />,
             <ProductCard
               size='medium'
               link={'/product'}
               title={'Топ черный из кашемира'}
-              price={25000}
+              price={25_000}
               imageSource={'/assets/img/products/product.png'}
+              key={8}
             />,
           ]}
         />

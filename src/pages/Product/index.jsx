@@ -22,7 +22,7 @@ const Product = () => {
               '/assets/img/product/product3.png',
             ]}
             configTitle='Топ вязанный из кашемира нежно бежевого цвета'
-            price={30000}
+            price={30_000}
             detailButtonTitle={'Топ голубого цвета в клетку, лён'}
             size={[56, 56, 56, 56]}
             colors={[0, 1, 2]}
@@ -36,28 +36,28 @@ const Product = () => {
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25000}
+                price={25_000}
                 imageSource={'/assets/img/products/product2.png'}
               />,
               <ProductCard
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25000}
+                price={25_000}
                 imageSource={'/assets/img/products/product3.png'}
               />,
               <ProductCard
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25000}
+                price={25_000}
                 imageSource={'/assets/img/products/product4.png'}
               />,
               <ProductCard
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25000}
+                price={25_000}
                 imageSource={'/assets/img/products/product5.png'}
               />,
             ]}

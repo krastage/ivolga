@@ -29,7 +29,9 @@ const AuthorizedModal = ({ authActive, setAuthActive, logoutHandle }) => {
           <h1 className='auth-modal-title__heading'>Ольга Малюга</h1>
         </div>
         <div className='auth-modal-buttons'>
-          {location.pathname !== '/profile' ? (
+          {location.pathname === '/profile' ? (
+            ''
+          ) : (
             <button
               className='auth-modal-buttons__guest'
               onClick={() => {
@@ -38,8 +40,6 @@ const AuthorizedModal = ({ authActive, setAuthActive, logoutHandle }) => {
               }}>
               Перейти в профиль
             </button>
-          ) : (
-            ''
           )}
           <button className='auth-modal-buttons__auth' onClick={logoutHandle}>
             Выйти

@@ -28,11 +28,7 @@ const Auth = ({ authActive, setAuthActive }) => {
   const navigation = useNavigate();
 
   useEffect(() => {
-    if (authActive) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = authActive ? 'hidden' : '';
   }, [authActive]);
 
   const toggleLogin = () => {
@@ -85,9 +81,9 @@ const Auth = ({ authActive, setAuthActive }) => {
       setAuthActive(false);
       setIsAuthorized(true);
       stopTimer();
-    } else {
-      setIsCodeValid(false);
+      return;
     }
+    setIsCodeValid(false);
   };
 
   const resendCodeHandle = () => {
@@ -101,11 +97,11 @@ const Auth = ({ authActive, setAuthActive }) => {
       setIsAuthorized(false);
       setIsLoginComponentActive(true);
       setAuthActive(false);
-    } else {
-      setIsAuthorized(false);
-      setIsLoginComponentActive(true);
-      setAuthActive(false);
+      return;
     }
+    setIsAuthorized(false);
+    setIsLoginComponentActive(true);
+    setAuthActive(false);
   };
 
   const startTimer = () => {
@@ -114,7 +110,7 @@ const Auth = ({ authActive, setAuthActive }) => {
       if (timer === 0) {
         clearTimeout(timerId);
       } else {
-        timer -= 1;
+        timer--;
         setResendTimer(timer);
       }
     };
@@ -134,17 +130,7 @@ const Auth = ({ authActive, setAuthActive }) => {
   ) : isLoginComponentActive ? (
     //Окно входа
     <LoginModal authActive={authActive} setAuthActive={setAuthActive} toggleLogin={toggleLogin} />
-  ) : !isVerificationComponentActive ? (
-    //  Ввод номера телефона
-    <PhoneInputModal
-      authActive={authActive}
-      setAuthActive={setAuthActive}
-      phoneNumber={phoneNumber}
-      phoneNumberHandle={phoneNumberHandle}
-      isButtonActive={isButtonActive}
-      sendVerificationCode={sendVerificationCode}
-    />
-  ) : (
+  ) : isVerificationComponentActive ? (
     // Ввод кода из СМС
     <VerificationModal
       authActive={authActive}
@@ -159,6 +145,16 @@ const Auth = ({ authActive, setAuthActive }) => {
       submitVerificationCode={submitVerificationCode}
       isResendButtonActive={isResendButtonActive}
       resendCodeHandle={resendCodeHandle}
+    />
+  ) : (
+    //  Ввод номера телефона
+    <PhoneInputModal
+      authActive={authActive}
+      setAuthActive={setAuthActive}
+      phoneNumber={phoneNumber}
+      phoneNumberHandle={phoneNumberHandle}
+      isButtonActive={isButtonActive}
+      sendVerificationCode={sendVerificationCode}
     />
   );
 };

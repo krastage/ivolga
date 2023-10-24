@@ -8,11 +8,7 @@ import '../../styles/components/Search.scss';
 
 const Search = ({ searchActive, setSearchActive }) => {
   useEffect(() => {
-    if (searchActive) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = searchActive ? 'hidden' : '';
   }, [searchActive]);
 
   return (

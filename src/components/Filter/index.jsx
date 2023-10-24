@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /**
  * Модальное окно фильтра товаров
  */
@@ -23,12 +24,12 @@ const Filter = ({
       resetFilter();
       resetActiveButtons();
       resetFilterAndActiveButtons();
-    } else {
-      setActiveFilterIndex(index);
-      setButtonColor('active');
-      handleFilterChange(index);
-      addActiveButtons(index);
+      return;
     }
+    setActiveFilterIndex(index);
+    setButtonColor('active');
+    handleFilterChange(index);
+    addActiveButtons(index);
   };
 
   const addActiveButtons = (index) => {
@@ -52,11 +53,7 @@ const Filter = ({
   };
 
   useEffect(() => {
-    if (filterActive) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = filterActive ? 'hidden' : '';
   }, [filterActive]);
 
   return (

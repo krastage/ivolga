@@ -132,6 +132,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 45.79vw;
 }
 
 .orders-details-items {
@@ -181,6 +182,7 @@
   @extend .common-container;
   gap: 40px;
   margin-bottom: 60px;
+  width: 48.84vw;
 }
 
 //Settings
