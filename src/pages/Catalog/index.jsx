@@ -2,7 +2,7 @@
  * Страница "Каталог"
  */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer';
 import ProductCard from '../../layouts/ProductCard';
 import ProductsCardList from '../../layouts/ProductsCardList';
@@ -131,7 +131,12 @@ const Catalog = () => {
   const resetFilter = () => {
     setSelectedTypes([]);
     setFiltersActivated(false);
+    setFilterActive(false);
   };
+
+  useEffect(() => {
+    setFilterActive(false);
+  }, []);
 
   return (
     <AnimatedPage>
