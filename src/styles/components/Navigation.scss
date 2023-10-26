@@ -21,11 +21,13 @@
 
 .nav-link {
   color: $text-black;
+  user-select: none;
 
   &-active,
   &:hover {
     color: $text-grey;
     transition: 0.5s;
+    user-select: none;
   }
 }
 
