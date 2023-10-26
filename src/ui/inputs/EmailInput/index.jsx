@@ -7,10 +7,12 @@ import React from 'react';
 const EmailInput = ({ title, name, placeholder, register, errors }) => {
   return (
     <div className='input-container'>
-      <p className='settings-item__title'>{title}</p>
+      <label className='input-label'
+             htmlFor={name}>{title}</label>
       <input
         className={`input ${errors[name] ? 'input-error' : ''}`}
         placeholder={placeholder}
+        id={name}
         {...register(name, {
           required: 'Почта обязательна для заполнения',
           pattern: {

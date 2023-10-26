@@ -3,16 +3,20 @@
  */
 
 import React from 'react';
-import InputMask from 'react-input-mask';
+import { useForm } from 'react-hook-form';
+import PhoneInput from '../../../ui/inputs/PhoneInput';
 
-const PhoneInputModal = ({
-  authActive,
-  setAuthActive,
-  phoneNumber,
-  phoneNumberHandle,
-  isButtonActive,
-  sendVerificationCode,
-}) => {
+const PhoneInputModal = ({ authActive, setAuthActive, sendVerificationCode }) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isValid },
+  } = useForm({ mode: 'onBlur' });
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <div
       className={authActive ? 'modal-right active' : 'modal-right'}
@@ -33,24 +37,26 @@ const PhoneInputModal = ({
           <p>Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
         </div>
 
-        <div className='auth-modal-login__input'>
-          <p>Ваш номер телефона</p>
-          <InputMask
-            mask='+7 (999) 999-99-99'
-            type='text'
-            className='input'
-            placeholder='+7 (___) ___-__-__'
-            value={phoneNumber}
-            onChange={phoneNumberHandle}
-          />
-        </div>
+        <form className='form' onSubmit={handleSubmit(onSubmit)}>
+          <div className='form__container'>
+            <div className='auth-modal-login__input'>
+              <PhoneInput
+                title={'Ваш номер телефона'}
+                name={'phone'}
+                errors={errors}
+                register={register}
+              />
+            </div>
 
-        <button
-          className='auth-modal-buttons__auth'
-          disabled={!isButtonActive}
-          onClick={sendVerificationCode}>
-          Получить код
-        </button>
+            <button
+              className='settings-submit__button'
+              type='submit'
+              disabled={!isValid}
+              onClick={sendVerificationCode}>
+              Сохранить
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );

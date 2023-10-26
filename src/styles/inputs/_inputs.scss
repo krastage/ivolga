@@ -36,6 +36,10 @@
   outline: none !important;
 }
 
+.input-label {
+  cursor: pointer;
+}
+
 .input-readonly {
   display: flex;
   padding: 16px 24px;
@@ -107,4 +111,93 @@
 
 .input-phone:focus {
   outline: none;
+}
+
+//Checkbox
+
+@keyframes checkboxChange {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox-input-label::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 1px solid $border-grey;
+  background: $background-white;
+}
+
+input[type='checkbox']:checked + .checkbox-input-label::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: url('../../../public/assets/img/icons/checkbox-active.svg') no-repeat center;
+  animation: checkboxChange 0.5s ease-in-out;
+}
+
+.checkbox-input-label span {
+  font-size: 12px;
+  margin-left: 11px;
+  cursor: pointer;
+}
+
+//Radio
+
+@keyframes radioChange {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.radio-input-label::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: url('../../../public/assets/img/icons/radio.svg') no-repeat center;
+}
+
+input[type='radio']:checked + .radio-input-label::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: url('../../../public/assets/img/icons/radio-active.svg') no-repeat center;
+  animation: radioChange 0.5s ease-in-out;
+}
+
+.radio-input-label span {
+  font-size: 16px;
+  margin-left: 11px;
+  cursor: pointer;
 }

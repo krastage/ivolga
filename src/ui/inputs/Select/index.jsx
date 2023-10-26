@@ -3,7 +3,9 @@ import React from 'react';
 const Select = ({ title, name, options, register, errors }) => {
   return (
     <div className='input-container'>
-      <p className='address-add-item__title'>{title}</p>
+      <label className='input-label' htmlFor={name}>
+        {title}
+      </label>
       <select
         name={name}
         id={name}

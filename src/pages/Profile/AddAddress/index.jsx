@@ -36,55 +36,54 @@ const AddAddress = () => {
   const content = (
     <AnimatedPage>
       {showMessage && <SuccessMessage />}
-      <div className="right-container">
+      <div className='right-container'>
         <div className='address-add-container'>
-        <Link to={'/profile/addresses'} className='back-button'>
-          <img src='/assets/img/icons/arrow-left.svg' alt='' />
-          <p>Назад</p>
-        </Link>
+          <Link to={'/profile/addresses'} className='back-button'>
+            <img src='/assets/img/icons/arrow-left.svg' alt='' />
+            <p>Назад</p>
+          </Link>
 
-        <form className='form form--gap' onSubmit={handleSubmit(onSubmit)}>
-          <h1 className='common-profile-title'>Новый адрес</h1>
+          <form className='form form--gap' onSubmit={handleSubmit(onSubmit)}>
+            <h1 className='common-profile-title'>Новый адрес</h1>
 
-          <MultiInput
-            title={'Название'}
-            placeholder={'Офис на Остоженке'}
-            name={'title'}
-            errors={errors}
-            register={register}
-          />
+            <MultiInput
+              title={'Название'}
+              placeholder={'Офис на Остоженке'}
+              name={'title'}
+              errors={errors}
+              register={register}
+            />
 
-          <Select
-            title={'Город'}
-            name={'city'}
-            errors={errors}
-            register={register}
-            options={['Москва', 'Санкт-Петербург', 'Казань']}
-          />
+            <Select
+              title={'Город'}
+              name={'city'}
+              errors={errors}
+              register={register}
+              options={['Москва', 'Санкт-Петербург', 'Казань']}
+            />
 
-          <MultiInput
-            title={'Адрес'}
-            placeholder={'Улица Большая Никитская, 2, кв. 21'}
-            name={'address'}
-            errors={errors}
-            register={register}
-          />
+            <MultiInput
+              title={'Адрес'}
+              placeholder={'Улица Большая Никитская, 2, кв. 21'}
+              name={'address'}
+              errors={errors}
+              register={register}
+            />
 
-          <TextAreaInput
-            title={'Комментарий для курьера'}
-            placeholder={'Позвоните за 2 часа, этаж 2, дофомон 54667457'}
-            name={'comment'}
-            errors={errors}
-            register={register}
-          />
+            <TextAreaInput
+              title={'Комментарий для курьера'}
+              placeholder={'Позвоните за 2 часа, этаж 2, домофон 54667457'}
+              name={'comment'}
+              errors={errors}
+              register={register}
+            />
 
-          <button className='address-add-save-button' type='submit' disabled={!isValid}>
-            Сохранить
-          </button>
-        </form>
+            <button className='address-add-save-button' type='submit' disabled={!isValid}>
+              Сохранить
+            </button>
+          </form>
+        </div>
       </div>
-      </div>
-      
     </AnimatedPage>
   );
 

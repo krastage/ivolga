@@ -2,10 +2,10 @@
  * Страница подраздела профиля с настройками (настройки)
  */
 
-import '../../../styles/forms/_forms.scss';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import ProfileLayout from '../../../layouts/ProfileLayout';
+import '../../../styles/forms/_forms.scss';
 import CheckboxInput from '../../../ui/inputs/CheckboxInput';
 import DateInput from '../../../ui/inputs/DateInput';
 import EmailInput from '../../../ui/inputs/EmailInput';
@@ -42,63 +42,68 @@ const Settings = () => {
   const content = (
     <AnimatedPage>
       {showMessage && <SuccessMessage />}
-      <div className="right-container">
+      <div className='right-container'>
         <div className='settings-container'>
-        <h1 className='common-profile-title'>Настройки профиля</h1>
+          <h1 className='common-profile-title'>Настройки профиля</h1>
 
-          <form className='form' onSubmit={handleSubmit(onSubmit)}>
-            <div className="form__container">
+          <form className='form'
+                onSubmit={handleSubmit(onSubmit)}>
+            <div className='form__container'>
               <TextInput
-            title={'Имя'}
-            placeholder={'Имя'}
-            name={'firstName'}
-            errors={errors}
-            register={register}
-          />
-          <TextInput
-            title={'Фамилия'}
-            placeholder={'Фамилия'}
-            name={'lastName'}
-            errors={errors}
-            register={register}
-          />
-          <DateInput
-            title={'Дата рождения'}
-            name={'dateOfBirth'}
-            errors={errors}
-            register={register}
-          />
-          <EmailInput
-            title={'Эл. почта'}
-            name={'email'}
-            placeholder={'olga@ivolga.com'}
-            errors={errors}
-            register={register}
-          />
+                title={'Имя'}
+                placeholder={'Имя'}
+                name={'firstName'}
+                errors={errors}
+                register={register}
+              />
+              <TextInput
+                title={'Фамилия'}
+                placeholder={'Фамилия'}
+                name={'lastName'}
+                errors={errors}
+                register={register}
+              />
+              <DateInput
+                title={'Дата рождения'}
+                name={'dateOfBirth'}
+                errors={errors}
+                register={register}
+              />
+              <EmailInput
+                title={'Эл. почта'}
+                name={'email'}
+                placeholder={'olga@ivolga.com'}
+                errors={errors}
+                register={register}
+              />
 
-          <ReadonlyInput title={'Телефон'} placeholder={'+7 (977) 184-20-72'} />
+              <ReadonlyInput
+                title={'Телефон'}
+                placeholder={'+7 (977) 184-20-72'} />
             </div>
-          
 
-            <div className="form__bottom-container">
+
+            <div className='form__bottom-container'>
               <div className='form-checkbox'>
-            <CheckboxInput
-              name={'agreement'}
-              text={'Я даю согласие на обработку персональных данных'}
-              errors={errors}
-              register={register}
-            />
-          </div>
+                <CheckboxInput
+                  name={'agreement'}
+                  text={'Я даю согласие на обработку персональных данных'}
+                  errors={errors}
+                  register={register}
+                />
+              </div>
 
-          <button className='settings-submit__button' type='submit' disabled={!isValid}>
-            Сохранить
-          </button>
+              <button className='settings-submit__button'
+                      type='submit'
+                      disabled={!isValid}>
+                Сохранить
+              </button>
             </div>
-          
-        </form>
+
+          </form>
+        </div>
       </div>
-      </div>
-      
+
     </AnimatedPage>
   );
 

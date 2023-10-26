@@ -3,7 +3,7 @@ import React from 'react';
 const ReadonlyInput = ({ title, placeholder }) => {
   return (
     <div className='input-container'>
-      <p className='settings-item__title'>{title}</p>
+      <label className='input-label'>{title}</label>
       <input className='input-readonly' placeholder={placeholder} readOnly />
     </div>
   );

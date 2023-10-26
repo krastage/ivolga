@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /**
  * Модальное окно фильтра товаров
  */
@@ -14,20 +13,17 @@ const Filter = ({
   filtersActivated,
 }) => {
   const [activeFilterIndex, setActiveFilterIndex] = useState(null);
-  const [buttonColor, setButtonColor] = useState('');
   const [activeButtons, setActiveButtons] = useState([]);
 
   const handleButtonClick = (index) => {
     if (activeFilterIndex === index) {
       setActiveFilterIndex(null);
-      setButtonColor('');
       resetFilter();
       resetActiveButtons();
       resetFilterAndActiveButtons();
       return;
     }
     setActiveFilterIndex(index);
-    setButtonColor('active');
     handleFilterChange(index);
     addActiveButtons(index);
   };

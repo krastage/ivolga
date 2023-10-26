@@ -15,24 +15,21 @@ const TextInput = ({ title, name, placeholder, register, errors }) => {
     return true;
   };
 
-  return (
-    <div className='input-container'>
-      <p className='settings-item__title'>{title}</p>
-      <input
-        className={`input ${errors[name] ? 'input-error' : ''}`}
-        placeholder={placeholder}
-        {...register(name, {
-          required: 'Поле обязательно для заполнения',
-          maxLength: {
-            value: 20,
-            message: 'Поле должно быть не длиннее 20 символов',
-          },
-          validate: validateInput,
-        })}
-      />
-      {errors[name] && <p className='error-message'>{errors[name].message}</p>}
-    </div>
-  );
+  return (<div className='input-container'>
+    <label className='input-label'
+           htmlFor={name}>{title}</label>
+    <input
+      className={`input ${errors[name] ? 'input-error' : ''}`}
+      id={name}
+      placeholder={placeholder}
+      {...register(name, {
+        required: 'Поле обязательно для заполнения', maxLength: {
+          value: 20, message: 'Поле должно быть не длиннее 20 символов',
+        }, validate: validateInput,
+      })}
+    />
+    {errors[name] && <p className='error-message'>{errors[name].message}</p>}
+  </div>);
 };
 
 export default TextInput;

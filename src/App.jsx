@@ -6,6 +6,7 @@ import Broadcasts from './pages/Broadcasts/Broadcasts';
 import Care from './pages/Care';
 import Catalog from './pages/Catalog';
 import Checkout from './pages/Checkout';
+import SuccessCheckout from './pages/Checkout/SuccessCheckout';
 import Collection from './pages/Collections/Collection';
 import Collections from './pages/Collections/Collections';
 import Contacts from './pages/Contacts/Contacts';
@@ -63,6 +64,7 @@ const App = () => {
             <Route path={'/profile/addresses/add'} element={<AddAddress />} />
             <Route path={'/profile/settings'} element={<Settings />} />
             <Route path={'/checkout'} element={<Checkout />} />
+            <Route path={'/checkout/success'} element={<SuccessCheckout />} />
             <Route path={'*'} element={<PageNotFound />} />
           </Routes>
         </AnimatedPage>

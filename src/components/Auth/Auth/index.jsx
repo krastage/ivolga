@@ -13,7 +13,8 @@ import VerificationModal from '../VerificationModal';
 const Auth = ({ authActive, setAuthActive }) => {
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [isLoginComponentActive, setIsLoginComponentActive] = useState(true);
-  const [isVerificationComponentActive, setIsVerificationComponentActive] = useState(false);
+  const [isVerificationComponentActive, setIsVerificationComponentActive] = useState(
+    false);
   const [phoneNumber, setPhoneNumber] = useState('');
   const [verificationCode, setVerificationCode] = useState('');
   const [sentPhoneNumber, setSentPhoneNumber] = useState('');
@@ -40,19 +41,6 @@ const Auth = ({ authActive, setAuthActive }) => {
   const toggleVerification = () => {
     setIsVerificationComponentActive(!isVerificationComponentActive);
     setVerificationCode('');
-  };
-
-  const phoneNumberHandle = (e) => {
-    const inputPhone = e.target.value;
-    const formattedPhone = inputPhone.replace(/\D/g, '');
-
-    if (formattedPhone.length === 11) {
-      setIsButtonActive(true);
-    } else {
-      setIsButtonActive(false);
-    }
-
-    setPhoneNumber(inputPhone);
   };
 
   const sendVerificationCode = () => {
@@ -129,7 +117,9 @@ const Auth = ({ authActive, setAuthActive }) => {
     />
   ) : isLoginComponentActive ? (
     //Окно входа
-    <LoginModal authActive={authActive} setAuthActive={setAuthActive} toggleLogin={toggleLogin} />
+    <LoginModal authActive={authActive}
+                setAuthActive={setAuthActive}
+                toggleLogin={toggleLogin} />
   ) : isVerificationComponentActive ? (
     // Ввод кода из СМС
     <VerificationModal
@@ -151,9 +141,6 @@ const Auth = ({ authActive, setAuthActive }) => {
     <PhoneInputModal
       authActive={authActive}
       setAuthActive={setAuthActive}
-      phoneNumber={phoneNumber}
-      phoneNumberHandle={phoneNumberHandle}
-      isButtonActive={isButtonActive}
       sendVerificationCode={sendVerificationCode}
     />
   );

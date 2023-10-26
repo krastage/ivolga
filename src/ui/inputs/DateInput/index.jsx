@@ -7,10 +7,12 @@ import React from 'react';
 const DateInput = ({ title, name, register, errors }) => {
   return (
     <div className='input-container'>
-      <p className='settings-item__title'>{title}</p>
+      <label className='input-label'
+             htmlFor={name}>{title}</label>
       <input
         className={`input ${errors[name] ? 'input-error' : ''}`}
         type='date'
+        id={name}
         {...register(name, {
           required: 'Дата обязательна для заполнения',
         })}

@@ -7,10 +7,13 @@ import React from 'react';
 const MultiInput = ({ title, name, placeholder, register, errors }) => {
   return (
     <div className='input-container'>
-      <p className='settings-item__title'>{title}</p>
+      <label className='input-label' htmlFor={name}>
+        {title}
+      </label>
       <input
         className={`input ${errors[name] ? 'input-error' : ''}`}
         placeholder={placeholder}
+        id={name}
         {...register(name, {
           required: 'Поле обязательно для заполнения',
           maxLength: {

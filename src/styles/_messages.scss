@@ -6,12 +6,11 @@
 
 .success-message {
   display: flex;
-  position: absolute;
-  background-color: $border-black;
   justify-content: space-between;
+  position: absolute;
+  z-index: 9999;
+  background-color: $border-black;
   padding: 24px;
-  margin-bottom: 80px;
-  margin-left: 100px;
   width: 465px;
   user-select: none;
 

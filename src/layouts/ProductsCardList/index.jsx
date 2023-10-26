@@ -23,7 +23,7 @@ const ProductsCardList = ({
             : 'products-card-head--centered container'
         }
         style={{ display: title === null ? 'none' : '' }}>
-        <h2>{title}</h2>
+        <h2 style={{ display: title === null ? 'none' : '' }}>{title}</h2>
         <FilterButton
           filterButton={filterButton}
           handleFilterChange={handleFilterChange}

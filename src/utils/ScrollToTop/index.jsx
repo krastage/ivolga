@@ -10,7 +10,10 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.scrollTo({
-      top: 0, left: 0, behavior: 'smooth',
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+      easing: 'ease-in-out',
     });
   }, [pathname]);
 
