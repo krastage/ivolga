@@ -1,4 +1,47 @@
-@import 'variables';
+@import 'global/settings';
+
+//Primary
+
+.primary-button {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  font-size: 16px;
+  border: 1px solid $border-grey;
+  background-color: $background-white;
+  user-select: none;
+  transition:
+    border 0.7s,
+    color 0.7s;
+
+  &:hover {
+    border: 1px solid $border-black;
+    transition:
+      border 0.7s,
+      color 0.7s;
+  }
+
+  &:disabled {
+    border: 1px solid $border-grey;
+    background-color: $background-white;
+    cursor: auto;
+    transition:
+      border 0.7s,
+      color 0.7s;
+  }
+}
+
+//Primary button active
+
+.primary-button-active {
+  @extend .primary-button;
+  border: 1px solid $border-black;
+
+  &:hover {
+    border: 1px solid $border-grey;
+  }
+}
 
 //Back
 
@@ -8,133 +51,62 @@
   align-items: center;
   gap: 8px;
   font-size: 16px;
+  transition: color 1.5s;
+
+  & p,
+  & img {
+    color: $text-black;
+    stroke: $text-black;
+    transition: color 1.5s;
+  }
+
+  & p:hover,
+  & img:hover {
+    color: $text-grey;
+    stroke: $text-grey;
+    transition: color 1.5s;
+  }
 }
 
-//Profile
+//Filter
 
-.profile-subscribe {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.profile-subscribe__button {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  justify-content: center;
-  font-size: 16px;
-  border: 1px solid $border-grey;
-}
-
-//Checkout
-
-.orders-item__button {
-  padding: 20px;
-  font-size: 12px;
-  border: $border-grey 1px solid;
-}
-
-//Stores
-
-.addresses-item__button {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  justify-content: center;
-  font-size: 12px;
-  border: 1px solid $border-grey;
-}
-
-.addresses__add-button {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  justify-content: center;
-  border: 1px solid $border-grey;
-}
-
-.address-add-save-button {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border: 1px solid $border-grey;
+.filter-button h1 {
+  color: $text-black;
+  transition: color 1.5s;
 
   &:hover {
-    border: 1px solid $border-black;
+    color: $text-grey;
+    transition: color 1.5s;
   }
-}
-
-.address-add-save-button:disabled {
-  border: 1px solid $border-grey;
-  background-color: $background-white;
-  cursor: auto;
-}
-
-//Settings
-
-.settings-submit__button {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  justify-content: center;
-  font-size: 16px;
-  border: 1px solid $border-grey;
-  background-color: $background-white;
-
-  &:hover {
-    border: 1px solid $border-black;
-  }
-}
-
-.settings-submit__button:disabled {
-  border: 1px solid $border-grey;
-  background-color: $background-white;
-  cursor: auto;
-}
-
-//Auth
-
-.auth-modal-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.auth-modal-buttons__auth {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  font-size: 16px;
-  border: 1px solid $border-black;
-
-  &:disabled {
-    border: 1px solid $border-grey;
-  }
-
-  &:enabled {
-    border: 1px solid $border-black;
-  }
-}
-
-.auth-modal-buttons__guest {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  font-size: 16px;
-  border: 1px solid $border-grey;
 }
 
 //Search
 
-.search-modal-input__button {
+.search-button {
   position: absolute;
   top: 0;
   right: 0;
   padding-top: 30px;
   transition: color 0.5s;
+}
+
+//Close
+
+.close-button {
+  display: flex;
+  padding: 10px;
+  border: 1px solid $border-grey;
+  align-items: center;
+  transition:
+    border 0.7s,
+    color 0.7s;
+
+  &:hover {
+    border: 1px solid $border-black;
+    transition:
+      border 0.7s,
+      color 0.7s;
+  }
 }
 
 //Scroll to top

@@ -1,12 +1,24 @@
-import React from 'react';
+/**
+ * Блок курьерской доставки
+ */
+
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import CheckboxInputNotRequired from '../../../../ui/inputs/CheckboxInputNotRequired';
-import MultiInput from '../../../../ui/inputs/MultiInput';
-import TextAreaInput from '../../../../ui/inputs/TextAreaInput';
+import PrimaryButton from '../../../../ui/buttons/PrimaryButton';
+import CheckboxInputNotRequired from '../../../../ui/inputs/checkbox/CheckboxInputNotRequired';
+import MultiInput from '../../../../ui/inputs/text/MultiInput';
+import ReadonlyInput from '../../../../ui/inputs/text/ReadonlyInput';
+import TextAreaInput from '../../../../ui/inputs/text/TextAreaInput';
 import AnimatedPage from '../../../../utils/AnimatedPage';
 import ScrollToTop from '../../../../utils/ScrollToTop';
 
 const CourierShipping = () => {
+  const [isAddressNameActive, setIsAddressNameActive] = useState(false);
+
+  const handleCheckbox = () => {
+    setIsAddressNameActive(!isAddressNameActive);
+  };
+
   const {
     register,
     formState: { errors },
@@ -34,19 +46,30 @@ const CourierShipping = () => {
               register={register}
             />
 
-            <CheckboxInputNotRequired name={'address-save'} text={'Сохранить адрес'} />
-
-            <MultiInput
-              title={'Название адреса'}
-              placeholder={'Дом, работа...'}
-              name={'address-name'}
-              errors={errors}
-              register={register}
+            <CheckboxInputNotRequired
+              name={'address-save'}
+              text={'Сохранить адрес'}
+              onChange={handleCheckbox}
             />
 
-            <button className='settings-submit__button' type='button'>
-              Сохранить
-            </button>
+            {isAddressNameActive ? (
+              <MultiInput
+                title={'Название адреса'}
+                placeholder={'Дом, работа...'}
+                name={'address-name'}
+                errors={errors}
+                register={register}
+              />
+            ) : (
+              <ReadonlyInput
+                title={'Название адреса'}
+                placeholder={'Дом, работа...'}
+                name={'address-name'}
+                errors={errors}
+                register={register}
+              />
+            )}
+            <PrimaryButton type={'button'} label={'Сохранить'} disabled={!isAddressNameActive} />
           </div>
         </form>
       </AnimatedPage>

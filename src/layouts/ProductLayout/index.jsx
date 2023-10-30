@@ -5,6 +5,7 @@
 import { useState } from 'react';
 import SizeGuide from '../../components/SizeGuide';
 import '../../styles/layouts/ProductLayout.scss';
+import PrimaryButtonActive from '../../ui/buttons/PrimaryButtonActive';
 
 const ProductLayout = ({ imgSource, configTitle, price, detailButtonTitle, size, colors }) => {
   const [sizeGuideActive, setSizeGuideActive] = useState(false);
@@ -131,9 +132,7 @@ const ProductLayout = ({ imgSource, configTitle, price, detailButtonTitle, size,
             <p>{colorsData[colors[selectedColor]]?.name}</p>
           </div>
 
-          <div className='product-config__buy'>
-            <button className='product-config__buy-button'>Купить</button>
-          </div>
+          <PrimaryButtonActive label={'Купить'} />
 
           <ul className='product-config__info-list'>
             <li className='product-config__info-item'>

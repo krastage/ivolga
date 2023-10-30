@@ -1,4 +1,9 @@
+/**
+ * Блок самовывоза
+ */
+
 import React from 'react';
+import PrimaryButton from '../../../../ui/buttons/PrimaryButton';
 import AnimatedPage from '../../../../utils/AnimatedPage';
 
 const PickupShipping = () => {
@@ -12,9 +17,7 @@ const PickupShipping = () => {
               Шоу-рум Fable, Дизайн-завод Флакон, Большая Новодмитровская ул., 36
             </p>
           </div>
-          <button className='settings-submit__button' type='button'>
-            Изменить адрес
-          </button>
+          <PrimaryButton type={'button'} label={'Изменить адрес'} />
         </div>
       </AnimatedPage>
     </>

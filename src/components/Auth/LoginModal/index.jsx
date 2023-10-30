@@ -3,6 +3,9 @@
  */
 
 import React from 'react';
+import CloseButton from '../../../ui/buttons/CloseButton';
+import PrimaryButton from '../../../ui/buttons/PrimaryButton';
+import PrimaryButtonActive from '../../../ui/buttons/PrimaryButtonActive';
 
 const LoginModal = ({ authActive, setAuthActive, toggleLogin }) => {
   return (
@@ -12,13 +15,7 @@ const LoginModal = ({ authActive, setAuthActive, toggleLogin }) => {
       <div className='modal-right-content' onClick={(e) => e.stopPropagation()}>
         <div className='modal-right-heading'>
           <p>Вход</p>
-          <button onClick={() => setAuthActive(false)}>
-            <img
-              src='/assets/img/icons/close.svg'
-              alt='close'
-              className='modal-right-heading__button'
-            />
-          </button>
+          <CloseButton onClick={() => setAuthActive(false)} />
         </div>
 
         <div className='auth-modal-title'>
@@ -30,12 +27,9 @@ const LoginModal = ({ authActive, setAuthActive, toggleLogin }) => {
         </div>
 
         <div className='auth-modal-buttons'>
-          <button className='auth-modal-buttons__auth' onClick={toggleLogin}>
-            Войти / Зарегистрироваться
-          </button>
-          <button className='auth-modal-buttons__guest' onClick={() => setAuthActive(false)}>
-            Продолжить как гость
-          </button>
+          <PrimaryButtonActive onClick={toggleLogin} label={'Войти / Зарегистрироваться'} />
+
+          <PrimaryButton onClick={() => setAuthActive(false)} label={'Продолжить как гость'} />
         </div>
       </div>
     </div>

@@ -2,10 +2,12 @@
  * Модальное окно корзины
  */
 
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../../layouts/ProductCard';
+import ProductsCardList from '../../layouts/ProductsCardList';
 import '../../styles/components/Basket.scss';
+import CloseButton from '../../ui/buttons/CloseButton';
 
 const Basket = ({ basketActive, setBasketActive }) => {
   useEffect(() => {
@@ -23,13 +25,7 @@ const Basket = ({ basketActive, setBasketActive }) => {
       <div className='modal-right-content' onClick={(e) => e.stopPropagation()}>
         <div className='modal-right-heading'>
           <p>Корзина</p>
-          <button onClick={() => setBasketActive(false)}>
-            <img
-              src='/assets/img/icons/close.svg'
-              alt='close'
-              className='modal-right-heading__button'
-            />
-          </button>
+          <CloseButton onClick={() => setBasketActive(false)} />
         </div>
 
         <div className='basket-modal-order'>
@@ -51,43 +47,33 @@ const Basket = ({ basketActive, setBasketActive }) => {
           </p>
         </div>
 
-        <Link
-          to='/checkout'
-          className='basket-modal-order__link'
-          onClick={() => setBasketActive(false)}>
+        <Link to='/checkout' className='primary-button' onClick={() => setBasketActive(false)}>
           Оформить заказ
         </Link>
 
-        <ul className='basket-modal-orders__list' onClick={() => setBasketActive(false)}>
-          <ProductCard
-            size='small'
-            link={'/product'}
-            title={'Топ черный из кашемира'}
-            price={25_000}
-            imageSource={'/assets/img/broadcast/product.png'}
-          />
-          <ProductCard
-            size='small'
-            link={'/product'}
-            title={'Топ черный из кашемира'}
-            price={25_000}
-            imageSource={'/assets/img/broadcast/product.png'}
-          />
-          <ProductCard
-            size='small'
-            link={'/product'}
-            title={'Топ черный из кашемира'}
-            price={25_000}
-            imageSource={'/assets/img/broadcast/product.png'}
-          />
-          <ProductCard
-            size='small'
-            link={'/product'}
-            title={'Топ черный из кашемира'}
-            price={25_000}
-            imageSource={'/assets/img/broadcast/product.png'}
-          />
-        </ul>
+        <ProductsCardList
+          title={null}
+          filterButton={false}
+          itemsPerRow={2}
+          children={[
+            <ProductCard
+              key={1}
+              size='medium'
+              link={'/product'}
+              title={'Топ черный из кашемира'}
+              price={25_000}
+              imageSource={'/assets/img/products/product.png'}
+            />,
+            <ProductCard
+              key={2}
+              size='medium'
+              link={'/product'}
+              title={'Топ черный из кашемира'}
+              price={25_000}
+              imageSource={'/assets/img/products/product.png'}
+            />,
+          ]}
+        />
       </div>
     </div>
   );

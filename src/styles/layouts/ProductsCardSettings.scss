@@ -3,6 +3,8 @@
 .products-card {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .products-card--big {
@@ -51,7 +53,7 @@
 }
 
 .products-card-title__price {
-  color: $text-grey
+  color: $text-grey;
 }
 
 .products-card-title--big {
@@ -121,6 +123,21 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+
+.products-card-list--1 {
+  @extend .products-card-list;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.products-card-list--2 {
+  @extend .products-card-list;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.products-card-list--4 {
+  @extend .products-card-list;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .products-card-list li {

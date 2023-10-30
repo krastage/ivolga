@@ -2,10 +2,11 @@
  *  Страница прямого эфира
  */
 
-import AnimatedPage from '../../../utils/AnimatedPage';
 import Footer from '../../../components/Footer';
 import ProductCard from '../../../layouts/ProductCard';
+import ProductsCardList from '../../../layouts/ProductsCardList';
 import '../../../styles/pages/Broadcasts/Broadcast.scss';
+import AnimatedPage from '../../../utils/AnimatedPage';
 
 const Broadcast = () => {
   return (
@@ -30,51 +31,55 @@ const Broadcast = () => {
           </div>
 
           <div className='broadcast-products'>
-            <h1 className='broadcast-products__title'>Товары из трансляции</h1>
-            <ul className='broadcast-products__list'>
-              <ProductCard
-                size='small'
-                link={'/product'}
-                title={'Топ черный из кашемира'}
-                price={25_000}
-                imageSource={'/assets/img/broadcast/product.png'}
-              />
-              <ProductCard
-                size='small'
-                link={'/product'}
-                title={'Топ черный из кашемира'}
-                price={25_000}
-                imageSource={'/assets/img/broadcast/product.png'}
-              />
-              <ProductCard
-                size='small'
-                link={'/product'}
-                title={'Топ черный из кашемира'}
-                price={25_000}
-                imageSource={'/assets/img/broadcast/product.png'}
-              />
-              <ProductCard
-                size='small'
-                link={'/product'}
-                title={'Топ черный из кашемира'}
-                price={25_000}
-                imageSource={'/assets/img/broadcast/product.png'}
-              />
-              <ProductCard
-                size='small'
-                link={'/product'}
-                title={'Топ черный из кашемира'}
-                price={25_000}
-                imageSource={'/assets/img/broadcast/product.png'}
-              />
-              <ProductCard
-                size='small'
-                link={'/product'}
-                title={'Топ черный из кашемира'}
-                price={25_000}
-                imageSource={'/assets/img/broadcast/product.png'}
-              />
-            </ul>
+            <ProductsCardList
+              title={'Товары из трансляции'}
+              filterButton={false}
+              itemsPerRow={1}
+              children={[
+                <ProductCard
+                  size='small'
+                  link={'/product'}
+                  title={'Топ черный из кашемира'}
+                  price={25_000}
+                  imageSource={'/assets/img/broadcast/product.png'}
+                />,
+                <ProductCard
+                  size='small'
+                  link={'/product'}
+                  title={'Топ черный из кашемира'}
+                  price={25_000}
+                  imageSource={'/assets/img/broadcast/product.png'}
+                />,
+                <ProductCard
+                  size='small'
+                  link={'/product'}
+                  title={'Топ черный из кашемира'}
+                  price={25_000}
+                  imageSource={'/assets/img/broadcast/product.png'}
+                />,
+                <ProductCard
+                  size='small'
+                  link={'/product'}
+                  title={'Топ черный из кашемира'}
+                  price={25_000}
+                  imageSource={'/assets/img/broadcast/product.png'}
+                />,
+                <ProductCard
+                  size='small'
+                  link={'/product'}
+                  title={'Топ черный из кашемира'}
+                  price={25_000}
+                  imageSource={'/assets/img/broadcast/product.png'}
+                />,
+                <ProductCard
+                  size='small'
+                  link={'/product'}
+                  title={'Топ черный из кашемира'}
+                  price={25_000}
+                  imageSource={'/assets/img/broadcast/product.png'}
+                />,
+              ]}
+            />
           </div>
         </main>
         <Footer />

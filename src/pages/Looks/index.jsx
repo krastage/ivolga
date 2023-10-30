@@ -2,12 +2,12 @@
  * Страница "Образы"
  */
 
-import AnimatedPage from '../../utils/AnimatedPage';
 import Footer from '../../components/Footer';
 import ProductCard from '../../layouts/ProductCard';
 import ProductsCardList from '../../layouts/ProductsCardList';
 import '../../styles/global/_settings.scss';
 import '../../styles/pages/Looks.scss';
+import AnimatedPage from '../../utils/AnimatedPage';
 
 const Looks = () => {
   return (
@@ -21,6 +21,7 @@ const Looks = () => {
             </div>
             <ProductsCardList
               filterButton={false}
+              itemsPerRow={4}
               children={[
                 <ProductCard
                   size='big'

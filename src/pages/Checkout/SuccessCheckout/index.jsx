@@ -1,5 +1,10 @@
+/**
+ * Страница успешного заказа
+ */
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import PrimaryButton from '../../../ui/buttons/PrimaryButton';
 import AnimatedPage from '../../../utils/AnimatedPage';
 
 const SuccessCheckout = () => {
@@ -18,9 +23,11 @@ const SuccessCheckout = () => {
             Благодарим вас за покупку в интернет-магазине Ivolga! Ваш заказ успешно оплачен и
             размещен. Отследить статус заказа можно в личном кабинете. Номер вашего заказа #00005
           </p>
-          <button className='settings-submit__button' type='button' onClick={() => handleButton()}>
-            Перейти в каталог
-          </button>
+          <PrimaryButton
+            type={'button'}
+            onClick={() => handleButton()}
+            label={'Перейти в каталог'}
+          />
         </div>
       </AnimatedPage>
     </>

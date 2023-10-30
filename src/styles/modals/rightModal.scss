@@ -1,5 +1,5 @@
 @import '../global/settings';
-@import "../variables";
+@import '../variables';
 
 //Modal right
 
@@ -13,18 +13,18 @@
   top: 0;
   right: 0;
   pointer-events: none;
-  transition: background-color 1.9s ease-in-out;
+  transition: background-color 0.9s ease-in-out;
   z-index: 9999;
 
   &.active {
     background-color: rgba(0, 0, 0, 0.4);
     pointer-events: all;
     z-index: 9999;
-    transition: background-color 1.9s ease-in-out;
+    transition: background-color 0.9s ease-in-out;
 
     .modal-right-content {
       right: 0;
-      transition: 1.9s right ease-in-out;
+      transition: 0.9s right ease-in-out;
     }
   }
 
@@ -40,7 +40,7 @@
     top: 0;
     position: fixed;
     overflow: auto;
-    transition: 1.9s right ease-in-out;
+    transition: 0.9s right ease-in-out;
     z-index: 9999;
   }
 }
@@ -50,12 +50,5 @@
 .modal-right-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.modal-right-heading__button {
-  display: flex;
-  padding: 10px;
-  border: 1px solid $border-grey;
   align-items: center;
 }

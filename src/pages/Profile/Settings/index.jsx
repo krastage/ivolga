@@ -6,21 +6,19 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import ProfileLayout from '../../../layouts/ProfileLayout';
 import '../../../styles/forms/_forms.scss';
-import CheckboxInput from '../../../ui/inputs/CheckboxInput';
-import DateInput from '../../../ui/inputs/DateInput';
-import EmailInput from '../../../ui/inputs/EmailInput';
-import ReadonlyInput from '../../../ui/inputs/ReadonlyInput';
-import TextInput from '../../../ui/inputs/TextInput';
+import PrimaryButton from '../../../ui/buttons/PrimaryButton';
+import CheckboxInput from '../../../ui/inputs/checkbox/CheckboxInput';
+import DateInput from '../../../ui/inputs/date/DateInput';
+import EmailInput from '../../../ui/inputs/text/EmailInput';
+import ReadonlyInput from '../../../ui/inputs/text/ReadonlyInput';
+import TextInput from '../../../ui/inputs/text/TextInput';
 import SuccessMessage from '../../../ui/messages/SuccessMessage';
 import AnimatedPage from '../../../utils/AnimatedPage';
 
 const Settings = () => {
   const [showMessage, setShowMessage] = useState(false);
   const {
-    handleSubmit,
-    register,
-    formState: { errors, isValid },
-    reset,
+    handleSubmit, register, formState: { errors, isValid }, reset,
   } = useForm({ mode: 'onBlur' });
 
   const onSubmit = (data) => {
@@ -39,73 +37,71 @@ const Settings = () => {
     }
   }, [showMessage]);
 
-  const content = (
-    <AnimatedPage>
-      {showMessage && <SuccessMessage />}
-      <div className='right-container'>
-        <div className='settings-container'>
-          <h1 className='common-profile-title'>Настройки профиля</h1>
+  const content = (<AnimatedPage>
+    {showMessage && <SuccessMessage />}
+    <div className='right-container'>
+      <div className='settings-container'>
+        <h1 className='common-profile-title'>Настройки профиля</h1>
 
-          <form className='form'
-                onSubmit={handleSubmit(onSubmit)}>
-            <div className='form__container'>
-              <TextInput
-                title={'Имя'}
-                placeholder={'Имя'}
-                name={'firstName'}
-                errors={errors}
-                register={register}
-              />
-              <TextInput
-                title={'Фамилия'}
-                placeholder={'Фамилия'}
-                name={'lastName'}
-                errors={errors}
-                register={register}
-              />
-              <DateInput
-                title={'Дата рождения'}
-                name={'dateOfBirth'}
-                errors={errors}
-                register={register}
-              />
-              <EmailInput
-                title={'Эл. почта'}
-                name={'email'}
-                placeholder={'olga@ivolga.com'}
-                errors={errors}
-                register={register}
-              />
+        <form className='form'
+              onSubmit={handleSubmit(onSubmit)}>
+          <div className='form__container'>
+            <TextInput
+              title={'Имя'}
+              placeholder={'Имя'}
+              name={'firstName'}
+              errors={errors}
+              register={register}
+            />
+            <TextInput
+              title={'Фамилия'}
+              placeholder={'Фамилия'}
+              name={'lastName'}
+              errors={errors}
+              register={register}
+            />
+            <DateInput
+              title={'Дата рождения'}
+              name={'dateOfBirth'}
+              errors={errors}
+              register={register}
+            />
+            <EmailInput
+              title={'Эл. почта'}
+              name={'email'}
+              placeholder={'olga@ivolga.com'}
+              errors={errors}
+              register={register}
+            />
 
-              <ReadonlyInput
-                title={'Телефон'}
-                placeholder={'+7 (977) 184-20-72'} />
+            <ReadonlyInput
+              title={'Телефон'}
+              placeholder={'+7 (977) 184-20-72'}
+            />
+
+          </div>
+
+          <div className='form__bottom-container'>
+            <div className='form-checkbox'>
+              <CheckboxInput
+                name={'agreement'}
+                text={'Я даю согласие на обработку персональных данных'}
+                errors={errors}
+                register={register}
+              />
             </div>
 
+            <PrimaryButton
+              type={'submit'}
+              disabled={!isValid}
+              label={'Сохранить'}
+            />
 
-            <div className='form__bottom-container'>
-              <div className='form-checkbox'>
-                <CheckboxInput
-                  name={'agreement'}
-                  text={'Я даю согласие на обработку персональных данных'}
-                  errors={errors}
-                  register={register}
-                />
-              </div>
-
-              <button className='settings-submit__button'
-                      type='submit'
-                      disabled={!isValid}>
-                Сохранить
-              </button>
-            </div>
-
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
-
-    </AnimatedPage>
-  );
+    </div>
+  </AnimatedPage>);
 
   return <ProfileLayout content={content} />;
 };

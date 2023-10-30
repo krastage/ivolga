@@ -15,12 +15,7 @@ const Auth = ({ authActive, setAuthActive }) => {
   const [isLoginComponentActive, setIsLoginComponentActive] = useState(true);
   const [isVerificationComponentActive, setIsVerificationComponentActive] = useState(
     false);
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [verificationCode, setVerificationCode] = useState('');
-  const [sentPhoneNumber, setSentPhoneNumber] = useState('');
-  const [isButtonActive, setIsButtonActive] = useState(false);
   const [isResendButtonActive, setIsResendButtonActive] = useState(true);
-  const [isCodeValid, setIsCodeValid] = useState(true);
   const [resendTimer, setResendTimer] = useState(30);
 
   let timerId;
@@ -35,43 +30,10 @@ const Auth = ({ authActive, setAuthActive }) => {
   const toggleLogin = () => {
     setIsLoginComponentActive(!isLoginComponentActive);
     setIsVerificationComponentActive(false);
-    setVerificationCode('');
   };
 
   const toggleVerification = () => {
     setIsVerificationComponentActive(!isVerificationComponentActive);
-    setVerificationCode('');
-  };
-
-  const sendVerificationCode = () => {
-    setIsVerificationComponentActive(true);
-    setPhoneNumber('');
-    setSentPhoneNumber(phoneNumber);
-    setIsButtonActive(false);
-    setIsResendButtonActive(false);
-    startTimer();
-  };
-
-  const verificationCodeHandle = (e) => {
-    const inputCode = e.target.value.replace(/[^0-9]/g, '');
-    setVerificationCode(inputCode);
-
-    if (inputCode) {
-      setIsButtonActive(true);
-      setIsCodeValid(true);
-    }
-  };
-
-  const submitVerificationCode = () => {
-    if (verificationCode === '1234') {
-      setIsCodeValid(true);
-      navigation('/profile');
-      setAuthActive(false);
-      setIsAuthorized(true);
-      stopTimer();
-      return;
-    }
-    setIsCodeValid(false);
   };
 
   const resendCodeHandle = () => {
@@ -117,31 +79,28 @@ const Auth = ({ authActive, setAuthActive }) => {
     />
   ) : isLoginComponentActive ? (
     //Окно входа
-    <LoginModal authActive={authActive}
-                setAuthActive={setAuthActive}
-                toggleLogin={toggleLogin} />
+    <LoginModal
+      authActive={authActive}
+      setAuthActive={setAuthActive}
+      toggleLogin={toggleLogin}
+    />
   ) : isVerificationComponentActive ? (
     // Ввод кода из СМС
     <VerificationModal
       authActive={authActive}
       setAuthActive={setAuthActive}
       toggleVerification={toggleVerification}
-      sentPhoneNumber={sentPhoneNumber}
-      isCodeValid={isCodeValid}
-      verificationCode={verificationCode}
-      verificationCodeHandle={verificationCodeHandle}
       resendTimer={resendTimer}
-      isButtonActive={isButtonActive}
-      submitVerificationCode={submitVerificationCode}
       isResendButtonActive={isResendButtonActive}
       resendCodeHandle={resendCodeHandle}
+      setIsAuthorized={setIsAuthorized}
     />
   ) : (
     //  Ввод номера телефона
     <PhoneInputModal
       authActive={authActive}
       setAuthActive={setAuthActive}
-      sendVerificationCode={sendVerificationCode}
+      setIsVerificationComponentActive={setIsVerificationComponentActive}
     />
   );
 };

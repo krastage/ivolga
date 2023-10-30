@@ -1,9 +1,13 @@
+/**
+ * Блок получатель
+ */
+
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import CheckboxInput from '../../../ui/inputs/CheckboxInput';
-import EmailInput from '../../../ui/inputs/EmailInput';
-import PhoneInput from '../../../ui/inputs/PhoneInput';
-import TextInput from '../../../ui/inputs/TextInput';
+import CheckboxInput from '../../../ui/inputs/checkbox/CheckboxInput';
+import PhoneInput from '../../../ui/inputs/number/PhoneInput';
+import EmailInput from '../../../ui/inputs/text/EmailInput';
+import TextInput from '../../../ui/inputs/text/TextInput';
 import AnimatedPage from '../../../utils/AnimatedPage';
 import ScrollToTop from '../../../utils/ScrollToTop';
 

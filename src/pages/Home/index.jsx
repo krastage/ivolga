@@ -3,12 +3,12 @@
  */
 
 import { Link } from 'react-router-dom';
-import AnimatedPage from '../../utils/AnimatedPage';
 import Footer from '../../components/Footer';
 import ProductCard from '../../layouts/ProductCard';
 import ProductsCardList from '../../layouts/ProductsCardList';
 import '../../styles/global/_settings.scss';
 import '../../styles/pages/Home.scss';
+import AnimatedPage from '../../utils/AnimatedPage';
 
 const Home = () => {
   return (
@@ -23,13 +23,16 @@ const Home = () => {
                   <h1>Осень / Зима 2023 - 2024</h1>
                 </article>
                 <div>
-                  <Link to='/catalog'>Перейти к покупкам</Link>
+                  <Link to='/catalog' className='home-link'>
+                    Перейти к покупкам
+                  </Link>
                 </div>
               </div>
             </div>
             <ProductsCardList
               title={'Бестселлеры'}
               filterButton={false}
+              itemsPerRow={4}
               children={[
                 <ProductCard
                   size='big'
@@ -75,7 +78,9 @@ const Home = () => {
                   <h1>Осень / Зима 2023 - 2024</h1>
                 </article>
                 <div>
-                  <Link to='/catalog'>Перейти к покупкам</Link>
+                  <Link to='/catalog' className='home-link'>
+                    Перейти к покупкам
+                  </Link>
                 </div>
               </div>
             </div>

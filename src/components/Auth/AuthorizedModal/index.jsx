@@ -4,6 +4,9 @@
 
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import CloseButton from '../../../ui/buttons/CloseButton';
+import PrimaryButton from '../../../ui/buttons/PrimaryButton';
+import PrimaryButtonActive from '../../../ui/buttons/PrimaryButtonActive';
 
 const AuthorizedModal = ({ authActive, setAuthActive, logoutHandle }) => {
   const location = useLocation();
@@ -16,13 +19,7 @@ const AuthorizedModal = ({ authActive, setAuthActive, logoutHandle }) => {
       <div className='modal-right-content' onClick={(e) => e.stopPropagation()}>
         <div className='modal-right-heading'>
           <p>Профиль</p>
-          <button onClick={() => setAuthActive(false)}>
-            <img
-              src='/assets/img/icons/close.svg'
-              alt='close'
-              className='modal-right-heading__button'
-            />
-          </button>
+          <CloseButton onClick={() => setAuthActive(false)} />
         </div>
 
         <div className='auth-modal-title'>
@@ -32,18 +29,15 @@ const AuthorizedModal = ({ authActive, setAuthActive, logoutHandle }) => {
           {location.pathname === '/profile' ? (
             ''
           ) : (
-            <button
-              className='auth-modal-buttons__guest'
+            <PrimaryButton
+              label={'Перейти в профиль'}
               onClick={() => {
                 navigation('/profile');
                 setAuthActive(false);
-              }}>
-              Перейти в профиль
-            </button>
+              }}
+            />
           )}
-          <button className='auth-modal-buttons__auth' onClick={logoutHandle}>
-            Выйти
-          </button>
+          <PrimaryButtonActive label={'Выйти'} onClick={logoutHandle} />
         </div>
       </div>
     </div>

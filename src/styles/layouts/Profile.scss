@@ -1,5 +1,4 @@
 @import '../global/settings';
-@import '../buttons';
 @import '../inputs/inputs';
 
 //Global
@@ -123,6 +122,10 @@
   align-items: center;
   padding-bottom: 10px;
   border-bottom: $border-grey 1px solid;
+
+  & a {
+    font-size: 12px;
+  }
 }
 
 //Checkout details
@@ -173,6 +176,10 @@
   align-items: center;
   padding-bottom: 10px;
   border-bottom: $border-grey 1px solid;
+
+  & a {
+    font-size: 12px;
+  }
 }
 
 //Addresses add

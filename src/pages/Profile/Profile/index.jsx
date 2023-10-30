@@ -6,17 +6,15 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import ProfileLayout from '../../../layouts/ProfileLayout';
 import '../../../styles/layouts/Profile.scss';
-import CheckboxInput from '../../../ui/inputs/CheckboxInput';
+import PrimaryButton from '../../../ui/buttons/PrimaryButton';
+import CheckboxInput from '../../../ui/inputs/checkbox/CheckboxInput';
 import SuccessMessage from '../../../ui/messages/SuccessMessage';
 import AnimatedPage from '../../../utils/AnimatedPage';
 
 const Profile = () => {
   const [showMessage, setShowMessage] = useState(false);
   const {
-    reset,
-    register,
-    handleSubmit,
-    formState: { errors, isValid },
+    reset, register, handleSubmit, formState: { errors, isValid },
   } = useForm();
 
   const onSubmit = (data) => {
@@ -34,11 +32,10 @@ const Profile = () => {
     }
   }, [showMessage]);
 
-  const content = (
-    <AnimatedPage>
-      {showMessage && <SuccessMessage />}
-      <div className="right-container">
-        <div className='profile-container'>
+  const content = (<AnimatedPage>
+    {showMessage && <SuccessMessage />}
+    <div className='right-container'>
+      <div className='profile-container'>
         <div className='profile-info'>
           <h1 className='common-profile-title'>Ольга Малюга</h1>
           <div className='profile-info__loyalty'>
@@ -54,26 +51,32 @@ const Profile = () => {
         <div className='profile-news'>
           <h1 className='profile-news__title'>Новостная рассылка</h1>
           <p className='profile-news__description'>
-            Получайте новости об актуальный акциях и специальных коллекциях бренда Ivolga
+            Получайте новости об актуальный акциях и специальных коллекциях
+            бренда Ivolga
           </p>
         </div>
 
-        <form className='profile-subscribe' onSubmit={handleSubmit(onSubmit)}>
+        <form
+          className='form form--gap'
+          onSubmit={handleSubmit(onSubmit)}>
+
           <CheckboxInput
             name={'agreement'}
             text={'Я не хочу получать новостную рассылку от магазина Ivolga'}
             errors={errors}
             register={register}
           />
-          <button className='settings-submit__button' type='submit' disabled={!isValid}>
-            Отписаться
-          </button>
+
+          <PrimaryButton
+            type={'submit'}
+            disabled={!isValid}
+            label={'Отписаться'}
+          />
+
         </form>
       </div>
-      </div>
-      
-    </AnimatedPage>
-  );
+    </div>
+  </AnimatedPage>);
 
   return <ProfileLayout content={content} />;
 };

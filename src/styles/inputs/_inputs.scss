@@ -1,7 +1,7 @@
 @import '../global/settings';
 @import '../variables';
 
-//containers
+//Containers
 
 .input-container {
   display: flex;
@@ -16,7 +16,11 @@
   margin-top: 72px;
 }
 
-//inputs
+.search-container {
+  position: relative;
+}
+
+//Inputs
 
 .input {
   display: flex;
@@ -27,6 +31,7 @@
   align-self: stretch;
   border: 1px solid $border-grey;
   background: $background-white;
+  transition: border 0.7s;
 }
 
 .input-error {
@@ -34,6 +39,7 @@
   background: $background-white !important;
   color: $error !important;
   outline: none !important;
+  transition: border 0.7s;
 }
 
 .input-label {
@@ -50,6 +56,7 @@
   border: 1px solid $border-grey;
   background: $background-white;
   outline: none !important;
+  transition: border 0.7s;
 }
 
 .textarea-input {
@@ -62,6 +69,7 @@
   align-self: stretch;
   border: 1px solid $border-grey;
   background: $background-white;
+  transition: border 0.7s;
 }
 
 .textarea-input-error {
@@ -69,6 +77,7 @@
   background: $background-white !important;
   color: $error !important;
   outline: none !important;
+  transition: border 0.7s;
 }
 
 .select-input {
@@ -83,6 +92,7 @@
     center;
   appearance: none;
   outline: none;
+  transition: border 0.7s;
 }
 
 .select-input:focus {
@@ -95,6 +105,7 @@
   background: $background-white !important;
   color: $error !important;
   outline: none !important;
+  transition: border 0.7s;
 }
 
 .input,
@@ -107,6 +118,7 @@
   align-self: stretch;
   border: 1px solid $border-grey;
   background: $background-white;
+  transition: border 0.7s;
 }
 
 .input-phone:focus {
@@ -139,6 +151,7 @@ input[type='checkbox'] {
   cursor: pointer;
   border: 1px solid $border-grey;
   background: $background-white;
+  transition: border 0.7s;
 }
 
 input[type='checkbox']:checked + .checkbox-input-label::before {
@@ -200,4 +213,22 @@ input[type='radio']:checked + .radio-input-label::before {
   font-size: 16px;
   margin-left: 11px;
   cursor: pointer;
+}
+
+//Search
+
+.search-input {
+  display: flex;
+  padding: 20px 8px 20px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  font-size: 28px;
+  color: $text-grey;
+  width: 100%;
+  border-bottom: 1px solid $border-black;
+
+  &:focus {
+    outline: none;
+  }
 }

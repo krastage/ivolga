@@ -5,8 +5,9 @@ import Broadcast from './pages/Broadcasts/Broadcast';
 import Broadcasts from './pages/Broadcasts/Broadcasts';
 import Care from './pages/Care';
 import Catalog from './pages/Catalog';
-import Checkout from './pages/Checkout';
+import Checkout from './pages/Checkout/Checkout';
 import SuccessCheckout from './pages/Checkout/SuccessCheckout';
+import UnsuccessfulCheckout from './pages/Checkout/UnsuccessfulCheckout';
 import Collection from './pages/Collections/Collection';
 import Collections from './pages/Collections/Collections';
 import Contacts from './pages/Contacts/Contacts';
@@ -19,10 +20,10 @@ import PageNotFound from './pages/PageNotFound';
 import Payment from './pages/Payment';
 import Privacy from './pages/Privacy';
 import Product from './pages/Product';
-import AddAddress from './pages/Profile/AddAddress';
-import Addresses from './pages/Profile/Addresses';
-import Order from './pages/Profile/Order';
-import Orders from './pages/Profile/Orders';
+import AddAddress from './pages/Profile/Addresses/AddAddress';
+import Addresses from './pages/Profile/Addresses/Addressess';
+import Order from './pages/Profile/Orders/Order';
+import Orders from './pages/Profile/Orders/Orders';
 import Profile from './pages/Profile/Profile';
 import Settings from './pages/Profile/Settings';
 import Wishlist from './pages/Profile/Wishlist';
@@ -65,6 +66,7 @@ const App = () => {
             <Route path={'/profile/settings'} element={<Settings />} />
             <Route path={'/checkout'} element={<Checkout />} />
             <Route path={'/checkout/success'} element={<SuccessCheckout />} />
+            <Route path={'/checkout/unsuccessful'} element={<UnsuccessfulCheckout />} />
             <Route path={'*'} element={<PageNotFound />} />
           </Routes>
         </AnimatedPage>

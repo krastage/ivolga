@@ -1,4 +1,4 @@
-@import "../global/settings";
+@import '../global/settings';
 
 //Home
 
@@ -7,6 +7,17 @@
   flex-direction: column;
   margin-bottom: 60px;
   gap: 60px;
+}
+
+.home-link {
+  color: $text-black;
+  padding: 10px;
+  transition: color 0.9s ease;
+
+  &:hover {
+    color: $text-grey;
+    transition: color 0.9s ease;
+  }
 }
 
 //Home hero
@@ -42,11 +53,11 @@
 //Body collection
 
 .body-hero {
-  background-image: url("../../../public/assets/img/products/hero1.png");
+  background-image: url('../../../public/assets/img/products/hero1.png');
 }
 
 //House collection
 
 .house-hero {
-  background-image: url("../../../public/assets/img/products/hero2.png");
+  background-image: url('../../../public/assets/img/products/hero2.png');
 }

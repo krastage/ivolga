@@ -3,8 +3,8 @@
  */
 
 import '../../styles/layouts/ProductsCardSettings.scss';
+import FilterButton from '../../ui/buttons/FilterButton';
 import AnimatedPage from '../../utils/AnimatedPage';
-import FilterButton from '../FilterButton';
 
 const ProductsCardList = ({
   title,
@@ -13,6 +13,7 @@ const ProductsCardList = ({
   handleFilterChange,
   resetFilter,
   filtersActivated,
+  itemsPerRow,
 }) => {
   return (
     <div className='container'>
@@ -33,7 +34,7 @@ const ProductsCardList = ({
       </div>
       <AnimatedPage>
         <div className='products-card-container__content'>
-          <ul className='products-card-list'>{children}</ul>
+          <ul className={`products-card-list products-card-list--${itemsPerRow}`}>{children}</ul>
         </div>
       </AnimatedPage>
     </div>

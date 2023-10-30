@@ -4,6 +4,7 @@
 
 import { useEffect, useState } from 'react';
 import '../../styles/components/Filter.scss';
+import CloseButton from '../../ui/buttons/CloseButton';
 
 const Filter = ({
   filterActive,
@@ -58,13 +59,7 @@ const Filter = ({
       onClick={() => setFilterActive(false)}>
       <div className='modal-top-content' onClick={(e) => e.stopPropagation()}>
         <div className='modal-top-heading'>
-          <button onClick={() => setFilterActive(false)}>
-            <img
-              src='/assets/img/icons/close.svg'
-              alt='close'
-              className='modal-top-heading__button'
-            />
-          </button>
+          <CloseButton onClick={() => setFilterActive(false)} />
         </div>
 
         <div className='filter-modal-content'>

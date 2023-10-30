@@ -4,6 +4,7 @@
 
 import { useEffect } from 'react';
 import '../../styles/components/SizeGuide.scss';
+import CloseButton from '../../ui/buttons/CloseButton';
 
 const SizeGuide = ({ sizeGuideActive, setSizeGuideActive }) => {
   useEffect(() => {
@@ -21,13 +22,7 @@ const SizeGuide = ({ sizeGuideActive, setSizeGuideActive }) => {
       <div className='modal-right-content' onClick={(e) => e.stopPropagation()}>
         <div className='modal-right-heading'>
           <p>Гид по размерам</p>
-          <button onClick={() => setSizeGuideActive(false)}>
-            <img
-              src='/assets/img/icons/close.svg'
-              alt='close'
-              className='modal-right-heading__button'
-            />
-          </button>
+          <CloseButton onClick={() => setSizeGuideActive(false)} />
         </div>
 
         <div className='sizeGuide-modal-content'>

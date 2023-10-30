@@ -2,13 +2,13 @@
  * Страница конкретного продукта, строится на основе шаблона ProductLayout
  */
 
-import AnimatedPage from '../../utils/AnimatedPage';
 import Footer from '../../components/Footer';
 import ProductCard from '../../layouts/ProductCard';
 import ProductLayout from '../../layouts/ProductLayout';
 import ProductsCardList from '../../layouts/ProductsCardList';
 import RelevantLooks from '../../layouts/RelevantLooks';
 import '../../styles/pages/Product.scss';
+import AnimatedPage from '../../utils/AnimatedPage';
 
 const Product = () => {
   return (
@@ -31,6 +31,7 @@ const Product = () => {
           <ProductsCardList
             title={'Бестселлеры'}
             filterButton={false}
+            itemsPerRow={4}
             children={[
               <ProductCard
                 size='big'

@@ -1,5 +1,5 @@
 @import '../global/settings';
-@import "../variables";
+@import '../variables';
 
 //Modal top
 
@@ -13,13 +13,13 @@
   top: 109px;
   right: 0;
   pointer-events: none;
-  transition: background-color 1.9s ease-in-out;
+  transition: background-color 0.9s ease-in-out;
 
   &.active {
     background-color: rgba(0, 0, 0, 0.4);
     pointer-events: all;
     z-index: 9999;
-    transition: background-color 1.9s ease-in-out;
+    transition: background-color 0.9s ease-in-out;
 
     .modal-top-content {
       top: 109px;
@@ -46,11 +46,4 @@
   padding: 40px 58px 0;
   display: flex;
   justify-content: flex-end;
-}
-
-.modal-top-heading__button {
-  display: flex;
-  padding: 10px;
-  border: 1px solid $border-grey;
-  align-items: center;
 }

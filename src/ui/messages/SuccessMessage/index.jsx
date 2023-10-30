@@ -1,3 +1,7 @@
+/**
+ * Сообщение об успешном сохранении
+ */
+
 import React from 'react';
 import AnimatedPage from '../../../utils/AnimatedPage';
 
