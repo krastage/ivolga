@@ -130,15 +130,15 @@ const Checkout = () => {
               <ul className='order-info__list'>
                 <li className='order-info__item'>
                   <p>2 товара</p>
-                  <p>50 000 ₽</p>
+                  <p>50 000&nbsp;₽</p>
                 </li>
                 <li className='order-info__item'>
                   <p>Доставка</p>
-                  <p>570 ₽</p>
+                  <p>570&nbsp;₽</p>
                 </li>
                 <li className='order-info__item'>
                   <p>Итого</p>
-                  <p>50 570 ₽</p>
+                  <p>50 570&nbsp;₽</p>
                 </li>
               </ul>
             </div>

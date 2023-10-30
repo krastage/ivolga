@@ -15,7 +15,7 @@ const Orders = () => {
           <ul className='orders-list'>
             <li className='orders-item'>
               <p>#00004</p>
-              <p>5 000 ₽</p>
+              <p>5 000&nbsp;₽</p>
               <p>24.09.2022</p>
               <Link to={'/profile/orders/order'}
                     className='primary-button'>
@@ -24,7 +24,7 @@ const Orders = () => {
             </li>
             <li className='orders-item'>
               <p>#00004</p>
-              <p>5 000 ₽</p>
+              <p>5 000&nbsp;₽</p>
               <p>24.09.2022</p>
               <Link to={'/profile/orders/order'}
                     className='primary-button'>
@@ -33,7 +33,7 @@ const Orders = () => {
             </li>
             <li className='orders-item'>
               <p>#00004</p>
-              <p>5 000 ₽</p>
+              <p>5 000&nbsp;₽</p>
               <p>24.09.2022</p>
               <Link to={'/profile/orders/order'}
                     className='primary-button'>

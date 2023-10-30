@@ -89,7 +89,7 @@ const ProductLayout = ({ imgSource, configTitle, price, detailButtonTitle, size,
       <div className='product-config'>
         <div className='product-config__head'>
           <p className='product-config__title'>{configTitle}</p>
-          <p>{price} ₽</p>
+          <p>{price}&nbsp;₽</p>
         </div>
         <div className='product-config__params'>
           <div>

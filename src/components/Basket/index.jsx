@@ -34,11 +34,11 @@ const Basket = ({ basketActive, setBasketActive }) => {
           <ul className='basket-modal-order__list'>
             <li className='basket-modal-order__item'>
               <p>2 товара</p>
-              <p>50 000 ₽</p>
+              <p>50 000&nbsp;₽</p>
             </li>
             <li className='basket-modal-order__item'>
               <p>Итого</p>
-              <p>50 570 ₽</p>
+              <p>50 570&nbsp;₽</p>
             </li>
           </ul>
 
