@@ -8,6 +8,23 @@
   gap: 20px;
 }
 
+.basket-container {
+  & .products-card-list {
+    &--2 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  & .products-card {
+    &--medium {
+      flex-grow: 1;
+      max-width: 50%;
+    }
+  }
+}
+
 .basket-modal-order__title {
   padding-bottom: 10px;
   border-bottom: $border-grey 1px solid;

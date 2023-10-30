@@ -22,7 +22,7 @@ const Basket = ({ basketActive, setBasketActive }) => {
     <div
       className={basketActive ? 'modal-right active' : 'modal-right'}
       onClick={() => setBasketActive(false)}>
-      <div className='modal-right-content' onClick={(e) => e.stopPropagation()}>
+      <div className='modal-right-content basket-container' onClick={(e) => e.stopPropagation()}>
         <div className='modal-right-heading'>
           <p>Корзина</p>
           <CloseButton onClick={() => setBasketActive(false)} />

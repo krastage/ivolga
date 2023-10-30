@@ -184,6 +184,25 @@ Order
   gap: 30px;
   flex-wrap: wrap;
   margin-bottom: 60px;
+
+  & .products-card-list {
+    &--2 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  & .products-card {
+    &--medium {
+      flex-grow: 1;
+      max-width: 50%;
+    }
+  }
+
+  & .container {
+    width: 100%;
+  }
 }
 
 //Checkout result
