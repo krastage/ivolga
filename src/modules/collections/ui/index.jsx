@@ -5,8 +5,8 @@
 import '../../../styles/pages/Collections.scss';
 import AnimatedPage from '../../../utils/AnimatedPage';
 import Footer from '../../footer/ui';
-import CollectionsElement from './components/collection';
-import CollectionsList from './components/list';
+import CollectionsElement from '../../ud-ui/layouts/collections/collection';
+import CollectionsList from '../../ud-ui/layouts/collections/collections-list';
 
 const Collections = () => {
   return (

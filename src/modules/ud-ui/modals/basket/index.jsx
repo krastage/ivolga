@@ -4,11 +4,10 @@
 
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../../../styles/components/Basket.scss';
-import CloseButton from '../../../ui/buttons/CloseButton';
-import ProductCard from '../../products/ui/components/product-card';
-import ProductsCardList
-  from '../../products/ui/components/product-card/components/list';
+import '../../../../styles/components/Basket.scss';
+import CloseButton from '../../../../ui/buttons/CloseButton';
+import ProductCard from '../../layouts/products/product-card';
+import ProductsCardList from '../../layouts/products/product-card-list';
 
 const Basket = ({ basketActive, setBasketActive }) => {
   useEffect(() => {

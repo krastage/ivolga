@@ -5,7 +5,7 @@
 import { useState } from 'react';
 import '../../../../../styles/layouts/ProductLayout.scss';
 import PrimaryButtonActive from '../../../../../ui/buttons/PrimaryButtonActive';
-import SizeGuide from '../../../../popup/SizeGuide';
+import SizeGuide from '../../../modals/size-guide';
 
 const ProductLayout = ({ imgSource, configTitle, price, detailButtonTitle, size, colors }) => {
   const [sizeGuideActive, setSizeGuideActive] = useState(false);

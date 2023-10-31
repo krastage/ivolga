@@ -2,9 +2,9 @@
  * Шаблон списка карточек товаров
  */
 
-import '../../../../../../../styles/layouts/ProductsCardSettings.scss';
-import FilterButton from '../../../../../../../ui/buttons/FilterButton';
-import AnimatedPage from '../../../../../../../utils/AnimatedPage';
+import '../../../../../styles/layouts/ProductsCardSettings.scss';
+import FilterButton from '../../../../../ui/buttons/FilterButton';
+import AnimatedPage from '../../../../../utils/AnimatedPage';
 
 const ProductsCardList = ({
   title,

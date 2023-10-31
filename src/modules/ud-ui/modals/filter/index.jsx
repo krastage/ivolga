@@ -3,8 +3,8 @@
  */
 
 import { useEffect, useState } from 'react';
-import '../../../styles/components/Filter.scss';
-import CloseButton from '../../../ui/buttons/CloseButton';
+import '../../../../styles/components/Filter.scss';
+import CloseButton from '../../../../ui/buttons/CloseButton';
 
 const Filter = ({
   filterActive,
@@ -19,14 +19,14 @@ const Filter = ({
   const handleButtonClick = (index) => {
     if (activeFilterIndex === index) {
       setActiveFilterIndex(null);
-      resetFilter();
-      resetActiveButtons();
-      resetFilterAndActiveButtons();
-      return;
+      removeActiveButton(index);
+      handleFilterChange(index);
     }
-    setActiveFilterIndex(index);
-    handleFilterChange(index);
-    addActiveButtons(index);
+    else {
+      handleFilterChange(index);
+      addActiveButtons(index);
+      setActiveFilterIndex(index);
+    }
   };
 
   const addActiveButtons = (index) => {
@@ -38,6 +38,11 @@ const Filter = ({
     });
   };
 
+  const removeActiveButton = (index) => {
+    setActiveButtons((prevActiveButtons) => {
+      return prevActiveButtons.filter((item) => item !== index);
+    });
+  };
   const resetActiveButtons = () => {
     setActiveButtons([]);
   };
@@ -57,7 +62,8 @@ const Filter = ({
     <div
       className={filterActive ? 'modal-top active' : 'modal-top'}
       onClick={() => setFilterActive(false)}>
-      <div className='modal-top-content' onClick={(e) => e.stopPropagation()}>
+      <div className='modal-top-content'
+           onClick={(e) => e.stopPropagation()}>
         <div className='modal-top-heading'>
           <CloseButton onClick={() => setFilterActive(false)} />
         </div>
@@ -96,7 +102,7 @@ const Filter = ({
                 className={`filter-modal-content__button ${
                   activeFilterIndex === 3 ? 'active' : ''
                 } ${activeButtons.includes(3) ? 'active' : ''}`}
-                onClick={() => handleFilterChange(3)}>
+                onClick={() => handleButtonClick(3)}>
                 Жилеты
               </button>
             </li>
@@ -105,7 +111,7 @@ const Filter = ({
                 className={`filter-modal-content__button ${
                   activeFilterIndex === 4 ? 'active' : ''
                 } ${activeButtons.includes(4) ? 'active' : ''}`}
-                onClick={() => handleFilterChange(4)}>
+                onClick={() => handleButtonClick(4)}>
                 Брюки
               </button>
             </li>
@@ -125,7 +131,7 @@ const Filter = ({
                 className={`filter-modal-content__button ${
                   activeFilterIndex === 5 ? 'active' : ''
                 } ${activeButtons.includes(5) ? 'active' : ''}`}
-                onClick={() => handleFilterChange(5)}>
+                onClick={() => handleButtonClick(5)}>
                 Лонгсливы
               </button>
             </li>
@@ -134,7 +140,7 @@ const Filter = ({
                 className={`filter-modal-content__button ${
                   activeFilterIndex === 6 ? 'active' : ''
                 } ${activeButtons.includes(6) ? 'active' : ''}`}
-                onClick={() => handleFilterChange(6)}>
+                onClick={() => handleButtonClick(6)}>
                 Шорты
               </button>
             </li>
@@ -143,7 +149,7 @@ const Filter = ({
                 className={`filter-modal-content__button ${
                   activeFilterIndex === 7 ? 'active' : ''
                 } ${activeButtons.includes(7) ? 'active' : ''}`}
-                onClick={() => handleFilterChange(7)}>
+                onClick={() => handleButtonClick(7)}>
                 Сумки
               </button>
             </li>
@@ -152,7 +158,7 @@ const Filter = ({
                 className={`filter-modal-content__button ${
                   activeFilterIndex === 8 ? 'active' : ''
                 } ${activeButtons.includes(8) ? 'active' : ''}`}
-                onClick={() => handleFilterChange(8)}>
+                onClick={() => handleButtonClick(8)}>
                 Аксессуары
               </button>
             </li>

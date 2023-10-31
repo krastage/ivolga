@@ -5,10 +5,10 @@
 import '../../../styles/pages/Product.scss';
 import AnimatedPage from '../../../utils/AnimatedPage';
 import Footer from '../../footer/ui';
-import RelevantLooks from '../../looks/ui/components/relevant-looks';
-import ProductLayout from './components/product';
-import ProductCard from './components/product-card';
-import ProductsCardList from './components/product-card/components/list';
+import RelevantLooks from '../../ud-ui/layouts/looks/relevant-looks';
+import ProductLayout from '../../ud-ui/layouts/products/product';
+import ProductCard from '../../ud-ui/layouts/products/product-card';
+import ProductsCardList from '../../ud-ui/layouts/products/product-card-list';
 
 const Product = () => {
   return (

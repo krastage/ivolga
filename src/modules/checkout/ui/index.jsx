@@ -10,9 +10,8 @@ import PrimaryButton from '../../../ui/buttons/PrimaryButton';
 import CheckboxInput from '../../../ui/inputs/checkbox/CheckboxInput';
 import AnimatedPage from '../../../utils/AnimatedPage';
 import Footer from '../../footer/ui';
-import ProductCard from '../../products/ui/components/product-card';
-import ProductsCardList
-  from '../../products/ui/components/product-card/components/list';
+import ProductCard from '../../ud-ui/layouts/products/product-card';
+import ProductsCardList from '../../ud-ui/layouts/products/product-card-list';
 import AddressAndShipping from './components/address-and-shipping';
 import PaymentCheckout from './components/payment';
 import Recipient from './components/recipient';

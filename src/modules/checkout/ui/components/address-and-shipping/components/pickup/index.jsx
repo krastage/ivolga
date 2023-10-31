@@ -5,7 +5,7 @@
 import React, { useState } from 'react';
 import PrimaryButton from '../../../../../../../ui/buttons/PrimaryButton';
 import AnimatedPage from '../../../../../../../utils/AnimatedPage';
-import AddressChange from '../../../../../../popup/AddressChange';
+import AddressChange from '../../../../../../ud-ui/modals/address-change';
 
 const PickupShipping = () => {
   const [isAddressChangeActive, setIsAddressChangeActive] = useState(false);

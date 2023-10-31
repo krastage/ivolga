@@ -4,11 +4,11 @@
 
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import '../../../../styles/components/Auth.scss';
-import AuthorizedModal from '../AuthorizedModal';
-import LoginModal from '../LoginModal';
-import PhoneInputModal from '../PhoneInputModal';
-import VerificationModal from '../VerificationModal';
+import '../../../../../styles/components/Auth.scss';
+import AuthorizedModal from './components/authorized';
+import LoginModal from './components/login';
+import PhoneInputModal from './components/phone';
+import VerificationModal from './components/verification';
 
 const Auth = ({ authActive, setAuthActive }) => {
   const [isAuthorized, setIsAuthorized] = useState(false);

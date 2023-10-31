@@ -3,9 +3,9 @@
  */
 
 import AnimatedPage from '../../../../../utils/AnimatedPage';
-import ProductCard from '../../../../products/ui/components/product-card';
+import ProductCard from '../../../../ud-ui/layouts/products/product-card';
 import ProductsCardList
-  from '../../../../products/ui/components/product-card/components/list';
+  from '../../../../ud-ui/layouts/products/product-card-list';
 import ProfileLayout from '../../index';
 
 const Wishlist = () => {

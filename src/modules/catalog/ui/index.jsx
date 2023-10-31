@@ -7,9 +7,8 @@ import '../../../styles/global/_settings.scss';
 import '../../../styles/pages/Catalog.scss';
 import AnimatedPage from '../../../utils/AnimatedPage';
 import Footer from '../../footer/ui';
-import ProductCard from '../../products/ui/components/product-card';
-import ProductsCardList
-  from '../../products/ui/components/product-card/components/list';
+import ProductCard from '../../ud-ui/layouts/products/product-card';
+import ProductsCardList from '../../ud-ui/layouts/products/product-card-list';
 
 const Catalog = () => {
   const [selectedTypes, setSelectedTypes] = useState([]);

@@ -6,9 +6,9 @@ import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import '../../../styles/components/Navigation.scss';
 import '../../../styles/global/_settings.scss';
-import Auth from '../../popup/auth/Auth';
-import Basket from '../../popup/Basket';
-import Search from '../../popup/Search';
+import Auth from '../../ud-ui/modals/auth/ui';
+import Basket from '../../ud-ui/modals/basket';
+import Search from '../../ud-ui/modals/search';
 
 const NavigationItem = ({ to, location, label }) => {
   return (

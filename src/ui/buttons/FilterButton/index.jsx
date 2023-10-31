@@ -5,7 +5,7 @@
  */
 
 import { useState } from 'react';
-import Filter from '../../../modules/popup/Filter';
+import Filter from '../../../modules/ud-ui/modals/filter';
 
 const FilterButton = ({ filterButton, handleFilterChange, resetFilter, filtersActivated }) => {
   const [filterActive, setFilterActive] = useState(false);

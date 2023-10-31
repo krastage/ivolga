@@ -5,9 +5,9 @@
 import '../../../../../styles/pages/Broadcasts/Broadcast.scss';
 import AnimatedPage from '../../../../../utils/AnimatedPage';
 import Footer from '../../../../footer/ui';
-import ProductCard from '../../../../products/ui/components/product-card';
+import ProductCard from '../../../../ud-ui/layouts/products/product-card';
 import ProductsCardList
-  from '../../../../products/ui/components/product-card/components/list';
+  from '../../../../ud-ui/layouts/products/product-card-list';
 
 const Broadcast = () => {
   return (
@@ -16,7 +16,9 @@ const Broadcast = () => {
         <main className='broadcast-content container'>
           <div className='broadcast'>
             <div className='broadcast-poster'>
-              <img src='/assets/img/broadcast/broadcast1.png' alt='' className='broadcast-video' />
+              <img src='/assets/img/broadcast/broadcast1.png'
+                   alt=''
+                   className='broadcast-video' />
               <div className='broadcast-elements'>
                 <p className='broadcast-state'>Запись</p>
                 <article className='broadcast-article'>
@@ -24,7 +26,8 @@ const Broadcast = () => {
                   <p>23 Июля</p>
                 </article>
                 <div className='broadcast-tools'>
-                  <img src='/assets/img/icons/line-translation.png' alt='' />
+                  <img src='/assets/img/icons/line-translation.png'
+                       alt='' />
                   <p>02:14 / 10:17</p>
                 </div>
               </div>

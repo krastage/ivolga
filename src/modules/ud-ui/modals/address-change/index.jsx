@@ -4,11 +4,12 @@
 
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import '../../../styles/modals/AddressModal.scss';
-import CloseButton from '../../../ui/buttons/CloseButton';
-import SearchButton from '../../../ui/buttons/SearchButton';
-import SearchInputBlack from '../../../ui/inputs/search/SearchInputBlack';
-import Select from '../../../ui/inputs/select/Select';
+import '../../../../styles/modals/AddressModal.scss';
+import CloseButton from '../../../../ui/buttons/CloseButton';
+import PrimaryButton from '../../../../ui/buttons/PrimaryButton';
+import SearchButton from '../../../../ui/buttons/SearchButton';
+import SearchInputBlack from '../../../../ui/inputs/search/SearchInputBlack';
+import Select from '../../../../ui/inputs/select/Select';
 
 const AddressChange = ({ isAddressChangeActive, setIsAddressChangeActive }) => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -56,7 +57,35 @@ const AddressChange = ({ isAddressChangeActive, setIsAddressChangeActive }) => {
               <h2>Адреса пунктов</h2>
               <div className='search-container'>
                 <SearchInputBlack placeholder={'Поиск по адресу'} />
-                <SearchButton color={'white'}/>
+                <SearchButton color={'white'} />
+              </div>
+            </div>
+
+            <div className='address-content__list'>
+              <div className='pickup-shipping'>
+                <div className='pickup-shipping__title'>
+                  <p>СДЭК</p>
+                  <p className='pickup-shipping__title-address'>
+                    Шоу-рум Fable, Дизайн-завод Флакон, Большая Новодмитровская
+                    ул.,
+                    36
+                  </p>
+                </div>
+                <PrimaryButton
+                  type={'button'}
+                  label={'Привезти сюда'}
+                />
+              </div>
+
+              <div className='pickup-shipping'>
+                <div className='pickup-shipping__title'>
+                  <p>СДЭК</p>
+                  <p className='pickup-shipping__title-address'>
+                    Шоу-рум Fable, Дизайн-завод Флакон, Большая Новодмитровская
+                    ул.,
+                    36
+                  </p>
+                </div>
               </div>
             </div>
 

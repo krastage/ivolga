@@ -5,10 +5,10 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-import BackButton from '../../../../ui/buttons/BackButton';
-import CloseButton from '../../../../ui/buttons/CloseButton';
-import PrimaryButton from '../../../../ui/buttons/PrimaryButton';
-import CodeInput from '../../../../ui/inputs/number/CodeInput';
+import BackButton from '../../../../../../../ui/buttons/BackButton';
+import CloseButton from '../../../../../../../ui/buttons/CloseButton';
+import PrimaryButton from '../../../../../../../ui/buttons/PrimaryButton';
+import CodeInput from '../../../../../../../ui/inputs/number/CodeInput';
 
 const VerificationModal = ({
   authActive,
