@@ -3,7 +3,7 @@
  */
 
 import { Link } from 'react-router-dom';
-import ProfileLayout from '../../../../../ui/layouts/ProfileLayout';
+import ProfileLayout from '../../index';
 import AnimatedPage from '../../../../../utils/AnimatedPage';
 
 const Orders = () => {

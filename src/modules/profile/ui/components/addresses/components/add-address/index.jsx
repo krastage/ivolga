@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-import ProfileLayout from '../../../../../../../ui/layouts/ProfileLayout';
+import ProfileLayout from '../../../../index';
 import PrimaryButton from '../../../../../../../ui/buttons/PrimaryButton';
 import Select from '../../../../../../../ui/inputs/select/Select';
 import MultiInput from '../../../../../../../ui/inputs/text/MultiInput';

@@ -2,11 +2,11 @@
  * Страница "Коллекции"
  */
 
-import AnimatedPage from '../../../utils/AnimatedPage';
-import Footer from '../../../ui/layouts/Footer';
-import CollectionsElement from '../../../ui/layouts/CollectionsElement';
-import CollectionsList from '../../../ui/layouts/CollectionsList';
 import '../../../styles/pages/Collections.scss';
+import AnimatedPage from '../../../utils/AnimatedPage';
+import Footer from '../../footer/ui';
+import CollectionsElement from './components/collection';
+import CollectionsList from './components/list';
 
 const Collections = () => {
   return (

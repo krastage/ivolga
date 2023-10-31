@@ -5,16 +5,17 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-import AddressAndShipping from '../../../ui/layouts/CheckoutDetails/AddressAndShipping/AddressAndShipping';
-import PaymentCheckout from '../../../ui/layouts/CheckoutDetails/PaymentCheckout';
-import Recipient from '../../../ui/layouts/CheckoutDetails/Recipient';
-import Footer from '../../../ui/layouts/Footer';
-import ProductCard from '../../../ui/layouts/ProductCard';
-import ProductsCardList from '../../../ui/layouts/ProductsCardList';
 import '../../../styles/pages/Checkout.scss';
 import PrimaryButton from '../../../ui/buttons/PrimaryButton';
 import CheckboxInput from '../../../ui/inputs/checkbox/CheckboxInput';
 import AnimatedPage from '../../../utils/AnimatedPage';
+import Footer from '../../footer/ui';
+import ProductCard from '../../products/ui/components/product-card';
+import ProductsCardList
+  from '../../products/ui/components/product-card/components/list';
+import AddressAndShipping from './components/address-and-shipping';
+import PaymentCheckout from './components/payment';
+import Recipient from './components/recipient';
 
 const Checkout = () => {
   const [showAddressAndShipping, setShowAddressAndShipping] = useState(true);

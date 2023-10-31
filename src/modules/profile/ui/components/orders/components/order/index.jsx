@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import ProductCard from '../../../../../../../ui/layouts/ProductCard';
-import ProfileLayout from '../../../../../../../ui/layouts/ProfileLayout';
 import AnimatedPage from '../../../../../../../utils/AnimatedPage';
+import ProductCard from '../../../../../../products/ui/components/product-card';
+import ProfileLayout from '../../../../index';
 
 const Order = () => {
   const content = (

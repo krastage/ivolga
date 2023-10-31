@@ -3,12 +3,13 @@
  */
 
 import { Link } from 'react-router-dom';
-import Footer from '../../../ui/layouts/Footer';
-import ProductCard from '../../../ui/layouts/ProductCard';
-import ProductsCardList from '../../../ui/layouts/ProductsCardList';
 import '../../../styles/global/_settings.scss';
 import '../../../styles/pages/Home.scss';
 import AnimatedPage from '../../../utils/AnimatedPage';
+import Footer from '../../footer/ui';
+import ProductCard from '../../products/ui/components/product-card';
+import ProductsCardList
+  from '../../products/ui/components/product-card/components/list';
 
 const Home = () => {
   return (

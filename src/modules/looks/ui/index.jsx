@@ -2,12 +2,13 @@
  * Страница "Образы"
  */
 
-import Footer from '../../../ui/layouts/Footer';
-import ProductCard from '../../../ui/layouts/ProductCard';
-import ProductsCardList from '../../../ui/layouts/ProductsCardList';
 import '../../../styles/global/_settings.scss';
 import '../../../styles/pages/Looks.scss';
 import AnimatedPage from '../../../utils/AnimatedPage';
+import Footer from '../../footer/ui';
+import ProductCard from '../../products/ui/components/product-card';
+import ProductsCardList
+  from '../../products/ui/components/product-card/components/list';
 
 const Looks = () => {
   return (

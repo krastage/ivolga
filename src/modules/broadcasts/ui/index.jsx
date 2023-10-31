@@ -4,7 +4,7 @@
 
 import { Link } from 'react-router-dom';
 import AnimatedPage from '../../../utils/AnimatedPage';
-import Footer from '../../../ui/layouts/Footer';
+import Footer from '../../footer/ui';
 import '../../../styles/pages/Broadcasts/Broadcasts.scss';
 
 const Broadcasts = () => {

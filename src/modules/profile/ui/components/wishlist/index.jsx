@@ -2,10 +2,11 @@
  * Страница подраздела профиля с информацией об избранных товарах (вишлист)
  */
 
-import ProductCard from '../../../../../ui/layouts/ProductCard';
-import ProductsCardList from '../../../../../ui/layouts/ProductsCardList';
-import ProfileLayout from '../../../../../ui/layouts/ProfileLayout';
 import AnimatedPage from '../../../../../utils/AnimatedPage';
+import ProductCard from '../../../../products/ui/components/product-card';
+import ProductsCardList
+  from '../../../../products/ui/components/product-card/components/list';
+import ProfileLayout from '../../index';
 
 const Wishlist = () => {
   const content = (

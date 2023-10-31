@@ -5,7 +5,7 @@
  */
 
 import { useState } from 'react';
-import Filter from '../../modals/Filter';
+import Filter from '../../../modules/popup/Filter';
 
 const FilterButton = ({ filterButton, handleFilterChange, resetFilter, filtersActivated }) => {
   const [filterActive, setFilterActive] = useState(false);
