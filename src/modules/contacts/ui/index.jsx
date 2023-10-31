@@ -1,42 +1,38 @@
 /**
- * Страница контактов
+ * Шаблон контактов
  */
 
-import AnimatedPage from '../../../utils/AnimatedPage';
-import ContactsLayout from '../../../ui/layouts/ContactsLayout';
+import { Link, useLocation } from 'react-router-dom';
+import '../../../styles/layouts/FAQ.scss';
 
-const Contacts = () => {
-  const content = (
-    <AnimatedPage>
-      <div className='contacts-info-container'>
-        <div className='contacts-info'>
-          <h1 className='faq-info__title'>Контакты</h1>
-          <ul className='faq-info__contacts'>
-            <li>
-              <div className='faq-info__contact'>
-                <p>Пресса и связи с общественностью</p>
-                <p>pr@ivolga.com</p>
-              </div>
-            </li>
-            <li>
-              <div className='faq-info__contact'>
-                <p>Байерам и партнерам</p>
-                <p>sale@ivolga.com</p>
-              </div>
-            </li>
-            <li>
-              <div className='faq-info__contact'>
-                <p>Помощь покупателям и вопросы по интернет-магазину</p>
-                <p>store@ivolga.com</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+const ContactsLayout = ({ content }) => {
+  const location = useLocation();
+
+  const LinkItem = ({ to, location, label }) => {
+    return (
+      <li>
+        <Link to={to} className={location.pathname === to ? 'faq-link-active' : 'faq-link'}>
+          {label}
+        </Link>
+      </li>
+    );
+  };
+
+  return (
+    <main className='faq container'>
+      <div className='faq-menu'>
+        <ul className='faq-menu__links'>
+          <li>
+            <LinkItem to='/contacts' label='Связаться с нами' location={location} />
+          </li>
+          <li>
+            <LinkItem to='/contacts/stores' label='Адреса магазинов' location={location} />
+          </li>
+        </ul>
       </div>
-    </AnimatedPage>
+      {content}
+    </main>
   );
-
-  return <ContactsLayout content={content} />;
 };
 
-export default Contacts;
+export default ContactsLayout;
