@@ -27,20 +27,9 @@
   color: $text-grey;
   font-size: 16px;
   transition: color 0.9s;
-
-  &:hover {
+  &.active {
+    @extend .filter-modal-content__button;
     color: $text-black;
-    transition: color 0.9s;
-  }
-}
-
-.filter-modal-content__button.active {
-  @extend .filter-modal-content__button;
-  color: $text-black;
-  transition: color 0.9s;
-
-  &:hover {
-    color: $text-grey;
     transition: color 0.9s;
   }
 }
@@ -50,10 +39,6 @@
   color: $text-black;
   position: absolute;
   bottom: 32px;
-
-  &:hover {
-    color: $text-grey;
-  }
 
   &:disabled {
     color: $text-grey;

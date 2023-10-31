@@ -11,51 +11,31 @@ const Filter = ({
   setFilterActive,
   handleFilterChange,
   resetFilter,
-  filtersActivated,
+
 }) => {
-  const [activeFilterIndex, setActiveFilterIndex] = useState(null);
-  const [activeButtons, setActiveButtons] = useState([]);
-
-  const handleButtonClick = (index) => {
-    if (activeFilterIndex === index) {
-      setActiveFilterIndex(null);
-      removeActiveButton(index);
-      handleFilterChange(index);
-    }
-    else {
-      handleFilterChange(index);
-      addActiveButtons(index);
-      setActiveFilterIndex(index);
-    }
+  const handleButtonClick = (evt) => {
+    const target = evt.target;
+    target.classList.toggle('active');
+    const resetButton = document.querySelector('.filter-modal-content__button-reset');
+    resetButton.disabled = document.querySelectorAll('.filter-modal-content__button.active').length === 0;
+    handleFilterChange(target.dataset.index);
   };
 
-  const addActiveButtons = (index) => {
-    setActiveButtons((prevActiveButtons) => {
-      if (!prevActiveButtons.includes(index)) {
-        return [...prevActiveButtons, index];
-      }
-      return prevActiveButtons;
-    });
-  };
-
-  const removeActiveButton = (index) => {
-    setActiveButtons((prevActiveButtons) => {
-      return prevActiveButtons.filter((item) => item !== index);
-    });
-  };
   const resetActiveButtons = () => {
-    setActiveButtons([]);
+    document.querySelectorAll('.filter-modal-content__button.active').forEach(el => el.classList.remove('active'));
   };
 
   const resetFilterAndActiveButtons = () => {
+    
     resetFilter();
-    setActiveFilterIndex(null);
     resetActiveButtons();
     setFilterActive(false);
   };
 
   useEffect(() => {
     document.body.style.overflow = filterActive ? 'hidden' : '';
+    const resetButton = document.querySelector('.filter-modal-content__button-reset');
+    resetButton.disabled = document.querySelectorAll('.filter-modal-content__button.active').length === 0;
   }, [filterActive]);
 
   return (
@@ -72,54 +52,48 @@ const Filter = ({
           <ul className='filter-modal-content__list'>
             <li>
               <button
-                className={`filter-modal-content__button ${
-                  activeFilterIndex === 0 ? 'active' : ''
-                } ${activeButtons.includes(0) ? 'active' : ''}`}
-                onClick={() => handleButtonClick(0)}>
+                className={`filter-modal-content__button`}
+                onClick={handleButtonClick}
+                data-index={0}>
                 Топы
               </button>
             </li>
             <li>
               <button
-                className={`filter-modal-content__button ${
-                  activeFilterIndex === 1 ? 'active' : ''
-                } ${activeButtons.includes(1) ? 'active' : ''}`}
-                onClick={() => handleButtonClick(1)}>
+                className={`filter-modal-content__button`}
+                onClick={handleButtonClick}
+                data-index={1}>
                 Пуховики
               </button>
             </li>
             <li>
               <button
-                className={`filter-modal-content__button ${
-                  activeFilterIndex === 2 ? 'active' : ''
-                } ${activeButtons.includes(2) ? 'active' : ''}`}
-                onClick={() => handleButtonClick(2)}>
+                className={`filter-modal-content__button`}
+                onClick={handleButtonClick}
+                data-index={2}>
                 Пиджаки
               </button>
             </li>
             <li>
               <button
-                className={`filter-modal-content__button ${
-                  activeFilterIndex === 3 ? 'active' : ''
-                } ${activeButtons.includes(3) ? 'active' : ''}`}
-                onClick={() => handleButtonClick(3)}>
+                className={`filter-modal-content__button`}
+                onClick={handleButtonClick}
+                data-index={3}>
                 Жилеты
               </button>
             </li>
             <li>
               <button
-                className={`filter-modal-content__button ${
-                  activeFilterIndex === 4 ? 'active' : ''
-                } ${activeButtons.includes(4) ? 'active' : ''}`}
-                onClick={() => handleButtonClick(4)}>
+                className={`filter-modal-content__button`}
+                onClick={handleButtonClick}
+                data-index={4}>
                 Брюки
               </button>
             </li>
             <li>
               <button
                 className='filter-modal-content__button-reset'
-                onClick={resetFilterAndActiveButtons}
-                disabled={!filtersActivated}>
+                onClick={resetFilterAndActiveButtons}>
                 Сбросить фильтр
               </button>
             </li>
@@ -128,37 +102,33 @@ const Filter = ({
           <ul className='filter-modal-content__list'>
             <li>
               <button
-                className={`filter-modal-content__button ${
-                  activeFilterIndex === 5 ? 'active' : ''
-                } ${activeButtons.includes(5) ? 'active' : ''}`}
-                onClick={() => handleButtonClick(5)}>
+                className={`filter-modal-content__button`}
+                onClick={handleButtonClick}
+                data-index={5}>
                 Лонгсливы
               </button>
             </li>
             <li>
               <button
-                className={`filter-modal-content__button ${
-                  activeFilterIndex === 6 ? 'active' : ''
-                } ${activeButtons.includes(6) ? 'active' : ''}`}
-                onClick={() => handleButtonClick(6)}>
+                className={`filter-modal-content__button`}
+                onClick={handleButtonClick}
+                data-index={6}>
                 Шорты
               </button>
             </li>
             <li>
               <button
-                className={`filter-modal-content__button ${
-                  activeFilterIndex === 7 ? 'active' : ''
-                } ${activeButtons.includes(7) ? 'active' : ''}`}
-                onClick={() => handleButtonClick(7)}>
+                className={`filter-modal-content__button`}
+                onClick={handleButtonClick}
+                data-index={7}>
                 Сумки
               </button>
             </li>
             <li>
               <button
-                className={`filter-modal-content__button ${
-                  activeFilterIndex === 8 ? 'active' : ''
-                } ${activeButtons.includes(8) ? 'active' : ''}`}
-                onClick={() => handleButtonClick(8)}>
+                className={`filter-modal-content__button `}
+                onClick={handleButtonClick}
+                data-index={8}>
                 Аксессуары
               </button>
             </li>

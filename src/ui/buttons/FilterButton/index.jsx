@@ -7,7 +7,7 @@
 import { useState } from 'react';
 import Filter from '../../../modules/ud-ui/modals/filter';
 
-const FilterButton = ({ filterButton, handleFilterChange, resetFilter, filtersActivated }) => {
+const FilterButton = ({ filterButton, handleFilterChange, resetFilter }) => {
   const [filterActive, setFilterActive] = useState(false);
 
   if (filterButton === false) {
@@ -24,7 +24,6 @@ const FilterButton = ({ filterButton, handleFilterChange, resetFilter, filtersAc
         setFilterActive={setFilterActive}
         handleFilterChange={handleFilterChange}
         resetFilter={resetFilter}
-        filtersActivated={filtersActivated}
       />
     </>
   );

@@ -121,12 +121,13 @@ const Catalog = () => {
 
   const handleFilterChange = (value) => {
     setFiltersActivated(true);
-    if (selectedTypes.includes(value)) {
-      setSelectedTypes(selectedTypes.filter((type) => type !== value));
+
+    if (selectedTypes.includes(Number(value))) {
+      setSelectedTypes(selectedTypes.filter((type) => type !== Number(value)));
       setFilterActive(false);
-    } else {
-      setSelectedTypes([...selectedTypes, value]);
+      return;
     }
+    setSelectedTypes([...selectedTypes, Number(value)]);
   };
 
   const resetFilter = () => {
