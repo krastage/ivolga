@@ -3,7 +3,7 @@
  */
 
 import { useState } from 'react';
-import '../../../../../styles/layouts/ProductLayout.scss';
+import '../../../../../styles/ProductLayout.scss';
 import PrimaryButtonActive from '../../../../../ui/buttons/PrimaryButtonActive';
 import SizeGuide from '../../../modals/size-guide';
 

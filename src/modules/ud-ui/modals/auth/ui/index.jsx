@@ -4,7 +4,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import '../../../../../styles/components/Auth.scss';
+import '../../../../../styles/Auth.scss';
 import AuthorizedModal from './components/authorized';
 import LoginModal from './components/login';
 import PhoneInputModal from './components/phone';

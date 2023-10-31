@@ -2,7 +2,7 @@
  * Несуществующая страница
  */
 
-import '../../../styles/pages/PageNotFound.scss';
+import '../../../styles/PageNotFound.scss';
 import AnimatedPage from '../../../utils/AnimatedPage';
 
 const PageNotFound = () => {

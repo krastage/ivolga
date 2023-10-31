@@ -3,7 +3,7 @@
  */
 
 import { Link, useLocation } from 'react-router-dom';
-import '../../../styles/components/Footer.scss';
+import '../../../styles/Footer.scss';
 
 const Footer = () => {
   const location = useLocation();

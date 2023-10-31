@@ -4,7 +4,7 @@
 
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import '../../../../styles/modals/AddressModal.scss';
+import '../../../../styles/AddressModal.scss';
 import CloseButton from '../../../../ui/buttons/CloseButton';
 import PrimaryButton from '../../../../ui/buttons/PrimaryButton';
 import SearchButton from '../../../../ui/buttons/SearchButton';

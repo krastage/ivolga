@@ -5,7 +5,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-import '../../../styles/pages/Checkout.scss';
+import '../../../styles/Checkout.scss';
 import PrimaryButton from '../../../ui/buttons/PrimaryButton';
 import CheckboxInput from '../../../ui/inputs/checkbox/CheckboxInput';
 import AnimatedPage from '../../../utils/AnimatedPage';

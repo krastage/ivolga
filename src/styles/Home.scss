@@ -1,4 +1,4 @@
-@import '../global/settings';
+@import './settings';
 
 //Home
 
@@ -53,11 +53,11 @@
 //Body collection
 
 .body-hero {
-  background-image: url('../../../public/assets/img/products/hero1.png');
+  background-image: url('../../public/assets/img/products/hero1.png');
 }
 
 //House collection
 
 .house-hero {
-  background-image: url('../../../public/assets/img/products/hero2.png');
+  background-image: url('../../public/assets/img/products/hero2.png');
 }

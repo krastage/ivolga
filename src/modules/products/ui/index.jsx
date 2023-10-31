@@ -2,7 +2,7 @@
  * Страница конкретного продукта, строится на основе шаблона product
  */
 
-import '../../../styles/pages/Product.scss';
+import '../../../styles/Product.scss';
 import AnimatedPage from '../../../utils/AnimatedPage';
 import Footer from '../../footer/ui';
 import RelevantLooks from '../../ud-ui/layouts/looks/relevant-looks';

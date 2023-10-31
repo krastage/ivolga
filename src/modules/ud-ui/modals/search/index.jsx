@@ -5,7 +5,7 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-import '../../../../styles/components/Search.scss';
+import '../../../../styles/Search.scss';
 import CloseButton from '../../../../ui/buttons/CloseButton';
 import SearchButton from '../../../../ui/buttons/SearchButton';
 import SearchInput from '../../../../ui/inputs/search/SearchInput';

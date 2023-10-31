@@ -2,7 +2,7 @@
  * Шаблон списка коллекций
  */
 
-import '../../../../../styles/layouts/CollectionsList.scss';
+import '../../../../../styles/CollectionsList.scss';
 
 const CollectionsList = ({ title, elements }) => {
   return (

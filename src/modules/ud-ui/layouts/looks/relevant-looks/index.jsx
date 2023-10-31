@@ -2,7 +2,7 @@
  * Шаблон списка релевантных образов
  */
 
-import '../../../../../styles/layouts/RelevantLooks.scss';
+import '../../../../../styles/RelevantLooks.scss';
 
 const RelevantLooks = ({ imageSource }) => {
   return (

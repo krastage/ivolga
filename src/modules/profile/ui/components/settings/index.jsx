@@ -5,7 +5,7 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import ProfileLayout from '../../index';
-import '../../../../../styles/forms/_forms.scss';
+import '../../../../../styles/_forms.scss';
 import PrimaryButton from '../../../../../ui/buttons/PrimaryButton';
 import CheckboxInput from '../../../../../ui/inputs/checkbox/CheckboxInput';
 import DateInput from '../../../../../ui/inputs/date/DateInput';

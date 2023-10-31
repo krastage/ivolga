@@ -1,4 +1,4 @@
-@import './global/settings';
+@import './settings';
 
 //@import 'components/search';
 //@import 'components/Auth';
@@ -9,6 +9,6 @@
 //@import 'components/Footer';
 //
 //
-@import './modals/topModal';
-@import './modals/rightModal';
+@import 'topModal';
+@import 'rightModal';
 //

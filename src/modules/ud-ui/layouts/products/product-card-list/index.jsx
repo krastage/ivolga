@@ -2,7 +2,7 @@
  * Шаблон списка карточек товаров
  */
 
-import '../../../../../styles/layouts/ProductsCardSettings.scss';
+import '../../../../../styles/ProductsCardSettings.scss';
 import FilterButton from '../../../../../ui/buttons/FilterButton';
 import AnimatedPage from '../../../../../utils/AnimatedPage';
 

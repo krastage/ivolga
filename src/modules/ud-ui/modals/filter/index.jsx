@@ -3,7 +3,7 @@
  */
 
 import { useEffect, useState } from 'react';
-import '../../../../styles/components/Filter.scss';
+import '../../../../styles/Filter.scss';
 import CloseButton from '../../../../ui/buttons/CloseButton';
 
 const Filter = ({

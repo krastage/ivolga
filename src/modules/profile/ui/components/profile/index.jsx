@@ -5,7 +5,7 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import ProfileLayout from '../../index';
-import '../../../../../styles/layouts/Profile.scss';
+import '../../../../../styles/Profile.scss';
 import PrimaryButton from '../../../../../ui/buttons/PrimaryButton';
 import CheckboxInput from '../../../../../ui/inputs/checkbox/CheckboxInput';
 import SuccessMessage from '../../../../../ui/messages/SuccessMessage';

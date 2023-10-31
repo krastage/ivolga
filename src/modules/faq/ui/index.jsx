@@ -4,7 +4,7 @@
 
 import { Link, useLocation } from 'react-router-dom';
 import AnimatedPage from '../../../utils/AnimatedPage';
-import '../../../styles/layouts/FAQ.scss';
+import '../../../styles/FAQ.scss';
 
 const FAQLayout = ({ menuTitle, contentTitle, children }) => {
   const location = useLocation();

@@ -2,7 +2,7 @@
  *  Страница прямого эфира
  */
 
-import '../../../../../styles/pages/Broadcasts/Broadcast.scss';
+import '../../../../../styles/Broadcast.scss';
 import AnimatedPage from '../../../../../utils/AnimatedPage';
 import Footer from '../../../../footer/ui';
 import ProductCard from '../../../../ud-ui/layouts/products/product-card';

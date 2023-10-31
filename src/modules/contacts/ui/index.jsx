@@ -3,7 +3,7 @@
  */
 
 import { Link, useLocation } from 'react-router-dom';
-import '../../../styles/layouts/FAQ.scss';
+import '../../../styles/FAQ.scss';
 
 const ContactsLayout = ({ content }) => {
   const location = useLocation();

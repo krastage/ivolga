@@ -2,7 +2,7 @@
  * Страница одной коллекции
  */
 
-import '../../../../../../styles/pages/Collection.scss';
+import '../../../../../../styles/Collection.scss';
 import AnimatedPage from '../../../../../../utils/AnimatedPage';
 import Footer from '../../../../../footer/ui';
 import CollectionsElement from '../../../../../ud-ui/layouts/collections/collection';

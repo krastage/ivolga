@@ -3,7 +3,7 @@
  */
 
 import { useEffect } from 'react';
-import '../../../../styles/modals/SizeGuide.scss';
+import '../../../../styles/SizeGuide.scss';
 import CloseButton from '../../../../ui/buttons/CloseButton';
 
 const SizeGuide = ({ sizeGuideActive, setSizeGuideActive }) => {

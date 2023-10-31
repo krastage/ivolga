@@ -3,8 +3,8 @@
  */
 
 import { useState } from 'react';
-import '../../../styles/global/_settings.scss';
-import '../../../styles/pages/Catalog.scss';
+import '../../../styles/_settings.scss';
+import '../../../styles/Catalog.scss';
 import AnimatedPage from '../../../utils/AnimatedPage';
 import Footer from '../../footer/ui';
 import ProductCard from '../../ud-ui/layouts/products/product-card';

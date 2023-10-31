@@ -3,7 +3,7 @@
  */
 
 import { Link } from 'react-router-dom';
-import '../../../../../styles/layouts/ProductsCardSettings.scss';
+import '../../../../../styles/ProductsCardSettings.scss';
 
 const ProductCard = ({ size, link, imageSource, price, title, type }) => {
   const cardStyles = {
