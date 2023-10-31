@@ -64,7 +64,7 @@ const AddressAndShipping = () => {
                     </p>
                   </div>
                   <div className='delivery-header__price'>
-                    <p>500 ₽</p>
+                    <p>500&nbsp;₽</p>
                   </div>
                 </button>
               </div>

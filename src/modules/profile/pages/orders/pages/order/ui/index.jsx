@@ -28,11 +28,11 @@ const Order = () => {
           <ul className='orders-details-list'>
             <li className='orders-detail'>
               <p>Стоимость доставки</p>
-              <p>0 ₽</p>
+              <p>0&nbsp;₽</p>
             </li>
             <li className='orders-detail'>
               <p>Итого</p>
-              <p>10 000 ₽</p>
+              <p>10 000&nbsp;₽</p>
             </li>
             <li className='orders-detail'>
               <p>Статус заказа</p>

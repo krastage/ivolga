@@ -45,7 +45,7 @@ const ProductCard = ({ size, link, imageSource, price, title, type }) => {
         <img src={imageSource} alt='product' />
         <div className={titleClassName} type={productType}>
           <p className='products-card-title__product'>{title}</p>
-          <p className='products-card-title__price'>{price} ₽</p>
+          <p className='products-card-title__price'>{price}&nbsp;₽</p>
         </div>
       </Link>
       <div className='products-card__colors'>
