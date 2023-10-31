@@ -12,14 +12,14 @@
   background-color: $background-white;
   user-select: none;
   transition:
-    border 0.7s,
-    color 0.7s;
+    border 0.9s,
+    color 0.9s;
 
   &:hover {
     border: 1px solid $border-black;
     transition:
-      border 0.7s,
-      color 0.7s;
+      border 0.9s,
+      color 0.9s;
   }
 
   &:disabled {
@@ -27,8 +27,8 @@
     background-color: $background-white;
     cursor: auto;
     transition:
-      border 0.7s,
-      color 0.7s;
+      border 0.9s,
+      color 0.9s;
   }
 }
 
@@ -51,20 +51,20 @@
   align-items: center;
   gap: 8px;
   font-size: 16px;
-  transition: color 1.5s;
+  transition: color 0.9s;
 
   & p,
   & img {
     color: $text-black;
     stroke: $text-black;
-    transition: color 1.5s;
+    transition: color 0.9s;
   }
 
   & p:hover,
   & img:hover {
     color: $text-grey;
     stroke: $text-grey;
-    transition: color 1.5s;
+    transition: color 0.9s;
   }
 }
 
@@ -72,11 +72,11 @@
 
 .filter-button h1 {
   color: $text-black;
-  transition: color 1.5s;
+  transition: color 0.9s;
 
   &:hover {
     color: $text-grey;
-    transition: color 1.5s;
+    transition: color 0.9s;
   }
 }
 
@@ -87,7 +87,7 @@
   top: 0;
   right: 0;
   padding-top: 30px;
-  transition: color 0.5s;
+  transition: color 0.9s;
 }
 
 //Close
@@ -98,14 +98,14 @@
   border: 1px solid $border-grey;
   align-items: center;
   transition:
-    border 0.7s,
-    color 0.7s;
+    border 0.9s,
+    color 0.9s;
 
   &:hover {
     border: 1px solid $border-black;
     transition:
-      border 0.7s,
-      color 0.7s;
+      border 0.9s,
+      color 0.9s;
   }
 }
 

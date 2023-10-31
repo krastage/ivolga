@@ -54,7 +54,7 @@ Config
   gap: 10px;
   width: 100%;
   outline: 1px $border-black solid;
-  transition: 0.7s background-color ease-in-out;
+  transition: 0.9s background-color ease-in-out;
 
   & p {
     color: $text-black;
@@ -62,7 +62,7 @@ Config
 
   &:hover {
     background-color: $border-grey;
-    transition: 0.7s background-color ease-in-out;
+    transition: 0.9s background-color ease-in-out;
   }
 }
 

@@ -31,7 +31,7 @@
   align-self: stretch;
   border: 1px solid $border-grey;
   background: $background-white;
-  transition: border 0.7s;
+  transition: border 0.9s;
 }
 
 .input-error {
@@ -39,7 +39,7 @@
   background: $background-white !important;
   color: $error !important;
   outline: none !important;
-  transition: border 0.7s;
+  transition: border 0.9s;
 }
 
 .input-label {
@@ -56,7 +56,7 @@
   border: 1px solid $border-grey;
   background: $background-white;
   outline: none !important;
-  transition: border 0.7s;
+  transition: border 0.9s;
 }
 
 .textarea-input {
@@ -69,7 +69,7 @@
   align-self: stretch;
   border: 1px solid $border-grey;
   background: $background-white;
-  transition: border 0.7s;
+  transition: border 0.9s;
 }
 
 .textarea-input-error {
@@ -77,7 +77,7 @@
   background: $background-white !important;
   color: $error !important;
   outline: none !important;
-  transition: border 0.7s;
+  transition: border 0.9s;
 }
 
 .select-input {
@@ -92,7 +92,7 @@
     center;
   appearance: none;
   outline: none;
-  transition: border 0.7s;
+  transition: border 0.9s;
 }
 
 .select-input:focus {
@@ -105,7 +105,7 @@
   background: $background-white !important;
   color: $error !important;
   outline: none !important;
-  transition: border 0.7s;
+  transition: border 0.9s;
 }
 
 .input,
@@ -118,7 +118,7 @@
   align-self: stretch;
   border: 1px solid $border-grey;
   background: $background-white;
-  transition: border 0.7s;
+  transition: border 0.9s;
 }
 
 .input-phone:focus {
@@ -151,7 +151,7 @@ input[type='checkbox'] {
   cursor: pointer;
   border: 1px solid $border-grey;
   background: $background-white;
-  transition: border 0.7s;
+  transition: border 0.9s;
 }
 
 input[type='checkbox']:checked + .checkbox-input-label::before {
@@ -230,5 +230,14 @@ input[type='radio']:checked + .radio-input-label::before {
 
   &:focus {
     outline: none;
+  }
+
+  &-black {
+    @extend .search-input;
+    color: $background-white;
+    background-color: $border-black;
+    font-size: 16px;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }

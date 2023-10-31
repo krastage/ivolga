@@ -25,12 +25,12 @@
 
 .profile-link {
   color: $text-grey;
-  transition: color 0.5s;
+  transition: color 0.9s;
 
   &-active,
   &:hover {
     color: $text-black;
-    transition: 0.5s;
+    transition: 0.9s;
   }
 }
 

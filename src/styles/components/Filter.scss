@@ -26,22 +26,22 @@
 .filter-modal-content__button {
   color: $text-grey;
   font-size: 16px;
-  transition: color 0.5s;
+  transition: color 0.9s;
 
   &:hover {
     color: $text-black;
-    transition: color 0.5s;
+    transition: color 0.9s;
   }
 }
 
 .filter-modal-content__button.active {
   @extend .filter-modal-content__button;
   color: $text-black;
-  transition: color 0.5s;
+  transition: color 0.9s;
 
   &:hover {
     color: $text-grey;
-    transition: color 0.5s;
+    transition: color 0.9s;
   }
 }
 

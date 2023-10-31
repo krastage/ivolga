@@ -5,7 +5,7 @@
  */
 
 import { useState } from 'react';
-import Filter from '../../../components/Filter';
+import Filter from '../../modals/Filter';
 
 const FilterButton = ({ filterButton, handleFilterChange, resetFilter, filtersActivated }) => {
   const [filterActive, setFilterActive] = useState(false);

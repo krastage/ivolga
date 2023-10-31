@@ -89,11 +89,11 @@
 
     .product-config__size-guide-button {
       font-size: 12px;
-      transition: color 0.5s;
+      transition: color 0.9s;
 
       &:hover {
         color: $text-grey;
-        transition: 0.5s;
+        transition: 0.9s;
       }
     }
 
@@ -104,7 +104,7 @@
       justify-content: space-between;
       border-bottom: $border-grey 1px solid;
       padding-bottom: 10px;
-      transition: color 0.5s;
+      transition: color 0.9s;
 
       & p {
         display: flex;
@@ -123,12 +123,12 @@
         align-items: center;
         border-radius: 100px;
         border: 1px solid $border-grey;
-        transition: color 0.5s;
+        transition: color 0.9s;
 
         &:hover,
         &:focus {
           border: 1px solid rgba(0, 0, 0, 0.57);
-          transition: 0.5s;
+          transition: 0.9s;
         }
       }
     }
@@ -176,7 +176,7 @@
 
         &:hover p {
           color: $text-grey;
-          transition: 0.5s;
+          transition: 0.9s;
         }
       }
     }
@@ -186,12 +186,12 @@
     .product-config-details-button__details {
       max-height: 0;
       overflow: hidden;
-      transition: 0.5s ease-in-out;
+      transition: 0.9s ease-in-out;
 
       &.active {
         display: flex;
         max-height: 294px;
-        transition: color 0.5s;
+        transition: color 0.9s;
         width: 100%;
         padding: 0 10px;
       }
