@@ -15,7 +15,6 @@ Application of women magazine.
 - JavaScript
 - React
 - Framer-motion
-- useForm
 
 ## Installation
 
