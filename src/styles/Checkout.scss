@@ -1,4 +1,4 @@
-@import './settings';
+@import 'global/settings';
 @import './forms';
 
 .checkout-content {
@@ -120,10 +120,17 @@ Config
 .pickup-shipping__title {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .pickup-shipping__title-address {
   color: $text-grey;
+
+  &-button {
+    @extend .pickup-shipping__title-address;
+    text-align: right;
+    width: 353px;
+  }
 }
 
 //Payment shipping

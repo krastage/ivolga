@@ -4,11 +4,12 @@
 
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import PrimaryButton from '../../../../../ui/buttons/PrimaryButton';
-import RadioInput from '../../../../../ui/inputs/radio/RadioInput';
-import MultiInputNotRequired from '../../../../../ui/inputs/text/MultiInputNotRequired';
-import AnimatedPage from '../../../../../utils/AnimatedPage';
-import ScrollToTop from '../../../../../utils/ScrollToTop';
+import AnimatedPage from '../../../../utils/AnimatedPage';
+import ScrollToTop from '../../../../utils/ScrollToTop';
+import PrimaryButton from '../../../../ud-ui/buttons/PrimaryButton';
+import RadioInput from '../../../../ud-ui/inputs/radio/RadioInput';
+import MultiInputNotRequired
+  from '../../../../ud-ui/inputs/text/MultiInputNotRequired';
 
 const PaymentCheckout = () => {
   const { handleSubmit } = useForm();

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import AnimatedPage from '../../../../../../utils/AnimatedPage';
+import PrimaryButton from '../../../../../../ud-ui/buttons/PrimaryButton';
+import Select from '../../../../../../ud-ui/inputs/select/Select';
+import MultiInput from '../../../../../../ud-ui/inputs/text/MultiInput';
+import TextAreaInput from '../../../../../../ud-ui/inputs/text/TextAreaInput';
+import SuccessMessage from '../../../../../../ud-ui/messages/SuccessMessage';
 import ProfileLayout from '../../../../index';
-import PrimaryButton from '../../../../../../../ui/buttons/PrimaryButton';
-import Select from '../../../../../../../ui/inputs/select/Select';
-import MultiInput from '../../../../../../../ui/inputs/text/MultiInput';
-import TextAreaInput from '../../../../../../../ui/inputs/text/TextAreaInput';
-import SuccessMessage from '../../../../../../../ui/messages/SuccessMessage';
-import AnimatedPage from '../../../../../../../utils/AnimatedPage';
 
 const AddAddress = () => {
   const [showMessage, setShowMessage] = useState(false);

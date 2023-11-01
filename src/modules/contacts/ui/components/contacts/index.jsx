@@ -2,7 +2,7 @@
  * Страница контактов
  */
 
-import AnimatedPage from '../../../../../utils/AnimatedPage';
+import AnimatedPage from '../../../../utils/AnimatedPage';
 import ContactsLayout from '../../index';
 
 const Contacts = () => {

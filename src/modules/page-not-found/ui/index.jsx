@@ -3,7 +3,7 @@
  */
 
 import '../../../styles/PageNotFound.scss';
-import AnimatedPage from '../../../utils/AnimatedPage';
+import AnimatedPage from '../../utils/AnimatedPage';
 
 const PageNotFound = () => {
   return (

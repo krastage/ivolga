@@ -5,7 +5,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import '../../../styles/Navigation.scss';
-import '../../../styles/_settings.scss';
+import '../../../styles/global/_settings.scss';
 import Auth from '../../ud-ui/modals/auth/ui';
 import Basket from '../../ud-ui/modals/basket';
 import Search from '../../ud-ui/modals/search';

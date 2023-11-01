@@ -4,8 +4,8 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import PrimaryButton from '../../../../../ui/buttons/PrimaryButton';
-import AnimatedPage from '../../../../../utils/AnimatedPage';
+import PrimaryButton from '../../../../ud-ui/buttons/PrimaryButton';
+import AnimatedPage from '../../../../utils/AnimatedPage';
 
 const UnsuccessfulCheckout = () => {
   const navigation = useNavigate();

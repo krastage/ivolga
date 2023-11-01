@@ -3,8 +3,8 @@
  */
 
 import React, { useState } from 'react';
-import PrimaryButton from '../../../../../../../ui/buttons/PrimaryButton';
-import AnimatedPage from '../../../../../../../utils/AnimatedPage';
+import PrimaryButton from '../../../../../../ud-ui/buttons/PrimaryButton';
+import AnimatedPage from '../../../../../../utils/AnimatedPage';
 import AddressChange from '../../../../../../ud-ui/modals/address-change';
 
 const PickupShipping = () => {

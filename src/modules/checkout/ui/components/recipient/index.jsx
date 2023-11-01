@@ -4,12 +4,12 @@
 
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import CheckboxInput from '../../../../../ui/inputs/checkbox/CheckboxInput';
-import PhoneInput from '../../../../../ui/inputs/number/PhoneInput';
-import EmailInput from '../../../../../ui/inputs/text/EmailInput';
-import TextInput from '../../../../../ui/inputs/text/TextInput';
-import AnimatedPage from '../../../../../utils/AnimatedPage';
-import ScrollToTop from '../../../../../utils/ScrollToTop';
+import AnimatedPage from '../../../../utils/AnimatedPage';
+import ScrollToTop from '../../../../utils/ScrollToTop';
+import CheckboxInput from '../../../../ud-ui/inputs/checkboxes/CheckboxInput';
+import PhoneInput from '../../../../ud-ui/inputs/number/PhoneInput';
+import EmailInput from '../../../../ud-ui/inputs/text/EmailInput';
+import TextInput from '../../../../ud-ui/inputs/text/TextInput';
 
 const Recipient = () => {
   const {

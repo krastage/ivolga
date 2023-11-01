@@ -2,7 +2,7 @@
  * Страница подраздела профиля с информацией об избранных товарах (вишлист)
  */
 
-import AnimatedPage from '../../../../../utils/AnimatedPage';
+import AnimatedPage from '../../../../utils/AnimatedPage';
 import ProductCard from '../../../../ud-ui/layouts/products/product-card';
 import ProductsCardList
   from '../../../../ud-ui/layouts/products/product-card-list';

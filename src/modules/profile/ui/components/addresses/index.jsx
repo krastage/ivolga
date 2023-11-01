@@ -4,7 +4,7 @@
 
 import { Link } from 'react-router-dom';
 import ProfileLayout from '../../index';
-import AnimatedPage from '../../../../../utils/AnimatedPage';
+import AnimatedPage from '../../../../utils/AnimatedPage';
 
 const Addresses = () => {
   const content = (<AnimatedPage>

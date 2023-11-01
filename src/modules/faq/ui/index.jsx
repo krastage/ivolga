@@ -3,7 +3,7 @@
  */
 
 import { Link, useLocation } from 'react-router-dom';
-import AnimatedPage from '../../../utils/AnimatedPage';
+import AnimatedPage from '../../utils/AnimatedPage';
 import '../../../styles/FAQ.scss';
 
 const FAQLayout = ({ menuTitle, contentTitle, children }) => {

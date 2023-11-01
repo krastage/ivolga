@@ -4,9 +4,9 @@
 
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import Select from '../../../../../ui/inputs/select/Select';
-import AnimatedPage from '../../../../../utils/AnimatedPage';
-import ScrollToTop from '../../../../../utils/ScrollToTop';
+import Select from '../../../../ud-ui/inputs/select/Select';
+import AnimatedPage from '../../../../utils/AnimatedPage';
+import ScrollToTop from '../../../../utils/ScrollToTop';
 import CourierShipping from './components/courier';
 import PickupShipping from './components/pickup';
 

@@ -4,9 +4,9 @@
 
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import CloseButton from '../../../../../../../ui/buttons/CloseButton';
-import PrimaryButton from '../../../../../../../ui/buttons/PrimaryButton';
-import PhoneInput from '../../../../../../../ui/inputs/number/PhoneInput';
+import CloseButton from '../../../../../buttons/CloseButton';
+import PrimaryButton from '../../../../../buttons/PrimaryButton';
+import PhoneInput from '../../../../../inputs/number/PhoneInput';
 
 const PhoneInputModal = ({ authActive, setAuthActive, setIsVerificationComponentActive }) => {
   const {

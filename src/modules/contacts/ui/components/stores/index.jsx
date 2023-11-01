@@ -2,7 +2,7 @@
  * Страница подраздела контактов с адресами магазинов
  */
 
-import AnimatedPage from '../../../../../utils/AnimatedPage';
+import AnimatedPage from '../../../../utils/AnimatedPage';
 import ContactsLayout from '../../index';
 
 const Stores = () => {

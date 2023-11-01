@@ -3,9 +3,9 @@
  */
 
 import React from 'react';
-import CloseButton from '../../../../../../../ui/buttons/CloseButton';
-import PrimaryButton from '../../../../../../../ui/buttons/PrimaryButton';
-import PrimaryButtonActive from '../../../../../../../ui/buttons/PrimaryButtonActive';
+import CloseButton from '../../../../../buttons/CloseButton';
+import PrimaryButton from '../../../../../buttons/PrimaryButton';
+import PrimaryButtonActive from '../../../../../buttons/PrimaryButtonActive';
 
 const LoginModal = ({ authActive, setAuthActive, toggleLogin }) => {
   return (

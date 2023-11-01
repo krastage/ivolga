@@ -2,7 +2,7 @@
  * Стандартная кнопка
  */
 
-import '../../../styles/_buttons.scss';
+import '../../../../styles/_buttons.scss';
 
 const PrimaryButtonActive = ({ type, disabled, onClick, label }) => {
   return (

@@ -1,4 +1,4 @@
-@import './settings';
+@import 'global/settings';
 
 //Primary
 
@@ -83,11 +83,18 @@
 //search
 
 .search-button {
+  display: flex;
+  align-content: center;
   position: absolute;
   top: 0;
   right: 0;
   padding-top: 30px;
   transition: color 0.9s;
+
+  &-address {
+    @extend .search-button;
+    padding: 20px;
+  }
 }
 
 //Close

@@ -2,9 +2,9 @@
  * Модальное окно фильтра товаров
  */
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import '../../../../styles/Filter.scss';
-import CloseButton from '../../../../ui/buttons/CloseButton';
+import CloseButton from '../../buttons/CloseButton';
 
 const Filter = ({
   filterActive,
@@ -26,7 +26,7 @@ const Filter = ({
   };
 
   const resetFilterAndActiveButtons = () => {
-    
+
     resetFilter();
     resetActiveButtons();
     setFilterActive(false);

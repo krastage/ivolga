@@ -4,16 +4,16 @@
 
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import ProfileLayout from '../../index';
 import '../../../../../styles/_forms.scss';
-import PrimaryButton from '../../../../../ui/buttons/PrimaryButton';
-import CheckboxInput from '../../../../../ui/inputs/checkbox/CheckboxInput';
-import DateInput from '../../../../../ui/inputs/date/DateInput';
-import EmailInput from '../../../../../ui/inputs/text/EmailInput';
-import ReadonlyInput from '../../../../../ui/inputs/text/ReadonlyInput';
-import TextInput from '../../../../../ui/inputs/text/TextInput';
-import SuccessMessage from '../../../../../ui/messages/SuccessMessage';
-import AnimatedPage from '../../../../../utils/AnimatedPage';
+import AnimatedPage from '../../../../utils/AnimatedPage';
+import PrimaryButton from '../../../../ud-ui/buttons/PrimaryButton';
+import CheckboxInput from '../../../../ud-ui/inputs/checkboxes/CheckboxInput';
+import DateInput from '../../../../ud-ui/inputs/date/DateInput';
+import EmailInput from '../../../../ud-ui/inputs/text/EmailInput';
+import ReadonlyInput from '../../../../ud-ui/inputs/text/ReadonlyInput';
+import TextInput from '../../../../ud-ui/inputs/text/TextInput';
+import SuccessMessage from '../../../../ud-ui/messages/SuccessMessage';
+import ProfileLayout from '../../index';
 
 const Settings = () => {
   const [showMessage, setShowMessage] = useState(false);

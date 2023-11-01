@@ -1,11 +1,11 @@
 /**
- * Шаблон кнопки Фильтр+
+ * Кнопка Фильтр+
  * @param filterButton пропс получаемый из списка карточек товаров
  * @returns {JSX.Element|null}
  */
 
 import { useState } from 'react';
-import Filter from '../../../modules/ud-ui/modals/filter';
+import Filter from '../../modals/filter';
 
 const FilterButton = ({ filterButton, handleFilterChange, resetFilter }) => {
   const [filterActive, setFilterActive] = useState(false);

@@ -3,7 +3,7 @@
  */
 
 import '../../../../../styles/Broadcast.scss';
-import AnimatedPage from '../../../../../utils/AnimatedPage';
+import AnimatedPage from '../../../../utils/AnimatedPage';
 import Footer from '../../../../footer/ui';
 import ProductCard from '../../../../ud-ui/layouts/products/product-card';
 import ProductsCardList

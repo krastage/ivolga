@@ -3,9 +3,9 @@
  */
 
 import { Link } from 'react-router-dom';
-import '../../../styles/_settings.scss';
+import '../../../styles/global/_settings.scss';
 import '../../../styles/Home.scss';
-import AnimatedPage from '../../../utils/AnimatedPage';
+import AnimatedPage from '../../utils/AnimatedPage';
 import Footer from '../../footer/ui';
 import ProductCard from '../../ud-ui/layouts/products/product-card';
 import ProductsCardList from '../../ud-ui/layouts/products/product-card-list';

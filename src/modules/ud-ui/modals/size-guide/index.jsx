@@ -4,7 +4,7 @@
 
 import { useEffect } from 'react';
 import '../../../../styles/SizeGuide.scss';
-import CloseButton from '../../../../ui/buttons/CloseButton';
+import CloseButton from '../../buttons/CloseButton';
 
 const SizeGuide = ({ sizeGuideActive, setSizeGuideActive }) => {
   useEffect(() => {

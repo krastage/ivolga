@@ -3,7 +3,7 @@
  */
 
 import '../../../styles/Product.scss';
-import AnimatedPage from '../../../utils/AnimatedPage';
+import AnimatedPage from '../../utils/AnimatedPage';
 import Footer from '../../footer/ui';
 import RelevantLooks from '../../ud-ui/layouts/looks/relevant-looks';
 import ProductLayout from '../../ud-ui/layouts/products/product';

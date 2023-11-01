@@ -27,10 +27,10 @@ import Order from './modules/profile/ui/components/orders/components/order';
 import Profile from './modules/profile/ui/components/profile';
 import Settings from './modules/profile/ui/components/settings';
 import Wishlist from './modules/profile/ui/components/wishlist';
-import './styles/_settings.scss';
-import ScrollToTopButton from './ui/buttons/ScrollToTopButton';
-import AnimatedPage from './utils/AnimatedPage';
-import ScrollToTop from './utils/ScrollToTop';
+import './styles/global/_settings.scss';
+import ScrollToTopButton from './modules/ud-ui/buttons/ScrollToTopButton';
+import AnimatedPage from './modules/utils/AnimatedPage';
+import ScrollToTop from './modules/utils/ScrollToTop';
 
 const App = () => {
   return (

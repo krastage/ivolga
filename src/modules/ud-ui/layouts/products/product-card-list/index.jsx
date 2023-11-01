@@ -3,8 +3,8 @@
  */
 
 import '../../../../../styles/ProductsCardSettings.scss';
-import FilterButton from '../../../../../ui/buttons/FilterButton';
-import AnimatedPage from '../../../../../utils/AnimatedPage';
+import AnimatedPage from '../../../../utils/AnimatedPage';
+import FilterButton from '../../../buttons/FilterButton';
 
 const ProductsCardList = ({
   title,

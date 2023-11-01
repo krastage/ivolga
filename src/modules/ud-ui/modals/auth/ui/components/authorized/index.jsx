@@ -4,10 +4,10 @@
 
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import CloseButton from '../../../../../../../ui/buttons/CloseButton';
-import PrimaryButton from '../../../../../../../ui/buttons/PrimaryButton';
+import CloseButton from '../../../../../buttons/CloseButton';
+import PrimaryButton from '../../../../../buttons/PrimaryButton';
 import PrimaryButtonActive
-  from '../../../../../../../ui/buttons/PrimaryButtonActive';
+  from '../../../../../buttons/PrimaryButtonActive';
 
 const AuthorizedModal = ({ authActive, setAuthActive, logoutHandle }) => {
   const location = useLocation();

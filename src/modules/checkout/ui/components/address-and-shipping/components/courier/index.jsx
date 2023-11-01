@@ -4,13 +4,14 @@
 
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import PrimaryButton from '../../../../../../../ui/buttons/PrimaryButton';
-import CheckboxInputNotRequired from '../../../../../../../ui/inputs/checkbox/CheckboxInputNotRequired';
-import MultiInput from '../../../../../../../ui/inputs/text/MultiInput';
-import ReadonlyInput from '../../../../../../../ui/inputs/text/ReadonlyInput';
-import TextAreaInput from '../../../../../../../ui/inputs/text/TextAreaInput';
-import AnimatedPage from '../../../../../../../utils/AnimatedPage';
-import ScrollToTop from '../../../../../../../utils/ScrollToTop';
+import AnimatedPage from '../../../../../../utils/AnimatedPage';
+import ScrollToTop from '../../../../../../utils/ScrollToTop';
+import PrimaryButton from '../../../../../../ud-ui/buttons/PrimaryButton';
+import CheckboxInputNotRequired
+  from '../../../../../../ud-ui/inputs/checkboxes/CheckboxInputNotRequired';
+import MultiInput from '../../../../../../ud-ui/inputs/text/MultiInput';
+import ReadonlyInput from '../../../../../../ud-ui/inputs/text/ReadonlyInput';
+import TextAreaInput from '../../../../../../ud-ui/inputs/text/TextAreaInput';
 
 const CourierShipping = () => {
   const [isAddressNameActive, setIsAddressNameActive] = useState(false);

@@ -4,12 +4,12 @@
 
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import ProfileLayout from '../../index';
 import '../../../../../styles/Profile.scss';
-import PrimaryButton from '../../../../../ui/buttons/PrimaryButton';
-import CheckboxInput from '../../../../../ui/inputs/checkbox/CheckboxInput';
-import SuccessMessage from '../../../../../ui/messages/SuccessMessage';
-import AnimatedPage from '../../../../../utils/AnimatedPage';
+import AnimatedPage from '../../../../utils/AnimatedPage';
+import PrimaryButton from '../../../../ud-ui/buttons/PrimaryButton';
+import CheckboxInput from '../../../../ud-ui/inputs/checkboxes/CheckboxInput';
+import SuccessMessage from '../../../../ud-ui/messages/SuccessMessage';
+import ProfileLayout from '../../index';
 
 const Profile = () => {
   const [showMessage, setShowMessage] = useState(false);
