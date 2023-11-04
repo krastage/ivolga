@@ -12,7 +12,10 @@ const FAQLayout = ({ menuTitle, contentTitle, children }) => {
   const LinkItem = ({ to, location, label }) => {
     return (
       <li>
-        <Link to={to} className={location.pathname === to ? 'faq-link-active' : 'faq-link'}>
+        <Link to={to}
+              className={location.pathname === to
+                ? 'faq-link-active'
+                : 'faq-link'}>
           {label}
         </Link>
       </li>
@@ -25,19 +28,29 @@ const FAQLayout = ({ menuTitle, contentTitle, children }) => {
         <h1 className='faq-menu__title'>{menuTitle}</h1>
         <ul className='faq-menu__links'>
           <li>
-            <LinkItem to='/delivery' label='Доставка' location={location} />
+            <LinkItem to='/delivery'
+                      label='Доставка'
+                      location={location} />
           </li>
           <li>
-            <LinkItem to='/exchange' label='Оплата и возврат' location={location} />
+            <LinkItem to='/exchange'
+                      label='Оплата и возврат'
+                      location={location} />
           </li>
           <li>
-            <LinkItem to='/care' label='Уход за одеждой' location={location} />
+            <LinkItem to='/care'
+                      label='Уход за одеждой'
+                      location={location} />
           </li>
           <li>
-            <LinkItem to='/privacy' label='Политика' location={location} />
+            <LinkItem to='/privacy'
+                      label='Политика'
+                      location={location} />
           </li>
           <li>
-            <LinkItem to='/payment' label='Оферта' location={location} />
+            <LinkItem to='/payment'
+                      label='Оферта'
+                      location={location} />
           </li>
         </ul>
       </div>
