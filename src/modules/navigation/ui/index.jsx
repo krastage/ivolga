@@ -1,5 +1,5 @@
 /**
- * Навигация (хэдер)
+ * Навигация
  */
 
 import { useEffect, useState } from 'react';
