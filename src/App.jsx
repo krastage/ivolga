@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import ScrollToTopButton from './modules/ud-ui/buttons/ScrollToTopButton';
 import AnimatedPage from './modules/utils/AnimatedPage';
 import ScrollToTop from './modules/utils/ScrollToTop';
+import Spinner from './modules/utils/Spinner';
 
 const Home = lazy(() => import('./modules/home/ui'));
 const Catalog = lazy(() => import('./modules/catalog/ui'));
@@ -24,7 +25,9 @@ const Wishlist = lazy(() => import('./modules/profile/ui/components/wishlist'));
 const Orders = lazy(() => import('./modules/profile/ui/components/orders'));
 const Order = lazy(() => import('./modules/profile/ui/components/orders/components/order'));
 const Addresses = lazy(() => import('./modules/profile/ui/components/addresses'));
-const AddAddress = lazy(() => import('./modules/profile/ui/components/addresses/components/add-address'));
+const AddAddress = lazy(() =>
+  import('./modules/profile/ui/components/addresses/components/add-address'),
+);
 const Settings = lazy(() => import('./modules/profile/ui/components/settings'));
 const Checkout = lazy(() => import('./modules/checkout/ui'));
 const SuccessCheckout = lazy(() => import('./modules/checkout/ui/components/success'));
@@ -39,7 +42,7 @@ const App = () => {
         <ScrollToTop />
         <ScrollToTopButton />
         <AnimatedPage>
-          <Suspense>
+          <Suspense fallback={<Spinner />}>
             <Navigation />
             <Routes>
               <Route path={'/home'} element={<Home />} />
