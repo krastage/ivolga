@@ -1,5 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Checkout from './modules/checkout/ui';
+
+import Profile from './modules/profile/ui/components/profile';
 import ScrollToTopButton from './modules/ud-ui/buttons/ScrollToTopButton';
 import AnimatedPage from './modules/utils/AnimatedPage';
 import ScrollToTop from './modules/utils/ScrollToTop';
@@ -20,7 +23,7 @@ const Exchange = lazy(() => import('./modules/faq/ui/components/exchange'));
 const Payment = lazy(() => import('./modules/faq/ui/components/payment'));
 const Privacy = lazy(() => import('./modules/faq/ui/components/privacy'));
 const Care = lazy(() => import('./modules/faq/ui/components/care'));
-const Profile = lazy(() => import('./modules/profile/ui/components/profile'));
+
 const Wishlist = lazy(() => import('./modules/profile/ui/components/wishlist'));
 const Orders = lazy(() => import('./modules/profile/ui/components/orders'));
 const Order = lazy(() => import('./modules/profile/ui/components/orders/components/order'));
@@ -29,7 +32,6 @@ const AddAddress = lazy(() =>
   import('./modules/profile/ui/components/addresses/components/add-address'),
 );
 const Settings = lazy(() => import('./modules/profile/ui/components/settings'));
-const Checkout = lazy(() => import('./modules/checkout/ui'));
 const SuccessCheckout = lazy(() => import('./modules/checkout/ui/components/success'));
 const UnsuccessfulCheckout = lazy(() => import('./modules/checkout/ui/components/unsuccess'));
 const PageNotFound = lazy(() => import('./modules/page-not-found/ui'));

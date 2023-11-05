@@ -16,6 +16,8 @@ Application of women magazine.
 - React
 - Framer-motion
 - Forms
+- Lazy loading
+- Modules
 
 ## Installation
 
