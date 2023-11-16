@@ -1,0 +1,14 @@
+@import 'global/settings';
+
+.relevant-looks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.relevant-looks-images {
+  display: flex;
+  gap: 30px;
+}

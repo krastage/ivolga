@@ -1,0 +1,64 @@
+@import 'global/settings';
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+.main-header.fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: $background-white;
+  z-index: 999;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.9s ease;
+}
+
+.nav-link {
+  color: $text-black;
+  user-select: none;
+
+  &-active,
+  &:hover {
+    color: $text-grey;
+    transition: 0.9s;
+    user-select: none;
+  }
+}
+
+//Logo
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+}
+
+//Navigation
+
+.main-header__list {
+  display: flex;
+  gap: 30px;
+}
+
+//Buttons
+
+.main-header__buttons-list {
+  display: flex;
+  gap: 30px;
+}
+
+.main-header__buttons-item,
+.main-header__button {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    stroke: $text-grey;
+    transition: 0.9s;
+  }
+}

@@ -1,0 +1,19 @@
+@import 'rightModal';
+
+//Recommendations
+
+.search-modal-recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & p {
+    color: $text-grey;
+  }
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+  }
+}

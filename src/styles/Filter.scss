@@ -1,0 +1,56 @@
+@import 'topModal';
+
+//Content
+
+.filter-modal-content {
+  display: flex;
+  justify-content: center;
+  height: 433px;
+  border-top: 1px solid $border-grey;
+}
+
+//List
+
+.filter-modal-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 32px;
+  width: 289px;
+  color: $text-grey;
+  border-left: 1px solid $border-grey;
+}
+
+//Buttons
+
+.filter-modal-content__button {
+  color: $text-grey;
+  font-size: 16px;
+  transition: color 0.9s;
+  &.active {
+    @extend .filter-modal-content__button;
+    color: $text-black;
+    transition: color 0.9s;
+  }
+}
+
+.filter-modal-content__button-reset {
+  @extend .filter-modal-content__button;
+  color: $text-black;
+  position: absolute;
+  bottom: 32px;
+
+  &:disabled {
+    color: $text-grey;
+    cursor: auto;
+  }
+}
+
+//Image
+
+.filter-modal-content__img {
+  position: absolute;
+  right: 0;
+  height: 401px;
+  padding: 16px;
+}

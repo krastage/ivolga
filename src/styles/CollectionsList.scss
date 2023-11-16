@@ -1,0 +1,36 @@
+@import 'global/settings';
+
+.collections-list {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.collections-list__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px 0 32px 0;
+}
+
+.collections-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.collections-item__link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.collections-item__link__img {
+  width: 100%;
+}
+
+.collections-item__link__title {
+  display: flex;
+  justify-content: center;
+}

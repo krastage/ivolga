@@ -1,0 +1,63 @@
+@import 'global/settings';
+
+//Home
+
+.home-collection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  gap: 60px;
+}
+
+.home-link {
+  color: $text-black;
+  padding: 10px;
+  transition: color 0.9s ease;
+
+  &:hover {
+    color: $text-grey;
+    transition: color 0.9s ease;
+  }
+}
+
+//Home hero
+
+.home__hero {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.home__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.home__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: $border-black 1px solid;
+}
+
+//Body collection
+
+.body-hero {
+  background-image: url('../../public/assets/img/products/hero1.png');
+}
+
+//House collection
+
+.house-hero {
+  background-image: url('../../public/assets/img/products/hero2.png');
+}

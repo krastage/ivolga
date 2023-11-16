@@ -1,0 +1,157 @@
+@import 'global/settings';
+
+.products-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+
+  &--big {
+    @extend .products-card;
+    width: 325px;
+    gap: 20px;
+  }
+
+  &--medium {
+    @extend .products-card;
+    width: 15.74vw;
+    gap: 20px;
+  }
+
+  &--small {
+    @extend .products-card;
+    width: 166px;
+    gap: 10px;
+    font-size: 12px;
+  }
+}
+
+.products-card-color {
+  padding: 5px;
+  border: 1px solid $border-black;
+  cursor: pointer;
+}
+
+.products-card-color-big {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid $border-black;
+  cursor: pointer;
+}
+
+.products-card-color-small {
+  width: 10px;
+  height: 10px;
+  padding: 3px;
+  border: 1px solid $border-black;
+}
+
+.products-card-title {
+  display: flex;
+  justify-content: space-between;
+
+  &--big {
+    @extend .products-card-title;
+
+    .products-card-title__product {
+      width: 257px;
+    }
+  }
+
+  &--medium {
+    @extend .products-card-title;
+
+    .products-card-title__product {
+      width: 170px;
+    }
+  }
+
+  &--small {
+    @extend .products-card-title;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.products-card-title__price {
+  color: $text-grey;
+}
+
+.products-card-container__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.products-card-container__reset-button {
+  font-size: 16px;
+  transition: color 0.9s;
+
+  &:hover {
+    color: $text-grey;
+    transition: color 0.9s;
+  }
+}
+
+.products-card-head {
+  display: flex;
+  margin-bottom: 30px;
+
+  &--space-between {
+    @extend .products-card-head;
+    justify-content: space-between;
+  }
+
+  &--centered {
+    @extend .products-card-head;
+    justify-content: center;
+  }
+}
+
+.products-card__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.products-card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  &--1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  & li {
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow 0.9s;
+
+    &:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.18);
+      transition: box-shadow 0.9s;
+    }
+  }
+}
+
+.products-card__price {
+  color: $text-grey;
+}
+
+.products-card__colors {
+  display: flex;
+  gap: 8px;
+}

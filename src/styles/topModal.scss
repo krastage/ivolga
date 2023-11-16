@@ -1,0 +1,49 @@
+@import 'global/settings';
+@import 'global/variables';
+
+//Modal top
+
+.modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 109px;
+  right: 0;
+  pointer-events: none;
+  transition: background-color 0.9s ease-in-out;
+
+  &.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: all;
+    z-index: 9999;
+    transition: background-color 0.9s ease-in-out;
+
+    .modal-top-content {
+      top: 109px;
+      transition: 1.9s top ease-in-out;
+    }
+  }
+
+  .modal-top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100vw;
+    background-color: $background-white;
+    top: -100vh;
+    position: fixed;
+    transition: 1.9s top ease-in-out;
+    border: 1px solid $border-grey;
+  }
+}
+
+//Modal top heading
+
+.modal-top-heading {
+  padding: 40px 58px 0;
+  display: flex;
+  justify-content: flex-end;
+}
