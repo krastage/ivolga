@@ -142,11 +142,7 @@ const Catalog = () => {
         <main className='content'>
           <div className='catalog-collection'>
             <div className='catalog__banner'>
-              <img
-                src='/assets/img/products/hero1.png'
-                alt='hero1'
-                className='main-content__banner-img'
-              />
+              <div className='main-content__banner-img'/>
             </div>
             {filteredProducts.length === 0 ? (
               <AnimatedPage>

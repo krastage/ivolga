@@ -10,6 +10,7 @@ import ProductCard from '../../layouts/products/product-card';
 import ProductsCardList from '../../layouts/products/product-card-list';
 
 const Basket = ({ basketActive, setBasketActive }) => {
+
   useEffect(() => {
     if (basketActive) {
       document.body.style.overflow = 'hidden';

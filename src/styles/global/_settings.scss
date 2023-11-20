@@ -40,6 +40,10 @@ h3 {
 
 h1 {
   font-size: 28px;
+
+  @media(max-width: 820px) {
+    font-size: 18px;
+  }
 }
 
 p,

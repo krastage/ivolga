@@ -10,4 +10,10 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+
+  img {
+    @media(max-width: 1440px) {
+      max-width: 40%;
+    }
+  }
 }

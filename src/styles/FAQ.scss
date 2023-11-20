@@ -3,16 +3,23 @@
 .faq {
   display: flex;
   padding: 0 60px 40px;
+
+  @media(max-width: 1000px) {
+    display: block;
+    padding: 0 10px 40px;
+  }
 }
 
 .faq-link {
   color: $text-grey;
   transition: color 0.9s;
+  white-space: nowrap;
 
   &-active,
   &:hover {
     color: $border-black;
     transition: 0.9s;
+    white-space: nowrap;
   }
 }
 
@@ -26,12 +33,30 @@
   width: 252px;
   border-right: $border-grey 1px solid;
   height: 100%;
+  margin-bottom: 20px;
+  
+  @media(max-width: 1000px) {
+    border: none;
+    border-bottom: 1px solid $border-grey;
+  }
+}
+
+.faq-menu__title {
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .faq-menu__links {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media(max-width: 1000px) {
+    flex-direction: row;
+    width: 100vw;
+    overflow: scroll;
+  }
 }
 
 //Info
@@ -45,6 +70,11 @@
 
   & p {
     max-width: 516px;
+  }
+
+  @media(max-width: 1000px) {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 

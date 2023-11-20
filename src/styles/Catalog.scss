@@ -5,6 +5,14 @@
   flex-direction: column;
   margin-bottom: 60px;
   gap: 60px;
+
+  .main-content__banner-img {
+    background-image: url('../../public/assets/img/products/hero1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 0;
+    height: 100vw;
+  }
 }
 
 .catalog__banner {
@@ -13,7 +21,8 @@
   align-content: center;
   justify-content: center;
   overflow: hidden;
-  height: 400px;
+  max-height: 400px;
+
 }
 
 .main-content__bestsellers-heading {
