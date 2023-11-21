@@ -5,12 +5,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 40px 60px;
-  
-  .auth-btn {
-    @media (max-width: 820px) {
-      display: none;
-    }
-  }
 }
 
 .main-header.fixed {
@@ -24,6 +18,7 @@
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.9s ease;
 }
+
 
 .nav-link {
   color: $text-black;
@@ -97,16 +92,19 @@ hr {
 }
 
 .mobile-header__nav {
-  transition: all .9s;
-  opacity: 0;
+  display: none;
   height: 0vh;
-
+  transition: all .9s ease-in;
   &-active {
-    transition: all .9s;
-    opacity: 1;
+    display: block;
     height: 100vh;
+    transition: all .9s ease-out;
   }
 }
+
+
+
+
 
 .mobile-header__list {
   border-top: 1px solid $text-grey;

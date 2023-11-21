@@ -27,31 +27,21 @@ const FAQLayout = ({ menuTitle, contentTitle, children }) => {
       <div className='faq-menu'>
         <h1 className='faq-menu__title'>{menuTitle}</h1>
         <ul className='faq-menu__links'>
-          <li>
             <LinkItem to='/delivery'
                       label='Доставка'
                       location={location} />
-          </li>
-          <li>
             <LinkItem to='/exchange'
                       label='Оплата и возврат'
                       location={location} />
-          </li>
-          <li>
             <LinkItem to='/care'
                       label='Уход за одеждой'
                       location={location} />
-          </li>
-          <li>
             <LinkItem to='/privacy'
                       label='Политика'
                       location={location} />
-          </li>
-          <li>
             <LinkItem to='/payment'
                       label='Оферта'
                       location={location} />
-          </li>
         </ul>
       </div>
 

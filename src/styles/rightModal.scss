@@ -16,6 +16,7 @@
   pointer-events: none;
   transition: background-color 0.9s ease-in-out;
   z-index: 9999;
+  
 
   &.active {
     opacity: 1;
@@ -35,8 +36,6 @@
     flex-direction: column;
     gap: 40px;
     height: 100vh;
-    width: $nav-modal-width;
-    right: $nav-modal-right;
     padding: 40px 60px;
     background-color: $background-white;
     top: 0;
@@ -44,6 +43,10 @@
     overflow: auto;
     transition: 0.9s right ease-in-out;
     z-index: 9999;
+
+    @media (max-width: 820px) {
+        width: 70%;
+      }
   }
 }
 

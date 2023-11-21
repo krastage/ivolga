@@ -22,10 +22,13 @@ const NavigationItem = ({ to, location, label, onClick }) => {
 
 const Navigation = () => {
 
+  
+  
   const location = useLocation();
-
+  
+  
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-  const [navActive, setNavActive] = useState(false);
+  const [nav, setNav] = useState(false)
   const [searchActive, setSearchActive] = useState(false);
   const [basketActive, setBasketActive] = useState(false);
   const [authActive, setAuthActive] = useState(false);
@@ -43,6 +46,15 @@ const Navigation = () => {
     setWindowWidth(window.innerWidth)
   }
   
+  const handleNav = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+      easing: 'ease-in-out',
+    });
+    setNav(!nav)
+  }
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -56,7 +68,13 @@ const Navigation = () => {
 
   return (
     <>
-    <header className={`main-header ${isNavFixed ? 'fixed container' : ''}`}>
+      <header className={
+        `
+        main-header
+        ${isNavFixed ? 'fixed container' : ''}
+        ${windowWidth >= 820 && 'mobile'}
+        `}
+      >
         <>
           <div className='main-header__logo'>
             <NavLink to={'/home'}>
@@ -163,8 +181,8 @@ const Navigation = () => {
               :
               <li className='main-header__buttons-item'>
                 <div
-                  className={navActive ? 'nav-mobile-btn-active' : 'nav-mobile-btn'}
-                  onClick={() => setNavActive(!navActive)}
+                  className={nav ? 'nav-mobile-btn-active' : 'nav-mobile-btn'}
+                  onClick={handleNav}
                 >
                   <div className='mobile-line'></div>
                   <div className='mobile-line'></div>
@@ -179,14 +197,14 @@ const Navigation = () => {
       <Basket basketActive={basketActive} setBasketActive={setBasketActive} />
       <Auth authActive={authActive} setAuthActive={setAuthActive} />
     </header>
-    <nav className={navActive ? 'mobile-header__nav-active' : 'mobile-header__nav'}>
-      <ul className='mobile-header__list'>
-        <NavigationItem to='/catalog' label='Каталог' location={location} onClick={() => setNavActive(!navActive)} />
-          <NavigationItem to='/looks' label='Образы' location={location} onClick={() => setNavActive(!navActive)}  />
-          <NavigationItem to='/collections' label='Коллекции' location={location} onClick={() => setNavActive(!navActive)} />
-          <NavigationItem to='/broadcasts' label='Прямые эфиры' location={location} onClick={() => setNavActive(!navActive)} />
-      </ul>
-    </nav>
+      <nav className={nav ? 'mobile-header__nav-active' : 'mobile-header__nav'}>
+        <ul className='mobile-header__list'>
+          <NavigationItem to='/catalog' label='Каталог' location={location} onClick={handleNav}/>
+          <NavigationItem to='/looks' label='Образы' location={location} onClick={handleNav} />
+          <NavigationItem to='/collections' label='Коллекции' location={location} onClick={handleNav} />
+          <NavigationItem to='/broadcasts' label='Прямые эфиры' location={location} onClick={handleNav} />
+        </ul>
+      </nav>
     </>
   );
 };
