@@ -16,6 +16,7 @@
 
 .collection-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   gap: 100px;
@@ -61,8 +62,13 @@
 
 .collection-item--space-between {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+
+  @media(max-width: 760px) {
+    gap: 50px;
+  }
 }
 
 .collection-item--space-between__title {
@@ -75,4 +81,8 @@
 
 .collection-item--space-between__title-img {
   width: 603px;
+
+  @media(max-width: 640px) {
+    width: 500px;
+  }
 }

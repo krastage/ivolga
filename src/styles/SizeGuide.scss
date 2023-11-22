@@ -12,7 +12,7 @@
   }
 
   .modal-right-content {
-    width: $size-guide-modal-width;
+    max-width: $size-guide-modal-width;
     right: $size-guide-modal-right;
     transition: 1.5s right ease-in-out;
   }
@@ -23,6 +23,15 @@
 .sizeGuide-modal-content {
   display: flex;
   gap: 48px;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+
+    img {
+      margin: 0 auto;
+      width: 30%;
+    }
+  }
 }
 
 .sizeGuide-modal__table {

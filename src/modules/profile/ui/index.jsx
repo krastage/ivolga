@@ -41,7 +41,7 @@ const ProfileLayout = ({ content }) => {
           </li>
         </ul>
       </div>
-      <React.Fragment>{content}</React.Fragment>
+        <React.Fragment>{content}</React.Fragment>
     </main>
   );
 };

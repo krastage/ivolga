@@ -5,9 +5,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-block: 20px;
   gap: 70px;
+
+  @media(max-width: 1100px) {
+      gap: 35px;
+    }
+  
+    @media(max-width: 760px) {
+      gap: 20px;
+      padding-block: 5px;
+    }
+  
 }
 
 .main-footer__links {
@@ -25,5 +34,17 @@
   &:hover {
     color: $text-grey;
     transition: 0.5s;
+  }
+}
+
+.footer-logo {
+  svg {
+    @media(max-width: 1100px) {
+      width: 80%;
+    }
+
+    @media(max-width: 760px) {
+      width: 50%;
+    }
   }
 }

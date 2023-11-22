@@ -2,10 +2,11 @@
 
 .faq {
   display: flex;
+  justify-content: center;
   padding: 0 60px 40px;
   overflow: hidden;
 
-  @media(max-width: 820px) {
+  @media(max-width: 1000px) {
     display: block;
     padding: 0 10px 40px;
   }
@@ -36,13 +37,13 @@
   height: 100%;
   margin-bottom: 20px;
   
-  @media(max-width: 820px) {
+  @media(max-width: 1000px) {
     border: none;
   }
 }
 
 .faq-menu__title {
-  @media (max-width: 820px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 }
@@ -52,7 +53,7 @@
   flex-direction: column;
   gap: 10px;
 
-  @media(max-width: 820px) {
+  @media(max-width: 1000px) {
     width: 100vw;
     flex-direction: row;
     gap: 25px;
@@ -111,7 +112,9 @@
 .contacts-info-container {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 60px;
+  margin: 0 auto;
 }
 
 .contacts-info {
@@ -119,6 +122,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
-  width: 811px;
+  max-width: 811px;
   margin-left: 97px;
 }

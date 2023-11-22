@@ -10,12 +10,36 @@
     @extend .products-card;
     width: 325px;
     gap: 20px;
+
+    @media(max-width: 1260px) {
+      width: 270px;
+    }
+
+    @media(max-width: 1100px) {
+      width: 220px;
+    }
+
+    @media(max-width: 960px) {
+      width: 270px;
+    }
   }
 
   &--medium {
     @extend .products-card;
-    width: 15.74vw;
+    width: 200px;
     gap: 20px;
+
+    @media(max-width: 1260px) {
+        width: 150px;
+      }
+    
+      @media(max-width: 1100px) {
+        width: 130px;
+      }
+    
+      @media(max-width: 960px) {
+        width: 150px;
+      }
   }
 
   &--small {
@@ -23,6 +47,15 @@
     width: 166px;
     gap: 10px;
     font-size: 12px;
+
+    @media(max-width: 1260px) {
+        width: 270px;
+      }
+    
+      @media(max-width: 1100px) {
+        width: 220px;
+      }
+    
   }
 }
 
@@ -58,6 +91,7 @@
       width: 257px;
     }
   }
+
 
   &--medium {
     @extend .products-card-title;
@@ -124,27 +158,15 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 
-  &--1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  &--2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  &--4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  @media(max-width: 1440px) {
+  @media(max-width: 960px) {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  @media(max-width: 1170px) {
+  
+  @media(max-width: 760px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media(max-width: 720px) {
+
+  @media(max-width: 430px) {
     grid-template-columns: repeat(1, 1fr);
   }
 

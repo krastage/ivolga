@@ -44,9 +44,6 @@ const Filter = ({
       onClick={() => setFilterActive(false)}>
       <div className='modal-top-content'
            onClick={(e) => e.stopPropagation()}>
-        <div className='modal-top-heading'>
-          <CloseButton onClick={() => setFilterActive(false)} />
-        </div>
 
         <div className='filter-modal-content'>
           <ul className='filter-modal-content__list'>

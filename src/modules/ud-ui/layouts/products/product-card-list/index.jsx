@@ -14,6 +14,7 @@ const ProductsCardList = ({
   resetFilter,
   filtersActivated,
   itemsPerRow,
+  broadcast
 }) => {
   return (
     <div className='container'>
@@ -22,7 +23,7 @@ const ProductsCardList = ({
           filterButton
             ? 'products-card-head--space-between container'
             : 'products-card-head--centered container'
-        }
+            }
         style={{ display: title === null ? 'none' : '' }}>
         <h2 style={{ display: title === null ? 'none' : '' }}>{title}</h2>
         <FilterButton

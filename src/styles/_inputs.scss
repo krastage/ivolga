@@ -228,6 +228,10 @@ input[type='radio']:checked + .radio-input-label::before {
   width: 100%;
   border-bottom: 1px solid $border-black;
 
+  @media(max-width: 1000px) {
+      font-size: 16px;
+    }
+
   &:focus {
     outline: none;
   }
