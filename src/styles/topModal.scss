@@ -3,6 +3,16 @@
 
 //Modal top
 
+.buttonchik {
+  position: relative;
+  height: 30px;
+  button {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+}
+
 .modal-top {
   display: flex;
   align-items: center;
@@ -10,7 +20,7 @@
   position: fixed;
   height: 100vh;
   width: 100vw;
-  top: 109px;
+  top: 100px;
   right: 0;
   pointer-events: none;
   transition: background-color 0.9s ease-in-out;
@@ -22,7 +32,7 @@
     transition: background-color 0.9s ease-in-out;
 
     .modal-top-content {
-      top: 109px;
+      top: 65px;
       transition: 1.9s top ease-in-out;
     }
   }
@@ -43,7 +53,7 @@
 //Modal top heading
 
 .modal-top-heading {
-  padding: 40px 58px 0;
+  padding: 0;
   display: flex;
   justify-content: flex-end;
 }

@@ -11,6 +11,11 @@
   height: 100%;
   position: relative;
 
+  @media(max-width: 620px) {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
   
 }
 
@@ -21,9 +26,14 @@
   flex-direction: column;
   gap: 16px;
 
-  @media(max-width: 960px) {
-      margin-left: 150px;
-      max-width: 30%;
+  @media(max-width: 620px) {
+    flex-direction: row;
+    justify-content: center;
+    width: 110px;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -38,6 +48,10 @@
   height: 548px;
   position: sticky;
   top: 110px;
+
+  @media(max-width: 620px) {
+    padding-bottom: 0;
+  }
 }
 
 //Title
@@ -204,7 +218,6 @@
 
 .product-config-details-button__details {
   max-height: 0;
-  overflow: hidden;
   transition: 0.9s ease-in-out;
 
   &.active {

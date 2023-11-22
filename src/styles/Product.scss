@@ -5,4 +5,8 @@
   flex-direction: column;
   margin-bottom: 60px;
   gap: 40px;
+
+  @media(max-width: 620px) {
+    gap: 0;
+  }
 }
