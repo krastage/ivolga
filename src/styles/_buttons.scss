@@ -144,6 +144,11 @@
   cursor: pointer;
   visibility: hidden;
   pointer-events: none;
+
+  @media(max-width: 620px) {
+    bottom: 25px;
+    right: 25px;
+  }
 }
 
 .scroll-button:not(:hover) {

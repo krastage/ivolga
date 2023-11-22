@@ -23,6 +23,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 h1,

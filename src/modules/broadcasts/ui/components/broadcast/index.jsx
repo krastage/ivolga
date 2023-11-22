@@ -38,22 +38,8 @@ const Broadcast = () => {
             <ProductsCardList
               title={'Товары из трансляции'}
               filterButton={false}
-              itemsPerRow={1}
+              itemsPerRow={2}
               children={[
-                <ProductCard
-                  size='small'
-                  link={'/product'}
-                  title={'Топ черный из кашемира'}
-                  price={25_000}
-                  imageSource={'/assets/img/broadcast/product.png'}
-                />,
-                <ProductCard
-                  size='small'
-                  link={'/product'}
-                  title={'Топ черный из кашемира'}
-                  price={25_000}
-                  imageSource={'/assets/img/broadcast/product.png'}
-                />,
                 <ProductCard
                   size='small'
                   link={'/product'}

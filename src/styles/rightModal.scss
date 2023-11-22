@@ -10,11 +10,11 @@
   justify-content: center;
   position: fixed;
   height: 100vh;
-  max-width: 100vw;
+  width: 100vw;
   top: 0;
-  right: 0;
+  right: 5px;
   pointer-events: none;
-  transition: background-color all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
   z-index: 9999;
   
 
@@ -23,7 +23,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     pointer-events: all;
     z-index: 9999;
-    transition: background-color all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
 
     .modal-right-content {
       opacity: 1;
@@ -37,22 +37,31 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    max-width: 40%;
+    width: 40%;
     height: 100vh;
     padding: 40px 60px;
     background-color: $background-white;
+    right: 0;
     top: 0;
     position: fixed;
-    overflow: auto;
     transition: all 0.9s ease-in-out;
     z-index: 9999;
 
     @media(max-width: 1440px) {
-      max-width: 20%;
+      width: 30%;
     }
 
     @media(max-width: 620px) {
-      max-width: 100%;
+      width: 85%;
+    }
+    @media(max-width: 580px) {
+      width: 80%;
+    }
+    @media(max-width: 480px) {
+      width: 78%;
+    }
+    @media(max-width: 430px) {
+      width: 75%;
     }
   }
 }

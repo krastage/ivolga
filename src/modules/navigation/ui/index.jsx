@@ -177,15 +177,17 @@ const Navigation = () => {
                   </svg>
                 </button>
               </li>
-              <li className='main-header__buttons-item'>
-                <div
-                  className={nav ? 'nav-mobile-btn-active' : 'nav-mobile-btn'}
-                  onClick={handleNav}
-                >
-                  <div className='mobile-line'></div>
-                  <div className='mobile-line'></div>
-                </div>
-              </li>
+              {windowWidth <= 820 &&
+                <li className='main-header__buttons-item'>
+                  <div
+                    className={nav ? 'nav-mobile-btn-active' : 'nav-mobile-btn'}
+                    onClick={handleNav}
+                  >
+                    <div className='mobile-line'></div>
+                    <div className='mobile-line'></div>
+                  </div>
+                </li>
+              }
             </ul>
           </div>
         </>

@@ -10,6 +10,8 @@
   gap: 67px;
   height: 100%;
   position: relative;
+
+  
 }
 
 //Images
@@ -18,6 +20,11 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media(max-width: 960px) {
+      margin-left: 150px;
+      max-width: 30%;
+  }
 }
 
 //Config
