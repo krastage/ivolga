@@ -146,7 +146,6 @@ const Navigation = () => {
                   </svg>
                 </button>
               </li>
-              {windowWidth >= 820 ?
                 <li className='main-header__buttons-item'>
                 <button
                   className='main-header__button'
@@ -178,7 +177,6 @@ const Navigation = () => {
                   </svg>
                 </button>
               </li>
-              :
               <li className='main-header__buttons-item'>
                 <div
                   className={nav ? 'nav-mobile-btn-active' : 'nav-mobile-btn'}
@@ -188,7 +186,6 @@ const Navigation = () => {
                   <div className='mobile-line'></div>
                 </div>
               </li>
-              }
             </ul>
           </div>
         </>

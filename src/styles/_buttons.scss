@@ -15,6 +15,15 @@
     border 0.9s,
     color 0.9s;
 
+    @media(max-width: 960px) {
+      font-size: 14px;
+    }
+
+    @media(max-width: 760px) {
+      font-size: 13px;
+    }
+    
+
   &:hover {
     border: 1px solid $border-black;
     transition:
