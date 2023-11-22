@@ -7,21 +7,30 @@
   flex-direction: column;
   gap: 20px;
   max-width: 100%;
+  
 }
 
 .basket-container {
+
   & .products-card-list {
     &--2 {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       width: 100%;
+      gap: 150px;
     }
+
   }
 
   & .products-card {
     &--medium {
       flex-grow: 1;
-      max-width: 47%;
+      max-width: 35%;
+
+      @media(max-width: 960px) {
+        max-width: 70%;
+      }
     }
   }
 }
