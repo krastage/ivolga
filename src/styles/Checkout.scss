@@ -18,6 +18,10 @@ Config
   padding-right: 98px;
   border-right: $border-grey 1px solid;
   width: 100%;
+
+  @media(max-width: 1100px) {
+    padding-right: 50px;
+  }
 }
 
 .configuration-content {
@@ -159,6 +163,10 @@ Order
   gap: 40px;
   padding-left: 98px;
   width: 100%;
+  
+  @media(max-width: 1100px) {
+    padding-left: 40px;
+  }
 }
 
 //Order info

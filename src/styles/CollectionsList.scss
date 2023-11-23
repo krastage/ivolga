@@ -1,18 +1,11 @@
 @import 'global/settings';
 
 .collections-list {
-  display: grid;
-  flex-direction: row;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-
-  @media (max-width: 1260px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 50px;
 }
 
 .collections-list__title {

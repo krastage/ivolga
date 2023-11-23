@@ -55,6 +55,12 @@
   padding: 1rem;
   margin-right: 1rem;
 
+  @media (max-width: 960px) {
+    top: 50%;
+    right: 26%;
+    max-width: 30%;
+  }
+
   @media(max-width: 640px) {
     top: 45%;
     max-width: 40%;

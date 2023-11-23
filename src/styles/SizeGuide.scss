@@ -32,12 +32,32 @@
       width: 30%;
     }
   }
+  
+  @media (max-width: 620px) {
+    .sizeGuide-table {
+      padding-left: 60px;
+      thead {
+        width: 50%;
+      }
+
+      tbody {
+        width: 50%;
+      }
+    }
+  }
 }
 
 .sizeGuide-modal__table {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 620px) {
+    text-align: center;
+    h1 {
+      align-self: centern;
+    }
+  }
 }
 
 .sizeGuide-table__title {
