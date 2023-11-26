@@ -3,6 +3,10 @@
 .product {
   display: flex;
   justify-content: center;
+
+  @media(max-width: 760px) {
+    display: block;
+  }
 }
 
 .product-common {
@@ -11,12 +15,18 @@
   height: 100%;
   position: relative;
 
-  @media(max-width: 620px) {
+  @media(max-width: 760px) {
     flex-direction: column;
     gap: 0;
     align-items: center;
   }
   
+}
+
+.cb {
+  background-color: #000;
+  width: 10px;
+  height: 10px;
 }
 
 //Images
@@ -26,13 +36,15 @@
   flex-direction: column;
   gap: 16px;
 
-  @media(max-width: 620px) {
-    flex-direction: row;
-    justify-content: center;
-    width: 110px;
-
+  @media(max-width: 960px) {
     img {
-      width: 100%;
+      width: 450px;
+    }
+  }
+  @media(max-width: 480px) {
+    padding-left: 40px;
+    img {
+      width: 150px;
     }
   }
 }
@@ -49,8 +61,21 @@
   position: sticky;
   top: 110px;
 
-  @media(max-width: 620px) {
+  @media(max-width: 760px) {
+    align-items: center;
     padding-bottom: 0;
+
+    div {
+      width: 400px;
+    }
+  }
+  @media(max-width: 480px) {
+    align-items: center;
+    padding-bottom: 0;
+
+    div {
+      width: 300px;
+    }
   }
 }
 
@@ -188,15 +213,16 @@
 .product-config__info-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .product-config__info-item {
-  border-bottom: $border-grey 1px solid;
   padding-bottom: 10px;
 }
 
+
 .product-config__button {
+  border-bottom: $border-grey 1px solid;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -215,9 +241,11 @@
 }
 
 //Details
+.image-swiper {
+  width: 100px;
+}
 
 .product-config-details-button__details {
-  max-height: 0;
   transition: 0.9s ease-in-out;
 
   &.active {

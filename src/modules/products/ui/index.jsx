@@ -20,6 +20,7 @@ const Product = () => {
               '/assets/img/product/product1.png',
               '/assets/img/product/product2.png',
               '/assets/img/product/product3.png',
+              '/assets/img/product/product1.png',
             ]}
             configTitle='Топ вязанный из кашемира нежно бежевого цвета'
             price={30_000}

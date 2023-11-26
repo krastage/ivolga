@@ -34,6 +34,10 @@
     .modal-top-content {
       top: 65px;
       transition: 1.9s top ease-in-out;
+
+      @media (max-width: 1440px) {
+        top: 99px;
+      }
     }
   }
 

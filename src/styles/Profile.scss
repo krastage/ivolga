@@ -126,6 +126,7 @@
       gap: 70px;
     }
 
+
     @media(max-width: 1260px) {
       grid-template-columns: 1fr 1fr 1fr;
 
@@ -145,6 +146,8 @@
       li {
         width: 220px
       }
+
+  
     }
     @media(max-width: 480px) {
       li {
@@ -223,12 +226,24 @@
   @extend .common-container;
   gap: 40px;
   width: 51.55vw;
+
+  @media (max-width: 620px) {
+    width: 400px;
+  }
 }
 
 .addresses-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media(max-width: 620px) {
+    gap: 60px;
+
+    li {
+      padding-bottom: 20px;
+    }
+  }
 }
 
 .addresses-item {
@@ -247,7 +262,7 @@
     gap: 10px;
     
     a {
-      padding: 10px
+      padding: 10px 80px;
     }
   }
 }

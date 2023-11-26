@@ -6,7 +6,12 @@
   margin-bottom: 60px;
   gap: 40px;
 
+  @media(max-width: 760px) {
+    display: block;
+  }
+
   @media(max-width: 620px) {
     gap: 0;
   }
 }
+

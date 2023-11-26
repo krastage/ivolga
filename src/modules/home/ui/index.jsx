@@ -10,10 +10,11 @@ import Footer from '../../footer/ui';
 import ProductCard from '../../ud-ui/layouts/products/product-card';
 import ProductsCardList from '../../ud-ui/layouts/products/product-card-list';
 
-const Home = () => {
+function Home() {
   return (
     <AnimatedPage>
       <>
+        
         <main className='content'>
           <div className='home-collection'>
             <div className='home__hero body-hero'>
@@ -38,36 +39,31 @@ const Home = () => {
                   size='big'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={25000}
                   imageSource={'/assets/img/products/product.png'}
-                  key={0}
-                />,
+                  key={0} />,
                 <ProductCard
                   size='big'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={25000}
                   imageSource={'/assets/img/products/product.png'}
-                  key={1}
-                />,
+                  key={1} />,
                 <ProductCard
                   size='big'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={25000}
                   imageSource={'/assets/img/products/product.png'}
-                  key={2}
-                />,
+                  key={2} />,
                 <ProductCard
                   size='big'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={25000}
                   imageSource={'/assets/img/products/product.png'}
-                  key={3}
-                />,
-              ]}
-            />
+                  key={3} />,
+              ]} />
           </div>
 
           <div className='home-collection'>
@@ -92,42 +88,37 @@ const Home = () => {
                   size='big'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={25000}
                   imageSource={'/assets/img/products/product2.png'}
-                  key={1}
-                />,
+                  key={1} />,
                 <ProductCard
                   size='big'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={25000}
                   imageSource={'/assets/img/products/product3.png'}
-                  key={2}
-                />,
+                  key={2} />,
                 <ProductCard
                   size='big'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={25000}
                   imageSource={'/assets/img/products/product4.png'}
-                  key={3}
-                />,
+                  key={3} />,
                 <ProductCard
                   size='big'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={25000}
                   imageSource={'/assets/img/products/product5.png'}
-                  key={4}
-                />,
-              ]}
-            />
+                  key={4} />,
+              ]} />
           </div>
         </main>
         <Footer />
       </>
     </AnimatedPage>
   );
-};
+}
 
 export default Home;

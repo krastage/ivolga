@@ -24,8 +24,10 @@
     pointer-events: all;
     z-index: 9999;
     transition: all 0.9s ease-in-out;
+    overflow: scroll;
 
     .modal-right-content {
+      overflow: scroll;
       opacity: 1;
       right: 0;
       transition: all 0.9s ease-in-out;
@@ -41,7 +43,7 @@
     height: 100%;
     padding: 40px 50px;
     background-color: $background-white;
-    right: 0;
+    right: -50%;
     top: 0;
     position: fixed;
     transition: all 0.9s ease-in-out;
@@ -107,7 +109,7 @@
     background-color: $background-white;
     top: 0;
     position: fixed;
-    overflow: auto;
+    overflow: scroll;
     transition: all 0.9s ease-in-out;
     z-index: 9999;
   }

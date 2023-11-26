@@ -2,10 +2,16 @@
  * Шаблон страницы товара, продукта
  */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../../../../../styles/ProductLayout.scss';
 import PrimaryButtonActive from '../../../buttons/PrimaryButtonActive';
 import SizeGuide from '../../../modals/size-guide';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 const ProductLayout = ({
   imgSource,
@@ -23,6 +29,7 @@ const ProductLayout = ({
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
   const [isExchangeOpen, setIsExchangeOpen] = useState(false);
   const [selectedColor, setSelectedColor] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const toggleDetails = () => {
     setShowDetails(!showDetails);
     setIsDetailsOpen(!isDetailsOpen);
@@ -43,12 +50,6 @@ const ProductLayout = ({
       className={`product-config-details-button__details ${
         showDetails ? 'product-config-details-button__details active' : ''
       }`}>
-      <p>
-        – relaxed fit <br />
-        – detachable high neck <br />
-        – primary fabric 58% cotton 42% polyester <br />
-        – made in Italy <br />– StyleID:J03NL0103J15381107
-      </p>
     </div>
   );
 
@@ -85,11 +86,42 @@ const ProductLayout = ({
     },
   ];
 
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [windowWidth])
+
   return (
     <>
-      <div className='product container'>
+      <div className='product'>
         <div className='product-common'>
-
+      {windowWidth <= 760 ?
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={10}
+        slidesPerView={3}
+        loop={true}
+        pagination
+        style={{width: '400px', paddingBottom: '40px'}}
+      >
+        {imgSource.map((imgSource, index) => (
+          <SwiperSlide>
+            <img width={100} src={imgSource}
+              alt='pick'
+              key={index} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      :
+      
+          
           <div className='product-images'>
             {imgSource.map((imgSource, index) => (
               <img src={imgSource}
@@ -97,6 +129,7 @@ const ProductLayout = ({
                    key={index} />
             ))}
           </div>
+      }
 
           <div className='product-config'>
             <div className='product-config__head'>
