@@ -20,11 +20,11 @@
     }
 
     @media (max-width: 960px) {
-      width: 270px;
+      width: 27vw;
     }
 
-    @media (max-width: 760px) {
-      width: 160px;
+    @media (max-width: $phone-size) {
+      width: 41vw;
     }
   }
 
@@ -132,6 +132,18 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 900px) and (min-width: 760px)  {
+    .container {
+      max-width: 90vw;
+      margin: 0 auto;
+    }
+
+    .products-card-list {
+      width: 100%;
+    }
+
+  }
 
   @media (max-width: 760px) {
     max-width: 760px;

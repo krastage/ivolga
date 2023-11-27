@@ -14,6 +14,10 @@
   @media(max-width: 620px) {
     padding: 0;
   }
+
+  @media(max-width: $phone-size) {
+    padding-bottom: 40px;
+  }
 }
 
 .faq-link {
@@ -109,6 +113,10 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @media(max-width: $phone-size) {
+    max-width: 100%;
+  }
 }
 
 .faq-info__contact {
@@ -165,7 +173,15 @@
     }
   }
 
+  img {
+    @media(max-width: $phone-size) {
+      max-width: 100%;
+    }
+  }
+
   @media(max-width: $phone-size) {
     padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
   }
 }
