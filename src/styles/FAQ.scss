@@ -88,6 +88,16 @@
   @media(max-width: 820px) {
     margin: 0;
   }
+
+  @media(max-width: $mini-tablet-size) {
+    margin: 0 auto;
+  }
+
+  @media(max-width: $phone-size) {
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .faq-info__title {
@@ -153,5 +163,9 @@
     img {
       max-width: 400px;
     }
+  }
+
+  @media(max-width: $phone-size) {
+    padding: 0 20px;
   }
 }

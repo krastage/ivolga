@@ -44,6 +44,7 @@
 
 .input-label {
   cursor: pointer;
+  font-size: clamp(13px, 1.1vw, 18px);
 }
 
 .input-readonly {
@@ -166,7 +167,7 @@ input[type='checkbox']:checked + .checkbox-input-label::before {
 }
 
 .checkbox-input-label span {
-  font-size: 12px;
+  font-size: clamp(12px, 1.2vw, 16px);
   margin-left: 11px;
   cursor: pointer;
 }

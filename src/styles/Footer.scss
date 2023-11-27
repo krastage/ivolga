@@ -32,6 +32,7 @@
 .footer-link {
   color: $text-black;
   transition: color 0.9s;
+  font-size: clamp(12px, 1.1vw, 18px);
 
   &-active,
   &:hover {

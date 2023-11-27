@@ -14,23 +14,25 @@
   top: 0;
   right: 5px;
   pointer-events: none;
-  transition: all 0.9s ease-in-out;
+  transition: 0.9s;
   z-index: 9999;
-  
 
   &.active {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.4);
     pointer-events: all;
     z-index: 9999;
-    transition: all 0.9s ease-in-out;
-    overflow: scroll;
+    transition: 0.9s;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     .modal-right-content {
-      overflow: scroll;
       opacity: 1;
       right: 0;
-      transition: all 0.9s ease-in-out;
+      transition: 0.9s;
+      max-height: 100vh !important;
+      overflow-y: scroll !important;
+      overflow-x: hidden;
     }
   }
 
@@ -46,23 +48,24 @@
     right: -50%;
     top: 0;
     position: fixed;
-    transition: all 0.9s ease-in-out;
+    transition: 0.9s;
     z-index: 9999;
 
-    @media(max-width: 1440px) {
+    @media (max-width: 1440px) {
       width: 30%;
     }
 
-    @media(max-width: 620px) {
+    @media (max-width: 620px) {
       width: 85%;
+      padding: 30px 40px;
     }
-    @media(max-width: 580px) {
+    @media (max-width: 580px) {
       width: 80%;
     }
-    @media(max-width: 480px) {
+    @media (max-width: 480px) {
       width: 78%;
     }
-    @media(max-width: 430px) {
+    @media (max-width: 430px) {
       width: 75%;
     }
   }
@@ -87,7 +90,7 @@
   top: 0;
   right: 0;
   pointer-events: none;
-  transition: background-color 0.9s ease-in-out;
+  transition: 0.9s;
   z-index: 9999;
 
   &.active {
@@ -95,8 +98,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     pointer-events: all;
     z-index: 9999;
-    transition: all 0.9s ease-in-out;
-
+    transition: 0.9s;
   }
 
   .modal-right-content {
@@ -110,7 +112,7 @@
     top: 0;
     position: fixed;
     overflow: scroll;
-    transition: all 0.9s ease-in-out;
+    transition: 0.9s;
     z-index: 9999;
   }
 }

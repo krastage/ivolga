@@ -31,10 +31,14 @@
 .nav-link {
   color: $text-black;
   user-select: none;
+  font-size: clamp(12px, 1.1vw, 18px);
+  display: block;
+  width: 100%;
 
   &-active,
   &:hover {
     color: $text-grey;
+    font-size: clamp(12px, 1.1vw, 18px);
     transition: 0.9s;
     user-select: none;
   }
@@ -72,6 +76,10 @@
 .main-header__list {
   display: flex;
   gap: 30px;
+  li {
+    display: flex;
+    align-items: center;
+  }
 }
 
 

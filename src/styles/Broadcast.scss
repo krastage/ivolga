@@ -12,8 +12,12 @@
   @media (max-width: 1440px) {
     gap: 50px;
   }
-  @media (max-width: 960px) {
-    gap: 5px;
+  @media(max-width: $tablet-size) {
+    gap: 35px;
+  }
+
+  @media(max-width: 580px) {
+    flex-direction: column;
   }
 }
 
@@ -22,23 +26,22 @@
 .broadcast-poster {
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
+  position: relative;
+
+  @media(max-width: $tablet-size) {
+    max-width: 50vw;
+  }
+
+  @media(max-width: 580px) {
+    margin: 0 auto;
+    max-width: 65vw;
+  }
 }
 
 .broadcast-video {
-  width: 500px;
+  width: 100%;
   height: auto;
-
-  @media(max-width: 760px) {
-    width: 400px;
-  }
-
-  @media(max-width: 620px) {
-    width: 280px;
-  }
-
-  @media(max-width: 430px) {
-    width: 220px;
-  }
 }
 
 //Elements
@@ -50,6 +53,12 @@
   padding-bottom: 32px;
   position: absolute;
   color: $background-white;
+  width: 100%;
+
+  @media(max-width: 580px) { 
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 //Article
@@ -85,6 +94,7 @@
   gap: 10px;
   margin-top: 40px;
   overflow: hidden;
+  width: 100%;
 }
 
 .broadcast-tools p {
@@ -99,6 +109,51 @@
   gap: 30px;
   font-size: 12px;
   max-width: 100%;
+
+  h2 {
+    font-size: clamp(10px, 1.4vw, 22px);
+  }
+
+  .products-card-list {
+    @media(max-width: $desktop-size) {
+      gap: 20px;
+    }
+
+    @media(max-width: $mini-desktop-size) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media(max-width: $tablet-size) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width: $mini-tablet-size) {
+      grid-template-columns: 1fr;
+      min-width: 20vw;
+    }
+
+    @media(max-width: 580px) {
+      grid-template-columns: repeat(2, 1fr);
+      min-width: 40%;
+    }
+  }
+
+
+  .products-card--small {
+      width: 11.97vw;
+
+      @media(max-width: $mini-desktop-size) {
+        width: 14vw;
+      }
+
+      @media(max-width: $tablet-size) {
+        width: 16.5vw;
+      }
+
+      @media(max-width: $mini-tablet-size) {
+        width: 100%;
+      }
+  }
 }
 
 .broadcast-products__title {

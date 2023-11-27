@@ -38,14 +38,21 @@
 
     .modal-top-content {
       top: 100px;
+      overflow-y: scroll;
       transition: 1.9s top ease-in-out;
+      overflow-x: hidden;
+
+      @media(max-width: $laptop-size) {
+        top: 80px;
+      }
 
       @media(max-width: 960px) {
         top: 65px;
       }
 
       @media(max-width: 620px) {
-        height: 450px;
+        height: 380px;
+        padding-bottom: 40px;
       }
     }
   }
@@ -60,6 +67,7 @@
     position: fixed;
     transition: 1.9s top ease-in-out;
     border: 1px solid $border-grey;
+    overflow-y: scroll;
   }
 }
 

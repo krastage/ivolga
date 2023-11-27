@@ -11,22 +11,23 @@
 }
 
 .basket-container {
+  max-height: 100vh !important;
+  overflow-y: scroll !important;
 
   & .products-card-list {
     &--2 {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       width: 100%;
-      gap: 150px;
 
-      @media(max-width: 1440px) {
-        gap: 50px;
+      @media(max-width: $laptop-size) {
+        flex-direction: column;
+        margin-bottom: 60px;
       }
       
       @media(max-width: 620px) {
         gap: 10px;
-        flex-wrap: wrap;
       }
     }
 
@@ -35,10 +36,11 @@
   & .products-card {
     &--medium {
       flex-grow: 1;
-      max-width: 35%;
+      width: 40%;
 
-      @media(max-width: 960px) {
-        max-width: 70%;
+      @media(max-width: $laptop-size) {
+       width: 80%;
+       margin: 0 auto;
       }
     }
   }

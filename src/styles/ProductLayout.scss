@@ -246,12 +246,14 @@
 }
 
 .product-config-details-button__details {
-  transition: 0.9s ease-in-out;
+  transition: 0.7s;
+  max-height: 0;
+  overflow: hidden;
 
   &.active {
     display: flex;
     max-height: 294px;
-    transition: color 0.9s;
+    transition: 0.7s;
     width: 100%;
     padding: 0 10px;
   }
