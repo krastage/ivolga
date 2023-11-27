@@ -47,6 +47,10 @@ const Filter = ({
         <div className='buttonchik'><CloseButton onClick={() => setFilterActive(false)}/></div>
         <div className='filter-modal-content'>
           <ul className='filter-modal-content__list'>
+            
+          </ul>
+          
+          <ul className='filter-modal-content__list'>
             <li>
               <button
                 className={`filter-modal-content__button`}

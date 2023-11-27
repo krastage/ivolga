@@ -77,6 +77,8 @@
 .profile-container {
   @extend .common-container;
   gap: 80px;
+
+  width: 100%;
 }
 
 .profile-info {

@@ -14,6 +14,11 @@
 }
 
 .modal-top {
+  @media(max-width: 480px) {
+    button {
+      font-size: 14px;
+    }
+  }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,11 +37,15 @@
     transition: background-color 0.9s ease-in-out;
 
     .modal-top-content {
-      top: 65px;
+      top: 100px;
       transition: 1.9s top ease-in-out;
 
-      @media (max-width: 1440px) {
-        top: 99px;
+      @media(max-width: 960px) {
+        top: 65px;
+      }
+
+      @media(max-width: 620px) {
+        height: 450px;
       }
     }
   }
@@ -53,6 +62,8 @@
     border: 1px solid $border-grey;
   }
 }
+
+
 
 //Modal top heading
 

@@ -32,6 +32,15 @@
       width: 30%;
     }
   }
+
+  @media(max-width: 760px) {
+    .sizeGuide-table {
+      padding-left: 40px;
+    }
+    thead {
+      width: 50%;
+    }
+  }
   
   @media (max-width: 620px) {
     .sizeGuide-table {
@@ -55,7 +64,7 @@
   @media (max-width: 620px) {
     text-align: center;
     h1 {
-      align-self: centern;
+      align-self: center;
     }
   }
 }
@@ -72,18 +81,17 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 818px;
+  width: 500px;
 
   & tbody {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 818px;
   }
 
   & td {
     display: flex;
-    width: 147px;
+    width: 50px;
     justify-content: center;
     padding-bottom: 10px;
     border-bottom: $border-grey 1px solid;
@@ -92,7 +100,7 @@
   & th {
     display: flex;
     gap: 20px;
-    width: 147px;
+    width: 50px;
     justify-content: center;
   }
 
