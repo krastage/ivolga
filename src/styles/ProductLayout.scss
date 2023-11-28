@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
 
-  @media(max-width: 760px) {
+  @media (max-width: 760px) {
     display: block;
   }
 }
@@ -15,12 +15,16 @@
   height: 100%;
   position: relative;
 
-  @media(max-width: 760px) {
+  @media (max-width: 860px) {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  @media (max-width: 760px) {
     flex-direction: column;
     gap: 0;
     align-items: center;
   }
-  
 }
 
 .cb {
@@ -36,12 +40,12 @@
   flex-direction: column;
   gap: 16px;
 
-  @media(max-width: 960px) {
+  @media (max-width: 960px) {
     img {
       width: 450px;
     }
   }
-  @media(max-width: 480px) {
+  @media (max-width: 480px) {
     padding-left: 40px;
     img {
       width: 150px;
@@ -61,7 +65,7 @@
   position: sticky;
   top: 110px;
 
-  @media(max-width: 760px) {
+  @media (max-width: 760px) {
     align-items: center;
     padding-bottom: 0;
 
@@ -69,7 +73,7 @@
       width: 400px;
     }
   }
-  @media(max-width: 480px) {
+  @media (max-width: 480px) {
     align-items: center;
     padding-bottom: 0;
 
@@ -112,6 +116,9 @@
 .product-config-detail-button__arrow {
   display: flex;
   gap: 8px;
+  @media (max-width: $big-phone-size) {
+    width: fit-content !important;
+  }
 }
 
 //Size
@@ -219,7 +226,6 @@
 .product-config__info-item {
   padding-bottom: 10px;
 }
-
 
 .product-config__button {
   border-bottom: $border-grey 1px solid;

@@ -16,6 +16,12 @@
     width: 70vw;
     right: $size-guide-modal-right;
     transition: 1.5s;
+
+    @media(max-width: $phone-size) {
+      width: 100vw;
+      box-sizing: border-box;
+      padding: 30px 20px;
+    }
   }
 }
 
@@ -34,7 +40,7 @@
       margin-bottom: 50px;
     }
 
-    @media (max-width: $phone-size) {
+    @media (max-width: 830px) {
       width: auto;
     }
   }
@@ -93,6 +99,10 @@
     min-width: 50px;
     flex-grow: 1;
     justify-content: center;
+
+    @media(max-width: $phone-size) {
+      gap: 10px;
+    }
   }
 
   & thead {
@@ -104,6 +114,10 @@
     display: flex;
     gap: 20px;
     align-items: center;
+
+    @media(max-width: $phone-size) {
+      gap: 10px;
+    }
   }
 }
 
