@@ -97,7 +97,7 @@
     margin: 0 auto;
   }
 
-  @media(max-width: $phone-size) {
+  @media(max-width: $big-phone-size) {
     padding: 0 20px;
     width: 100%;
     box-sizing: border-box;

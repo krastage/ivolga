@@ -84,7 +84,7 @@ const Settings = () => {
           <div className='form__bottom-container'>
             <div className='form-checkbox'>
               <CheckboxInput
-                name={'agreement'}
+                name={'personal-agreement'}
                 text={'Я даю согласие на обработку персональных данных'}
                 errors={errors}
                 register={register}

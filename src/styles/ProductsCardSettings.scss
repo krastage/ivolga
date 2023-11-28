@@ -8,16 +8,8 @@
 
   &--big {
     @extend .products-card;
-    width: 325px;
+    width: 20vw;
     gap: 20px;
-
-    @media (max-width: 1260px) {
-      width: 270px;
-    }
-
-    @media (max-width: 1100px) {
-      width: 220px;
-    }
 
     @media (max-width: 960px) {
       width: 27vw;
@@ -133,7 +125,7 @@
   align-items: center;
   gap: 20px;
 
-  @media (max-width: 900px) and (min-width: 760px)  {
+  @media (max-width: 1440px) and (min-width: 760px)  {
     .container {
       max-width: 90vw;
       margin: 0 auto;
@@ -162,7 +154,7 @@
 
 .products-card-head {
   display: flex;
-  margin-bottom: 30px;
+  padding: 0 10px;
 
   &--space-between {
     @extend .products-card-head;

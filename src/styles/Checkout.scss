@@ -11,6 +11,14 @@
     align-items: center;
     gap: 50px;
   }
+
+  @media(max-width: $big-phone-size) {
+    padding: 45px 30px;
+  }
+
+  @media(max-width: 380px) {
+    padding: 35px 20px;
+  }
 }
 
 /**
@@ -79,6 +87,14 @@ Config
     background-color: $border-grey;
     transition: 0.9s background-color ease-in-out;
   }
+
+  @media(max-width: $phone-size) {
+    padding: 14px 16px;
+  }
+
+  @media(max-width: 380px) {
+    padding: 12px;
+  }
 }
 
 .delivery-button.active {
@@ -99,11 +115,18 @@ Config
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 3px;
+  gap: 3px;text-align: left;
 
   & span {
     font-size: 12px;
     color: $text-grey;
+  }
+
+  p {
+    @media(max-width: 380px) {
+      max-width: 90%;
+      
+    }
   }
 }
 

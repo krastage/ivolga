@@ -18,6 +18,7 @@
   width: 289px;
   color: $text-grey;
   border-left: 1px solid $border-grey;
+  position: relative;
 }
 
 //Buttons
@@ -38,6 +39,13 @@
   color: $text-black;
   position: absolute;
   bottom: 32px;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media(max-width: 620px) {
+    bottom: 0px;
+  }
 
   &:disabled {
     color: $text-grey;

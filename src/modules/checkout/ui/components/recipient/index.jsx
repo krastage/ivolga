@@ -60,7 +60,7 @@ const Recipient = () => {
             />
 
             <CheckboxInput
-              name={'agreement'}
+              name={'personal-agreement'}
               text={'Я даю согласие на обработку персональных данных'}
               errors={errors}
               register={register}
