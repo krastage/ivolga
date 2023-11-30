@@ -280,8 +280,14 @@ Order
   justify-content: center;
   align-content: center;
   width: 866px;
-  margin: 0 auto;
-  padding: 317px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media(max-width: $laptop-size) {
+    width: 85vw;
+  }
 
   & h1 {
     padding-bottom: 10px;

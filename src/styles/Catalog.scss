@@ -13,6 +13,14 @@
     background-position: 40% 0;
     height: 100vw;
   }
+
+
+    .modal-top-content {
+      @media(max-width: 620px) {
+        height: 380px;
+        padding-bottom: 40px;
+      }
+    }
 }
 
 .catalog__banner {

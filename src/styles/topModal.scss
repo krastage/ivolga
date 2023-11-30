@@ -49,11 +49,6 @@
       @media(max-width: 960px) {
         top: 65px;
       }
-
-      @media(max-width: 620px) {
-        height: 380px;
-        padding-bottom: 40px;
-      }
     }
   }
 
@@ -68,6 +63,11 @@
     transition: 1.9s top ease-in-out;
     border: 1px solid $border-grey;
     overflow-y: scroll;
+
+    @media(max-width: 620px) {
+      height: 380px;
+      padding-bottom: 40px;
+    }
   }
 }
 
