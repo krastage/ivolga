@@ -6,6 +6,10 @@
   margin-bottom: 60px;
   gap: 60px;
 
+  .title {
+    font-size: clamp(20px, 2.5vw, 30px);
+  }
+
   .main-content__banner-img {
     background-image: url('../../public/assets/img/products/hero1.png');
     background-repeat: no-repeat;
