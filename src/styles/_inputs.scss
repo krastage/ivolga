@@ -132,6 +132,7 @@
 input[type="date"] {
   @media (max-width: $big-phone-size) {
     height: 54.5px;
+    max-width: 90%;
   }
 }
 
