@@ -11,24 +11,20 @@
   border: 1px solid $border-grey;
   background-color: $background-white;
   user-select: none;
-  transition:
-    border 0.9s,
-    color 0.9s;
+  transition: border 0.9s, color 0.9s;
+  color: rgb(0, 0, 0);
 
   &:hover {
     border: 1px solid $border-black;
-    transition:
-      border 0.9s,
-      color 0.9s;
+    transition: border 0.9s, color 0.9s;
   }
 
   &:disabled {
     border: 1px solid $border-grey;
     background-color: $background-white;
     cursor: auto;
-    transition:
-      border 0.9s,
-      color 0.9s;
+    transition: border 0.9s, color 0.9s;
+    color: rgb(147 147 147);
   }
 }
 
@@ -105,15 +101,11 @@
   padding: 10px;
   border: 1px solid $border-grey;
   align-items: center;
-  transition:
-    border 0.9s,
-    color 0.9s;
+  transition: border 0.9s, color 0.9s;
 
   &:hover {
     border: 1px solid $border-black;
-    transition:
-      border 0.9s,
-      color 0.9s;
+    transition: border 0.9s, color 0.9s;
   }
 }
 
@@ -137,7 +129,7 @@
   visibility: hidden;
   pointer-events: none;
 
-  @media(max-width: 620px) {
+  @media (max-width: 620px) {
     bottom: 25px;
     right: 25px;
   }

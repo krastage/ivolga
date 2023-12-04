@@ -120,6 +120,11 @@
   border: 1px solid $border-grey;
   background: $background-white;
   transition: border 0.9s;
+
+  @media (max-width: $big-phone-size) {
+    min-width: 80%;
+  }
+
 }
 
 .input-phone:focus {

@@ -32,14 +32,9 @@ const Navigation = () => {
   const [searchActive, setSearchActive] = useState(false);
   const [basketActive, setBasketActive] = useState(false);
   const [authActive, setAuthActive] = useState(false);
-  const [isNavFixed, setIsNavFixed] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsNavFixed(true);
-    } else {
-      setIsNavFixed(false);
-    }
+    document.querySelector('body').style.paddingTop = `${document.querySelector('.main-header').offsetHeight}px`;
   };
   
   const handleResize = () => {
@@ -57,11 +52,14 @@ const Navigation = () => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
+    if (document.readyState === 'complete') {
+      handleScroll();
+  } else {
+      window.addEventListener('load', handleScroll);
+  }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('load', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
   }, [window.innerWidth]);
@@ -71,7 +69,9 @@ const Navigation = () => {
       <header className={
         `
         main-header
-        ${isNavFixed ? 'fixed container' : ''}
+        
+        fixed container'
+        
         ${windowWidth >= 820 && 'mobile'}
         `}
       >
