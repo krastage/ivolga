@@ -122,9 +122,17 @@
   transition: border 0.9s;
 
   @media (max-width: $big-phone-size) {
-    min-width: 80%;
+    min-width: 100%;
+    box-sizing: border-box;
   }
 
+}
+
+input[type="date"] {
+  @media (max-width: $big-phone-size) {
+    width: 100%;
+    height: 54.5px;
+  }
 }
 
 .input-phone:focus {

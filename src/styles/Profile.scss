@@ -30,13 +30,12 @@
   }
 
   @media (max-width: 760px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     padding: 0 40px;
     padding-top: 15px;
   }
 
   @media (max-width: $big-phone-size) {
-    grid-template-columns: 1fr;
     padding: 0 30px;
     padding-top: 15px;
   }
