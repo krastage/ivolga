@@ -8,6 +8,11 @@ html {
 
 body {
   margin: 0;
+  font-family: Pragmatica;
+  font-size: clamp(12px, 1.15vw, 22px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
 }
 
 .body-container {
@@ -41,18 +46,6 @@ h3 {
   padding: 0;
 }
 
-h1 {
-  font-size: 28px;
-
-  @media(max-width: 1260px) {
-    font-size: 24px;
-  }
-
-  @media(max-width: 1000px) {
-    font-size: 20px;
-  }
-}
-
 p,
 a,
 span,
@@ -72,16 +65,7 @@ ul {
   margin: 0;
   padding: 0;
   border: none;
-
-  @media(max-width: 1260px) {
-    font-size: 15px;
-  }
-
-  @media (max-width: 1000px) {
-    font-size: 14px;
-  }
 }
-
 
 a:visited {
   text-decoration: none;
@@ -106,4 +90,12 @@ textarea:focus {
   outline: 1px solid $border-black;
 }
 
+.title {
+  font-size: clamp(18px, 2.2vw, 34px);
+  color: #2a2835;
 
+  font-family: Steinbeck;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

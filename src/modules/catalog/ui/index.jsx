@@ -3,7 +3,7 @@
  */
 
 import { useState } from 'react';
-import '../../../styles/global/_settings.scss';
+
 import '../../../styles/Catalog.scss';
 import AnimatedPage from '../../utils/AnimatedPage';
 import Footer from '../../footer/ui';

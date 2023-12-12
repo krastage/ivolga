@@ -4,7 +4,7 @@
 
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import '../../../styles/global/_settings.scss';
+
 import '../../../styles/Navigation.scss';
 import Auth from '../../ud-ui/modals/auth/ui';
 import Basket from '../../ud-ui/modals/basket';

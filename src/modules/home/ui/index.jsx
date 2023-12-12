@@ -3,7 +3,7 @@
  */
 
 import { Link } from 'react-router-dom';
-import '../../../styles/global/_settings.scss';
+
 import '../../../styles/Home.scss';
 import AnimatedPage from '../../utils/AnimatedPage';
 import Footer from '../../footer/ui';
@@ -20,8 +20,8 @@ function Home() {
             <div className='home__hero body-hero'>
               <div className='home__description'>
                 <article className='home__article'>
-                  <p>Новая коллекция</p>
-                  <h1>Осень / Зима 2023 - 2024</h1>
+                  <p className='home__article-text'>Новая коллекция</p>
+                  <h1 className='title'>Осень / Зима 2023 - 2024</h1>
                 </article>
                 <div>
                   <Link to='/catalog' className='home-link'>
@@ -70,8 +70,8 @@ function Home() {
             <div className='home__hero house-hero'>
               <div className='home__description'>
                 <article className='home__article'>
-                  <p>Новая коллекция</p>
-                  <h1>Осень / Зима 2023 - 2024</h1>
+                  <p className='home__article-text'>Новая коллекция</p>
+                  <h1 className='title'>Осень / Зима 2023 - 2024</h1>
                 </article>
                 <div>
                   <Link to='/catalog' className='home-link'>

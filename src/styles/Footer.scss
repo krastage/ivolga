@@ -1,4 +1,4 @@
-@import 'global/settings';
+@import 'global/variables';
 
 .main-footer {
   overflow: hidden;
@@ -9,24 +9,49 @@
   padding-block: 20px;
   gap: 70px;
 
-  @media(max-width: 1100px) {
-      gap: 35px;
-    }
-  
-    @media(max-width: 760px) {
-      gap: 20px;
-      padding-block: 5px;
-    }
-  
+  @media (max-width: 1100px) {
+    gap: 35px;
+  }
+
+  @media (max-width: 760px) {
+    gap: 20px;
+    padding-block: 5px;
+  }
 }
 
 .main-footer__links {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-inline: 20px;
   gap: 30px;
   overflow: hidden;
+
+  @media (max-width: $phone-size) {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 15px;
+
+    & li {
+      border-bottom: 1px solid #d7d7d7;
+
+      & a {
+        width: 100%;
+        display: block;
+        padding: 0 20px;
+        padding-bottom: 15px;
+      }
+
+      &::before {
+        content: '';
+        width: 12px;
+        height: 16px;
+        position: absolute;
+        right: 12px;
+        background: url(../../public/assets/img/footer-icon.svg);
+      }
+    }
+  }
 }
 
 .footer-link {
@@ -44,12 +69,11 @@
 .footer-logo {
   text-align: center;
   svg {
-
-    @media(max-width: 1100px) {
+    @media (max-width: 1100px) {
       width: 80%;
     }
 
-    @media(max-width: 760px) {
+    @media (max-width: 760px) {
       width: 50%;
     }
   }

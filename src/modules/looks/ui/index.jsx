@@ -2,7 +2,7 @@
  * Страница "Образы"
  */
 
-import '../../../styles/global/_settings.scss';
+
 import '../../../styles/Looks.scss';
 import AnimatedPage from '../../utils/AnimatedPage';
 import Footer from '../../footer/ui';

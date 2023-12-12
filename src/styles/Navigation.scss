@@ -1,4 +1,4 @@
-@import 'global/settings';
+@import 'global/variables';
 
 .main-header {
   display: flex;
@@ -53,12 +53,14 @@
 
 .nav-mobile-btn-active {
   .mobile-line {
-    border: 1px solid $text-grey;
+    height: 1px;
+    background: $text-grey;
   }
 }
 
 .mobile-line {
-  border: 1px solid $text-black;
+  height: 1px;
+  background: $text-black;
 }
 
 //Logo
