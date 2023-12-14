@@ -13,6 +13,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 20.8px */
+  background: #FBFBF6;
 }
 
 .body-container {
@@ -37,7 +38,6 @@ h1,
 h2,
 h3 {
   color: $text-black;
-  font-family: Steinbeck, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -65,6 +65,10 @@ ul {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+input, textarea {
+  background: #FBFBF6 !important;
 }
 
 a:visited {
