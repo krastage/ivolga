@@ -13,11 +13,21 @@
   }
 
   .modal-right-content {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 65% 35%;
     padding: 40px 60px 40px 40px;
-    width: 1298px;
+    max-width: 1298px;
+    width: 100vw;
     right: $size-guide-modal-right;
     transition: 1.5s;
+
+    @media(max-width: 900px) {
+      grid-template-columns: 60% 40%;
+    }
+
+    & img {
+      width: 100%;
+    }
   }
 }
 

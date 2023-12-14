@@ -105,15 +105,14 @@ const ProductLayout = ({
       {windowWidth <= 760 ?
       <Swiper
         modules={[Navigation, Pagination]}
-        spaceBetween={10}
-        slidesPerView={3}
+        slidesPerView={1}
         loop={true}
         pagination
-        style={{width: '400px', paddingBottom: '40px'}}
+        style={{maxWidth: '400px', width: '100vw', paddingBottom: '40px'}}
       >
         {imgSource.map((imgSource, index) => (
           <SwiperSlide>
-            <img width={100} src={imgSource}
+            <img width={'100%'} src={imgSource}
               alt='pick'
               key={index} />
           </SwiperSlide>

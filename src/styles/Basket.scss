@@ -17,10 +17,6 @@
 
   & .products-card-list {
     &--2 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 100%;
 
       @media(max-width: $laptop-size) {
         flex-direction: column;
@@ -28,7 +24,7 @@
       }
       
       @media(max-width: 620px) {
-        gap: 10px;
+        grid-template-columns: 50% 50%;
       }
     }
 
@@ -36,13 +32,7 @@
 
   & .products-card {
     &--medium {
-      flex-grow: 1;
-      width: 40%;
-
-      @media(max-width: $laptop-size) {
-       width: 80%;
-       margin: 0 auto;
-      }
+      width: 100%;
     }
   }
 }

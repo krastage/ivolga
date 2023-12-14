@@ -196,7 +196,7 @@ Order
   flex-direction: column;
   gap: 40px;
   padding-left: 98px;
-  width: 100%;
+  width: 40%;
   
   @media(max-width: 1100px) {
     padding-left: 40px;
@@ -204,6 +204,7 @@ Order
 
   @media(max-width: 760px) {
     padding: 0;
+    width: 100%;
   }
 }
 
@@ -241,28 +242,15 @@ Order
   & .products-card-list {
     &--2 {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 50%);
       width: 100%;
-
-      @media(max-width: 590px) {
-        grid-template-columns: repeat(1, 1fr);
-      }
     }
   }
 
   & .products-card {
     &--medium {
       flex-grow: 1;
-      max-width: 100%;
-
-      @media(max-width: 760px) {
-        width: 40vw;
-      }
-
-      @media(max-width: 590px) {
-        width: 65vw;
-        margin: 0 auto;
-      }
+      width: 100%;
       
     }
   }

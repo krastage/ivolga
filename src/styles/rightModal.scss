@@ -33,6 +33,7 @@
       max-height: 100vh !important;
       overflow-y: scroll !important;
       overflow-x: hidden;
+      box-sizing: border-box;
     }
   }
 
@@ -66,7 +67,9 @@
       width: 78%;
     }
     @media (max-width: 430px) {
-      width: 75%;
+      width: 100vw;
+      padding: 20px 10px;
+      box-sizing: border-box;
     }
   }
 }
