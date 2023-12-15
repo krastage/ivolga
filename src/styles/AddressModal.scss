@@ -4,6 +4,7 @@
 .address-right {
   @extend .modal-right;
   transition: 1.5s;
+  overflow-y: scroll;
 
   &.active {
     .modal-right-content {
@@ -21,14 +22,73 @@
     right: $size-guide-modal-right;
     transition: 1.5s;
 
-    @media(max-width: 900px) {
+    @media (max-width: 900px) {
       grid-template-columns: 60% 40%;
+    }
+
+    @media (max-width: $big-phone-size) {
+      grid-template-columns: 100%;
+      padding: 0;
+      padding-top: 20px;
     }
 
     & img {
       width: 100%;
     }
+
+    &.map {
+      .address-right__map-mobile {
+        max-height: 1000px;
+        transition: 0.5s;
+        height: max-content;
+      }
+    }
+  
+    &.list {
+      .address-content__list {
+        max-height: 1000px;
+        transition: 0.5s;
+        
+      }
+    }
   }
+}
+
+.address-right__map {
+  @media (max-width: $big-phone-size) {
+    display: none;
+  }
+}
+
+.address-content__controllers {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  border-bottom: $border-grey 1px solid;
+  border-top: $border-grey 1px solid;
+  @media (min-width: $big-phone-size) {
+    display: none;
+  }
+}
+
+.address-content__controller {
+  padding: 12px 0;
+  transition: 0.5s;
+  border-bottom: transparent 1px solid;
+
+  &.active {
+    border-color: $border-black;
+    transition: 0.5s;
+  }
+}
+
+.address-right__map-mobile {
+  @media (min-width: $big-phone-size) {
+    display: none;
+  }
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 //Content
@@ -38,11 +98,17 @@
   flex-direction: column;
   gap: 40px;
   width: 100%;
+  box-sizing: border-box;
 
   & h2 {
     padding-bottom: 10px;
     border-bottom: $border-grey 1px solid;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: $big-phone-size) {
+   padding: 0 10px;
+
   }
 }
 
@@ -52,4 +118,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: $big-phone-size) {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
 }

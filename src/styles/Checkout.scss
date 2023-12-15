@@ -191,6 +191,17 @@ Config
   flex-direction: column;
   gap: 10px;
   align-items: stretch;
+
+  @media (max-width: $big-phone-size) {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+  }
+
+  .input-container {
+    @media (max-width: $big-phone-size) {
+      gap: 0;
+    }
+  }
 }
 
 /**

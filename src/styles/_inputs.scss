@@ -32,6 +32,10 @@
   border: 1px solid $border-grey;
   background: $background-white;
   transition: border 0.9s;
+
+  @media (max-width: $big-phone-size) {
+    padding: 10px !important;
+  }
 }
 
 .input-error {

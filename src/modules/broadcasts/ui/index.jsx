@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom';
 import '../../../styles/Broadcasts.scss';
 import Footer from '../../footer/ui';
 import AnimatedPage from '../../utils/AnimatedPage';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode } from 'swiper/modules';
+
+import 'swiper/css'
+import 'swiper/css/free-mode';
 
 const Broadcasts = () => {
   return (
@@ -15,7 +20,7 @@ const Broadcasts = () => {
           <ul className='broadcasts-list container'>
             <li className='broadcasts-item'>
               <div className='broadcasts-translation'>
-                <Link to='/broadcasts/broadcast'>
+                <Link className='broadcasts__link' to='/broadcasts/broadcast'>
                   <img
                     src='/assets/img/broadcasts/poster1.png'
                     alt='broadcast'
@@ -45,11 +50,26 @@ const Broadcasts = () => {
                   <img src='/assets/img/looks/small/look4.png' alt='look' />
                 </li>
               </ul>
+
+              <Swiper className='broadcasts-products broadcasts-products--mobile' modules={[FreeMode]} slidesPerView={3} spaceBetween={20} freeMode={true}>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look1.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look2.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look3.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look4.png' alt='look' />
+                </SwiperSlide>
+              </Swiper>
             </li>
 
             <li className='broadcasts-item'>
               <div className='broadcasts-translation'>
-                <Link to='/broadcasts/broadcast'>
+                <Link className='broadcasts__link' to='/broadcasts/broadcast'>
                   <img
                     src='/assets/img/broadcasts/poster2.png'
                     alt='broadcast'
@@ -64,6 +84,27 @@ const Broadcasts = () => {
                   </div>
                 </Link>
               </div>
+
+              <Swiper className='broadcasts-products broadcasts-products--mobile' modules={[FreeMode]} slidesPerView={3} spaceBetween={20} freeMode={true}>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look1.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look2.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look3.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look3.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look3.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look4.png' alt='look' />
+                </SwiperSlide>
+              </Swiper>
 
               <ul className='broadcasts-products'>
                 <li>
@@ -89,7 +130,7 @@ const Broadcasts = () => {
 
             <li className='broadcasts-item'>
               <div className='broadcasts-translation'>
-                <Link to='/broadcasts/broadcast'>
+                <Link className='broadcasts__link' to='/broadcasts/broadcast'>
                   <img
                     src='/assets/img/broadcasts/poster3.png'
                     alt='broadcast'
@@ -104,6 +145,21 @@ const Broadcasts = () => {
                   </div>
                 </Link>
               </div>
+
+              <Swiper className='broadcasts-products broadcasts-products--mobile' modules={[FreeMode]} slidesPerView={3} spaceBetween={20} freeMode={true}>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look5.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look6.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look7.png' alt='look' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src='/assets/img/looks/small/look8.png' alt='look' />
+                </SwiperSlide>
+              </Swiper>
 
               <ul className='broadcasts-products'>
                 <li>

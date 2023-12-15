@@ -26,6 +26,10 @@
     transition: border 0.9s, color 0.9s;
     color: rgb(147 147 147);
   }
+
+  @media (max-width: $big-phone-size) {
+    padding: 10px;
+  }
 }
 
 //Primary button active

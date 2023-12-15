@@ -34,7 +34,8 @@ const Navigation = () => {
   const [authActive, setAuthActive] = useState(false);
 
   const handleScroll = () => {
-    document.querySelector('body').style.paddingTop = `${document.querySelector('.main-header').offsetHeight}px`;
+    console.log(`${document.querySelector('.main-header').offsetHeight}px`);
+    document.querySelector('body').style.paddingTop = `${document.querySelector('.main-header').offsetHeight * 1.1}px`;
   };
   
   const handleResize = () => {
