@@ -135,6 +135,10 @@
 
 .home-collection .products-card-list{
   width: 90%;
+
+  @media(max-width: $phone-size) {
+    width: 100%;
+  }
 }
 
 .products-card-container__content {
@@ -178,6 +182,12 @@
   &--centered {
     @extend .products-card-head;
     justify-content: center;
+    
+    .title {
+      @media(max-width: $phone-size) {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 
