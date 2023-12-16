@@ -86,11 +86,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 516px;
-
-  & p {
-    max-width: 516px;
-  }
 
   @media (max-width: 1000px) {
     margin: 0 auto;

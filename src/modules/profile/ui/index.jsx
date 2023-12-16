@@ -22,7 +22,7 @@ const ProfileLayout = ({ content }) => {
   return (
     <main className='profile'>
       <div className='profile-menu'>
-        <h1 className='profile-menu__title'>Личный кабинет</h1>
+        <h1 className='profile-menu__title title'>Личный кабинет</h1>
         <ul className='profile-menu__links'>
           <li>
             <LinkItem to='/profile' label='Профиль' location={location} />

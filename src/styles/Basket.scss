@@ -17,7 +17,7 @@
 
   & .products-card-list {
     &--2 {
-
+      grid-template-columns: repeat(3, 33.3%);
       @media(max-width: $laptop-size) {
         flex-direction: column;
         margin-bottom: 60px;
