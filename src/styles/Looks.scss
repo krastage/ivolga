@@ -22,4 +22,15 @@
       max-width: 40%;
     }
   }
+
+  @media(max-width: $phone-size) {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 10px;
+
+    img {
+      width: 100%;
+      max-width: none;
+    }
+  }
 }

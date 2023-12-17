@@ -17,7 +17,7 @@ const FilterButton = ({ filterButton, handleFilterChange, resetFilter }) => {
   return (
     <>
       <button onClick={() => setFilterActive(true)} className='filter-button'>
-        <h1>Фильтр+</h1>
+        <h1 className="title">Фильтр +</h1>
       </button>
       <Filter
         filterActive={filterActive}
