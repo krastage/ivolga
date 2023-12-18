@@ -259,6 +259,10 @@ input[type='radio']:checked + .radio-input-label::before {
     outline: none;
   }
 
+  &::placeholder {
+    font-family: Steinbeck;
+  }
+
   &-black {
     @extend .search-input;
     color: $background-white;
