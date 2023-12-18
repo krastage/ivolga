@@ -17,14 +17,14 @@
 
   & .products-card-list {
     &--2 {
-      grid-template-columns: repeat(3, 33.3%);
+      grid-template-columns: repeat(2, 50%);
       @media(max-width: $laptop-size) {
         flex-direction: column;
         margin-bottom: 60px;
       }
       
-      @media(max-width: 620px) {
-        grid-template-columns: 50% 50%;
+      @media(max-width: 920px) {
+        grid-template-columns: 100%;
       }
     }
 

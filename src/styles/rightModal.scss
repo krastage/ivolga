@@ -56,6 +56,14 @@
       width: 30%;
     }
 
+    @media (max-width: 1280px) {
+      width: 40%;
+    }
+
+    @media (max-width: 1020px) {
+      width: 45%;
+    }
+
     @media (max-width: 620px) {
       width: 85%;
       padding: 30px 40px;
