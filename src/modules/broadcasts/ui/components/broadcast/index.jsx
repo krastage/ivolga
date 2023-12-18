@@ -39,7 +39,7 @@ const Broadcast = () => {
                     size='small'
                     link={'/product'}
                     title={'Топ черный из кашемира'}
-                    price={25_000}
+                    price={'25 000'}
                     imageSource={'/assets/img/broadcast/product.png'}
                   />
                 </SwiperSlide>
@@ -48,7 +48,7 @@ const Broadcast = () => {
                     size='small'
                     link={'/product'}
                     title={'Топ черный из кашемира'}
-                    price={25_000}
+                    price={'25 000'}
                     imageSource={'/assets/img/broadcast/product.png'}
                   />
                 </SwiperSlide>
@@ -57,7 +57,7 @@ const Broadcast = () => {
                     size='small'
                     link={'/product'}
                     title={'Топ черный из кашемира'}
-                    price={25_000}
+                    price={'25 000'}
                     imageSource={'/assets/img/broadcast/product.png'}
                   />
                 </SwiperSlide>
@@ -66,7 +66,7 @@ const Broadcast = () => {
                     size='small'
                     link={'/product'}
                     title={'Топ черный из кашемира'}
-                    price={25_000}
+                    price={'25 000'}
                     imageSource={'/assets/img/broadcast/product.png'}
                   />
                 </SwiperSlide>
@@ -84,28 +84,28 @@ const Broadcast = () => {
                   size='small'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={'25 000'}
                   imageSource={'/assets/img/broadcast/product.png'}
                 />,
                 <ProductCard
                   size='small'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={'25 000'}
                   imageSource={'/assets/img/broadcast/product.png'}
                 />,
                 <ProductCard
                   size='small'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={'25 000'}
                   imageSource={'/assets/img/broadcast/product.png'}
                 />,
                 <ProductCard
                   size='small'
                   link={'/product'}
                   title={'Топ черный из кашемира'}
-                  price={25_000}
+                  price={'25 000'}
                   imageSource={'/assets/img/broadcast/product.png'}
                 />,
               ]}

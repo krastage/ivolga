@@ -38,28 +38,28 @@ const Product = () => {
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product2.png'}
               />,
               <ProductCard
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product3.png'}
               />,
               <ProductCard
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product4.png'}
               />,
               <ProductCard
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product5.png'}
               />,
             ]}

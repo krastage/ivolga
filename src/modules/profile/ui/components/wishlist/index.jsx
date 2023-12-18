@@ -22,7 +22,7 @@ const Wishlist = () => {
                 size='medium'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product.png'}
                 key={1}
               />,
@@ -30,7 +30,7 @@ const Wishlist = () => {
                 size='medium'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product.png'}
                 key={2}
               />,
@@ -38,7 +38,7 @@ const Wishlist = () => {
                 size='medium'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product.png'}
                 key={3}
               />,
@@ -46,7 +46,7 @@ const Wishlist = () => {
                 size='medium'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product.png'}
                 key={4}
               />,
@@ -54,7 +54,7 @@ const Wishlist = () => {
                 size='medium'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product.png'}
                 key={5}
               />,
@@ -62,7 +62,7 @@ const Wishlist = () => {
                 size='medium'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product.png'}
                 key={6}
               />,
@@ -70,7 +70,7 @@ const Wishlist = () => {
                 size='medium'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product.png'}
                 key={7}
               />,
@@ -78,7 +78,7 @@ const Wishlist = () => {
                 size='medium'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
-                price={25_000}
+                price={'25 000'}
                 imageSource={'/assets/img/products/product.png'}
                 key={8}
               />,
