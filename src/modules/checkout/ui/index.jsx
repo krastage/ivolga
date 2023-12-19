@@ -57,7 +57,7 @@ const Checkout = () => {
                 className='configuration'
                 onClick={() => handleBlockActivation('AddressAndShipping')}>
                 <div className='configuration-head'>
-                  <h1>Адрес и доставка</h1>
+                  <h1 className='title-1'>Адрес и доставка</h1>
                   <img
                     src={
                       activeBlock === 'AddressAndShipping'
@@ -74,7 +74,7 @@ const Checkout = () => {
             <div>
               <button className='configuration' onClick={() => handleBlockActivation('Recipient')}>
                 <div className='configuration-head'>
-                  <h1>Получатель</h1>
+                  <h1 className='title-1'>Получатель</h1>
                   <img
                     src={
                       activeBlock === 'Recipient'
@@ -91,7 +91,7 @@ const Checkout = () => {
             <div>
               <button className='configuration' onClick={() => handleBlockActivation('Payment')}>
                 <div className='configuration-head'>
-                  <h1>Оплата</h1>
+                  <h1 className='title-1'>Оплата</h1>
                   <img
                     src={
                       activeBlock === 'Payment'
@@ -126,7 +126,7 @@ const Checkout = () => {
 
           <div className='checkout-order-container'>
             <div className='order-info'>
-              <h1 className='order-info__title'>Ваш заказ</h1>
+              <h1 className='title-1 order-info__title'>Ваш заказ</h1>
               <ul className='order-info__list'>
                 <li className='order-info__item'>
                   <p>2 товара</p>

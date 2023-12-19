@@ -68,18 +68,6 @@
   }
 }
 
-//filter
-
-.filter-button h1 {
-  color: $text-black;
-  transition: color 0.9s;
-  font-size: clamp(20px, 2vw, 28px);
-
-  &:hover {
-    color: $text-grey;
-    transition: color 0.9s;
-  }
-}
 
 //search
 

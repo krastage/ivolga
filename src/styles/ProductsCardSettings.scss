@@ -118,6 +118,13 @@
 
   &--medium {
     @extend .products-card-title;
+    @media (max-width: 1020px) {
+      .products-card-title__product {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      flex-wrap: wrap;
+    }
   }
 
   &--small {
@@ -130,7 +137,7 @@
 
 .products-card-title__price {
   color: $text-grey;
-  font-size: clamp(12px, 1.25vw, 20px);
+  font-size: clamp(12px, 1.1vw, 20px);
 }
 
 .home-collection .products-card-list{

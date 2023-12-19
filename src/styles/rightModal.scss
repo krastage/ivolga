@@ -16,24 +16,23 @@
   pointer-events: none;
   transition: 0.9s;
   z-index: 9999;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   &.active {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.4);
     pointer-events: all;
-    z-index: 9999;
     transition: 0.9s;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    
 
     .modal-right-content {
       opacity: 1;
       right: 0;
       transition: 0.9s;
       max-height: 100vh !important;
-      overflow-y: scroll !important;
-      overflow-x: hidden;
-      box-sizing: border-box;
+      
+      
     }
   }
 
@@ -42,26 +41,21 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 40%;
+    width: 45%;
     height: 100%;
     padding: 40px 50px;
     background-color: $background-white;
-    right: -50%;
+    right: -70%;
     top: 0;
     position: fixed;
     transition: 0.9s;
     z-index: 9999;
-
-    @media (max-width: 1440px) {
-      width: 30%;
-    }
-
-    @media (max-width: 1280px) {
-      width: 40%;
-    }
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
 
     @media (max-width: 1020px) {
-      width: 45%;
+      width: 50%;
     }
 
     @media (max-width: 620px) {
@@ -90,40 +84,3 @@
   align-items: center;
 }
 
-.modal-right-mobile {
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  right: 0;
-  pointer-events: none;
-  transition: 0.9s;
-  z-index: 9999;
-
-  &.active {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.4);
-    pointer-events: all;
-    z-index: 9999;
-    transition: 0.9s;
-  }
-
-  .modal-right-content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    height: 100vh;
-    width: $nav-modal-width;
-    right: $nav-modal-right;
-    background-color: $background-white;
-    top: 0;
-    position: fixed;
-    overflow: scroll;
-    transition: 0.9s;
-    z-index: 9999;
-  }
-}

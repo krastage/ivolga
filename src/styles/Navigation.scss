@@ -23,8 +23,6 @@
   margin: 0 auto;
   background-color: $background-white;
   z-index: 999;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 0.9s ease;
 }
 
 .nav-link {
@@ -68,6 +66,10 @@
 .main-header__logo {
   display: flex;
   align-items: center;
+
+  a {
+    display: flex;
+  }
 }
 
 //Navigation
