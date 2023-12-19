@@ -21,6 +21,12 @@
         padding-bottom: 40px;
       }
     }
+
+    @media(max-width: $phone-size) {
+      .products-card-list {
+        padding: 0 5px;
+      }
+    }
 }
 
 .catalog__banner {

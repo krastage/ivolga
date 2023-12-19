@@ -16,8 +16,8 @@
     padding: 45px 30px;
   }
 
-  @media(max-width: 380px) {
-    padding: 35px 20px;
+  @media(max-width: $phone-size) {
+    padding: 35px 10px;
   }
 }
 
