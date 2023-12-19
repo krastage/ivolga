@@ -5,7 +5,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import AnimatedPage from '../../../../../../utils/AnimatedPage';
-import ScrollToTop from '../../../../../../utils/ScrollToTop';
 import PrimaryButton from '../../../../../../ud-ui/buttons/PrimaryButton';
 import CheckboxInputNotRequired
   from '../../../../../../ud-ui/inputs/checkboxes/CheckboxInputNotRequired';
@@ -27,7 +26,6 @@ const CourierShipping = () => {
 
   return (
     <>
-      <ScrollToTop />
       <AnimatedPage>
         <form>
           <div className='shipping-content'>

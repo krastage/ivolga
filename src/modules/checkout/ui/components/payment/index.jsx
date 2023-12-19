@@ -5,7 +5,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import AnimatedPage from '../../../../utils/AnimatedPage';
-import ScrollToTop from '../../../../utils/ScrollToTop';
 import PrimaryButton from '../../../../ud-ui/buttons/PrimaryButton';
 import RadioInput from '../../../../ud-ui/inputs/radio/RadioInput';
 import MultiInputNotRequired
@@ -20,7 +19,6 @@ const PaymentCheckout = () => {
 
   return (
     <>
-      <ScrollToTop />
       <AnimatedPage>
         <form className='form payment-checkout' onSubmit={handleSubmit(onSubmit)}>
           <div className='form__container'>

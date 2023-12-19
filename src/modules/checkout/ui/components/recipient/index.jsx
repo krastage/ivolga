@@ -5,7 +5,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import AnimatedPage from '../../../../utils/AnimatedPage';
-import ScrollToTop from '../../../../utils/ScrollToTop';
 import CheckboxInput from '../../../../ud-ui/inputs/checkboxes/CheckboxInput';
 import PhoneInput from '../../../../ud-ui/inputs/number/PhoneInput';
 import EmailInput from '../../../../ud-ui/inputs/text/EmailInput';
@@ -24,7 +23,6 @@ const Recipient = () => {
 
   return (
     <>
-      <ScrollToTop />
       <AnimatedPage>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='form__container'>
