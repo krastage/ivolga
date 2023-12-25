@@ -32,7 +32,7 @@ const AddressChange = ({ isAddressChangeActive, setIsAddressChangeActive }) => {
         <div className='modal-right-content'
              onClick={(e) => e.stopPropagation()}>
           <div>
-            <img src='/assets/img/checkout/map.png'
+            <img src='assets/img/checkout/map.png'
                  alt='' />
           </div>
 

@@ -81,7 +81,7 @@ const SizeGuide = ({ sizeGuideActive, setSizeGuideActive }) => {
             <p className='sizeGuide-modal__table-info'>Значения указаны в сантиметрах</p>
           </div>
 
-          <img src='/assets/img/icons/sizeguide.png' alt='size' />
+          <img src='assets/img/icons/sizeguide.png' alt='size' />
         </div>
       </div>
     </div>

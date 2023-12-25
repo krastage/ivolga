@@ -20,14 +20,14 @@ const Collection = () => {
 
           <ul className='collection-list container'>
             <li className='collection-item--vertical'>
-              <img src='/assets/img/collection/collection1.png' alt='collection' />
+              <img src='assets/img/collection/collection1.png' alt='collection' />
               <p>
                 Для съёмки нашей осенней коллекции мы отправились на Кольский полуостров –
                 уникальное место с невероятной природой.
               </p>
             </li>
             <li className='collection-item--horizontal'>
-              <img src='/assets/img/collection/river.png' alt='collection' />
+              <img src='assets/img/collection/river.png' alt='collection' />
               <p>
                 Новая осенняя коллекция очень тактильная – мягкий объемный трикотаж, широкое пальто
                 из шерсти, в которое хочется укутаться, костюмы тройки в двух цветах – цвета
@@ -37,17 +37,17 @@ const Collection = () => {
             </li>
             <li className='collection-item--space-between'>
               <div className='collection-item--space-between__title'>
-                <img src='/assets/img/collection/collection2.png' alt='collection' />
+                <img src='assets/img/collection/collection2.png' alt='collection' />
                 <p>Кольский полуостров – это широкая зона тундры, живописные скалы.</p>
               </div>
               <img
-                src='/assets/img/collection/collection3.png'
+                src='assets/img/collection/collection3.png'
                 alt='collection'
                 className='collection-item--space-between__title-img'
               />
             </li>
             <li className='collection-item--horizontal'>
-              <img src='/assets/img/collection/collection4.png' alt='collection' />
+              <img src='assets/img/collection/collection4.png' alt='collection' />
               <p>
                 Новая осенняя коллекция очень тактильная – мягкий объемный трикотаж, широкое пальто
                 из шерсти, в которое хочется укутаться, костюмы тройки в двух цветах – цвета
@@ -62,17 +62,17 @@ const Collection = () => {
             elements={[
               <CollectionsElement
                 link={'/collections/collection'}
-                imageSource={'/assets/img/collections/product4.png'}
+                imageSource={'assets/img/collections/product4.png'}
                 title={'Весна/Лето 2024, Лукбук'}
               />,
               <CollectionsElement
                 link={'/collections/collection'}
-                imageSource={'/assets/img/collections/product2.png'}
+                imageSource={'assets/img/collections/product2.png'}
                 title={'Весна/Лето 2024, Лукбук'}
               />,
               <CollectionsElement
                 link={'/collections/collection'}
-                imageSource={'/assets/img/collections/product3.png'}
+                imageSource={'assets/img/collections/product3.png'}
                 title={'Весна/Лето 2024, Лукбук'}
               />,
             ]}

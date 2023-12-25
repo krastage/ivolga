@@ -73,15 +73,15 @@ const ProductLayout = ({
   const colorsData = [
     {
       name: 'Бежевый',
-      img: '/assets/img/icons/color-pick1.svg',
+      img: 'assets/img/icons/color-pick1.svg',
     },
     {
       name: 'Белый',
-      img: '/assets/img/icons/color-pick2.svg',
+      img: 'assets/img/icons/color-pick2.svg',
     },
     {
       name: 'Зеленый',
-      img: '/assets/img/icons/color-pick3.svg',
+      img: 'assets/img/icons/color-pick3.svg',
     },
   ];
 
@@ -108,7 +108,7 @@ const ProductLayout = ({
                 <button className='product-config-detail-button'>
                   <p>{detailButtonTitle}</p>
                   <div className='product-config-detail-button__arrow'>
-                    <img src='/assets/img/icons/arrow.svg'
+                    <img src='assets/img/icons/arrow.svg'
                          alt='' />
                     <p>Детали</p>
                   </div>

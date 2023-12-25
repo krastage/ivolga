@@ -18,32 +18,32 @@ const Collections = () => {
             elements={[
               <CollectionsElement
                 link={'/collections/collection'}
-                imageSource={'/assets/img/collections/product1.png'}
+                imageSource={'assets/img/collections/product1.png'}
                 title={'Весна/Лето 2024, Лукбук'}
               />,
               <CollectionsElement
                 link={'/collections/collection'}
-                imageSource={'/assets/img/collections/product2.png'}
+                imageSource={'assets/img/collections/product2.png'}
                 title={'Весна/Лето 2024, Лукбук'}
               />,
               <CollectionsElement
                 link={'/collections/collection'}
-                imageSource={'/assets/img/collections/product3.png'}
+                imageSource={'assets/img/collections/product3.png'}
                 title={'Весна/Лето 2024, Лукбук'}
               />,
               <CollectionsElement
                 link={'/collections/collection'}
-                imageSource={'/assets/img/collections/product4.png'}
+                imageSource={'assets/img/collections/product4.png'}
                 title={'Весна/Лето 2024, Лукбук'}
               />,
               <CollectionsElement
                 link={'/collections/collection'}
-                imageSource={'/assets/img/collections/product5.png'}
+                imageSource={'assets/img/collections/product5.png'}
                 title={'Весна/Лето 2024, Лукбук'}
               />,
               <CollectionsElement
                 link={'/collections/collection'}
-                imageSource={'/assets/img/collections/product6.png'}
+                imageSource={'assets/img/collections/product6.png'}
                 title={'Весна/Лето 2024, Лукбук'}
               />,
             ]}

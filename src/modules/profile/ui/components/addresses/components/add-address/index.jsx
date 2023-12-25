@@ -40,7 +40,7 @@ const AddAddress = () => {
       <div className='right-container'>
         <div className='address-add-container'>
           <Link to={'/profile/addresses'} className='back-button'>
-            <img src='/assets/img/icons/arrow-left.svg' alt='' />
+            <img src='assets/img/icons/arrow-left.svg' alt='' />
             <p>Назад</p>
           </Link>
 

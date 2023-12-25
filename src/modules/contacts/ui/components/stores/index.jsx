@@ -25,7 +25,7 @@ const Stores = () => {
               </div>
             </li>
           </ul>
-          <img src='/assets/img/products/addres1.png' alt='address1' />
+          <img src='assets/img/products/addres1.png' alt='address1' />
         </div>
 
         <div className='contacts-info'>
@@ -44,7 +44,7 @@ const Stores = () => {
               </div>
             </li>
           </ul>
-          <img src='/assets/img/products/addres2.png' alt='address2' />
+          <img src='assets/img/products/addres2.png' alt='address2' />
         </div>
       </div>
     </AnimatedPage>

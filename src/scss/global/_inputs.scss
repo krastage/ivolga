@@ -95,7 +95,7 @@
   font-size: 16px;
   align-self: stretch;
   border: 1px solid $border-grey;
-  background: url('../../public/assets/img/icons/arrow-down.svg') no-repeat calc(100% - 24px)
+  background: url('../../publicassets/img/icons/arrow-down.svg') no-repeat calc(100% - 24px)
     center;
   appearance: none;
   outline: none;
@@ -103,7 +103,7 @@
 }
 
 .select-input:focus {
-  background: url('../../public/assets/img/icons/arrow-left2.svg') no-repeat calc(100% - 24px)
+  background: url('../../publicassets/img/icons/arrow-left2.svg') no-repeat calc(100% - 24px)
     center;
 }
 
@@ -184,7 +184,7 @@ input[type='checkbox']:checked + .checkbox-input-label::before {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  background: url('../../public/assets/img/icons/checkbox-active.svg') no-repeat center;
+  background: url('../../publicassets/img/icons/checkbox-active.svg') no-repeat center;
   animation: checkboxChange 0.5s ease-in-out;
 }
 
@@ -218,7 +218,7 @@ input[type='radio'] {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  background: url('../../public/assets/img/icons/radio.svg') no-repeat center;
+  background: url('../../publicassets/img/icons/radio.svg') no-repeat center;
 }
 
 input[type='radio']:checked + .radio-input-label::before {
@@ -228,7 +228,7 @@ input[type='radio']:checked + .radio-input-label::before {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  background: url('../../public/assets/img/icons/radio-active.svg') no-repeat center;
+  background: url('../../publicassets/img/icons/radio-active.svg') no-repeat center;
   animation: radioChange 0.5s ease-in-out;
 }
 

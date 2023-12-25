@@ -10,7 +10,7 @@ const SuccessMessage = () => {
     <AnimatedPage>
       <div className='success-message'>
         <p>Изменения сохранены</p>
-        <img src='/assets/img/icons/success.png' alt='' />
+        <img src='assets/img/icons/success.png' alt='' />
       </div>
     </AnimatedPage>
   );

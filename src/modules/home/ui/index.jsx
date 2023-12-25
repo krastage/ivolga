@@ -39,7 +39,7 @@ const Home = () => {
                   link={'/product'}
                   title={'Топ черный из кашемира'}
                   price={25_000}
-                  imageSource={'/assets/img/products/product.png'}
+                  imageSource={'assets/img/products/product.png'}
                   key={0}
                 />,
                 <ProductCard
@@ -47,7 +47,7 @@ const Home = () => {
                   link={'/product'}
                   title={'Топ черный из кашемира'}
                   price={25_000}
-                  imageSource={'/assets/img/products/product.png'}
+                  imageSource={'assets/img/products/product.png'}
                   key={1}
                 />,
                 <ProductCard
@@ -55,7 +55,7 @@ const Home = () => {
                   link={'/product'}
                   title={'Топ черный из кашемира'}
                   price={25_000}
-                  imageSource={'/assets/img/products/product.png'}
+                  imageSource={'assets/img/products/product.png'}
                   key={2}
                 />,
                 <ProductCard
@@ -63,7 +63,7 @@ const Home = () => {
                   link={'/product'}
                   title={'Топ черный из кашемира'}
                   price={25_000}
-                  imageSource={'/assets/img/products/product.png'}
+                  imageSource={'assets/img/products/product.png'}
                   key={3}
                 />,
               ]}
@@ -93,7 +93,7 @@ const Home = () => {
                   link={'/product'}
                   title={'Топ черный из кашемира'}
                   price={25_000}
-                  imageSource={'/assets/img/products/product2.png'}
+                  imageSource={'assets/img/products/product2.png'}
                   key={1}
                 />,
                 <ProductCard
@@ -101,7 +101,7 @@ const Home = () => {
                   link={'/product'}
                   title={'Топ черный из кашемира'}
                   price={25_000}
-                  imageSource={'/assets/img/products/product3.png'}
+                  imageSource={'assets/img/products/product3.png'}
                   key={2}
                 />,
                 <ProductCard
@@ -109,7 +109,7 @@ const Home = () => {
                   link={'/product'}
                   title={'Топ черный из кашемира'}
                   price={25_000}
-                  imageSource={'/assets/img/products/product4.png'}
+                  imageSource={'assets/img/products/product4.png'}
                   key={3}
                 />,
                 <ProductCard
@@ -117,7 +117,7 @@ const Home = () => {
                   link={'/product'}
                   title={'Топ черный из кашемира'}
                   price={25_000}
-                  imageSource={'/assets/img/products/product5.png'}
+                  imageSource={'assets/img/products/product5.png'}
                   key={4}
                 />,
               ]}

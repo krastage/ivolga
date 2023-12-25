@@ -61,8 +61,8 @@ const Checkout = () => {
                   <img
                     src={
                       activeBlock === 'AddressAndShipping'
-                        ? '/assets/img/icons/checkout-block-active.svg'
-                        : '/assets/img/icons/checkout-block-inactive.svg'
+                        ? 'assets/img/icons/checkout-block-active.svg'
+                        : 'assets/img/icons/checkout-block-inactive.svg'
                     }
                     alt=''
                   />
@@ -78,8 +78,8 @@ const Checkout = () => {
                   <img
                     src={
                       activeBlock === 'Recipient'
-                        ? '/assets/img/icons/checkout-block-active.svg'
-                        : '/assets/img/icons/checkout-block-inactive.svg'
+                        ? 'assets/img/icons/checkout-block-active.svg'
+                        : 'assets/img/icons/checkout-block-inactive.svg'
                     }
                     alt=''
                   />
@@ -95,8 +95,8 @@ const Checkout = () => {
                   <img
                     src={
                       activeBlock === 'Payment'
-                        ? '/assets/img/icons/checkout-block-active.svg'
-                        : '/assets/img/icons/checkout-block-inactive.svg'
+                        ? 'assets/img/icons/checkout-block-active.svg'
+                        : 'assets/img/icons/checkout-block-inactive.svg'
                     }
                     alt=''
                   />
@@ -153,14 +153,14 @@ const Checkout = () => {
                     link={'/product'}
                     title={'Топ черный из кашемира'}
                     price={25_000}
-                    imageSource={'/assets/img/products/product.png'}
+                    imageSource={'assets/img/products/product.png'}
                   />,
                   <ProductCard
                     size='medium'
                     link={'/product'}
                     title={'Топ черный из кашемира'}
                     price={25_000}
-                    imageSource={'/assets/img/products/product.png'}
+                    imageSource={'assets/img/products/product.png'}
                   />,
                 ]}
               />

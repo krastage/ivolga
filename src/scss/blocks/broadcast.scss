@@ -178,9 +178,6 @@
   }
 
   .products-card-list {
-    @media (max-width: $desktop-size) {
-      gap: 20px;
-    }
 
     @media (max-width: $mini-desktop-size) {
       grid-template-columns: repeat(3, 1fr);

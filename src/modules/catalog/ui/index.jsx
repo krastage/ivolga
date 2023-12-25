@@ -21,7 +21,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 0,
     },
     {
@@ -29,7 +29,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 1,
     },
     {
@@ -37,7 +37,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 1,
     },
     {
@@ -45,7 +45,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 2,
     },
     {
@@ -53,7 +53,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 0,
     },
     {
@@ -61,7 +61,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 2,
     },
     {
@@ -69,7 +69,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 1,
     },
     {
@@ -77,7 +77,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 2,
     },
     {
@@ -85,7 +85,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 2,
     },
     {
@@ -93,7 +93,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 1,
     },
     {
@@ -101,7 +101,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 0,
     },
     {
@@ -109,7 +109,7 @@ const Catalog = () => {
       link: '/product',
       title: 'Топ черный из кашемира',
       price: 25_000,
-      imageSource: '/assets/img/products/product.png',
+      imageSource: 'assets/img/products/product.png',
       type: 2,
     },
   ];
@@ -143,7 +143,7 @@ const Catalog = () => {
           <div className='catalog-collection'>
             <div className='catalog__banner'>
               <img
-                src='/assets/img/products/hero1.png'
+                src='assets/img/products/hero1.png'
                 alt='hero1'
                 className='main-content__banner-img'
               />

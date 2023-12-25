@@ -62,7 +62,7 @@ const Basket = ({ basketActive, setBasketActive }) => {
               link={'/product'}
               title={'Топ черный из кашемира'}
               price={25_000}
-              imageSource={'/assets/img/products/product.png'}
+              imageSource={'assets/img/products/product.png'}
             />,
             <ProductCard
               key={2}
@@ -70,7 +70,7 @@ const Basket = ({ basketActive, setBasketActive }) => {
               link={'/product'}
               title={'Топ черный из кашемира'}
               price={25_000}
-              imageSource={'/assets/img/products/product.png'}
+              imageSource={'assets/img/products/product.png'}
             />,
           ]}
         />

@@ -23,7 +23,7 @@ const Wishlist = () => {
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product.png'}
+                imageSource={'assets/img/products/product.png'}
                 key={1}
               />,
               <ProductCard
@@ -31,7 +31,7 @@ const Wishlist = () => {
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product.png'}
+                imageSource={'assets/img/products/product.png'}
                 key={2}
               />,
               <ProductCard
@@ -39,7 +39,7 @@ const Wishlist = () => {
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product.png'}
+                imageSource={'assets/img/products/product.png'}
                 key={3}
               />,
               <ProductCard
@@ -47,7 +47,7 @@ const Wishlist = () => {
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product.png'}
+                imageSource={'assets/img/products/product.png'}
                 key={4}
               />,
               <ProductCard
@@ -55,7 +55,7 @@ const Wishlist = () => {
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product.png'}
+                imageSource={'assets/img/products/product.png'}
                 key={5}
               />,
               <ProductCard
@@ -63,7 +63,7 @@ const Wishlist = () => {
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product.png'}
+                imageSource={'assets/img/products/product.png'}
                 key={6}
               />,
               <ProductCard
@@ -71,7 +71,7 @@ const Wishlist = () => {
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product.png'}
+                imageSource={'assets/img/products/product.png'}
                 key={7}
               />,
               <ProductCard
@@ -79,7 +79,7 @@ const Wishlist = () => {
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product.png'}
+                imageSource={'assets/img/products/product.png'}
                 key={8}
               />,
             ]}

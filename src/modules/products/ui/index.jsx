@@ -17,9 +17,9 @@ const Product = () => {
         <main className='product-content'>
           <ProductLayout
             imgSource={[
-              '/assets/img/product/product1.png',
-              '/assets/img/product/product2.png',
-              '/assets/img/product/product3.png',
+              'assets/img/product/product1.png',
+              'assets/img/product/product2.png',
+              'assets/img/product/product3.png',
             ]}
             configTitle='Топ вязанный из кашемира нежно бежевого цвета'
             price={30_000}
@@ -38,37 +38,37 @@ const Product = () => {
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product2.png'}
+                imageSource={'assets/img/products/product2.png'}
               />,
               <ProductCard
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product3.png'}
+                imageSource={'assets/img/products/product3.png'}
               />,
               <ProductCard
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product4.png'}
+                imageSource={'assets/img/products/product4.png'}
               />,
               <ProductCard
                 size='big'
                 link={'/product'}
                 title={'Топ черный из кашемира'}
                 price={25_000}
-                imageSource={'/assets/img/products/product5.png'}
+                imageSource={'assets/img/products/product5.png'}
               />,
             ]}
           />
 
           <RelevantLooks
             imageSource={[
-              '/assets/img/relevant-looks/look1.png',
-              '/assets/img/relevant-looks/look2.png',
-              '/assets/img/relevant-looks/look3.png',
+              'assets/img/relevant-looks/look1.png',
+              'assets/img/relevant-looks/look2.png',
+              'assets/img/relevant-looks/look3.png',
             ]}
           />
         </main>

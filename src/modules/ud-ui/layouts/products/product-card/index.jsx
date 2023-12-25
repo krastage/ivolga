@@ -50,7 +50,7 @@ const ProductCard = ({ size, link, imageSource, price, title, type }) => {
       </Link>
       <div className='products-card__colors'>
         <img
-          src='/assets/img/icons/rectangle.png'
+          src='assets/img/icons/rectangle.png'
           alt='rectangle-color'
           className={colorClassName}
         />

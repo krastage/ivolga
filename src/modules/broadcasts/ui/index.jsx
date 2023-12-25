@@ -17,7 +17,7 @@ const Broadcasts = () => {
               <div className='broadcasts-translation'>
                 <Link to='/broadcasts/broadcast'>
                   <img
-                    src='/assets/img/broadcasts/poster1.png'
+                    src='assets/img/broadcasts/poster1.png'
                     alt='broadcast'
                     className='broadcasts-poster'
                   />
@@ -33,16 +33,16 @@ const Broadcasts = () => {
 
               <ul className='broadcasts-products'>
                 <li>
-                  <img src='/assets/img/looks/small/look1.png' alt='look' />
+                  <img src='assets/img/looks/small/look1.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look2.png' alt='look' />
+                  <img src='assets/img/looks/small/look2.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look3.png' alt='look' />
+                  <img src='assets/img/looks/small/look3.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look4.png' alt='look' />
+                  <img src='assets/img/looks/small/look4.png' alt='look' />
                 </li>
               </ul>
             </li>
@@ -51,7 +51,7 @@ const Broadcasts = () => {
               <div className='broadcasts-translation'>
                 <Link to='/broadcasts/broadcast'>
                   <img
-                    src='/assets/img/broadcasts/poster2.png'
+                    src='assets/img/broadcasts/poster2.png'
                     alt='broadcast'
                     className='broadcasts-poster'
                   />
@@ -67,22 +67,22 @@ const Broadcasts = () => {
 
               <ul className='broadcasts-products'>
                 <li>
-                  <img src='/assets/img/looks/small/look1.png' alt='look' />
+                  <img src='assets/img/looks/small/look1.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look2.png' alt='look' />
+                  <img src='assets/img/looks/small/look2.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look3.png' alt='look' />
+                  <img src='assets/img/looks/small/look3.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look3.png' alt='look' />
+                  <img src='assets/img/looks/small/look3.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look3.png' alt='look' />
+                  <img src='assets/img/looks/small/look3.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look4.png' alt='look' />
+                  <img src='assets/img/looks/small/look4.png' alt='look' />
                 </li>
               </ul>
             </li>
@@ -91,7 +91,7 @@ const Broadcasts = () => {
               <div className='broadcasts-translation'>
                 <Link to='/broadcasts/broadcast'>
                   <img
-                    src='/assets/img/broadcasts/poster3.png'
+                    src='assets/img/broadcasts/poster3.png'
                     alt='broadcast'
                     className='broadcasts-poster'
                   />
@@ -107,16 +107,16 @@ const Broadcasts = () => {
 
               <ul className='broadcasts-products'>
                 <li>
-                  <img src='/assets/img/looks/small/look5.png' alt='look' />
+                  <img src='assets/img/looks/small/look5.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look6.png' alt='look' />
+                  <img src='assets/img/looks/small/look6.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look7.png' alt='look' />
+                  <img src='assets/img/looks/small/look7.png' alt='look' />
                 </li>
                 <li>
-                  <img src='/assets/img/looks/small/look8.png' alt='look' />
+                  <img src='assets/img/looks/small/look8.png' alt='look' />
                 </li>
               </ul>
             </li>

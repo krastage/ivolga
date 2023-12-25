@@ -136,7 +136,7 @@ const Filter = ({
 
           <div>
             <img
-              src='/assets/img/products/filter-img.png'
+              src='assets/img/products/filter-img.png'
               alt=''
               className='filter-modal-content__img'
             />

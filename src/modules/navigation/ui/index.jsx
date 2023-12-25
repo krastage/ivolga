@@ -48,7 +48,7 @@ const Navigation = () => {
     <header className={`main-header ${isNavFixed ? 'fixed container' : ''}`}>
       <div className='main-header__logo'>
         <NavLink to={'/home'}>
-          <img src='/assets/img/icons/logo.svg' alt='logo' />
+          <img src='assets/img/icons/logo.svg' alt='logo' />
         </NavLink>
       </div>
 
