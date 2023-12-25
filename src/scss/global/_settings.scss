@@ -1,0 +1,114 @@
+//Global settings
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Pragmatica;
+  font-size: clamp(12px, 1.15vw, 22px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  background: #fbfbf6;
+}
+
+.body-container {
+  max-width: 1680px;
+  margin: 0 auto;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 2000px;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  color: $text-black;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+a,
+span,
+label,
+input,
+textarea,
+tr,
+td,
+th,
+ul {
+  font-family: Pragmatica, sans-serif;
+  color: $text-black;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input,
+textarea {
+  background: #fbfbf6 !important;
+  border-radius: 0 !important;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid $border-black;
+}
+
+.title {
+  font-size: clamp(18px, 2.2vw, 34px);
+  color: #2a2835;
+
+  font-family: Steinbeck;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title-1 {
+  /* Title 1 */
+  font-family: Pragmatica;
+  font-size: clamp(16px, 1.6vw, 26px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

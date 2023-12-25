@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <meta name='theme-color' content='#000000' />
+  <meta name='description' content='Web site created using create-react-app' />
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Ivolga</title>
+</head>
+
+<body>
+  <div id="root" class="body-container">
+    <div class="App">
+      <div></div>
+      <div style="opacity: 1; transform: none;">
+        <header class="
+    main-header
+    
+    fixed container'
+    
+    mobile
+    " style="">
+          <div class="main-header__logo"><a class="" href="home.html"><img src="/assets/img/icons/logo.svg" alt="logo"></a>
+          </div>
+          <nav class="main-header__nav">
+            <ul class="main-header__list">
+              <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+              <li><a class="nav-link" href="looks.html">Образы</a></li>
+              <li><a class="nav-link" href="collections.html">Коллекции</a></li>
+              <li><a class="nav-link" href="broadcasts.html">Прямые эфиры</a></li>
+            </ul>
+          </nav>
+          <div class="main-header__buttons">
+            <ul class="main-header__buttons-list">
+              <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20" height="20"
+                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Icon">
+                      <g id="Group 35">
+                        <circle id="Ellipse 5" cx="8.57171" cy="8.57114" r="5.21429" stroke="black"></circle>
+                        <line id="Line 41" x1="11.7823" y1="12.5033" x2="17.4965" y2="18.2176" stroke="black"></line>
+                      </g>
+                    </g>
+                  </svg></button></li>
+              <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20" height="20"
+                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Icon">
+                      <path id="Ellipse 7"
+                        d="M12.8569 7.14279C12.8569 5.56483 11.5777 4.28564 9.99972 4.28564C8.42176 4.28564 7.14258 5.56483 7.14258 7.14279"
+                        stroke="black"></path>
+                      <rect id="Rectangle 153" x="3.35742" y="7.64282" width="13.2857" height="9" fill="white"
+                        stroke="black"></rect>
+                    </g>
+                  </svg></button></li>
+              <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20" height="20"
+                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Icon" clip-path="url(#clip0_903_1614)">
+                      <circle id="Ellipse 6" cx="9.99958" cy="7.14289" r="3.78571" stroke="black"></circle>
+                      <rect id="Rectangle 152" x="3.35742" y="13.3572" width="13.2857" height="14.7143" rx="3.78571"
+                        stroke="black"></rect>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_903_1614">
+                        <rect width="20" height="20" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg></button></li>
+            </ul>
+          </div>
+          <div class="modal-right">
+            <div class="modal-right-content">
+              <div class="modal-right-heading">
+                <p>Поиск</p><button class="close-button"><img src="/assets/img/icons/close.svg" alt="close"></button>
+              </div>
+              <form class="form">
+                <div class="search-container">
+                  <div class="search-container"><input type="text" placeholder="Поиск по каталогу" class="search-input">
+                  </div><button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="21"
+                      viewBox="0 0 28 21" fill="none">
+                      <g clip-path="url(#clip0_1128_3180)">
+                        <line x1="1" y1="9.69238" x2="26" y2="9.69238" stroke="black"></line>
+                        <path d="M17.5435 18.1938L26.0293 9.70801L17.5435 1.22223" stroke="black"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1128_3180">
+                          <rect width="28" height="20" fill="white" transform="matrix(-1 0 0 -1 28 20.1924)"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg></button>
+                </div>
+              </form>
+              <div class="search-modal-recommendations">
+                <p>Рекомендации</p>
+                <ul>
+                  <li><a class="primary-button" href="catalog.html">Fable of Dirty</a></li>
+                  <li><a class="primary-button" href="catalog.html">Футболки</a></li>
+                  <li><a class="primary-button" href="catalog.html">Пуховики</a></li>
+                  <li><a class="primary-button" href="catalog.html">Sale</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-right">
+            <div class="modal-right-content basket-container">
+              <div class="modal-right-heading">
+                <p>Корзина</p><button class="close-button"><img src="/assets/img/icons/close.svg" alt="close"></button>
+              </div>
+              <div class="basket-modal-order">
+                <h1 class="basket-modal-order__title">Ваш заказ</h1>
+                <ul class="basket-modal-order__list">
+                  <li class="basket-modal-order__item">
+                    <p>2 товара</p>
+                    <p>50 000&nbsp;₽</p>
+                  </li>
+                  <li class="basket-modal-order__item">
+                    <p>Итого</p>
+                    <p>50 570&nbsp;₽</p>
+                  </li>
+                </ul>
+                <p class="basket-modal-order__description">Стоимость доставки будет рассчитана при оформлении заказа</p>
+              </div><a class="primary-button" href="checkout.html">Оформить заказ</a>
+              <div class="container">
+                <div class="products-card-head--centered container" style="display: none;">
+                  <h2 class="title" style="display: none;"></h2>
+                </div>
+                <div style="opacity: 1; transform: none;">
+                  <div class="products-card-container__content">
+                    <ul class="products-card-list products-card-list--2">
+                      <li class="products-card--medium"><a class="products-card__link" href="product.html"><img
+                            src="/assets/img/products/product.png" alt="product">
+                          <div class="products-card-title--medium">
+                            <p class="products-card-title__product">Топ черный из кашемира</p>
+                            <p class="products-card-title__price">25 000&nbsp;₽</p>
+                          </div>
+                        </a>
+                        <div class="products-card__colors"><img src="/assets/img/icons/rectangle.png"
+                            alt="rectangle-color" class="products-card-color-small"></div>
+                      </li>
+                      <li class="products-card--medium"><a class="products-card__link" href="product.html"><img
+                            src="/assets/img/products/product.png" alt="product">
+                          <div class="products-card-title--medium">
+                            <p class="products-card-title__product">Топ черный из кашемира</p>
+                            <p class="products-card-title__price">25 000&nbsp;₽</p>
+                          </div>
+                        </a>
+                        <div class="products-card__colors"><img src="/assets/img/icons/rectangle.png"
+                            alt="rectangle-color" class="products-card-color-small"></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-right">
+            <div class="modal-right-content">
+              <div class="modal-right-heading">
+                <p>Вход в аккаунт</p><button class="close-button"><img src="/assets/img/icons/close.svg"
+                    alt="close"></button>
+              </div>
+              <div class="auth-modal-title">
+                <h1 class="auth-modal-title__heading">Войти или зарегистрироваться</h1>
+                <p>Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
+              </div>
+              <form class="form form--gap">
+                <div class="input-container"><label class="input-label" for="phone">Ваш номер телефона</label><input
+                    class="input input-error" id="phone" placeholder="+7 (___) ___-__-__" name="phone">
+                  <p class="error-message">Номер телефона обязателен для заполнения</p>
+                </div><button class="primary-button" type="submit" disabled="">Сохранить</button>
+              </form>
+            </div>
+          </div>
+        </header>
+        <nav class="mobile-header__nav" style="">
+          <ul class="mobile-header__list">
+            <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li><a class="nav-link" href="looks.html">Образы</a></li>
+            <li><a class="nav-link" href="collections.html">Коллекции</a></li>
+            <li><a class="nav-link" href="broadcasts.html">Прямые эфиры</a></li>
+          </ul>
+        </nav>
+        <main class="faq container">
+          <div class="faq-menu">
+            <h1 class="faq-menu__title">Помощь покупателю</h1>
+            <ul class="faq-menu__links">
+              <li><a class="faq-link" href="delivery.html">Доставка</a></li>
+              <li><a class="faq-link-active" href="exchange.html">Оплата и возврат</a></li>
+              <li><a class="faq-link" href="care.html">Уход за одеждой</a></li>
+              <li><a class="faq-link" href="privacy.html">Политика</a></li>
+              <li><a class="faq-link" href="payment.html">Оферта</a></li>
+            </ul>
+          </div>
+          <div style="opacity: 1; transform: none;">
+            <div class="faq-info">
+              <h1 class="faq-info__title">Оплата и возврат</h1>
+              <p>Мы предлагаем быструю и надежную доставку по всей России. Вот что вам нужно знать о нашей доставке:
+                Стоимость доставки: Мы предлагаем бесплатную доставку для заказов свыше [вставьте сумму]. Для заказов на
+                меньшую сумму стоимость доставки будет рассчитываться автоматически при оформлении заказа. Время
+                доставки: Мы стараемся доставлять заказы в течение [вставьте время] дней после оформления заказа.
+                Однако, время доставки может варьироваться в зависимости от вашего местоположения и наличия товара на
+                складе. Курьерская доставка: Мы предлагаем курьерскую доставку по Москве и Санкт-Петербургу. Курьер
+                свяжется с вами для уточнения удобного времени доставки. Почтовая доставка: Мы используем услуги Почты
+                России для доставки по всей стране. Вы сможете отслеживать статус вашей посылки на сайте Почты России.
+                Самовывоз: Вы можете забрать свой заказ самостоятельно в нашем магазине. Мы свяжемся с вами, чтобы
+                уточнить время и место самовывоза. Отслеживание заказа: Вы можете отслеживать статус вашего заказа на
+                нашем сайте. Мы также будем отправлять вам уведомления о статусе заказа на вашу электронную почту.
+                Возврат и обмен товара: Если вы не полностью удовлетворены своим заказом, вы можете вернуть или обменять
+                его в течение [вставьте время] дней после получения заказа. Обратитесь к нашей политике возврата и
+                обмена, чтобы узнать больше.</p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

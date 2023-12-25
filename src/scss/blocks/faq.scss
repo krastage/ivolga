@@ -1,0 +1,163 @@
+.faq {
+  display: grid;
+  grid-template-columns: 252px auto;
+
+  justify-content: flex-start;
+  padding: 0 60px 40px;
+  gap: 40px;
+
+  @media (max-width: $laptop-size) {
+    grid-template-columns: 200px auto;
+  }
+  @media (max-width: 1000px) {
+    display: block;
+    padding: 0 10px 40px;
+  }
+
+  @media (max-width: 620px) {
+    padding: 0;
+  }
+
+  @media (max-width: $phone-size) {
+    padding-bottom: 40px;
+  }
+}
+
+.faq-link {
+  color: $text-grey;
+  transition: color 0.9s;
+  white-space: nowrap;
+
+  &-active,
+  &:hover {
+    color: $border-black;
+    transition: 0.9s;
+    white-space: nowrap;
+  }
+}
+
+//FAQ menu
+
+.faq-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  border-right: $border-grey 1px solid;
+  height: 100%;
+  margin-bottom: 20px;
+
+  @media (max-width: 1000px) {
+    border: none;
+  }
+}
+
+.faq-menu__title {
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.faq-menu__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+
+  @media (max-width: 1100px) {
+    padding-right: 20px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+
+//Info
+
+.faq-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 1000px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $big-phone-size) {
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.faq-info__title {
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+.faq-info__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @media (max-width: $phone-size) {
+    max-width: 100%;
+  }
+}
+
+.faq-info__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+//Contacts
+
+.contacts {
+  display: flex;
+}
+
+.contacts-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 60px;
+  margin: 0 auto;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 60vw;  
+
+  img {
+    width: 100%;
+  }
+
+  @media(max-width: 1000px) {
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  img {
+    @media (max-width: $phone-size) {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: $phone-size) {
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}

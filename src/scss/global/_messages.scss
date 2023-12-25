@@ -1,0 +1,18 @@
+.error-message {
+  color: $error;
+}
+
+.success-message {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 9999;
+  background-color: $border-black;
+  padding: 24px;
+  width: 465px;
+  user-select: none;
+
+  & p {
+    color: $background-white;
+  }
+}

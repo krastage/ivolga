@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta name='theme-color' content='#000000' />
+    <meta name='description' content='Web site created using create-react-app' />
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Ivolga</title>
+</head>
+
+<body>
+    <div id="root" class="body-container">
+        <div class="App">
+            <div></div>
+            <div style="opacity: 1; transform: none;">
+                <header class="main-header fixed container' mobile">
+                    <div class="main-header__logo"><a class="" href="home.html"><img src="/assets/img/icons/logo.svg"
+                                alt="logo"></a></div>
+                    <nav class="main-header__nav">
+                        <ul class="main-header__list">
+                            <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+                            <li><a class="nav-link" href="looks.html">Образы</a></li>
+                            <li><a class="nav-link" href="collections.html">Коллекции</a></li>
+                            <li><a class="nav-link" href="broadcasts.html">Прямые эфиры</a></li>
+                        </ul>
+                    </nav>
+                    <div class="main-header__buttons">
+                        <ul class="main-header__buttons-list">
+                            <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Icon">
+                                            <g id="Group 35">
+                                                <circle id="Ellipse 5" cx="8.57171" cy="8.57114" r="5.21429"
+                                                    stroke="black"></circle>
+                                                <line id="Line 41" x1="11.7823" y1="12.5033" x2="17.4965" y2="18.2176"
+                                                    stroke="black"></line>
+                                            </g>
+                                        </g>
+                                    </svg></button></li>
+                            <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Icon">
+                                            <path id="Ellipse 7"
+                                                d="M12.8569 7.14279C12.8569 5.56483 11.5777 4.28564 9.99972 4.28564C8.42176 4.28564 7.14258 5.56483 7.14258 7.14279"
+                                                stroke="black"></path>
+                                            <rect id="Rectangle 153" x="3.35742" y="7.64282" width="13.2857" height="9"
+                                                fill="white" stroke="black"></rect>
+                                        </g>
+                                    </svg></button></li>
+                            <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Icon" clip-path="url(#clip0_903_1614)">
+                                            <circle id="Ellipse 6" cx="9.99958" cy="7.14289" r="3.78571" stroke="black">
+                                            </circle>
+                                            <rect id="Rectangle 152" x="3.35742" y="13.3572" width="13.2857"
+                                                height="14.7143" rx="3.78571" stroke="black"></rect>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_903_1614">
+                                                <rect width="20" height="20" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg></button></li>
+                        </ul>
+                    </div>
+                    <div class="modal-right">
+                        <div class="modal-right-content">
+                            <div class="modal-right-heading">
+                                <p>Поиск</p><button class="close-button"><img src="/assets/img/icons/close.svg"
+                                        alt="close"></button>
+                            </div>
+                            <form class="form">
+                                <div class="search-container">
+                                    <div class="search-container"><input type="text" placeholder="Поиск по каталогу"
+                                            class="search-input"></div><button class="search-button"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="28" height="21"
+                                            viewBox="0 0 28 21" fill="none">
+                                            <g clip-path="url(#clip0_1128_3180)">
+                                                <line x1="1" y1="9.69238" x2="26" y2="9.69238" stroke="black"></line>
+                                                <path d="M17.5435 18.1938L26.0293 9.70801L17.5435 1.22223"
+                                                    stroke="black"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1128_3180">
+                                                    <rect width="28" height="20" fill="white"
+                                                        transform="matrix(-1 0 0 -1 28 20.1924)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg></button>
+                                </div>
+                            </form>
+                            <div class="search-modal-recommendations">
+                                <p>Рекомендации</p>
+                                <ul>
+                                    <li><a class="primary-button" href="catalog.html">Fable of Dirty</a></li>
+                                    <li><a class="primary-button" href="catalog.html">Футболки</a></li>
+                                    <li><a class="primary-button" href="catalog.html">Пуховики</a></li>
+                                    <li><a class="primary-button" href="catalog.html">Sale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-right">
+                        <div class="modal-right-content basket-container">
+                            <div class="modal-right-heading">
+                                <p>Корзина</p><button class="close-button"><img src="/assets/img/icons/close.svg"
+                                        alt="close"></button>
+                            </div>
+                            <div class="basket-modal-order">
+                                <h1 class="basket-modal-order__title">Ваш заказ</h1>
+                                <ul class="basket-modal-order__list">
+                                    <li class="basket-modal-order__item">
+                                        <p>2 товара</p>
+                                        <p>50 000&nbsp;₽</p>
+                                    </li>
+                                    <li class="basket-modal-order__item">
+                                        <p>Итого</p>
+                                        <p>50 570&nbsp;₽</p>
+                                    </li>
+                                </ul>
+                                <p class="basket-modal-order__description">Стоимость доставки будет рассчитана при
+                                    оформлении заказа</p>
+                            </div><a class="primary-button" href="checkout.html">Оформить заказ</a>
+                            <div class="container">
+                                <div class="products-card-head--centered container" style="display: none;">
+                                    <h2 class="title" style="display: none;"></h2>
+                                </div>
+                                <div style="opacity: 1; transform: none;">
+                                    <div class="products-card-container__content">
+                                        <ul class="products-card-list products-card-list--2">
+                                            <li class="products-card--medium"><a class="products-card__link"
+                                                    href="product.html"><img src="/assets/img/products/product.png"
+                                                        alt="product">
+                                                    <div class="products-card-title--medium">
+                                                        <p class="products-card-title__product">Топ черный из кашемира
+                                                        </p>
+                                                        <p class="products-card-title__price">25 000&nbsp;₽</p>
+                                                    </div>
+                                                </a>
+                                                <div class="products-card__colors"><img
+                                                        src="/assets/img/icons/rectangle.png" alt="rectangle-color"
+                                                        class="products-card-color-small"></div>
+                                            </li>
+                                            <li class="products-card--medium"><a class="products-card__link"
+                                                    href="product.html"><img src="/assets/img/products/product.png"
+                                                        alt="product">
+                                                    <div class="products-card-title--medium">
+                                                        <p class="products-card-title__product">Топ черный из кашемира
+                                                        </p>
+                                                        <p class="products-card-title__price">25 000&nbsp;₽</p>
+                                                    </div>
+                                                </a>
+                                                <div class="products-card__colors"><img
+                                                        src="/assets/img/icons/rectangle.png" alt="rectangle-color"
+                                                        class="products-card-color-small"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-right">
+                        <div class="modal-right-content">
+                            <div class="modal-right-heading">
+                                <p>Вход</p><button class="close-button"><img src="/assets/img/icons/close.svg"
+                                        alt="close"></button>
+                            </div>
+                            <div class="auth-modal-title">
+                                <h1 class="auth-modal-title__heading">Войдите в аккаунт или продолжите как гость</h1>
+                                <p>Зарегистрируйтесь или войдите в свой аккаунт, чтобы воспользоваться программой
+                                    лояльности</p>
+                            </div>
+                            <div class="auth-modal-buttons"><button class="primary-button-active">Войти /
+                                    Зарегистрироваться</button><button class="primary-button">Продолжить как
+                                    гость</button></div>
+                        </div>
+                    </div>
+                </header>
+                <nav class="mobile-header__nav" style="">
+                    <ul class="mobile-header__list">
+                        <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+                        <li><a class="nav-link" href="looks.html">Образы</a></li>
+                        <li><a class="nav-link" href="collections.html">Коллекции</a></li>
+                        <li><a class="nav-link" href="broadcasts.html">Прямые эфиры</a></li>
+                    </ul>
+                </nav>
+                <div style="opacity: 1; transform: none;">
+                    <main class="product-content">
+                        <div class="product">
+                            <div class="product-common">
+                                <div class="product-images"><img src="/assets/img/product/product1.png" alt="pick"><img
+                                        src="/assets/img/product/product2.png" alt="pick"><img
+                                        src="/assets/img/product/product3.png" alt="pick"><img
+                                        src="/assets/img/product/product1.png" alt="pick"></div>
+                                <div class="product-config">
+                                    <div class="product-config__head">
+                                        <p class="product-config__title">Топ вязанный из кашемира нежно бежевого цвета
+                                        </p>
+                                        <p>30000&nbsp;₽</p>
+                                    </div>
+                                    <div class="product-config__params">
+                                        <div><button class="product-config-detail-button">
+                                                <p>Топ голубого цвета в клетку, лён</p>
+                                                <div class="product-config-detail-button__arrow"><img
+                                                        src="/assets/img/icons/arrow.svg" alt="">
+                                                    <p>Детали</p>
+                                                </div>
+                                            </button></div>
+                                        <div class="product-config__size">
+                                            <ul class="product-config__size-list">
+                                                <li><button class="product-config__size-button">56</button></li>
+                                                <li><button class="product-config__size-button">56</button></li>
+                                                <li><button class="product-config__size-button">56</button></li>
+                                                <li><button class="product-config__size-button">56</button></li>
+                                            </ul><button class="product-config__size-guide-button">Гид по
+                                                размерам</button>
+                                        </div>
+                                        <div class="product-config__colors">
+                                            <ul class="product-config__colors-list">
+                                                <li><button class="product-config__colors-button"><img
+                                                            src="/assets/img/icons/color-pick1.svg" alt="pick"></button>
+                                                </li>
+                                                <li><button class="product-config__colors-button"><img
+                                                            src="/assets/img/icons/color-pick2.svg" alt="pick"></button>
+                                                </li>
+                                                <li><button class="product-config__colors-button"><img
+                                                            src="/assets/img/icons/color-pick3.svg" alt="pick"></button>
+                                                </li>
+                                            </ul>
+                                            <p></p>
+                                        </div><button class="primary-button-active">Купить</button>
+                                        <ul class="product-config__info-list">
+                                            <li class="product-config__info-item"><button
+                                                    class="product-config__button">
+                                                    <div class="product-config__button-title">
+                                                        <p>Детали и уход</p>
+                                                        <p>+</p>
+                                                    </div>
+                                                    <div class="product-config-details-button__details "></div>
+                                                </button></li>
+                                            <li class="product-config__info-item"><button
+                                                    class="product-config__button">
+                                                    <div class="product-config__button-title">
+                                                        <p>Оплата и доставка</p>
+                                                        <p>+</p>
+                                                    </div>
+                                                    <div class="product-config-details-button__details ">
+                                                        <p>Информация об оплате и доставке</p>
+                                                    </div>
+                                                </button></li>
+                                            <li class="product-config__info-item"><button
+                                                    class="product-config__button">
+                                                    <div class="product-config__button-title">
+                                                        <p>Возврат</p>
+                                                        <p>+</p>
+                                                    </div>
+                                                    <div class="product-config-details-button__details ">
+                                                        <p>Информация о возврате</p>
+                                                    </div>
+                                                </button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sizeGuide-right">
+                            <div class="modal-right-content">
+                                <div class="modal-right-heading">
+                                    <p>Гид по размерам</p><button class="close-button"><img
+                                            src="/assets/img/icons/close.svg" alt="close"></button>
+                                </div>
+                                <div class="sizeGuide-modal-content">
+                                    <div class="sizeGuide-modal__table">
+                                        <h1 class="sizeGuide-table__title">Футболка</h1>
+                                        <table class="sizeGuide-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Размер</th>
+                                                    <th>Длина изделия</th>
+                                                    <th>Ширина груди</th>
+                                                    <th>Длина рукава</th>
+                                                    <th>Длина плеча</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>XS</td>
+                                                    <td>70</td>
+                                                    <td>72</td>
+                                                    <td>58</td>
+                                                    <td>56</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>S</td>
+                                                    <td>70</td>
+                                                    <td>72</td>
+                                                    <td>58</td>
+                                                    <td>56</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>M</td>
+                                                    <td>70</td>
+                                                    <td>72</td>
+                                                    <td>58</td>
+                                                    <td>56</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>L</td>
+                                                    <td>70</td>
+                                                    <td>72</td>
+                                                    <td>58</td>
+                                                    <td>56</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>XL</td>
+                                                    <td>70</td>
+                                                    <td>72</td>
+                                                    <td>58</td>
+                                                    <td>56</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="sizeGuide-modal__table-info">Значения указаны в сантиметрах</p>
+                                    </div><img src="/assets/img/icons/sizeguide.png" alt="size">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="products-card-head--centered container">
+                                <h2 class="title">Бестселлеры</h2>
+                            </div>
+                            <div style="opacity: 1; transform: none;">
+                                <div class="products-card-container__content">
+                                    <ul class="products-card-list products-card-list--4">
+                                        <li class="products-card--big"><a class="products-card__link"
+                                                href="product.html"><img src="/assets/img/products/product2.png"
+                                                    alt="product">
+                                                <div class="products-card-title--big">
+                                                    <p class="products-card-title__product">Топ черный из кашемира</p>
+                                                    <p class="products-card-title__price">25 000&nbsp;₽</p>
+                                                </div>
+                                            </a>
+                                            <div class="products-card__colors"><img
+                                                    src="/assets/img/icons/rectangle.png" alt="rectangle-color"
+                                                    class="products-card-color-big"></div>
+                                        </li>
+                                        <li class="products-card--big"><a class="products-card__link"
+                                                href="product.html"><img src="/assets/img/products/product3.png"
+                                                    alt="product">
+                                                <div class="products-card-title--big">
+                                                    <p class="products-card-title__product">Топ черный из кашемира</p>
+                                                    <p class="products-card-title__price">25 000&nbsp;₽</p>
+                                                </div>
+                                            </a>
+                                            <div class="products-card__colors"><img
+                                                    src="/assets/img/icons/rectangle.png" alt="rectangle-color"
+                                                    class="products-card-color-big"></div>
+                                        </li>
+                                        <li class="products-card--big"><a class="products-card__link"
+                                                href="product.html"><img src="/assets/img/products/product4.png"
+                                                    alt="product">
+                                                <div class="products-card-title--big">
+                                                    <p class="products-card-title__product">Топ черный из кашемира</p>
+                                                    <p class="products-card-title__price">25 000&nbsp;₽</p>
+                                                </div>
+                                            </a>
+                                            <div class="products-card__colors"><img
+                                                    src="/assets/img/icons/rectangle.png" alt="rectangle-color"
+                                                    class="products-card-color-big"></div>
+                                        </li>
+                                        <li class="products-card--big"><a class="products-card__link"
+                                                href="product.html"><img src="/assets/img/products/product5.png"
+                                                    alt="product">
+                                                <div class="products-card-title--big">
+                                                    <p class="products-card-title__product">Топ черный из кашемира</p>
+                                                    <p class="products-card-title__price">25 000&nbsp;₽</p>
+                                                </div>
+                                            </a>
+                                            <div class="products-card__colors"><img
+                                                    src="/assets/img/icons/rectangle.png" alt="rectangle-color"
+                                                    class="products-card-color-big"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relevant-looks-container container">
+                            <h2>Релевантные образы</h2>
+                            <ul class="relevant-looks-images">
+                                <li><img src="/assets/img/relevant-looks/look1.png" alt="look"></li>
+                                <li><img src="/assets/img/relevant-looks/look2.png" alt="look"></li>
+                                <li><img src="/assets/img/relevant-looks/look3.png" alt="look"></li>
+                            </ul>
+                        </div>
+                    </main>
+                    <footer class="main-footer container">
+                        <ul class="main-footer__links">
+                            <li><a class="footer-link" href="contacts.html">Контакты</a></li>
+                            <li><a class="footer-link" href="delivery.html">Доставка</a></li>
+                            <li><a class="footer-link" href="payment.html">Оплата</a></li>
+                            <li><a class="footer-link" href="exchange.html">Обмен и возврат</a></li>
+                            <li><a class="footer-link" href="care.html">Уход за одеждой</a></li>
+                            <li><a class="footer-link" href="privacy.html">Политика конфиденциальности</a></li>
+                        </ul>
+                        <div class="footer-logo"><a href="/home.html"><svg xmlns="http://www.w3.org/2000/svg" width="200"
+                                    height="76" viewBox="0 0 200 76" fill="none">
+                                    <g clip-path="url(#clip0_903_1857)">
+                                        <path
+                                            d="M6.6139 13.1844L6.93918 12.8375L17.2395 1.82153L18.9526 0H16.4372H10.3654H9.80159L9.47631 0.433698L1.27941 11.4496L2.16849 12.1002L1.27941 11.4496L0 13.1844H2.16849H6.13683H6.6139Z"
+                                            fill="#2A2835"></path>
+                                        <path
+                                            d="M4.33718 16.6323H3.25293V17.7166V57.9855V59.0697H4.33718H9.25965H10.3439V57.9855V17.7166V16.6323H9.25965H4.33718Z"
+                                            fill="#2A2835"></path>
+                                        <path
+                                            d="M102.959 1.17078H101.875V2.25502V57.9853V59.0695H102.959H107.86H108.944V57.9853V2.25502V1.17078H107.86H102.959Z"
+                                            fill="#2A2835"></path>
+                                        <path
+                                            d="M198.483 52.5641C198.158 52.6942 197.811 52.781 197.356 52.781C196.575 52.781 196.163 52.5858 195.968 52.369C195.751 52.1521 195.556 51.7401 195.556 50.8944V29.5131C195.556 26.7157 195.101 24.3304 194.103 22.4655C193.149 20.6222 191.891 19.1477 190.308 18.0851C188.769 17.0659 187.055 16.3937 185.169 16.0467C183.347 15.6781 181.504 15.4829 179.683 15.4829C177.254 15.4829 175.02 15.7431 173.004 16.3069C170.965 16.8707 169.144 17.7165 167.561 18.9091C166.021 20.1018 164.785 21.6414 163.896 23.5063C162.985 25.3712 162.465 27.5397 162.313 29.9901L162.226 31.1394H169.361L169.404 30.0985C169.491 27.041 170.466 25.0243 172.093 23.8316C173.828 22.5088 176.148 21.7932 179.075 21.7932C180.463 21.7932 181.743 21.9233 182.914 22.1619H182.935H182.957C184.128 22.357 185.104 22.7257 185.884 23.2461H185.906C186.708 23.7666 187.337 24.4605 187.771 25.3712V25.4363C188.226 26.2603 188.487 27.4313 188.487 28.9709C188.487 29.9684 188.335 30.684 188.118 31.1611V31.2262C187.923 31.7249 187.641 32.0936 187.294 32.3755C186.925 32.6357 186.427 32.8308 185.776 32.961C185.039 33.1127 184.171 33.2429 183.152 33.3296C180.485 33.6332 177.861 33.9801 175.237 34.3488C172.613 34.6741 170.206 35.2596 168.038 36.127C165.848 37.0377 164.048 38.3605 162.682 40.117C161.229 41.9385 160.578 44.3889 160.578 47.3381C160.578 49.4849 160.947 51.4148 161.684 53.0846V53.1279C162.486 54.7109 163.527 56.0554 164.85 57.1396V57.1613C166.216 58.1805 167.778 58.9178 169.491 59.3732C171.247 59.8719 173.112 60.1105 175.064 60.1105C177.015 60.1105 178.88 59.9153 180.398 59.525C181.938 59.1347 183.304 58.5925 184.497 57.8552C185.733 57.118 186.817 56.2289 187.771 55.1663C188.161 54.7326 188.552 54.2555 188.92 53.7785C188.92 53.8218 188.92 53.8869 188.92 53.9303V53.9736V54.017C189.094 54.9712 189.441 55.8386 189.939 56.5975C190.46 57.3999 191.197 58.007 192.065 58.4407H192.108L192.151 58.4841C193.105 58.8744 194.276 59.0262 195.599 59.0262C196.293 59.0262 196.879 59.0045 197.356 58.9395C197.855 58.8744 198.397 58.8094 198.982 58.701L199.871 58.5492V51.8485L198.353 52.5208L198.483 52.5641ZM188.443 42.3939C188.443 44.2154 188.075 45.8201 187.381 47.208C186.708 48.6608 185.798 49.8535 184.627 50.851C183.499 51.8485 182.133 52.6075 180.55 53.1279C178.945 53.6701 177.276 53.9303 175.497 53.9303C174.478 53.9303 173.459 53.7568 172.483 53.4315C171.507 53.1062 170.662 52.6509 169.946 52.0654C169.23 51.4365 168.645 50.6992 168.19 49.8969C167.799 49.0729 167.604 48.1404 167.604 47.0345C167.604 45.278 168.103 44.0853 168.97 43.3047L168.255 42.524L168.992 43.3263C170.054 42.3505 171.421 41.5916 173.112 41.0711C174.868 40.529 176.798 40.117 178.924 39.8568L178.772 38.7725L178.924 39.8351C181.157 39.5315 183.326 39.1845 185.407 38.8159C186.145 38.7075 186.969 38.5123 187.858 38.2521C188.053 38.187 188.226 38.122 188.422 38.0352V42.3505L188.443 42.3939Z"
+                                            fill="#2A2835"></path>
+                                        <path
+                                            d="M46.4699 16.6323H45.6893L45.4507 17.3479L33.8927 50.0488L22.2045 17.3479L21.9443 16.6323H21.1636H15.699H14.1377L14.7015 18.1069L30.2279 58.3758L31.2471 57.9855L30.2279 58.3758L30.5098 59.0697H31.2471H36.4732H37.2321L37.4924 58.3758L52.5634 18.0852L53.1055 16.6323H51.5442H46.4699Z"
+                                            fill="#2A2835"></path>
+                                        <path
+                                            d="M93.7879 29.3182C92.9205 26.5859 91.6194 24.2006 89.928 22.1622C88.2149 20.1238 86.0898 18.4974 83.5526 17.2831C81.0372 16.047 78.1748 15.4615 74.9654 15.4615C71.756 15.4615 68.8719 16.0687 66.2914 17.2831C63.8194 18.4974 61.7159 20.1238 60.0028 22.1622C58.2897 24.2006 57.0103 26.5859 56.1429 29.3182C55.2755 31.9855 54.8418 34.8262 54.8418 37.8404C54.8418 40.8546 55.2755 43.7387 56.1429 46.4493L57.1621 46.124L56.1212 46.471C56.9886 49.1382 58.2897 51.5019 59.9811 53.5403C61.6942 55.5787 63.7977 57.205 66.2697 58.4194H66.2914C68.8503 59.5904 71.7344 60.1542 74.9437 60.1542C78.1531 60.1542 81.0155 59.5904 83.5309 58.4194C86.0464 57.205 88.1932 55.5787 89.9063 53.5403C91.6194 51.5019 92.8988 49.1382 93.7662 46.471C94.6336 43.7387 95.0673 40.8763 95.0673 37.8621C95.0673 34.8479 94.6336 32.0071 93.7662 29.3399L93.7879 29.3182ZM87.109 43.8471C86.5668 45.7771 85.7428 47.4685 84.6369 48.9864L85.526 49.637L84.6369 49.0081C83.596 50.4827 82.2515 51.6754 80.6252 52.5861C79.0422 53.4752 77.1773 53.9306 74.9871 53.9306C72.7969 53.9306 70.932 53.4752 69.349 52.5861C67.7226 51.6754 66.3565 50.4827 65.2506 48.9864C64.188 47.4902 63.3423 45.7771 62.7568 43.8471C62.2147 41.8738 61.9328 39.8571 61.9328 37.8187C61.9328 35.7803 62.2147 33.807 62.7568 31.877C63.3423 29.9037 64.188 28.1689 65.2506 26.6727C66.3565 25.1981 67.7226 23.9837 69.349 23.073C70.932 22.1839 72.7969 21.7285 74.9871 21.7285C77.1773 21.7285 79.0422 22.1839 80.6252 23.073C82.2515 23.9837 83.596 25.1764 84.6369 26.651C85.7428 28.1689 86.5668 29.882 87.109 31.8553V31.877C87.6945 33.807 87.998 35.7803 87.998 37.797C87.998 39.8137 87.6945 41.8304 87.109 43.8037V43.8471Z"
+                                            fill="#2A2835"></path>
+                                        <path
+                                            d="M147.958 16.6324H146.873V21.2079C146.787 21.0995 146.7 20.9694 146.591 20.861C145.702 19.8201 144.683 18.9093 143.534 18.1287C142.341 17.283 141.04 16.6541 139.587 16.1987C138.178 15.7433 136.66 15.5265 135.055 15.5265C131.997 15.5265 129.243 16.0903 126.793 17.2613C124.408 18.3672 122.391 19.9285 120.721 21.9235C119.117 23.8535 117.881 26.1521 117.013 28.7543C116.189 31.3348 115.799 34.0454 115.799 36.9078C115.799 39.7702 116.146 42.6543 116.84 45.2999C117.555 47.9238 118.683 50.244 120.223 52.2391C121.849 54.2558 123.866 55.8388 126.294 56.9881C128.766 58.1157 131.672 58.6361 135.012 58.6361C138.178 58.6361 140.953 57.8338 143.339 56.1857C144.705 55.2533 145.876 54.1256 146.873 52.8462V54.7328C146.873 59.5035 145.876 62.9731 144.054 65.3151C142.298 67.5703 139.37 68.8063 134.99 68.8063C133.711 68.8063 132.475 68.6545 131.26 68.3726C130.068 68.1341 128.983 67.7438 128.007 67.18C127.097 66.6378 126.294 65.9006 125.6 64.9681C124.993 64.1441 124.56 63.0598 124.321 61.672L124.169 60.7612H117.165L117.252 61.9322C117.425 64.2091 118.032 66.2258 119.138 67.9173C120.266 69.6087 121.632 70.9748 123.28 72.0591C124.95 73.1216 126.793 73.9023 128.831 74.4011C130.848 74.8998 132.908 75.1383 135.012 75.1383C138.373 75.1383 141.279 74.683 143.686 73.7288C146.114 72.7964 148.131 71.4085 149.649 69.587C151.167 67.7871 152.251 65.6187 152.902 63.1032C153.596 60.6094 153.943 57.8338 153.943 54.7979V16.6324H147.936H147.958ZM146.049 43.0013C145.572 44.8228 144.813 46.4275 143.794 47.8153C142.797 49.1381 141.561 50.244 140.064 51.1114C138.633 51.8921 136.963 52.3041 134.968 52.3041C132.821 52.3041 131.043 51.8921 129.547 51.1114C128.007 50.244 126.75 49.1598 125.752 47.837C124.755 46.4492 123.996 44.8445 123.497 43.0447C122.998 41.2231 122.76 39.3365 122.76 37.3849C122.76 35.4332 122.977 33.4382 123.432 31.5516C123.931 29.6434 124.668 27.9736 125.687 26.5207C126.685 25.0895 127.942 23.9619 129.46 23.0945H129.482L128.94 22.1621L129.504 23.0945C130.978 22.2271 132.778 21.7717 134.968 21.7717C137.158 21.7717 138.937 22.2271 140.324 23.0945C141.842 24.0053 143.078 25.1763 144.033 26.6509C145.008 28.1471 145.702 29.8385 146.158 31.7034C146.613 33.6117 146.83 35.4983 146.83 37.3849C146.83 39.2715 146.548 41.1798 146.006 43.0013H146.049Z"
+                                            fill="#2A2835"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_903_1857">
+                                            <rect width="200" height="75.0732" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg></a></div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

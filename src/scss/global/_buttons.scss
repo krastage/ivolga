@@ -1,0 +1,146 @@
+//Primary
+
+.primary-button {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  font-size: clamp(13px, 1.2vw, 18px);
+  border: 1px solid $border-grey;
+  background-color: $background-white;
+  user-select: none;
+  transition: border 0.9s, color 0.9s;
+  color: rgb(0, 0, 0);
+
+  &:hover {
+    border: 1px solid $border-black;
+    transition: border 0.9s, color 0.9s;
+  }
+
+  &:disabled {
+    border: 1px solid $border-grey;
+    background-color: $background-white;
+    cursor: auto;
+    transition: border 0.9s, color 0.9s;
+    color: rgb(147 147 147);
+  }
+
+  @media (max-width: $big-phone-size) {
+    padding: 10px;
+  }
+}
+
+//Primary button active
+
+.primary-button-active {
+  @extend .primary-button;
+  border: 1px solid $border-black;
+
+  &:hover {
+    border: 1px solid $border-grey;
+  }
+}
+
+//Back
+
+.back-button {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  transition: color 0.9s;
+
+  & p,
+  & img {
+    color: $text-black;
+    stroke: $text-black;
+    transition: color 0.9s;
+  }
+
+  & p:hover,
+  & img:hover {
+    color: $text-grey;
+    stroke: $text-grey;
+    transition: color 0.9s;
+  }
+}
+
+
+//search
+
+.search-button {
+  display: flex;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 30px;
+  transition: color 0.9s;
+
+  &-address {
+    @extend .search-button;
+    padding: 20px;
+  }
+}
+
+//Close
+
+.close-button {
+  display: flex;
+  padding: 10px;
+  border: 1px solid $border-grey;
+  align-items: center;
+  transition: border 0.9s, color 0.9s;
+
+  &:hover {
+    border: 1px solid $border-black;
+    transition: border 0.9s, color 0.9s;
+  }
+}
+
+//Scroll to top
+
+.scroll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border: none;
+  fill: $background-white;
+  border-radius: 100%;
+  cursor: pointer;
+  visibility: hidden;
+  pointer-events: none;
+
+  @media (max-width: 620px) {
+    bottom: 25px;
+    right: 25px;
+  }
+}
+
+.scroll-button:not(:hover) {
+  background: $text-black;
+}
+
+.scroll-button:hover {
+  background: $border-black;
+}
+
+.scroll-button.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.backToTopBtn:not(.active) {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

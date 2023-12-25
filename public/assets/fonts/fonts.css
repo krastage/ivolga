@@ -1,13 +1,16 @@
 @font-face {
-  font-family: Pragmatica;
-  src: url('Pragmatica-Book.woff');
+  font-family: 'Pragmatica';
+  src: url('./pragmatica_book.otf') format('opentype');
+  /* Дополнительные форматы для поддержки различных браузеров */
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: Steinbeck;
-  src: url('SteinbeckRegular.woff');
+  font-family: 'Steinbeck';
+  src: url('./SteinbeckRegular.woff') format('woff'),
+       url('./SteinbeckRegular.otf') format('opentype');
+  /* Дополнительные форматы для поддержки различных браузеров */
   font-style: normal;
   font-weight: 400;
 }

@@ -1,0 +1,125 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+
+  @media (max-width: 1100px) {
+    padding: 30px 40px;
+  }
+
+  @media (max-width: 960px) {
+    padding: 20px 30px;
+  }
+}
+
+.main-header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: $background-white;
+  z-index: 999;
+}
+
+.nav-link {
+  color: $text-black;
+  user-select: none;
+  font-size: clamp(12px, 1.1vw, 18px);
+  display: block;
+  width: 100%;
+
+  &-active,
+  &:hover {
+    color: $text-grey;
+    font-size: clamp(12px, 1.1vw, 18px);
+    transition: 0.9s;
+    user-select: none;
+  }
+}
+
+.nav-mobile-btn,
+.nav-mobile-btn-active {
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-mobile-btn-active {
+  .mobile-line {
+    height: 1px;
+    background: $text-grey;
+  }
+}
+
+.mobile-line {
+  height: 1px;
+  background: $text-black;
+}
+
+//Logo
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: flex;
+  }
+}
+
+//Navigation
+
+.main-header__list {
+  display: flex;
+  gap: 30px;
+  li {
+    display: flex;
+    align-items: center;
+  }
+}
+
+//Buttons
+
+.main-header__buttons-list {
+  display: flex;
+  gap: 30px;
+}
+
+.main-header__buttons-item,
+.main-header__button {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    stroke: $text-grey;
+    transition: 0.9s;
+  }
+}
+
+hr {
+  z-index: 9999;
+  width: 100%;
+}
+
+.mobile-header__nav {
+  display: none;
+  height: 0vh;
+  transition: all 0.9s ease-in;
+  &-active {
+    display: block;
+    height: 100vh;
+    transition: all 0.9s ease-out;
+  }
+}
+
+.mobile-header__list {
+  border-top: 1px solid $text-grey;
+
+  li {
+    padding: 20px 10px;
+    border-bottom: 1px solid $text-grey;
+  }
+}

@@ -1,0 +1,282 @@
+.product {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 760px) {
+    display: block;
+  }
+}
+
+.product-common {
+  display: flex;
+  gap: 67px;
+  height: 100%;
+  position: relative;
+
+  @media (max-width: 860px) {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+}
+
+.cb {
+  background-color: #000;
+  width: 10px;
+  height: 10px;
+}
+
+//Images
+
+.product-images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 960px) {
+    img {
+      width: 450px;
+    }
+  }
+  @media (max-width: 480px) {
+    padding-left: 40px;
+    img {
+      width: 150px;
+    }
+  }
+}
+
+//Config
+
+.product-config {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 548px;
+  position: sticky;
+  top: 110px;
+  padding: 0 15px;
+  padding-top: 45px;
+  padding-bottom: 90px;
+  box-sizing: border-box;
+
+  @media (max-width: 760px) {
+    align-items: center;
+    padding-bottom: 0;
+    height: auto;
+    margin-bottom: 30px;
+
+    div {
+      width: 400px;
+    }
+  }
+  @media (max-width: 480px) {
+    align-items: center;
+    padding-bottom: 0;
+
+    div {
+      width: 100%;
+    }
+  }
+}
+
+.product-config__size-button {
+  color: $text-black !important;
+}
+
+//Title
+
+.product-config__head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7px;
+  border-bottom: $border-grey 1px solid;
+}
+
+.product-config__title {
+  width: 246px;
+}
+
+//Params
+
+.product-config__params {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.product-config-detail-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: $border-grey 1px solid;
+}
+
+.product-config-detail-button__arrow {
+  display: flex;
+  gap: 8px;
+  @media (max-width: $big-phone-size) {
+    width: fit-content !important;
+  }
+}
+
+//Size
+
+.product-config__size {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $border-grey 1px solid;
+
+  & p {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  &-list {
+    display: flex;
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-right: $border-grey 1px solid;
+
+    &:focus {
+      color: $background-white;
+      background-color: $text-grey;
+    }
+  }
+}
+
+.product-config__size-guide-button {
+  font-size: 12px;
+  transition: color 0.9s;
+  color: $text-black !important;
+
+  &:hover {
+    color: $text-grey;
+    transition: 0.9s;
+  }
+}
+
+//Colors
+
+.product-config__colors {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $border-grey 1px solid;
+  padding-bottom: 10px;
+  transition: color 0.9s;
+
+  & p {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  &-list {
+    display: flex;
+    gap: 8px;
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid $border-grey;
+    transition: color 0.9s;
+
+    &:hover,
+    &:focus {
+      border: 1px solid rgba(0, 0, 0, 0.57);
+      transition: 0.9s;
+    }
+  }
+}
+
+//Buy
+
+.product-config__buy {
+  display: flex;
+  align-items: center;
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid $border-black;
+    font-size: 16px;
+  }
+}
+
+//Info
+
+.product-config__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-config__info-item {
+  padding-bottom: 10px;
+}
+
+.product-config__button {
+  border-bottom: $border-grey 1px solid;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+
+  &-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &:hover p {
+      color: $text-grey;
+      transition: 0.9s;
+    }
+  }
+}
+
+//Details
+.image-swiper {
+  width: 100px;
+}
+
+.product-config-details-button__details {
+  transition: 0.7s;
+  max-height: 0;
+  overflow: hidden;
+
+  &.active {
+    display: flex;
+    max-height: 294px;
+    transition: 0.7s;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  & p {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $text-black !important;
+}

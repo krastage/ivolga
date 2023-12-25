@@ -1,0 +1,79 @@
+//Modal top
+
+.buttonchik {
+  position: relative;
+  height: 30px;
+  button {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+}
+
+.modal-top {
+  @media(max-width: 480px) {
+    button {
+      font-size: 14px;
+    }
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 100px;
+  right: 0;
+  pointer-events: none;
+  transition: background-color 0.9s ease-in-out;
+
+  &.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: all;
+    z-index: 9999;
+    transition: background-color 0.9s ease-in-out;
+
+    .modal-top-content {
+      top: 100px;
+      overflow-y: scroll;
+      transition: 1.9s top ease-in-out;
+      overflow-x: hidden;
+
+      @media(max-width: $laptop-size) {
+        top: 80px;
+      }
+
+      @media(max-width: 960px) {
+        top: 65px;
+      }
+    }
+  }
+
+  .modal-top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100vw;
+    background-color: $background-white;
+    top: -100vh;
+    position: fixed;
+    transition: 1.9s top ease-in-out;
+    border: 1px solid $border-grey;
+    overflow-y: scroll;
+
+    @media(max-width: 620px) {
+      height: 380px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+
+
+//Modal top heading
+
+.modal-top-heading {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}

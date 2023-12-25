@@ -13,8 +13,6 @@ Application of women magazine.
 - HTML
 - CSS (SCSS)
 - JavaScript
-- React
-- Framer-motion
 - Forms
 - Lazy loading
 - Modules

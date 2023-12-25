@@ -1,0 +1,35 @@
+//Looks
+
+.looks-products {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  .products-card-list {
+    justify-items: center;
+    margin: 10px 0;
+  }
+}
+
+.looks-posters {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  img {
+    @media(max-width: 1440px) {
+      max-width: 40%;
+    }
+  }
+
+  @media(max-width: $phone-size) {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 10px;
+
+    img {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}

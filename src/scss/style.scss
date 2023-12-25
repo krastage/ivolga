@@ -1,0 +1,35 @@
+@import './global/variables';
+@import './global/penguin-scripts.scss';
+@import './global/settings';
+@import './global/inputs';
+@import './global/forms';
+@import './global/buttons';
+@import './global/top-modal';
+@import './global/right-modal';
+@import './global/spinner';
+@import './global/messages';
+@import './global/address-modal';
+
+@import './blocks/auth.scss';
+@import './blocks/basket.scss';
+@import './blocks/broadcast.scss';
+@import './blocks/broadcasts.scss';
+@import './blocks/catalog.scss';
+@import './blocks/checkout.scss';
+@import './blocks/collection.scss';
+@import './blocks/collections-list.scss';
+@import './blocks/faq.scss';
+@import './blocks/filter.scss';
+@import './blocks/footer.scss';
+
+@import './blocks/home.scss';
+@import './blocks/looks.scss';
+@import './blocks/navigation.scss';
+@import './blocks/page-not-found.scss';
+@import './blocks/product-layout.scss';
+@import './blocks/product.scss';
+@import './blocks/products-card-settings.scss';
+@import './blocks/profile.scss';
+@import './blocks/relevant-looks.scss';
+@import './blocks/search.scss';
+@import './blocks/size-guide.scss';

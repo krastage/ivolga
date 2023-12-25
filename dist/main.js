@@ -1,0 +1,3 @@
+/*! For license information please see main.js.LICENSE.txt */
+!function(){"use strict";var e={"./src/scss/style.scss":function(e,r,t){t.r(r)}},r={};function t(s){var o=r[s];if(void 0!==o)return o.exports;var n=r[s]={exports:{}};return e[s](n,n.exports,t),n.exports}t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})};var s={};!function(){t.r(s);t("./src/scss/style.scss")}()}();
+//# sourceMappingURL=main.js.map
