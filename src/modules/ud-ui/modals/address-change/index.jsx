@@ -8,7 +8,7 @@ import '../../../../styles/AddressModal.scss';
 import CloseButton from '../../buttons/CloseButton';
 import PrimaryButton from '../../buttons/PrimaryButton';
 import SearchButton from '../../buttons/SearchButton';
-import SearchInputBlack from '../../inputs/search/SearchInputBlack';
+import SearchInput from '../../inputs/search/SearchInput';
 import Select from '../../inputs/select/Select';
 
 const AddressChange = ({ isAddressChangeActive, setIsAddressChangeActive }) => {
@@ -36,7 +36,6 @@ const AddressChange = ({ isAddressChangeActive, setIsAddressChangeActive }) => {
     const activeEl = document.querySelector('.address-content__controller.active');
     const viewType = evt.target.dataset.viewType;
     const container = document.querySelector('.address-right .modal-right-content');
-    console.log(container);
     activeEl.classList.remove('active');
     evt.target.classList.add('active');
 
@@ -94,7 +93,7 @@ const AddressChange = ({ isAddressChangeActive, setIsAddressChangeActive }) => {
             <div>
               <h2>Адреса пунктов</h2>
               <div className='search-container'>
-                <SearchInputBlack placeholder={'Поиск по адресу'} />
+                <SearchInput placeholder={'Поиск по адресу'} />
                 <SearchButton color={'white'} />
               </div>
             </div>

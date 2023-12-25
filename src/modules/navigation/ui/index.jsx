@@ -35,7 +35,7 @@ const Navigation = () => {
 
   const handleScroll = () => {
     console.log(`${document.querySelector('.main-header').offsetHeight}px`);
-    document.querySelector('body').style.paddingTop = `${document.querySelector('.main-header').offsetHeight * 1.1}px`;
+    document.querySelector('body').style.paddingTop = `${document.querySelector('.main-header').offsetHeight}px`;
   };
   
   const handleResize = () => {
