@@ -12,6 +12,11 @@ body {
   font-weight: 400;
   line-height: 130%; /* 20.8px */
   background: #fbfbf6;
+
+  &.modal-open {
+    overflow: hidden;
+    max-height: 100vh;
+  }
 }
 
 .body-container {

@@ -62,9 +62,9 @@
   max-width: 100%;
   padding: 1rem;
   margin-right: 1rem;
+  top: 20%;
 
   @media(max-width: 1440px) {
-    top: 16%;
     right: 0;
     max-width: 30vw;
   }

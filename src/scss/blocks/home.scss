@@ -52,7 +52,7 @@
 //Body collection
 
 .body-hero {
-  background-image: url('../../public/assets/img/products/hero1.png');
+  background-image: url('./../../public/assets/img/products/hero1.png');
   @media (max-width: 820px) {
     height: 20rem;
   }
@@ -61,7 +61,7 @@
 //House collection
 
 .house-hero {
-  background-image: url('../../public/assets/img/products/hero2.png');
+  background-image: url('./../../public/assets/img/products/hero2.png');
   @media (max-width: 820px) {
     height: 20rem;
   }

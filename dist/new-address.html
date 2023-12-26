@@ -23,7 +23,7 @@
     
     mobile
     " style="">
-          <div class="main-header__logo"><a class="" href="home.html"><img src="/assets/img/icons/logo.svg" alt="logo"></a>
+          <div class="main-header__logo"><a class="" href="home.html"><img src="assets/img/icons/logo.svg" alt="logo"></a>
           </div>
           <nav class="main-header__nav">
             <ul class="main-header__list">
@@ -35,7 +35,7 @@
           </nav>
           <div class="main-header__buttons">
             <ul class="main-header__buttons-list">
-              <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20" height="20"
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".search-modal"><svg width="20" height="20"
                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon">
                       <g id="Group 35">
@@ -44,7 +44,7 @@
                       </g>
                     </g>
                   </svg></button></li>
-              <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20" height="20"
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".basket-modal"><svg width="20" height="20"
                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon">
                       <path id="Ellipse 7"
@@ -54,7 +54,7 @@
                         stroke="black"></rect>
                     </g>
                   </svg></button></li>
-              <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20" height="20"
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".profile-modal"><svg width="20" height="20"
                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon" clip-path="url(#clip0_903_1614)">
                       <circle id="Ellipse 6" cx="9.99958" cy="7.14289" r="3.78571" stroke="black"></circle>
@@ -69,10 +69,10 @@
                   </svg></button></li>
             </ul>
           </div>
-          <div class="modal-right">
+          <div class="modal-right search-modal">
             <div class="modal-right-content">
               <div class="modal-right-heading">
-                <p>Поиск</p><button class="close-button"><img src="/assets/img/icons/close.svg" alt="close"></button>
+                <p>Поиск</p><button class="close-button"><img src="assets/img/icons/close.svg" alt="close"></button>
               </div>
               <form class="form">
                 <div class="search-container">
@@ -102,10 +102,10 @@
               </div>
             </div>
           </div>
-          <div class="modal-right">
+          <div class="modal-right basket-modal">
             <div class="modal-right-content basket-container">
               <div class="modal-right-heading">
-                <p>Корзина</p><button class="close-button"><img src="/assets/img/icons/close.svg" alt="close"></button>
+                <p>Корзина</p><button class="close-button"><img src="assets/img/icons/close.svg" alt="close"></button>
               </div>
               <div class="basket-modal-order">
                 <h1 class="basket-modal-order__title">Ваш заказ</h1>
@@ -129,23 +129,23 @@
                   <div class="products-card-container__content">
                     <ul class="products-card-list products-card-list--2">
                       <li class="products-card--medium"><a class="products-card__link" href="product.html"><img
-                            src="/assets/img/products/product.png" alt="product">
+                            src="assets/img/products/product.png" alt="product">
                           <div class="products-card-title--medium">
                             <p class="products-card-title__product">Топ черный из кашемира</p>
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="/assets/img/icons/rectangle.png"
+                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
                             alt="rectangle-color" class="products-card-color-small"></div>
                       </li>
                       <li class="products-card--medium"><a class="products-card__link" href="product.html"><img
-                            src="/assets/img/products/product.png" alt="product">
+                            src="assets/img/products/product.png" alt="product">
                           <div class="products-card-title--medium">
                             <p class="products-card-title__product">Топ черный из кашемира</p>
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="/assets/img/icons/rectangle.png"
+                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
                             alt="rectangle-color" class="products-card-color-small"></div>
                       </li>
                     </ul>
@@ -154,16 +154,17 @@
               </div>
             </div>
           </div>
-          <div class="modal-right">
+          <div class="modal-right profile-modal">
             <div class="modal-right-content">
               <div class="modal-right-heading">
-                <p>Профиль</p><button class="close-button"><img src="/assets/img/icons/close.svg" alt="close"></button>
+                <p>Вход</p><button class="close-button"><img src="assets/img/icons/close.svg" alt="close"></button>
               </div>
               <div class="auth-modal-title">
-                <h1 class="auth-modal-title__heading">Ольга Малюга</h1>
+                <h1 class="auth-modal-title__heading">Войдите в аккаунт или продолжите как гость</h1>
+                <p>Зарегистрируйтесь или войдите в свой аккаунт, чтобы воспользоваться программой лояльности</p>
               </div>
-              <div class="auth-modal-buttons"><button class="primary-button">Перейти в профиль</button><button
-                  class="primary-button-active">Выйти</button></div>
+              <div class="auth-modal-buttons"><button class="primary-button-active">Войти /
+                  Зарегистрироваться</button><button class="primary-button">Продолжить как гость</button></div>
             </div>
           </div>
         </header>
@@ -199,7 +200,7 @@
           <div style="opacity: 1; transform: none;">
             <div class="right-container">
               <div class="address-add-container"><a class="back-button" href="addresses.html"><img
-                    src="/assets/img/icons/arrow-left.svg" alt="">
+                    src="assets/img/icons/arrow-left.svg" alt="">
                   <p>Назад</p>
                 </a>
                 <form class="form form--gap">
@@ -226,6 +227,7 @@
       </div>
     </div>
   </div>
+<script src="main.js"></script>
 </body>
 
 </html>

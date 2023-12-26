@@ -17,19 +17,19 @@
       <div></div>
       <div style="opacity: 1; transform: none;">
         <header class="main-header fixed container mobile" style="">
-          <div class="main-header__logo"><a class="" href="home.html"><img src="assets/img/icons/logo.svg" alt="logo"></a>
+          <div class="main-header__logo"><a class="" href="/home"><img src="assets/img/icons/logo.svg" alt="logo"></a>
           </div>
           <nav class="main-header__nav">
             <ul class="main-header__list">
-              <li><a class="nav-link" href="catalog.html">Каталог</a></li>
-              <li><a class="nav-link" href="looks.html">Образы</a></li>
-              <li><a class="nav-link" href="collections.html">Коллекции</a></li>
-              <li><a class="nav-link" href="broadcasts.html">Прямые эфиры</a></li>
+              <li><a class="nav-link" href="/catalog">Каталог</a></li>
+              <li><a class="nav-link" href="/looks">Образы</a></li>
+              <li><a class="nav-link" href="/collections">Коллекции</a></li>
+              <li><a class="nav-link" href="/broadcasts">Прямые эфиры</a></li>
             </ul>
           </nav>
           <div class="main-header__buttons">
             <ul class="main-header__buttons-list">
-              <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20" height="20"
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".search-modal"><svg width="20" height="20"
                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon">
                       <g id="Group 35">
@@ -38,7 +38,7 @@
                       </g>
                     </g>
                   </svg></button></li>
-              <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20" height="20"
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".basket-modal"><svg width="20" height="20"
                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon">
                       <path id="Ellipse 7"
@@ -48,7 +48,7 @@
                         stroke="black"></rect>
                     </g>
                   </svg></button></li>
-              <li class="main-header__buttons-item"><button class="main-header__button"><svg width="20" height="20"
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".profile-modal"><svg width="20" height="20"
                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon" clip-path="url(#clip0_903_1614)">
                       <circle id="Ellipse 6" cx="9.99958" cy="7.14289" r="3.78571" stroke="black"></circle>
@@ -63,7 +63,7 @@
                   </svg></button></li>
             </ul>
           </div>
-          <div class="modal-right">
+          <div class="modal-right search-modal">
             <div class="modal-right-content">
               <div class="modal-right-heading">
                 <p>Поиск</p><button class="close-button"><img src="assets/img/icons/close.svg" alt="close"></button>
@@ -96,7 +96,7 @@
               </div>
             </div>
           </div>
-          <div class="modal-right">
+          <div class="modal-right basket-modal">
             <div class="modal-right-content basket-container">
               <div class="modal-right-heading">
                 <p>Корзина</p><button class="close-button"><img src="assets/img/icons/close.svg" alt="close"></button>
@@ -148,7 +148,7 @@
               </div>
             </div>
           </div>
-          <div class="modal-right">
+          <div class="modal-right profile-modal">
             <div class="modal-right-content">
               <div class="modal-right-heading">
                 <p>Вход</p><button class="close-button"><img src="assets/img/icons/close.svg" alt="close"></button>
@@ -164,10 +164,10 @@
         </header>
         <nav class="mobile-header__nav" style="">
           <ul class="mobile-header__list">
-            <li><a class="nav-link" href="catalog.html">Каталог</a></li>
-            <li><a class="nav-link" href="looks.html">Образы</a></li>
-            <li><a class="nav-link" href="collections.html">Коллекции</a></li>
-            <li><a class="nav-link" href="broadcasts.html">Прямые эфиры</a></li>
+            <li><a class="nav-link" href="/catalog">Каталог</a></li>
+            <li><a class="nav-link" href="/looks">Образы</a></li>
+            <li><a class="nav-link" href="/collections">Коллекции</a></li>
+            <li><a class="nav-link" href="/broadcasts">Прямые эфиры</a></li>
           </ul>
         </nav>
         <div style="opacity: 1; transform: none;">
@@ -275,7 +275,7 @@
                   <div style="opacity: 1; transform: none;">
                     <div class="products-card-container__content">
                       <ul class="products-card-list products-card-list--2">
-                        <li class="products-card--medium"><a class="products-card__link" href="product.html"><img
+                        <li class="products-card--medium"><a class="products-card__link" href="/product"><img
                               src="assets/img/products/product.png" alt="product">
                             <div class="products-card-title--medium">
                               <p class="products-card-title__product">Топ черный из кашемира</p>
@@ -285,7 +285,7 @@
                           <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
                               alt="rectangle-color" class="products-card-color-small"></div>
                         </li>
-                        <li class="products-card--medium"><a class="products-card__link" href="product.html"><img
+                        <li class="products-card--medium"><a class="products-card__link" href="/product"><img
                               src="assets/img/products/product.png" alt="product">
                             <div class="products-card-title--medium">
                               <p class="products-card-title__product">Топ черный из кашемира</p>
@@ -304,14 +304,14 @@
           </main>
           <footer class="main-footer container">
             <ul class="main-footer__links">
-              <li><a class="footer-link" href="contacts.html">Контакты</a></li>
-              <li><a class="footer-link" href="delivery.html">Доставка</a></li>
-              <li><a class="footer-link" href="payment.html">Оплата</a></li>
-              <li><a class="footer-link" href="exchange.html">Обмен и возврат</a></li>
-              <li><a class="footer-link" href="care.html">Уход за одеждой</a></li>
-              <li><a class="footer-link" href="privacy.html">Политика конфиденциальности</a></li>
+              <li><a class="footer-link" href="/contacts">Контакты</a></li>
+              <li><a class="footer-link" href="/delivery">Доставка</a></li>
+              <li><a class="footer-link" href="/payment">Оплата</a></li>
+              <li><a class="footer-link" href="/exchange">Обмен и возврат</a></li>
+              <li><a class="footer-link" href="/care">Уход за одеждой</a></li>
+              <li><a class="footer-link" href="/privacy">Политика конфиденциальности</a></li>
             </ul>
-            <div class="footer-logo"><a href="/home.html"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="76"
+            <div class="footer-logo"><a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="76"
                   viewBox="0 0 200 76" fill="none">
                   <g clip-path="url(#clip0_903_1857)">
                     <path
@@ -347,6 +347,7 @@
       </div>
     </div>
   </div>
+<script src="main.js"></script>
 </body>
 
 </html>
