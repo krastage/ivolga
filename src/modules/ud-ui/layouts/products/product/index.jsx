@@ -48,7 +48,7 @@ const ProductLayout = ({
   const details = (
     <div
       className={`product-config-details-button__details ${
-        showDetails ? 'product-config-details-button__details active' : ''
+        showDetails ? 'active' : ''
       }`}>
     </div>
   );
@@ -56,7 +56,7 @@ const ProductLayout = ({
   const payment = (
     <div
       className={`product-config-details-button__details ${
-        showPayment ? 'product-config-details-button__details active' : ''
+        showPayment ? 'active' : ''
       }`}>
       <p>Информация об оплате и доставке</p>
     </div>
@@ -65,7 +65,7 @@ const ProductLayout = ({
   const exchange = (
     <div
       className={`product-config-details-button__details ${
-        showExchange ? 'product-config-details-button__details active' : ''
+        showExchange ? 'active' : ''
       }`}>
       <p>Информация о возврате</p>
     </div>
@@ -108,7 +108,7 @@ const ProductLayout = ({
         slidesPerView={1}
         loop={true}
         pagination
-        style={{maxWidth: '400px', width: '100vw', paddingBottom: '40px'}}
+        style={{maxWidth: '450px', width: '100vw', paddingBottom: '40px'}}
       >
         {imgSource.map((imgSource, index) => (
           <SwiperSlide>

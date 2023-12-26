@@ -191,9 +191,7 @@
     justify-content: center;
     
     .title {
-      @media(max-width: $phone-size) {
         margin-bottom: 15px;
-      }
     }
   }
 }
