@@ -17,20 +17,22 @@
       <div></div>
       <div style="opacity: 1; transform: none;">
         <header class="main-header fixed container mobile" style="">
-          <div class="main-header__logo"><a class="" href="/home"><img src="assets/img/icons/logo.svg" alt="logo"></a>
+          <div class="main-header__logo"><a class="" href="home.html"><img src="assets/img/icons/logo.svg"
+                alt="logo"></a>
           </div>
           <nav class="main-header__nav">
             <ul class="main-header__list">
-              <li><a class="nav-link" href="/catalog">Каталог</a></li>
-              <li><a class="nav-link" href="/looks">Образы</a></li>
-              <li><a class="nav-link" href="/collections">Коллекции</a></li>
-              <li><a class="nav-link" href="/broadcasts">Прямые эфиры</a></li>
+              <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+              <li><a class="nav-link" href="looks.html">Образы</a></li>
+              <li><a class="nav-link" href="collections.html">Коллекции</a></li>
+              <li><a class="nav-link" href="broadcasts.html">Прямые эфиры</a></li>
             </ul>
           </nav>
           <div class="main-header__buttons">
             <ul class="main-header__buttons-list">
-              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".search-modal"><svg width="20" height="20"
-                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button"
+                  data-src=".search-modal"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon">
                       <g id="Group 35">
                         <circle id="Ellipse 5" cx="8.57171" cy="8.57114" r="5.21429" stroke="black"></circle>
@@ -38,8 +40,9 @@
                       </g>
                     </g>
                   </svg></button></li>
-              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".basket-modal"><svg width="20" height="20"
-                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button"
+                  data-src=".basket-modal"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon">
                       <path id="Ellipse 7"
                         d="M12.8569 7.14279C12.8569 5.56483 11.5777 4.28564 9.99972 4.28564C8.42176 4.28564 7.14258 5.56483 7.14258 7.14279"
@@ -48,8 +51,9 @@
                         stroke="black"></rect>
                     </g>
                   </svg></button></li>
-              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".profile-modal"><svg width="20" height="20"
-                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button"
+                  data-src=".profile-modal"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon" clip-path="url(#clip0_903_1614)">
                       <circle id="Ellipse 6" cx="9.99958" cy="7.14289" r="3.78571" stroke="black"></circle>
                       <rect id="Rectangle 152" x="3.35742" y="13.3572" width="13.2857" height="14.7143" rx="3.78571"
@@ -61,6 +65,12 @@
                       </clipPath>
                     </defs>
                   </svg></button></li>
+              <li class="main-header__buttons-item mobile-menu">
+                <button class="nav-mobile-btn modal-button" data-src=".mobile-header__nav">
+                  <div class="mobile-line"></div>
+                  <div class="mobile-line"></div>
+                </button>
+              </li>
             </ul>
           </div>
           <div class="modal-right search-modal">
@@ -149,47 +159,89 @@
             </div>
           </div>
           <div class="modal-right profile-modal">
-            <div class="modal-right-content">
+            <div class="modal-right-content profile-modal__step profile-modal__step--1">
               <div class="modal-right-heading">
                 <p>Вход</p><button class="close-button"><img src="assets/img/icons/close.svg" alt="close"></button>
               </div>
               <div class="auth-modal-title">
                 <h1 class="auth-modal-title__heading">Войдите в аккаунт или продолжите как гость</h1>
-                <p>Зарегистрируйтесь или войдите в свой аккаунт, чтобы воспользоваться программой лояльности</p>
+                <p>Зарегистрируйтесь или войдите в свой аккаунт, чтобы воспользоваться программой
+                  лояльности</p>
               </div>
               <div class="auth-modal-buttons"><button class="primary-button-active">Войти /
-                  Зарегистрироваться</button><button class="primary-button">Продолжить как гость</button></div>
+                  Зарегистрироваться</button><button class="primary-button">Продолжить как
+                  гость</button></div>
+            </div>
+
+            <div class="modal-right-content profile-modal__step profile-modal__step--2 hide">
+              <div class="modal-right-heading">
+                <p>Вход в аккаунт</p><button class="close-button"><img src="/assets/img/icons/close.svg"
+                    alt="close"></button>
+              </div>
+              <div class="auth-modal-title">
+                <h1 class="auth-modal-title__heading">Войти или зарегистрироваться</h1>
+                <p>Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
+              </div>
+              <form class="form form--gap">
+                <div class="input-container"><label class="input-label" for="phone">Ваш номер
+                    телефона</label><input class="input mobile-phone-input js_phone" id="phone"
+                    placeholder="+7 (___) ___-__-__" name="phone"></div><button class="primary-button" type="submit"
+                  disabled="">Сохранить</button>
+              </form>
+            </div>
+
+            <div class="modal-right-content profile-modal__step profile-modal__step--3 hide">
+              <div class="modal-right-heading"><button class="back-button"><img src="/assets/img/icons/arrow-left.svg"
+                    alt="">
+                  <p>Назад</p>
+                </button><button class="close-button"><img src="/assets/img/icons/close.svg" alt="close"></button></div>
+              <div class="auth-modal-title">
+                <h1 class="auth-modal-title__heading">Подтвердите номер</h1>
+                <p>Мы отправили код на номер </p>
+              </div>
+              <form class="form form--gap">
+                <div class="input-container"><label class="input-label" for="verificationCode">Код из
+                    SMS</label><input class="input " id="verificationCode" placeholder="----" maxlength="4"
+                    name="verificationCode"></div>
+                <div class="auth-modal-buttons"><a href="profile.html" class="primary-button disabled" type="submit"
+                    disabled="">Подтвердить телефон</a><button class="primary-button" type="button" disabled="">Получить
+                    код повторно</button></div>
+              </form>
             </div>
           </div>
         </header>
         <nav class="mobile-header__nav" style="">
           <ul class="mobile-header__list">
-            <li><a class="nav-link" href="/catalog">Каталог</a></li>
-            <li><a class="nav-link" href="/looks">Образы</a></li>
-            <li><a class="nav-link" href="/collections">Коллекции</a></li>
-            <li><a class="nav-link" href="/broadcasts">Прямые эфиры</a></li>
+            <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li><a class="nav-link" href="looks.html">Образы</a></li>
+            <li><a class="nav-link" href="collections.html">Коллекции</a></li>
+            <li><a class="nav-link" href="broadcasts.html">Прямые эфиры</a></li>
           </ul>
         </nav>
         <div style="opacity: 1; transform: none;">
           <main class="checkout-content">
             <div class="checkout-config-container">
-              <div><button class="configuration">
+              <div class="checkout-config active">
+                <button class="configuration">
                   <div class="configuration-head">
-                    <h1 class="title-1">Адрес и доставка</h1><img src="assets/img/icons/checkout-block-active.svg"
-                      alt="">
+                    <h1 class="title-1">Адрес и доставка</h1>
+                    <div class="configuration-head__icon"></div>
                   </div>
                 </button>
                 <div style="opacity: 1; transform: none;">
-                  <form class="form">
+                  <form class="form checkout-form">
                     <div class="configuration-content">
-                      <div class="input-container"><label class="input-label" for="city">Город</label><select
-                          name="city" id="city" class="select-input ">
+                      <div class="input-container city-container">
+                        <label class="input-label" for="city">Город</label>
+                        <select name="city" id="city" class="select-input ">
                           <option value="Москва">Москва</option>
                           <option value="Санкт-Петербург">Санкт-Петербург</option>
                           <option value="Казань">Казань</option>
-                        </select></div>
+                        </select>
+                      </div>
                       <div class="configuration-buttons">
-                        <div class="configuration-buttons__wrapper"><button class="delivery-button active">
+                        <div class="configuration-buttons__wrapper"><button data-type="delivery"
+                            class="delivery-button active">
                             <div class="delivery-header__title">
                               <p>Курьер</p>
                               <p><span>Курьерская доставка</span></p>
@@ -198,7 +250,7 @@
                               <p>500&nbsp;₽</p>
                             </div>
                           </button></div>
-                        <div class="configuration-buttons__wrapper"><button class="delivery-button ">
+                        <div class="configuration-buttons__wrapper"><button data-type="self" class="delivery-button ">
                             <div class="delivery-header__title">
                               <p>Самовывоз</p>
                               <p><span>Дизайн-завод Флакон</span></p>
@@ -222,30 +274,155 @@
                                 name="address-save"><label for="address-save"
                                 class="checkbox-input-label"><span>Сохранить адрес</span></label></div>
                             <div class="input-container"><label class="input-label">Название адреса</label><input
-                                class="input-readonly" placeholder="Дом, работа..." readonly=""></div><button
-                              class="primary-button" type="button" disabled="">Сохранить</button>
+                                class="input-readonly address-save__input" placeholder="Дом, работа..." readonly="">
+                            </div><button class="primary-button address-save__button" type="button"
+                              disabled="">Сохранить</button>
                           </div>
                         </form>
+                        <div class="pickup-shipping">
+                          <div class="pickup-shipping__title">
+                            <p>СДЭК</p>
+                            <p class="pickup-shipping__title-address">Шоу-рум Fable, Дизайн-завод Флакон, Большая
+                              Новодмитровская ул., 36</p>
+                          </div><button class="primary-button modal-button"
+                          data-src=".address-right"type="button">Изменить адрес</button>
+                        </div>
+                        <div class="address-right modal-right">
+                          <div class="modal-right-content map">
+                            <div class="address-right__map"><img src="/assets/img/checkout/map.png" alt=""></div>
+                            <div class="address-content">
+                              <div class="modal-right-heading">
+                                <p>Пункты самовывоза</p><button class="close-button"><img
+                                    src="/assets/img/icons/close.svg" alt="close"></button>
+                              </div>
+                              <div>
+                                <h2>Выберите службу выдачи</h2>
+                                <div class="input-container"><label class="input-label" for="service"></label><select
+                                    name="service" id="service" class="select-input ">
+                                    <option value="СДЭК">СДЭК</option>
+                                    <option value="DPD">DPD</option>
+                                  </select></div>
+                              </div>
+                              <div class="address-content__controllers"><button data-view-type="map"
+                                  class="address-content__controller active">На карте</button><button
+                                  data-view-type="list" class="address-content__controller">Списком</button></div>
+                              <div>
+                                <h2>Адреса пунктов</h2>
+                                <div class="search-container">
+                                  <div class="search-container"><input type="text" placeholder="Поиск по адресу"
+                                      class="search-input"></div><button class="search-button-address"><svg
+                                      xmlns="http://www.w3.org/2000/svg" width="28" height="21" viewBox="0 0 28 21"
+                                      fill="none">
+                                      <line x1="1" y1="10.1924" x2="26" y2="10.1924" stroke="white"></line>
+                                      <path d="M17.5435 18.6938L26.0293 10.208L17.5435 1.72223" stroke="white"></path>
+                                    </svg></button>
+                                </div>
+                              </div>
+                              <div class="address-right__map-mobile"><img src="/assets/img/checkout/map.png" alt="">
+                              </div>
+                              <div class="address-content__list">
+                                <div class="pickup-shipping">
+                                  <div class="pickup-shipping__title">
+                                    <p>СДЭК</p>
+                                    <p class="pickup-shipping__title-address-button">Шоу-рум Fable, Дизайн-завод Флакон,
+                                      Большая Новодмитровская ул., 36</p>
+                                  </div><button class="primary-button" type="button">Привезти сюда</button>
+                                </div>
+                                <div class="pickup-shipping">
+                                  <div class="pickup-shipping__title">
+                                    <p>СДЭК</p>
+                                    <p class="pickup-shipping__title-address-button">Шоу-рум Fable, Дизайн-завод Флакон,
+                                      Большая Новодмитровская ул., 36</p>
+                                  </div>
+                                </div>
+                                <div class="pickup-shipping">
+                                  <div class="pickup-shipping__title">
+                                    <p>СДЭК</p>
+                                    <p class="pickup-shipping__title-address-button">Шоу-рум Fable, Дизайн-завод Флакон,
+                                      Большая Новодмитровская ул., 36</p>
+                                  </div>
+                                </div>
+                                <div class="pickup-shipping">
+                                  <div class="pickup-shipping__title">
+                                    <p>СДЭК</p>
+                                    <p class="pickup-shipping__title-address-button">Шоу-рум Fable, Дизайн-завод Флакон,
+                                      Большая Новодмитровская ул., 36</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
-              <div><button class="configuration">
+              <div class="checkout-config">
+                <button class="configuration">
                   <div class="configuration-head">
-                    <h1 class="title-1">Получатель</h1><img src="assets/img/icons/checkout-block-inactive.svg" alt="">
+                    <h1 class="title-1">Получатель</h1>
+                    <div class="configuration-head__icon"></div>
                   </div>
-                </button></div>
-              <div><button class="configuration">
+                </button>
+                <div style="opacity: 1; transform: none;">
+                  <form class="checkout-form">
+                    <div class="form__container">
+                      <div class="input-container"><label class="input-label" for="firstName">Имя</label><input
+                          class="input " id="firstName" placeholder="Имя" name="firstName"></div>
+                      <div class="input-container"><label class="input-label" for="lastName">Фамилия</label><input
+                          class="input " id="lastName" placeholder="Фамилия" name="lastName"></div>
+                      <div class="input-container"><label class="input-label" for="email">Эл. почта</label><input
+                          class="input " placeholder="olga@ivolga.com" id="email" name="email"></div>
+                      <div class="input-container"><label class="input-label" for="phone">Ваш номер
+                          телефона</label><input class="input js_phone" id="phone" placeholder="+7 (___) ___-__-__"
+                          name="phone"></div>
+                      <div class="input-container"><input type="checkbox" id="agreement"
+                          name="personal-agreement"><label for="agreement" class="checkbox-input-label"><span>Я
+                            даю согласие на обработку персональных данных</span></label></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="checkout-config">
+                <button class="configuration">
                   <div class="configuration-head">
-                    <h1 class="title-1">Оплата</h1><img src="assets/img/icons/checkout-block-inactive.svg" alt="">
+                    <h1 class="title-1">Оплата</h1>
+                    <div class="configuration-head__icon"></div>
                   </div>
-                </button></div>
+                </button>
+                <div style="opacity: 1; transform: none;">
+                  <form class="checkout-form form payment-checkout">
+                    <div class="form__container">
+                      <div class="input-container"><input type="radio" id="option1" name="radio-name"
+                          value="option1"><label for="option1" class="radio-input-label"><span>Онлайн оплата
+                            картой</span></label></div>
+                      <div class="input-container"><input type="radio" id="option2" name="radio-name"
+                          value="option2"><label for="option2" class="radio-input-label"><span>Оплата наличными
+                            курьеру</span></label></div>
+                      <div class="input-container"><input type="radio" id="option3" name="radio-name"
+                          value="option3"><label for="option3" class="radio-input-label"><span>Оплата Долями (от
+                            Tinkoff)</span></label></div>
+                    </div>
+                    <div class="payment-promo">
+                      <div class="input-container"><label class="input-label" for="promo"></label><input class="input"
+                          placeholder="Промокод" id="promo"></div><button class="primary-button"
+                        type="submit">Применить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
               <div class="form__bottom-container">
                 <div class="form-checkbox">
-                  <div class="input-container"><input type="checkbox" id="agreement" name="agreement"><label
-                      for="agreement" class="checkbox-input-label"><span>Я согласен с условиями интернет-магазина
-                        Ivolga</span></label></div>
+                  <div class="input-container">
+                    <input type="checkbox" id="personal-agreement" name="agreement"><label for="personal-agreement"
+                      class="checkbox-input-label">
+                      <span>Я согласен с условиями
+                        интернет-магазина
+                        Ivolga
+                      </span>
+                    </label>
+                  </div>
                 </div><button class="primary-button" type="button" disabled="">Подтвердить заказ</button>
               </div>
             </div>
@@ -275,7 +452,7 @@
                   <div style="opacity: 1; transform: none;">
                     <div class="products-card-container__content">
                       <ul class="products-card-list products-card-list--2">
-                        <li class="products-card--medium"><a class="products-card__link" href="/product"><img
+                        <li class="products-card--medium"><a class="products-card__link" href="product.html"><img
                               src="assets/img/products/product.png" alt="product">
                             <div class="products-card-title--medium">
                               <p class="products-card-title__product">Топ черный из кашемира</p>
@@ -285,7 +462,7 @@
                           <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
                               alt="rectangle-color" class="products-card-color-small"></div>
                         </li>
-                        <li class="products-card--medium"><a class="products-card__link" href="/product"><img
+                        <li class="products-card--medium"><a class="products-card__link" href="product.html"><img
                               src="assets/img/products/product.png" alt="product">
                             <div class="products-card-title--medium">
                               <p class="products-card-title__product">Топ черный из кашемира</p>
@@ -304,12 +481,12 @@
           </main>
           <footer class="main-footer container">
             <ul class="main-footer__links">
-              <li><a class="footer-link" href="/contacts">Контакты</a></li>
-              <li><a class="footer-link" href="/delivery">Доставка</a></li>
-              <li><a class="footer-link" href="/payment">Оплата</a></li>
-              <li><a class="footer-link" href="/exchange">Обмен и возврат</a></li>
-              <li><a class="footer-link" href="/care">Уход за одеждой</a></li>
-              <li><a class="footer-link" href="/privacy">Политика конфиденциальности</a></li>
+              <li><a class="footer-link" href="contacts.html">Контакты</a></li>
+              <li><a class="footer-link" href="delivery.html">Доставка</a></li>
+              <li><a class="footer-link" href="payment.html">Оплата</a></li>
+              <li><a class="footer-link" href="exchange.html">Обмен и возврат</a></li>
+              <li><a class="footer-link" href="care.html">Уход за одеждой</a></li>
+              <li><a class="footer-link" href="privacy.html">Политика конфиденциальности</a></li>
             </ul>
             <div class="footer-logo"><a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="76"
                   viewBox="0 0 200 76" fill="none">
@@ -347,7 +524,7 @@
       </div>
     </div>
   </div>
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>

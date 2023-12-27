@@ -42,6 +42,12 @@
   }
 }
 
+.profile-modal__step {
+  &.hide {
+    display: none;
+  }
+}
+
 //Modal right heading
 
 .modal-right-heading {

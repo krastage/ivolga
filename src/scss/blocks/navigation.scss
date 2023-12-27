@@ -39,24 +39,40 @@
   }
 }
 
-.nav-mobile-btn,
-.nav-mobile-btn-active {
+.nav-mobile-btn {
   width: 24px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
+  position: relative;
+  height: 14px;
 
-.nav-mobile-btn-active {
-  .mobile-line {
-    height: 1px;
-    background: $text-grey;
+  &.active {
+    .mobile-line {
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+      transition: 0.6s;
+
+      &:last-of-type {
+        bottom: auto;
+        transform: translateY(-50%) rotate(45deg);
+      }
+    }
   }
 }
+
 
 .mobile-line {
   height: 1px;
   background: $text-black;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.6s;
+  &:last-of-type {
+    top: auto;
+    bottom: 0;
+  }
 }
 
 //Logo
@@ -79,6 +95,10 @@
     display: flex;
     align-items: center;
   }
+
+  @media(max-width: $mini-tablet-size) {
+    display: none;
+  }
 }
 
 //Buttons
@@ -99,18 +119,30 @@
   }
 }
 
+.mobile-menu {
+  display: none;
+
+  @media(max-width: $mini-tablet-size) {
+    display: flex;
+  }
+}
+
 hr {
   z-index: 9999;
   width: 100%;
 }
 
 .mobile-header__nav {
-  display: none;
-  height: 0vh;
   transition: all 0.9s ease-in;
-  &-active {
-    display: block;
-    height: 100vh;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: -100vh;
+  left: 0;
+  background: $background-white;
+  z-index: 9999;
+  &.active {
+    top: var(--padding-top);
     transition: all 0.9s ease-out;
   }
 }

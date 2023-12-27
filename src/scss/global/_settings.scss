@@ -12,10 +12,16 @@ body {
   font-weight: 400;
   line-height: 130%; /* 20.8px */
   background: #fbfbf6;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   &.modal-open {
     overflow: hidden;
     max-height: 100vh;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0px;
   }
 }
 
@@ -23,7 +29,6 @@ body {
   max-width: 1680px;
   margin: 0 auto;
   width: 100vw;
-  overflow-x: hidden;
 }
 
 .container {
@@ -96,11 +101,12 @@ button {
 
 input:focus,
 textarea:focus {
-  outline: 1px solid $border-black;
+  border: 1px solid $border-black;
+  box-sizing: border-box;
 }
 
 .title {
-  font-size: clamp(18px, 2.2vw, 34px);
+  font-size: clamp(18px, 2.2vw, 30px);
   color: #2a2835;
 
   font-family: Steinbeck;

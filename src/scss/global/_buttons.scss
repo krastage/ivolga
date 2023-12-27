@@ -17,12 +17,17 @@
     transition: border 0.9s, color 0.9s;
   }
 
-  &:disabled {
+  &:disabled,
+  &.disabled {
     border: 1px solid $border-grey;
     background-color: $background-white;
     cursor: auto;
     transition: border 0.9s, color 0.9s;
     color: rgb(147 147 147);
+  }
+
+  &.disabled {
+    pointer-events: none;
   }
 
   @media (max-width: $big-phone-size) {

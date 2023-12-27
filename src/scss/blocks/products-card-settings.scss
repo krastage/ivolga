@@ -27,7 +27,7 @@
         padding: 5px;
         width: 29vw;
       }
-  
+
       @media (max-width: $phone-size) {
         width: 43.5vw;
       }
@@ -138,10 +138,10 @@
   font-size: clamp(12px, 1.1vw, 20px);
 }
 
-.home-collection .products-card-list{
+.home-collection .products-card-list {
   width: 90%;
 
-  @media(max-width: $phone-size) {
+  @media (max-width: $phone-size) {
     width: 100%;
   }
 }
@@ -187,11 +187,9 @@
   &--centered {
     @extend .products-card-head;
     justify-content: center;
-    
+
     .title {
-      @media(max-width: $phone-size) {
-        margin-bottom: 15px;
-      }
+      margin-bottom: 15px;
     }
   }
 }

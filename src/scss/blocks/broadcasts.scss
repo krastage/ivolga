@@ -31,10 +31,10 @@
   height: 535px;
   overflow: hidden;
   margin: 0 auto;
-  
-  @media(max-width: 860px) {
-      width: 100vw;
-    }
+
+  @media (max-width: 860px) {
+    width: 100vw;
+  }
 }
 
 .broadcasts-poster {
@@ -98,16 +98,12 @@
 //Broadcasts products
 
 .broadcasts-products {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  @media(max-width: $big-phone-size) {
-    display: none;
-  }
-  &--mobile {
-    @media(min-width: $big-phone-size) {
-      display: none !important;
+  @media (min-width: 620px) {
+    .swiper-wrapper {
+      display: flex !important;
+      justify-content: center !important;
+      flex-wrap: wrap !important;
+      gap: 10px !important;
     }
   }
 }

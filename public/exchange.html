@@ -35,8 +35,9 @@
           </nav>
           <div class="main-header__buttons">
             <ul class="main-header__buttons-list">
-              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".search-modal"><svg width="20" height="20"
-                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button"
+                  data-src=".search-modal"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon">
                       <g id="Group 35">
                         <circle id="Ellipse 5" cx="8.57171" cy="8.57114" r="5.21429" stroke="black"></circle>
@@ -44,8 +45,9 @@
                       </g>
                     </g>
                   </svg></button></li>
-              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".basket-modal"><svg width="20" height="20"
-                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button"
+                  data-src=".basket-modal"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon">
                       <path id="Ellipse 7"
                         d="M12.8569 7.14279C12.8569 5.56483 11.5777 4.28564 9.99972 4.28564C8.42176 4.28564 7.14258 5.56483 7.14258 7.14279"
@@ -54,8 +56,9 @@
                         stroke="black"></rect>
                     </g>
                   </svg></button></li>
-              <li class="main-header__buttons-item"><button class="main-header__button modal-button" data-src=".profile-modal"><svg width="20" height="20"
-                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <li class="main-header__buttons-item"><button class="main-header__button modal-button"
+                  data-src=".profile-modal"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g id="Icon" clip-path="url(#clip0_903_1614)">
                       <circle id="Ellipse 6" cx="9.99958" cy="7.14289" r="3.78571" stroke="black"></circle>
                       <rect id="Rectangle 152" x="3.35742" y="13.3572" width="13.2857" height="14.7143" rx="3.78571"
@@ -67,6 +70,12 @@
                       </clipPath>
                     </defs>
                   </svg></button></li>
+              <li class="main-header__buttons-item mobile-menu" >
+                <button class="nav-mobile-btn modal-button" data-src=".mobile-header__nav">
+                  <div class="mobile-line"></div>
+                  <div class="mobile-line"></div>
+                </button>
+              </li>
             </ul>
           </div>
           <div class="modal-right search-modal">
@@ -155,18 +164,58 @@
             </div>
           </div>
           <div class="modal-right profile-modal">
-            <div class="modal-right-content">
-              <div class="modal-right-heading">
-                <p>Вход</p><button class="close-button"><img src="assets/img/icons/close.svg" alt="close"></button>
-              </div>
-              <div class="auth-modal-title">
-                <h1 class="auth-modal-title__heading">Войдите в аккаунт или продолжите как гость</h1>
-                <p>Зарегистрируйтесь или войдите в свой аккаунт, чтобы воспользоваться программой лояльности</p>
-              </div>
-              <div class="auth-modal-buttons"><button class="primary-button-active">Войти /
-                  Зарегистрироваться</button><button class="primary-button">Продолжить как гость</button></div>
-            </div>
-          </div>
+                        <div class="modal-right-content profile-modal__step profile-modal__step--1">
+                            <div class="modal-right-heading">
+                                <p>Вход</p><button class="close-button"><img src="assets/img/icons/close.svg"
+                                        alt="close"></button>
+                            </div>
+                            <div class="auth-modal-title">
+                                <h1 class="auth-modal-title__heading">Войдите в аккаунт или продолжите как гость</h1>
+                                <p>Зарегистрируйтесь или войдите в свой аккаунт, чтобы воспользоваться программой
+                                    лояльности</p>
+                            </div>
+                            <div class="auth-modal-buttons"><button class="primary-button-active">Войти /
+                                    Зарегистрироваться</button><button class="primary-button">Продолжить как
+                                    гость</button></div>
+                        </div>
+
+                        <div class="modal-right-content profile-modal__step profile-modal__step--2 hide">
+                            <div class="modal-right-heading">
+                                <p>Вход в аккаунт</p><button class="close-button"><img src="/assets/img/icons/close.svg"
+                                        alt="close"></button>
+                            </div>
+                            <div class="auth-modal-title">
+                                <h1 class="auth-modal-title__heading">Войти или зарегистрироваться</h1>
+                                <p>Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
+                            </div>
+                            <form class="form form--gap">
+                                <div class="input-container"><label class="input-label" for="phone">Ваш номер
+                                        телефона</label><input class="input mobile-phone-input js_phone" id="phone"
+                                        placeholder="+7 (___) ___-__-__" name="phone"></div><button
+                                    class="primary-button" type="submit" disabled="">Сохранить</button>
+                            </form>
+                        </div>
+
+                        <div class="modal-right-content profile-modal__step profile-modal__step--3 hide">
+                            <div class="modal-right-heading"><button class="back-button"><img
+                                        src="/assets/img/icons/arrow-left.svg" alt="">
+                                    <p>Назад</p>
+                                </button><button class="close-button"><img src="/assets/img/icons/close.svg"
+                                        alt="close"></button></div>
+                            <div class="auth-modal-title">
+                                <h1 class="auth-modal-title__heading">Подтвердите номер</h1>
+                                <p>Мы отправили код на номер </p>
+                            </div>
+                            <form class="form form--gap">
+                                <div class="input-container"><label class="input-label" for="verificationCode">Код из
+                                        SMS</label><input class="input " id="verificationCode" placeholder="----"
+                                        maxlength="4" name="verificationCode"></div>
+                                <div class="auth-modal-buttons"><a href="profile.html" class="primary-button disabled" type="submit"
+                                        disabled="">Подтвердить телефон</a><button class="primary-button"
+                                        type="button" disabled="">Получить код повторно</button></div>
+                            </form>
+                        </div>
+                    </div>
         </header>
         <nav class="mobile-header__nav" style="">
           <ul class="mobile-header__list">

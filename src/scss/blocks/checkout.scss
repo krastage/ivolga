@@ -57,13 +57,56 @@ Config
   }
 }
 
+.configuration-head__icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #1B1A19;
+  transition: 0.7s;
+}
+
+.checkout-config {
+  &.active {
+    .checkout-form {
+      max-height: 2000px;
+      transition: 0.7s;
+    }
+
+    .configuration-head__icon {
+      background-color: #1B1A19;
+      transition: 0.7s;
+    }
+  }
+}
+
+
+.checkout-form {
+  overflow-y: hidden;
+  overflow-x: auto;
+  max-height: 0;
+  transition: 0.7s;
+}
+
 .configuration-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  &.self {
+    .city-container,
+    .shipping-content {
+      display: none;
+    }
+    .pickup-shipping,
+    .address-right {
+      display: flex;
+    }
+  }
+
 }
 
 //Buttons
+
 
 .configuration {
   padding-bottom: 20px;
@@ -93,8 +136,9 @@ Config
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  outline: 1px $border-black solid;
+  border: 1px $border-black solid;
   transition: 0.9s background-color ease-in-out;
+  box-sizing: border-box;
 
   & p {
     color: $text-black;
