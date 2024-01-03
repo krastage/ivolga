@@ -6,6 +6,7 @@
 
 .success-message {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   position: fixed;
   z-index: 9999;
@@ -16,6 +17,18 @@
   left: 50%;
   transform: translateX(-50%);
   user-select: none;
+  animation: move 2s forwards;
+
+  @keyframes move {
+    from {
+      top: 5vh;
+      opacity: 0;
+    }
+    to {
+      top: 15vh;
+      opacity: 1;
+    }
+  }
 
   & p {
     color: $background-white;

@@ -2,7 +2,7 @@
  * Страница "Каталог"
  */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import '../../../styles/Catalog.scss';
 import AnimatedPage from '../../utils/AnimatedPage';
@@ -14,6 +14,9 @@ const Catalog = () => {
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [filterActive, setFilterActive] = useState(false);
   const [filtersActivated, setFiltersActivated] = useState(false);
+
+
+  
 
   const products = [
     {
@@ -120,11 +123,11 @@ const Catalog = () => {
       : products.filter((product) => selectedTypes.includes(product.type));
 
   const handleFilterChange = (value) => {
+    
     setFiltersActivated(true);
-
+    setFilterActive(false);
     if (selectedTypes.includes(Number(value))) {
       setSelectedTypes(selectedTypes.filter((type) => type !== Number(value)));
-      setFilterActive(false);
       return;
     }
     setSelectedTypes([...selectedTypes, Number(value)]);
@@ -135,6 +138,13 @@ const Catalog = () => {
     setFiltersActivated(false);
     setFilterActive(false);
   };
+  
+  useEffect(() => {
+    if (filteredProducts.length === 0) {
+      document.querySelector("body").style.overflow = "auto";
+      
+    }
+  }, [filteredProducts]);
 
   return (
     <AnimatedPage>
@@ -142,7 +152,7 @@ const Catalog = () => {
         <main className='content'>
           <div className='catalog-collection'>
             <div className='catalog__banner'>
-              <div className='main-content__banner-img'/>
+              <div className='main-content__banner-img' />
             </div>
             {filteredProducts.length === 0 ? (
               <AnimatedPage>
