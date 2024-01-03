@@ -4,13 +4,29 @@
 
 .success-message {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   background-color: $border-black;
   padding: 24px;
-  width: 465px;
+  max-width: 465px;
+  width: 80vw;
+  left: 50%;
+  transform: translateX(-50%);
   user-select: none;
+  animation: move 2s forwards;
+
+  @keyframes move {
+    from {
+      top: 5vh;
+      opacity: 0;
+    }
+    to {
+      top: 15vh;
+      opacity: 1;
+    }
+  }
 
   & p {
     color: $background-white;
