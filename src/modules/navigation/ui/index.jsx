@@ -13,7 +13,10 @@ import Search from '../../ud-ui/modals/search';
 const NavigationItem = ({ to, location, label, onClick }) => {
   return (
     <li>
-      <NavLink onClick={onClick} to={to} className={location.pathname === to ? 'nav-link-active' : 'nav-link'}>
+      <NavLink
+        onClick={onClick}
+        to={to}
+        className={location.pathname === to ? 'nav-link-active' : 'nav-link'}>
         {label}
       </NavLink>
     </li>
@@ -21,43 +24,35 @@ const NavigationItem = ({ to, location, label, onClick }) => {
 };
 
 const Navigation = () => {
-
-  
-  
   const location = useLocation();
-  
-  
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-  const [nav, setNav] = useState(false)
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [nav, setNav] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
   const [basketActive, setBasketActive] = useState(false);
   const [authActive, setAuthActive] = useState(false);
 
   const handleScroll = () => {
-    console.log(`${document.querySelector('.main-header').offsetHeight}px`);
-    document.querySelector('body').style.paddingTop = `${document.querySelector('.main-header').offsetHeight}px`;
+    const paddingTop = `${document.querySelector('.main-header').offsetHeight}px`;
+    const body = document.querySelector('body');
+    body.style.paddingTop = paddingTop;
+    body.style.setProperty('--padding-top', paddingTop);
   };
-  
+
   const handleResize = () => {
-    setWindowWidth(window.innerWidth)
-  }
-  
+    setWindowWidth(window.innerWidth);
+  };
+
   const handleNav = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-      easing: 'ease-in-out',
-    });
-    setNav(!nav)
-  }
+    setNav(!nav);
+  };
 
   useEffect(() => {
     if (document.readyState === 'complete') {
       handleScroll();
-  } else {
+    } else {
       window.addEventListener('load', handleScroll);
-  }
+    }
 
     return () => {
       window.removeEventListener('load', handleScroll);
@@ -67,15 +62,14 @@ const Navigation = () => {
 
   return (
     <>
-      <header className={
-        `
+      <header
+        className={`
         main-header
         
         fixed container'
         
         ${windowWidth >= 820 && 'mobile'}
-        `}
-      >
+        `}>
         <>
           <div className='main-header__logo'>
             <NavLink to={'/home'}>
@@ -83,7 +77,7 @@ const Navigation = () => {
             </NavLink>
           </div>
 
-          {windowWidth >= 820 &&
+          {windowWidth >= 820 && (
             <nav className='main-header__nav'>
               <ul className='main-header__list'>
                 <NavigationItem to='/catalog' label='Каталог' location={location} />
@@ -92,7 +86,7 @@ const Navigation = () => {
                 <NavigationItem to='/broadcasts' label='Прямые эфиры' location={location} />
               </ul>
             </nav>
-          }
+          )}
 
           <div className='main-header__buttons'>
             <ul className='main-header__buttons-list'>
@@ -106,7 +100,13 @@ const Navigation = () => {
                     xmlns='http://www.w3.org/2000/svg'>
                     <g id='Icon'>
                       <g id='Group 35'>
-                        <circle id='Ellipse 5' cx='8.57171' cy='8.57114' r='5.21429' stroke='black' />
+                        <circle
+                          id='Ellipse 5'
+                          cx='8.57171'
+                          cy='8.57114'
+                          r='5.21429'
+                          stroke='black'
+                        />
                         <line
                           id='Line 41'
                           x1='11.7823'
@@ -147,11 +147,8 @@ const Navigation = () => {
                   </svg>
                 </button>
               </li>
-                <li className='main-header__buttons-item'>
-                <button
-                  className='main-header__button'
-                  onClick={() => setAuthActive(true)}
-                >
+              <li className='main-header__buttons-item'>
+                <button className='main-header__button' onClick={() => setAuthActive(true)}>
                   <svg
                     width='20'
                     height='20'
@@ -178,31 +175,40 @@ const Navigation = () => {
                   </svg>
                 </button>
               </li>
-              {windowWidth <= 820 &&
+              {windowWidth <= 820 && (
                 <li className='main-header__buttons-item'>
                   <div
                     className={nav ? 'nav-mobile-btn-active' : 'nav-mobile-btn'}
-                    onClick={handleNav}
-                  >
+                    onClick={handleNav}>
                     <div className='mobile-line'></div>
                     <div className='mobile-line'></div>
                   </div>
                 </li>
-              }
+              )}
             </ul>
           </div>
         </>
-        
-      <Search searchActive={searchActive} setSearchActive={setSearchActive} />
-      <Basket basketActive={basketActive} setBasketActive={setBasketActive} />
-      <Auth authActive={authActive} setAuthActive={setAuthActive} />
-    </header>
-      <nav className={nav ? 'mobile-header__nav-active' : 'mobile-header__nav'}>
+
+        <Search searchActive={searchActive} setSearchActive={setSearchActive} />
+        <Basket basketActive={basketActive} setBasketActive={setBasketActive} />
+        <Auth authActive={authActive} setAuthActive={setAuthActive} />
+      </header>
+      <nav className={nav ? 'mobile-header__nav mobile-header__nav-active' : 'mobile-header__nav'}>
         <ul className='mobile-header__list'>
-          <NavigationItem to='/catalog' label='Каталог' location={location} onClick={handleNav}/>
+          <NavigationItem to='/catalog' label='Каталог' location={location} onClick={handleNav} />
           <NavigationItem to='/looks' label='Образы' location={location} onClick={handleNav} />
-          <NavigationItem to='/collections' label='Коллекции' location={location} onClick={handleNav} />
-          <NavigationItem to='/broadcasts' label='Прямые эфиры' location={location} onClick={handleNav} />
+          <NavigationItem
+            to='/collections'
+            label='Коллекции'
+            location={location}
+            onClick={handleNav}
+          />
+          <NavigationItem
+            to='/broadcasts'
+            label='Прямые эфиры'
+            location={location}
+            onClick={handleNav}
+          />
         </ul>
       </nav>
     </>

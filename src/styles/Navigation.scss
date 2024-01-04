@@ -107,12 +107,16 @@ hr {
 }
 
 .mobile-header__nav {
-  display: none;
-  height: 0vh;
   transition: all 0.9s ease-in;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: -100vh;
+  left: 0;
+  background: $background-white;
+  z-index: 998;
   &-active {
-    display: block;
-    height: 100vh;
+    top: var(--padding-top);
     transition: all 0.9s ease-out;
   }
 }
