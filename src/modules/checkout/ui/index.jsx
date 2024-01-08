@@ -29,18 +29,26 @@ const Checkout = () => {
     formState: { errors, isValid },
   } = useForm({ mode: 'onBlur' });
 
-  const handleBlockActivation = (block) => {
+  const handleBlockActivation = (evt, block) => {
     if (block === activeBlock) {
       setActiveBlock(null);
       setShowAddressAndShipping(false);
       setShowRecipient(false);
       setShowPayment(false);
-    } else {
-      setActiveBlock(block);
-      setShowAddressAndShipping(block === 'AddressAndShipping');
-      setShowRecipient(block === 'Recipient');
-      setShowPayment(block === 'Payment');
+      return;
     }
+    setActiveBlock(block);
+    setShowAddressAndShipping(block === 'AddressAndShipping');
+    setShowRecipient(block === 'Recipient');
+    setShowPayment(block === 'Payment');
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: evt.target.offsetTop - Number(getComputedStyle(document.querySelector('body')).getPropertyValue('--padding-top').replace('px', '')),
+        behavior: 'smooth' // Добавляем smooth для плавной прокрутки
+      });
+    }, 100);
+    
   };
 
   const onSubmit = () => {
@@ -55,7 +63,7 @@ const Checkout = () => {
             <div>
               <button
                 className='configuration'
-                onClick={() => handleBlockActivation('AddressAndShipping')}>
+                onClick={(evt) => handleBlockActivation(evt, 'AddressAndShipping')}>
                 <div className='configuration-head'>
                   <h1 className='title-1'>Адрес и доставка</h1>
                   <img
@@ -72,7 +80,7 @@ const Checkout = () => {
             </div>
 
             <div>
-              <button className='configuration' onClick={() => handleBlockActivation('Recipient')}>
+              <button className='configuration' onClick={(evt) => handleBlockActivation(evt,'Recipient')}>
                 <div className='configuration-head'>
                   <h1 className='title-1'>Получатель</h1>
                   <img
@@ -89,7 +97,7 @@ const Checkout = () => {
             </div>
 
             <div>
-              <button className='configuration' onClick={() => handleBlockActivation('Payment')}>
+              <button className='configuration' onClick={(evt) => handleBlockActivation(evt,'Payment')}>
                 <div className='configuration-head'>
                   <h1 className='title-1'>Оплата</h1>
                   <img
