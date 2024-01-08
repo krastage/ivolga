@@ -47,7 +47,7 @@ const Checkout = () => {
         top: evt.target.offsetTop - Number(getComputedStyle(document.querySelector('body')).getPropertyValue('--padding-top').replace('px', '')),
         behavior: 'smooth' // Добавляем smooth для плавной прокрутки
       });
-    }, 100);
+    }, 200);
     
   };
 
