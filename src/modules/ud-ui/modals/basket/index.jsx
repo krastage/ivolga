@@ -64,6 +64,7 @@ const Basket = ({ basketActive, setBasketActive }) => {
               title={'Топ черный из кашемира'}
               price={'25 000'}
               imageSource={'/assets/img/products/product.png'}
+              isCounter={true}
             />,
             <ProductCard
               key={2}
@@ -72,6 +73,7 @@ const Basket = ({ basketActive, setBasketActive }) => {
               title={'Топ черный из кашемира'}
               price={'25 000'}
               imageSource={'/assets/img/products/product.png'}
+              isCounter={true}
             />,
           ]}
         />

@@ -16,6 +16,23 @@ body {
   background: #fbfbf6;
 }
 
+/* Убираем стандартные стрелки в input[type="number"] */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Webkit - Safari, Chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .body-container {
   max-width: 1680px;
   margin: 0 auto;

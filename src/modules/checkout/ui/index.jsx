@@ -162,6 +162,7 @@ const Checkout = () => {
                     title={'Топ черный из кашемира'}
                     price={'25 000'}
                     imageSource={'/assets/img/products/product.png'}
+                    isCounter={true}
                   />,
                   <ProductCard
                     size='medium'
@@ -169,6 +170,7 @@ const Checkout = () => {
                     title={'Топ черный из кашемира'}
                     price={'25 000'}
                     imageSource={'/assets/img/products/product.png'}
+                    isCounter={true}
                   />,
                 ]}
               />
