@@ -4,16 +4,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const picksButton = document.querySelectorAll('.product-config__colors-button');
-
-if (picksButton.length > 0) {
-  picksButton.forEach((pickButton) => {
-    pickButton.addEventListener('click', () => {
-      const color = pickButton.dataset.color;
-      document.querySelector('.product-config__colors p').textContent = color;
-    });
-  });
-}
 
 const showMoreButtons = document.querySelectorAll('.product-config__button');
 

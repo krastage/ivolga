@@ -16,8 +16,17 @@ if (chapterButtons.length > 0) {
         container.classList.remove('active');
         return;
       }
+      
+      setTimeout(() => {
+        window.scrollTo({
+          top: chapterButton.offsetTop - (document.querySelector('.main-header').offsetHeight + 10),
+          behavior: 'smooth' // Добавляем smooth для плавной прокрутки
+        });
+      }, document.querySelector('.checkout-config.active') ? 400 : 100);
       document.querySelector('.checkout-config.active')?.classList.remove('active');
       container.classList.add('active');
+
+      
     });
   });
 }

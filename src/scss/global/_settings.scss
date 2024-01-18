@@ -19,10 +19,23 @@ body {
     overflow: hidden;
     max-height: 100vh;
   }
+}
 
-  &::-webkit-scrollbar {
-    width: 0px;
-  }
+/* Убираем стандартные стрелки в input[type="number"] */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Webkit - Safari, Chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .body-container {

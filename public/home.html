@@ -64,7 +64,7 @@
                       </clipPath>
                     </defs>
                   </svg></button></li>
-              <li class="main-header__buttons-item mobile-menu" >
+              <li class="main-header__buttons-item mobile-menu">
                 <button class="nav-mobile-btn modal-button" data-src=".mobile-header__nav">
                   <div class="mobile-line"></div>
                   <div class="mobile-line"></div>
@@ -138,8 +138,31 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-small"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small">
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class='products-card__bottom-row'>
+                          <div class='products-card__counter'>
+                            <button class='products-card__counter-button products-card__counter-minus'>
+                              <svg width='9' height='1' viewBox='0 0 9 1' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <path d='M0.847656 0.0166016H8.87891V1.00879H0.847656V0.0166016Z' fill='#8C8C8C' />
+                              </svg>
+                            </button>
+                            <input type='number' class='products-card__counter-input' min="1" value='1' />
+                            <button class='products-card__counter-button products-card__counter-plus'>
+                              <svg width='11' height='11' viewBox='0 0 11 11' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <path
+                                  d='M0.847656 5.0166H5.18359V0.680664H6.17578V5.0166H10.5117V6.00879H6.17578V10.3447H5.18359V6.00879H0.847656V5.0166Z'
+                                  fill='#8C8C8C' />
+                              </svg>
+                            </button>
+                          </div>
+                          <button class='products-card__delete'>Удалить</button>
+                        </div>
                       </li>
                       <li class="products-card--medium"><a class="products-card__link" href="product.html"><img
                             src="assets/img/products/product.png" alt="product">
@@ -148,68 +171,90 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-small"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small">
+                            <div></div>
+                          </div>
+                        </div>
+
+                        <div class='products-card__bottom-row'>
+                          <div class='products-card__counter'>
+                            <button class='products-card__counter-button products-card__counter-minus'>
+                              <svg width='9' height='1' viewBox='0 0 9 1' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <path d='M0.847656 0.0166016H8.87891V1.00879H0.847656V0.0166016Z' fill='#8C8C8C' />
+                              </svg>
+                            </button>
+                            <input type='number' class='products-card__counter-input' min="1" value='1' />
+                            <button class='products-card__counter-button products-card__counter-plus'>
+                              <svg width='11' height='11' viewBox='0 0 11 11' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <path
+                                  d='M0.847656 5.0166H5.18359V0.680664H6.17578V5.0166H10.5117V6.00879H6.17578V10.3447H5.18359V6.00879H0.847656V5.0166Z'
+                                  fill='#8C8C8C' />
+                              </svg>
+                            </button>
+                          </div>
+                          <button class='products-card__delete'>Удалить</button>
+                        </div>
                       </li>
                     </ul>
-                  </div>
+                  </div>.
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-right profile-modal">
-                        <div class="modal-right-content profile-modal__step profile-modal__step--1">
-                            <div class="modal-right-heading">
-                                <p>Вход</p><button class="close-button"><img src="assets/img/icons/close.svg"
-                                        alt="close"></button>
-                            </div>
-                            <div class="auth-modal-title">
-                                <h1 class="auth-modal-title__heading">Войдите в аккаунт или продолжите как гость</h1>
-                                <p>Зарегистрируйтесь или войдите в свой аккаунт, чтобы воспользоваться программой
-                                    лояльности</p>
-                            </div>
-                            <div class="auth-modal-buttons"><button class="primary-button-active">Войти /
-                                    Зарегистрироваться</button><button class="primary-button">Продолжить как
-                                    гость</button></div>
-                        </div>
+            <div class="modal-right-content profile-modal__step profile-modal__step--1">
+              <div class="modal-right-heading">
+                <p>Вход</p><button class="close-button"><img src="assets/img/icons/close.svg" alt="close"></button>
+              </div>
+              <div class="auth-modal-title">
+                <h1 class="auth-modal-title__heading">Войдите в аккаунт или продолжите как гость</h1>
+                <p>Зарегистрируйтесь или войдите в свой аккаунт, чтобы воспользоваться программой
+                  лояльности</p>
+              </div>
+              <div class="auth-modal-buttons"><button class="primary-button-active">Войти /
+                  Зарегистрироваться</button><button class="primary-button">Продолжить как
+                  гость</button></div>
+            </div>
 
-                        <div class="modal-right-content profile-modal__step profile-modal__step--2 hide">
-                            <div class="modal-right-heading">
-                                <p>Вход в аккаунт</p><button class="close-button"><img src="/assets/img/icons/close.svg"
-                                        alt="close"></button>
-                            </div>
-                            <div class="auth-modal-title">
-                                <h1 class="auth-modal-title__heading">Войти или зарегистрироваться</h1>
-                                <p>Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
-                            </div>
-                            <form class="form form--gap">
-                                <div class="input-container"><label class="input-label" for="phone">Ваш номер
-                                        телефона</label><input class="input mobile-phone-input js_phone" id="phone"
-                                        placeholder="+7 (___) ___-__-__" name="phone"></div><button
-                                    class="primary-button" type="submit" disabled="">Сохранить</button>
-                            </form>
-                        </div>
+            <div class="modal-right-content profile-modal__step profile-modal__step--2 hide">
+              <div class="modal-right-heading">
+                <p>Вход в аккаунт</p><button class="close-button"><img src="/assets/img/icons/close.svg"
+                    alt="close"></button>
+              </div>
+              <div class="auth-modal-title">
+                <h1 class="auth-modal-title__heading">Войти или зарегистрироваться</h1>
+                <p>Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
+              </div>
+              <form class="form form--gap">
+                <div class="input-container"><label class="input-label" for="phone">Ваш номер
+                    телефона</label><input class="input mobile-phone-input js_phone" id="phone"
+                    placeholder="+7 (___) ___-__-__" name="phone"></div><button class="primary-button" type="submit"
+                  disabled="">Сохранить</button>
+              </form>
+            </div>
 
-                        <div class="modal-right-content profile-modal__step profile-modal__step--3 hide">
-                            <div class="modal-right-heading"><button class="back-button"><img
-                                        src="/assets/img/icons/arrow-left.svg" alt="">
-                                    <p>Назад</p>
-                                </button><button class="close-button"><img src="/assets/img/icons/close.svg"
-                                        alt="close"></button></div>
-                            <div class="auth-modal-title">
-                                <h1 class="auth-modal-title__heading">Подтвердите номер</h1>
-                                <p>Мы отправили код на номер </p>
-                            </div>
-                            <form class="form form--gap">
-                                <div class="input-container"><label class="input-label" for="verificationCode">Код из
-                                        SMS</label><input class="input " id="verificationCode" placeholder="----"
-                                        maxlength="4" name="verificationCode"></div>
-                                <div class="auth-modal-buttons"><a href="profile.html" class="primary-button disabled" type="submit"
-                                        disabled="">Подтвердить телефон</a><button class="primary-button"
-                                        type="button" disabled="">Получить код повторно</button></div>
-                            </form>
-                        </div>
-                    </div>
+            <div class="modal-right-content profile-modal__step profile-modal__step--3 hide">
+              <div class="modal-right-heading"><button class="back-button"><img src="/assets/img/icons/arrow-left.svg"
+                    alt="">
+                  <p>Назад</p>
+                </button><button class="close-button"><img src="/assets/img/icons/close.svg" alt="close"></button></div>
+              <div class="auth-modal-title">
+                <h1 class="auth-modal-title__heading">Подтвердите номер</h1>
+                <p>Мы отправили код на номер </p>
+              </div>
+              <form class="form form--gap">
+                <div class="input-container"><label class="input-label" for="verificationCode">Код из
+                    SMS</label><input class="input " id="verificationCode" placeholder="----" maxlength="4"
+                    name="verificationCode"></div>
+                <div class="auth-modal-buttons"><a href="profile.html" class="primary-button disabled" type="submit"
+                    disabled="">Подтвердить телефон</a><button class="primary-button" type="button" disabled="">Получить
+                    код повторно</button></div>
+              </form>
+            </div>
+          </div>
         </header>
         <nav class="mobile-header__nav" style="">
           <ul class="mobile-header__list">
@@ -245,8 +290,14 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-big"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small">
+                            <div></div>
+                          </div>
+                          <div class="products-card-color-small">
+                            <div></div>
+                          </div>
+                        </div>
                       </li>
                       <li class="products-card--big"><a class="products-card__link" href="product.html"><img
                             src="assets/img/products/product.png" alt="product">
@@ -255,8 +306,9 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-big"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small"><div></div></div>
+                        </div>
                       </li>
                       <li class="products-card--big"><a class="products-card__link" href="product.html"><img
                             src="assets/img/products/product.png" alt="product">
@@ -265,8 +317,9 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-big"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small"><div></div></div>
+                        </div>
                       </li>
                       <li class="products-card--big"><a class="products-card__link" href="product.html"><img
                             src="assets/img/products/product.png" alt="product">
@@ -275,8 +328,9 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-big"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small"><div></div></div>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -307,8 +361,9 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-big"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small"><div></div></div>
+                        </div>
                       </li>
                       <li class="products-card--big"><a class="products-card__link" href="product.html"><img
                             src="assets/img/products/product3.png" alt="product">
@@ -317,8 +372,9 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-big"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small"><div></div></div>
+                        </div>
                       </li>
                       <li class="products-card--big"><a class="products-card__link" href="product.html"><img
                             src="assets/img/products/product4.png" alt="product">
@@ -327,8 +383,9 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-big"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small"><div></div></div>
+                        </div>
                       </li>
                       <li class="products-card--big"><a class="products-card__link" href="product.html"><img
                             src="assets/img/products/product5.png" alt="product">
@@ -337,8 +394,9 @@
                             <p class="products-card-title__price">25 000&nbsp;₽</p>
                           </div>
                         </a>
-                        <div class="products-card__colors"><img src="assets/img/icons/rectangle.png"
-                            alt="rectangle-color" class="products-card-color-big"></div>
+                        <div class="products-card__colors">
+                          <div class="products-card-color-small"><div></div></div>
+                        </div>
                       </li>
                     </ul>
                   </div>
