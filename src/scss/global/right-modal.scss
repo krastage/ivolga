@@ -1,6 +1,6 @@
-//Modal right
 
 .modal-right {
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,44 +8,67 @@
   height: 100vh;
   width: 100vw;
   top: 0;
-  right: 0;
+  right: 5px;
   pointer-events: none;
-  transition: background-color 0.9s ease-in-out;
+  transition: 0.9s;
   z-index: 9999;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   &.active {
+    opacity: 1;
     background-color: rgba(0, 0, 0, 0.4);
     pointer-events: all;
-    z-index: 9999;
-    transition: background-color 0.9s ease-in-out;
+    transition: 0.9s;
+    
 
     .modal-right-content {
+      opacity: 1;
       right: 0;
-      transition: 0.9s right ease-in-out;
+      transition: 0.9s;
+      max-height: 100vh !important;
+      
+      
     }
   }
 
   .modal-right-content {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    height: 100vh;
-    width: 700px;
-    right: -150vw;
-    box-sizing: border-box;
-    padding: 40px 60px;
+    width: 45%;
+    height: 100%;
+    padding: 40px 50px;
     background-color: $background-white;
+    right: -70%;
     top: 0;
     position: fixed;
-    overflow: auto;
-    transition: 0.9s right ease-in-out;
+    transition: 0.9s;
     z-index: 9999;
-  }
-}
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
 
-.profile-modal__step {
-  &.hide {
-    display: none;
+    @media (max-width: 1020px) {
+      width: 50%;
+    }
+
+    @media (max-width: 620px) {
+      width: 85%;
+      padding: 30px 40px;
+    }
+    @media (max-width: 580px) {
+      width: 80%;
+    }
+    @media (max-width: 480px) {
+      width: 78%;
+    }
+    @media (max-width: 430px) {
+      width: 100vw;
+      padding: 20px 10px;
+      box-sizing: border-box;
+    }
   }
 }
 
@@ -56,3 +79,4 @@
   justify-content: space-between;
   align-items: center;
 }
+
